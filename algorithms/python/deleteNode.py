@@ -34,4 +34,3 @@ class Solution(object):
         while node.left:
             node = node.left
         return node
-
