@@ -1,4 +1,3 @@
 #!/bin/bash
 
-find algorithms -type f | xargs grep 'http' | awk '{ print $NF }'
-find shell -type f | xargs grep 'http' | awk '{ print $NF }'
+find algorithms shell -type f | xargs grep 'https' | awk '{ print $NF }'
