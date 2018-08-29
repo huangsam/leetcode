@@ -1,4 +1,4 @@
-// https://leetcode.com/problems/palindrome-linked-list/
+// https://leetcode.com/problems/palindrome-linked-list/description/
 /**
  * Definition for singly-linked list.
  * public class ListNode {

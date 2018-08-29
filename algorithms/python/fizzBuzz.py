@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/fizz-buzz/
+# https://leetcode.com/problems/fizz-buzz/description/
 class Solution(object):
     def fizzBuzz(self, n):
         """

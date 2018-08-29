@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/diameter-of-binary-tree/
+# https://leetcode.com/problems/diameter-of-binary-tree/description/
 
 # Definition for a binary tree node.
 # class TreeNode(object):

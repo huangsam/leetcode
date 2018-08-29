@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/single-number-ii/
+# https://leetcode.com/problems/single-number-ii/description/
 class Solution(object):
     def singleNumber(self, nums):
         """

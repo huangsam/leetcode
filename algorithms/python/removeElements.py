@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/remove-linked-list-elements/
+# https://leetcode.com/problems/remove-linked-list-elements/description/
 
 # Definition for singly-linked list.
 class ListNode(object):

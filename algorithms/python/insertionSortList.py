@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/insertion-sort-list/
+# https://leetcode.com/problems/insertion-sort-list/description/
 
 # Definition for singly-linked list.
 class ListNode(object):

@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/two-sum/
+# https://leetcode.com/problems/two-sum/description/
 class Solution(object):
     def twoSum(self, nums, target):
         """

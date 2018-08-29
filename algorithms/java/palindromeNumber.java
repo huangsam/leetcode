@@ -1,4 +1,4 @@
-// https://leetcode.com/problems/palindrome-number/
+// https://leetcode.com/problems/palindrome-number/description/
 public class Solution {
     public int length(int x) {
         int count = 0;

@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/median-of-two-sorted-arrays/
+# https://leetcode.com/problems/median-of-two-sorted-arrays/description/
 class Solution(object):
     def merge(self, nums1, nums2):
         nlen1 = len(nums1)

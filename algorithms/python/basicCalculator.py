@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/basic-calculator-ii/
+# https://leetcode.com/problems/basic-calculator-ii/description/
 class Solution(object):
     def calculate(self, s):
         if not s:

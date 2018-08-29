@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/find-the-difference/
+# https://leetcode.com/problems/find-the-difference/description/
 class Solution(object):
     def findTheDifference(self, s, t):
         """

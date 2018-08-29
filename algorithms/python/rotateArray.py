@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/rotate-array/
+# https://leetcode.com/problems/rotate-array/description/
 class Solution(object):
     def reverse(self, nums, start, end):
         while start < end:

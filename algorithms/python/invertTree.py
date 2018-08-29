@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/invert-binary-tree/
+# https://leetcode.com/problems/invert-binary-tree/description/
 
 # Definition for a binary tree node.
 # class TreeNode(object):

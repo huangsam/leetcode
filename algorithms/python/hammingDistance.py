@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/hamming-distance/
+# https://leetcode.com/problems/hamming-distance/description/
 class Solution(object):
     def hammingDistance(self, x, y):
         """

@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/maximum-depth-of-binary-tree/
+# https://leetcode.com/problems/maximum-depth-of-binary-tree/description/
 
 # Definition for a binary tree node.
 # class TreeNode(object):
