@@ -26,12 +26,12 @@ class Solution:
         left, right = found, found
         while True:
             result = self.binarySearch(nums, target, 0, left)
-            if result == -1 or result == found or result == left:
+            if result == -1 or result == left:
                 break
             left = result
         while True:
             result = self.binarySearch(nums, target, right, len(nums))
-            if result == -1 or result == found or result == right:
+            if result == -1 or result == right:
                 break
             right = result
         return [left, right]
