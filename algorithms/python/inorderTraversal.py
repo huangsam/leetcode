@@ -19,3 +19,20 @@ class Solution(object):
         result.append(root.val)
         result.extend(self.inorderTraversal(root.right))
         return result
+
+    def inorderTraversalIterative(self, root):
+        """
+        :type root: TreeNode
+        :rtype: List[int]
+        """
+        visited = []
+        c = root
+        s = []
+        while c is not None or len(s) > 0:
+            while c is not None:
+                s.append(c)
+                c = c.left
+            c = s.pop()
+            visited.append(c.val)
+            c = c.right
+        return visited
