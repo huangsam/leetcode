@@ -12,7 +12,7 @@ class Solution:
             else:
                 lo, hi = lo, mid
         return found
-    
+
     def searchRange(self, nums, target):
         """
         :type nums: List[int]
