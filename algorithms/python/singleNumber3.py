@@ -16,3 +16,26 @@ class Solution:
             if v == 1:
                 result.append(k)
         return result
+
+    def singleNumberBits(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[int]
+        """
+        l = 0
+        r = 0
+        xor = 0
+        for num in nums:
+            xor ^= num
+
+        # find rightmost set bit
+        # since l and r are different
+        set_bit = xor & ~(xor-1)
+
+        # run xor based on set bit
+        for num in nums:
+            if num & set_bit != 0:
+                l ^= num
+            else:
+                r ^= num
+        return (l, r)
