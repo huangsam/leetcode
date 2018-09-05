@@ -22,20 +22,20 @@ class Solution:
         :type nums: List[int]
         :rtype: List[int]
         """
-        l = 0
-        r = 0
+        left = 0
+        right = 0
         xor = 0
         for num in nums:
             xor ^= num
 
         # find rightmost set bit
-        # since l and r are different
-        set_bit = xor & ~(xor-1)
+        # since left and right are different
+        set_bit = xor & ~(xor - 1)
 
         # run xor based on set bit
         for num in nums:
             if num & set_bit != 0:
-                l ^= num
+                left ^= num
             else:
-                r ^= num
-        return (l, r)
+                right ^= num
+        return (left, right)
