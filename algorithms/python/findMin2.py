@@ -7,7 +7,7 @@ class Solution:
         """
         l, h = 0, len(nums) - 1
         while l < h:
-            m = (l + h) >> 1
+            m = (l + h) // 2
             if nums[m] > nums[h]:
                 l = m + 1
             elif nums[m] < nums[h]:
