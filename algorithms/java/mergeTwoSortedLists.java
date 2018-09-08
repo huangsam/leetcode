@@ -1,4 +1,3 @@
-// https://leetcode.com/problems/merge-two-sorted-lists/description/
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -14,7 +13,13 @@ public class Solution {
         ListNode tmp = null;
 
         while (true) {
-            if (l1 != null && l2 != null) {
+            if (l1 == null) {
+                current.next = l2;
+                break;
+            } else if (l2 == null) {
+                current.next = l1;
+                break;
+            } else {
                 if (l1.val <= l2.val) {
                     tmp = l1;
                     l1 = l1.next;
@@ -22,14 +27,6 @@ public class Solution {
                     tmp = l2;
                     l2 = l2.next;
                 }
-            } else if (l1 != null) {
-                tmp = l1;
-                l1 = l1.next;
-            } else if (l2 != null) {
-                tmp = l2;
-                l2 = l2.next;
-            } else {
-                break;
             }
             current.next = tmp;
             current = current.next;
