@@ -18,7 +18,7 @@ public class Solution {
     }
 
     public TreeNode helper(int[] num, int low, int high) {
-        if (low > high) { // Done
+        if (low > high) {
             return null;
         }
         int mid = (low + high) / 2;
