@@ -1,5 +1,4 @@
 // https://leetcode.com/problems/merge-k-sorted-lists/description/
-
 /**
  * Definition for singly-linked list.
  * public class ListNode {
