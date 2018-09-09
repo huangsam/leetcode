@@ -38,7 +38,7 @@ public class Solution {
         if(l1 == null) return l2;
         if(l2 == null) return l1;
         ListNode temp;
-        if(l1.val > l2.val){
+        if(l1.val > l2.val) {
             temp = l2;
             temp.next = mergeTwoListsRecursive(l1,l2.next);
             return temp;
