@@ -5,7 +5,6 @@ class Solution:
         :type obstacleGrid: List[List[int]]
         :rtype: int
         """
-
         # initialize memo array
         memo = [[0] * n for i in range(m)]
 
