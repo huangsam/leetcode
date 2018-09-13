@@ -6,7 +6,6 @@ class Solution:
         :type target: int
         :rtype: List[int]
         """
-        l, h = 0, len(nums)
         found = self.binarySearch(nums, target, 0, len(nums) - 1)
         if found == -1:
             return [-1, -1]
