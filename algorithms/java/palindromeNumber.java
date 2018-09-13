@@ -1,21 +1,5 @@
 // https://leetcode.com/problems/palindrome-number/description/
 public class Solution {
-    public int length(int x) {
-        int count = 0;
-        while (x != 0) {
-            x /= 10;
-            count += 1;
-        }
-        return count;
-    }
-    public int digit(int x, int index) {
-        int divisor = 1;
-        while (index != 0) {
-            index -= 1;
-            divisor *= 10;
-        }
-        return (x / divisor) % 10;
-    }
     public boolean isPalindrome(int x) {
         if (x < 0) {
             return false;
@@ -32,5 +16,23 @@ public class Solution {
             left += 1;
         }
         return true;
+    }
+
+    public int length(int x) {
+        int count = 0;
+        while (x != 0) {
+            x /= 10;
+            count += 1;
+        }
+        return count;
+    }
+
+    public int digit(int x, int index) {
+        int divisor = 1;
+        while (index != 0) {
+            index -= 1;
+            divisor *= 10;
+        }
+        return (x / divisor) % 10;
     }
 }
