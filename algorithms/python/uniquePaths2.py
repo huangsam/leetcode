@@ -1,6 +1,5 @@
 # https://leetcode.com/problems/unique-paths-ii/description/
 class Solution:
-
     def uniquePathsWithObstacles(self, m, n):
         """
         :type obstacleGrid: List[List[int]]
