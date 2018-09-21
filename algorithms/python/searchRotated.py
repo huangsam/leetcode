@@ -16,7 +16,7 @@ class Solution:
                     l, h = l, m-1
                 else:
                     l, h = m+1, h
-            elif target >= nums[m] and target <= nums[h]:
+            elif nums[m] <= target <= nums[h]:
                 l, h = m+1, h
             else:
                 l, h = l, m-1
