@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/merge-two-binary-trees/description/
+# https://leetcode.com/problems/merge-two-binary-trees/
 
 # Definition for a binary tree node.
 class TreeNode(object):

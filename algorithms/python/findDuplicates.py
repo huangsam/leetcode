@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/find-all-duplicates-in-an-array/description/
+# https://leetcode.com/problems/find-all-duplicates-in-an-array/
 class Solution(object):
     def findDuplicates(self, nums):
         """

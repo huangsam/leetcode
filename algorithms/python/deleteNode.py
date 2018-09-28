@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/delete-node-in-a-bst/description/
+# https://leetcode.com/problems/delete-node-in-a-bst/
 
 # Definition for a binary tree node.
 class TreeNode(object):

@@ -1,4 +1,4 @@
-// https://leetcode.com/problems/palindrome-number/description/
+// https://leetcode.com/problems/palindrome-number/
 public class Solution {
     public boolean isPalindrome(int x) {
         if (x < 0) {

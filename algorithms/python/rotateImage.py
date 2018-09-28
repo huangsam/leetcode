@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/rotate-image/description/
+# https://leetcode.com/problems/rotate-image/
 class Solution:
     def rotate(self, matrix):
         """

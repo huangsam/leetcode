@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/jewels-and-stones/description/
+# https://leetcode.com/problems/jewels-and-stones/
 class Solution(object):
     def numJewelsInStones(self, J, S):
         """

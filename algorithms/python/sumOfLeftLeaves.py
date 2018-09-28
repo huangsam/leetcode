@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/sum-of-left-leaves/description/
+# https://leetcode.com/problems/sum-of-left-leaves/
 
 # Definition for a binary tree node.
 class TreeNode(object):

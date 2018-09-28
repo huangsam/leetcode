@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/balanced-binary-tree/description/
+# https://leetcode.com/problems/balanced-binary-tree/
 
 # Definition for a binary tree node.
 class TreeNode(object):

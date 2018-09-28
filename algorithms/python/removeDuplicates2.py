@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/description/
+# https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/
 class Solution(object):
     def removeDuplicates(self, nums):
         i = 0

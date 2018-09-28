@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/find-bottom-left-tree-value/description/
+# https://leetcode.com/problems/find-bottom-left-tree-value/
 
 # Definition for a binary tree node.
 class TreeNode(object):

@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/power-of-four/description/
+# https://leetcode.com/problems/power-of-four/
 class Solution(object):
     def isPowerOfFour(self, num):
         """

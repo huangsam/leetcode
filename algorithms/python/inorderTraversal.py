@@ -1,4 +1,4 @@
-# https://leetcode.com/problems/binary-tree-inorder-traversal/description/
+# https://leetcode.com/problems/binary-tree-inorder-traversal/
 
 # Definition for a binary tree node.
 class TreeNode(object):
