@@ -5,17 +5,17 @@ class Solution(object):
             return 0
         stack = []
         num = 0
-        op = '+'
+        op = "+"
         slen = len(s)
         for i in range(slen):
             if s[i].isdigit():
                 num = num * 10 + int(s[i])
-            if s[i] in ('+', '-', '/', '*') or i == len(s) - 1:
-                if op == '+':
+            if s[i] in ("+", "-", "/", "*") or i == len(s) - 1:
+                if op == "+":
                     stack.append(num)
-                elif op == '-':
+                elif op == "-":
                     stack.append(-num)
-                elif op == '*':
+                elif op == "*":
                     tmp = stack.pop()
                     stack.append(tmp * num)
                 else:

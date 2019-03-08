@@ -7,6 +7,7 @@ class TreeNode(object):
         self.left = None
         self.right = None
 
+
 class Solution(object):
     def constructMaximumBinaryTree(self, nums):
         """
@@ -27,5 +28,5 @@ class Solution(object):
                 max_ind = ind
         root = TreeNode(max_num)
         root.left = self.constructMaximumBinaryTree(nums[:max_ind])
-        root.right = self.constructMaximumBinaryTree(nums[(max_ind + 1):])
+        root.right = self.constructMaximumBinaryTree(nums[(max_ind + 1) :])
         return root

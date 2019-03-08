@@ -3,9 +3,9 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 name = "pypi"
 
-[packages]
-"flake8" = "*"
-
 [dev-packages]
+"flake8" = "*"
+black = {version="*", markers="python_version >= '3.6'"}
 
-[requires]
+[pipenv]
+allow_prereleases = true

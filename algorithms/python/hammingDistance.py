@@ -9,6 +9,6 @@ class Solution(object):
         distance = 0
         xor_result = bin(x ^ y)[2:]
         for bit in xor_result:
-            if bit == '1':
+            if bit == "1":
                 distance += 1
         return distance

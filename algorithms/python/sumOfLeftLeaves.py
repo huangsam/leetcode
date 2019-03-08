@@ -7,6 +7,7 @@ class TreeNode(object):
         self.left = None
         self.right = None
 
+
 class Solution(object):
     def isLeafNode(self, root):
         return root.left is None and root.right is None
