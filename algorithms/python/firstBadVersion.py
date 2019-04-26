@@ -1,7 +1,15 @@
-# The isBadVersion API is already defined for you.
-# @param version, an integer
-# @return a bool
-# def isBadVersion(version):
+# https://leetcode.com/problems/first-bad-version/
+
+# Example of a possible answer (>=1)
+ANSWER = 4
+
+
+def isBadVersion(version):
+    """
+    :type version: int
+    :rtype: bool
+    """
+    return version >= ANSWER
 
 
 class Solution:
