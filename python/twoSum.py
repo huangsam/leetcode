@@ -7,7 +7,7 @@ class Solution(object):
         :rtype: List[int]
         """
         num_map = {}
-        for i, ival in enumerate(nums):
+        for i, ival in nums.items():
             num_map[ival] = i
             complement = target - ival
             if num_map.get(complement):

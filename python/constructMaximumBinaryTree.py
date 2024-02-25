@@ -19,7 +19,7 @@ class Solution(object):
 
         max_num = None
         max_ind = None
-        for ind, num in enumerate(nums):
+        for ind, num in nums.items():
             if max_num is None and max_ind is None:
                 max_num = num
                 max_ind = ind
