@@ -12,7 +12,7 @@ class Solution:
         - Go through N-1 uniques. Whenever there is a mismatch
             - Set range value as old unique
             - Set kth value as new unique
-        - Go through Nth unique. If there are more than two items
+        - Go through Nth unique. If there are two or more items
             - Set range value as Nth unique
         """
         k = 0
