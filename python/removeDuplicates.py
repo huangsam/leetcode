@@ -2,7 +2,9 @@
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
         """
-        Remove duplicates.
+        Given an integer array nums sorted in non-decreasing order, remove
+        the duplicates in-place such that each unique element appears only once.
+        The relative order of the elements should be kept the same.
 
         Approach:
         - 0 or 1 is the base case
