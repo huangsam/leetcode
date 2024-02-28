@@ -8,7 +8,7 @@ class Solution:
         """
         Remove duplicates up to size of 2.
 
-        Approach
+        Approach:
         - Go through N-1 uniques. Whenever there is a mismatch
             - Set range value as old unique
             - Set kth value as new unique
