@@ -1,19 +1,28 @@
 # https://leetcode.com/problems/rotate-array/
-class Solution(object):
-    def reverse(self, nums, start, end):
-        while start < end:
-            nums[start], nums[end] = nums[end], nums[start]
-            start += 1
-            end -= 1
+class Solution:
+    @staticmethod
+    def reverse(nums: List[int], a: int, b: int) -> None:
+        while a < b:
+            nums[a], nums[b] = nums[b], nums[a]
+            a, b = a + 1, b - 1
 
-    def rotate(self, nums, k):
+    def rotate(self, nums: List[int], k: int) -> None:
         """
-        :type nums: List[int]
-        :type k: int
-        :rtype: void Do not return anything, modify nums in-place instead.
+        Given an integer array nums, rotate the array to the
+        right by k steps, where k is non-negative.
+
+        Try to come up with as many solutions as you can.
+        Could you do it in-place with O(1) extra space?
+
+        Approach:
+        - Reverse all numbers to correct positions in reverse order
+        - Reverse k numbers back to correct order
+        - Reverse remainder back to correct order
         """
-        nlen = len(nums)
-        k = k % nlen
-        self.reverse(nums, 0, nlen - 1)
-        self.reverse(nums, 0, k - 1)
-        self.reverse(nums, k, nlen - 1)
+        if k < 0:
+            raise ValueError("Assume k is non-negative")
+        op_count = k % len(nums)
+        n = len(nums) - 1
+        self.reverse(nums, 0, n)
+        self.reverse(nums, 0, op_count - 1)
+        self.reverse(nums, op_count, n)
