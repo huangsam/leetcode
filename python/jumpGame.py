@@ -39,9 +39,6 @@ class Solution:
         for nidx, nval in enumerate(nums):
             if reachable[nidx] is False:
                 continue
-            for i in range(nval + 1):
-                nmark = nidx + i
-                if nmark >= nlen:
-                    break
-                reachable[nmark] = True
+            for i in range(nidx, min(nidx + nval + 1, nlen)):
+                reachable[i] = True
         return reachable[nlen - 1]
