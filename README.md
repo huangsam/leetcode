@@ -2,7 +2,7 @@
 
 Python / Java Solutions of [LeetCode Questions](https://leetcode.com/).
 
-🐍 🐍 🐍 🏃‍♂️ 🏃‍♂️ 🏃‍♂️ ☕ ☕ ☕
+🐍 🐍 🐍 - 🏃‍♂️ 🏃‍♂️ 🏃‍♂️ - ☕ ☕ ☕
 
 The URL of each solution is embedded at the top of the file.
 
