@@ -1,6 +1,7 @@
 # https://leetcode.com/problems/majority-element/
 from collections import defaultdict
 
+
 class Solution:
     def majorityElement(self, nums: List[int]) -> int:
         """
@@ -13,7 +14,7 @@ class Solution:
         Approach 1:
         - Gather all counts by number
         - While doing so, report any number that occurs over [n/2]
-    
+
         Follow-up: Could you solve the problem in linear time and in O(1) space?
         """
         counts_by_num: defaultdict[int, int] = defaultdict(int)

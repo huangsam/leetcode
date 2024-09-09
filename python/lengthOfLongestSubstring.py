@@ -19,5 +19,5 @@ class Solution:
                     char_set.remove(s[left])
                     left += 1
                 char_set.add(s[right])
-        
+
         return max_length
