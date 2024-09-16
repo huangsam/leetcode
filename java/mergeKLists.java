@@ -1,13 +1,10 @@
 // https://leetcode.com/problems/merge-k-sorted-lists/
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) { val = x; }
- * }
- */
-class Solution {
+
+import java.util.Arrays;
+
+import container.ListNode;
+
+public class mergeKLists {
     public ListNode mergeKLists(ListNode[] lists) {
         if (lists.length == 2) {
             return mergeTwoLists(lists[0], lists[1]);

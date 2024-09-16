@@ -1,13 +1,8 @@
 // https://leetcode.com/problems/palindrome-linked-list/
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) { val = x; }
- * }
- */
-public class Solution {
+
+import container.ListNode;
+
+public class palindromeLinkedList {
     public boolean isPalindrome(ListNode head) {
         ListNode prev = null;
         ListNode current = head;

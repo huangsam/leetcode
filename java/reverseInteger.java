@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/reverse-integer/
-public class Solution {
+public class reverseInteger {
     public int reverse(int x) {
         int result = 0;
         int digit = 0;

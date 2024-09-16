@@ -1,2 +1,8 @@
-venv/
+# System
 .DS_Store
+
+# Python
+venv/
+
+# Java
+target/

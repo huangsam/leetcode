@@ -1,14 +1,8 @@
 // https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode(int x) { val = x; }
- * }
- */
-public class Solution {
+
+import container.TreeNode;
+
+public class sortedArrayToBST {
     public TreeNode sortedArrayToBST(int[] num) {
         if (num.length == 0) {
             return null;
