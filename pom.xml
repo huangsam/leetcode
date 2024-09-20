@@ -16,7 +16,6 @@
 
         <!-- https://stackoverflow.com/a/37358341 -->
         <maven-checkstyle-plugin.version>3.5.0</maven-checkstyle-plugin.version>
-        <maven-project-info-reports-plugin.version>3.6.2</maven-project-info-reports-plugin.version>
 
         <!-- https://stackoverflow.com/a/3018152 -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
