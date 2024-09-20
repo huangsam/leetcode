@@ -24,9 +24,6 @@
 
     <build>
         <sourceDirectory>java</sourceDirectory>
-    </build>
-
-    <reporting>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -35,12 +32,14 @@
                 <configuration>
                     <configLocation>checkstyle.xml</configLocation>
                 </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-project-info-reports-plugin</artifactId>
-                <version>${maven-project-info-reports-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
-    </reporting>
+    </build>
 </project>
