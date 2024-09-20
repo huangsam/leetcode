@@ -4,13 +4,7 @@
                  "http://www.puppycrawl.com/dtds/configuration_1_3.dtd">
 
 <module name="Checker">
-    <property name="charset" value="UTF-8"/>
-
     <property name="fileExtensions" value="java"/>
-
-    <module name="FileTabCharacter">
-        <property name="eachLine" value="true"/>
-    </module>
 
     <module name="LineLength">
         <property name="max" value="160"/>
