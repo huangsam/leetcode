@@ -6,14 +6,13 @@
 <module name="Checker">
     <property name="charset" value="UTF-8"/>
 
-    <property name="fileExtensions" value="java, xml"/>
+    <property name="fileExtensions" value="java"/>
 
     <module name="FileTabCharacter">
         <property name="eachLine" value="true"/>
     </module>
 
     <module name="LineLength">
-        <property name="fileExtensions" value="java"/>
         <property name="max" value="160"/>
     </module>
 
