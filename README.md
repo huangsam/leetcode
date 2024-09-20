@@ -23,4 +23,5 @@ For Java solutions:
 
 ```shell
 mvn install
+mvn site
 ```
