@@ -13,14 +13,14 @@ Run `bash urls.sh` to see the URLs for all attempted problems.
 For Python solutions:
 
 ```shell
-virtualenv venv
+virtualenv venv  # setup starts here
 source venv/bin/activate
 pip install flake8
-flake8 python
+flake8 python  # validation starts here
 ```
 
 For Java solutions:
 
 ```shell
-mvn install
+mvn install  # validation starts here
 ```
