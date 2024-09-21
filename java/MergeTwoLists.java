@@ -2,7 +2,7 @@
 
 import container.ListNode;
 
-public class mergeTwoLists {
+public final class MergeTwoLists {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         ListNode result = new ListNode(-1);
         ListNode current = result;
@@ -31,17 +31,20 @@ public class mergeTwoLists {
     }
 
     public ListNode mergeTwoListsRecursive(ListNode l1, ListNode l2) {
-        if(l1 == null) return l2;
-        if(l2 == null) return l1;
-        ListNode temp;
-        if(l1.val > l2.val) {
-            temp = l2;
-            temp.next = mergeTwoListsRecursive(l1,l2.next);
-            return temp;
+        if (l1 == null) {
+            return l2;
         }
-        else {
+        if (l2 == null) {
+            return l1;
+        }
+        ListNode temp;
+        if (l1.val > l2.val) {
+            temp = l2;
+            temp.next = mergeTwoListsRecursive(l1, l2.next);
+            return temp;
+        } else {
             temp = l1;
-            temp.next = mergeTwoListsRecursive(l1.next,l2);
+            temp.next = mergeTwoListsRecursive(l1.next, l2);
             return temp;
         }
     }

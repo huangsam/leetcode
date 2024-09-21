@@ -2,7 +2,7 @@
 
 import container.TreeNode;
 
-public class sortedArrayToBST {
+public final class SortedArrayToBST {
     public TreeNode sortedArrayToBST(int[] num) {
         if (num.length == 0) {
             return null;

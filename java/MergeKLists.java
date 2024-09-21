@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 import container.ListNode;
 
-public class mergeKLists {
+public final class MergeKLists {
     public ListNode mergeKLists(ListNode[] lists) {
         if (lists.length == 2) {
             return mergeTwoLists(lists[0], lists[1]);
@@ -20,15 +20,18 @@ public class mergeKLists {
     }
 
     private ListNode mergeTwoLists(ListNode l1, ListNode l2) {
-        if (l1 == null) return l2;
-        if (l2 == null) return l1;
+        if (l1 == null) {
+            return l2;
+        }
+        if (l2 == null) {
+            return l1;
+        }
         ListNode temp;
         if (l1.val > l2.val) {
             temp = l2;
             temp.next = mergeTwoLists(l1, l2.next);
             return temp;
-        }
-        else {
+        } else {
             temp = l1;
             temp.next = mergeTwoLists(l1.next, l2);
             return temp;

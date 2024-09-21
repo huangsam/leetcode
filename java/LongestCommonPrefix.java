@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/longest-common-prefix/
-public class longestCommonPrefix {
+public final class LongestCommonPrefix {
     public String longestCommonPrefix(String[] strs) {
         if (strs.length == 0) {
             return "";
@@ -15,15 +15,15 @@ public class longestCommonPrefix {
         }
 
         while (maxMatch < minIndex) {
-            boolean badMatch = false;
+            boolean isBadMatch = false;
             char currentChar = strs[0].charAt(maxMatch);
             for (int i = 1; i < strs.length; i++) {
                 if (currentChar != strs[i].charAt(maxMatch)) {
-                    badMatch = true;
+                    isBadMatch = true;
                     break;
                 }
             }
-            if (badMatch == true) {
+            if (isBadMatch) {
                 break;
             }
             maxMatch += 1;

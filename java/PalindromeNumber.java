@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/palindrome-number/
-public class palindromeNumber {
+public final class PalindromeNumber {
+    public static final int TEN = 10;
+
     public boolean isPalindrome(int x) {
         if (x < 0) {
             return false;
@@ -7,9 +9,9 @@ public class palindromeNumber {
         int right = length(x) - 1;
         int left = 0;
         while (right > left) {
-            int digit_one = digit(x, right);
-            int digit_two = digit(x, left);
-            if (digit_one != digit_two) {
+            int digitOne = digit(x, right);
+            int digitTwo = digit(x, left);
+            if (digitOne != digitTwo) {
                 return false;
             }
             right -= 1;
@@ -21,7 +23,7 @@ public class palindromeNumber {
     public int length(int x) {
         int count = 0;
         while (x != 0) {
-            x /= 10;
+            x /= TEN;
             count += 1;
         }
         return count;
@@ -31,8 +33,8 @@ public class palindromeNumber {
         int divisor = 1;
         while (index != 0) {
             index -= 1;
-            divisor *= 10;
+            divisor *= TEN;
         }
-        return (x / divisor) % 10;
+        return (x / divisor) % TEN;
     }
 }

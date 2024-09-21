@@ -2,7 +2,9 @@
 
 import container.ListNode;
 
-public class addTwoNumbers {
+public final class AddTwoNumbers {
+    public static final int TEN = 10;
+
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode result = new ListNode(-1);
         ListNode current = result;
@@ -16,9 +18,9 @@ public class addTwoNumbers {
                 val += 1;
             }
 
-            if (val >= 10) {
+            if (val >= TEN) {
                 carry = true;
-                val %= 10;
+                val %= TEN;
             } else {
                 carry = false;
             }
@@ -36,9 +38,9 @@ public class addTwoNumbers {
             if (carry) {
                 val += 1;
             }
-            if (val >= 10) {
+            if (val >= TEN) {
                 carry = true;
-                val %= 10;
+                val %= TEN;
             } else {
                 carry = false;
             }
@@ -53,9 +55,9 @@ public class addTwoNumbers {
             if (carry) {
                 val += 1;
             }
-            if (val >= 10) {
+            if (val >= TEN) {
                 carry = true;
-                val %= 10;
+                val %= TEN;
             } else {
                 carry = false;
             }
