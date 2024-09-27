@@ -9,7 +9,7 @@ from collections import defaultdict
 #         self.next = next
 class Solution:
     def deleteDuplicates(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        val_freq: Dict[Any, int] = defaultdict(int)
+        val_freq: DefaultDict[Any, int] = defaultdict(int)
         all_nodes = []
 
         curr = head
@@ -31,4 +31,3 @@ class Solution:
             curr = temp
 
         return dummy.next
-
