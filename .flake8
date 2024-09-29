@@ -3,5 +3,12 @@
 # E741: Some variable names can be short
 # F821: LeetCode imports type hinting and other libraries implicitly
 extend-ignore = E203,E741,F821
+# Modern editors and screens make it possible to look at 2x the code
 max-line-length = 160
-exclude = venv
+exclude =
+    # Virtual environment has unrelated Python
+    venv,
+    # Java build folder does not have Python
+    target,
+    # Java source folder does not have Python
+    java
