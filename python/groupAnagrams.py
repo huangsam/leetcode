@@ -25,8 +25,8 @@ class Solution:
     def getHash(self, content: str) -> int:
         freq = [0] * 26
         for ch in content:
-            freq[ord(ch) - ord('a')] += 1
+            freq[ord(ch) - ord("a")] += 1
         key_list = []
         for idx, val in enumerate(freq):
-            key_list.append(f'{idx}-{val}')
+            key_list.append(f"{idx}-{val}")
         return hash(tuple(key_list))

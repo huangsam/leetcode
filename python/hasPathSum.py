@@ -18,8 +18,4 @@ class Solution:
         remainder = targetSum - root.val
 
         # The answer should be found in the children nodes
-        return (
-            self.hasPathSum(root.left, remainder)
-            or
-            self.hasPathSum(root.right, remainder)
-        )
+        return self.hasPathSum(root.left, remainder) or self.hasPathSum(root.right, remainder)

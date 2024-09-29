@@ -29,10 +29,7 @@ class Solution:
         # Check board grids
         for i in range(3):
             for j in range(3):
-                grid = (
-                    board[i * 3 + x][j * 3 + y]
-                    for x in range(3) for y in range(3)
-                )
+                grid = (board[i * 3 + x][j * 3 + y] for x in range(3) for y in range(3))
                 if not self.hasValidEntries(grid):
                     return False
 

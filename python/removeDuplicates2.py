@@ -27,14 +27,14 @@ class Solution:
         while cur < len(nums):
             if nums[uniq] != nums[cur]:
                 dist = self.checkAdjustedDistance(uniq, cur)
-                nums[k: k + dist] = [nums[k]] * dist
+                nums[k : k + dist] = [nums[k]] * dist
                 k += dist
                 nums[k] = nums[cur]
                 uniq = cur
             cur += 1
 
         if cur - 1 > uniq:
-            nums[k: k + 2] = [nums[k]] * 2
+            nums[k : k + 2] = [nums[k]] * 2
             return k + 2
 
         return k + 1

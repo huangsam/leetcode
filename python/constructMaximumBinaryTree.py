@@ -21,5 +21,5 @@ class Solution:
         root = TreeNode(max_num)
         if isinstance(max_ind, int):
             root.left = self.constructMaximumBinaryTree(nums[:max_ind])
-            root.right = self.constructMaximumBinaryTree(nums[(max_ind + 1):])
+            root.right = self.constructMaximumBinaryTree(nums[(max_ind + 1) :])
         return root

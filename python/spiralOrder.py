@@ -65,16 +65,16 @@ class Solution:
 
     def canMove(self, matrix, visited, direction, x, y) -> bool:
         if direction == "r":
-            if y == self.width(matrix) - 1 or visited[x][y+1]:
+            if y == self.width(matrix) - 1 or visited[x][y + 1]:
                 return False
         elif direction == "d":
-            if x == self.height(matrix) - 1 or visited[x+1][y]:
+            if x == self.height(matrix) - 1 or visited[x + 1][y]:
                 return False
         elif direction == "l":
-            if y == 0 or visited[x][y-1]:
+            if y == 0 or visited[x][y - 1]:
                 return False
         elif direction == "u":
-            if x == 0 or visited[x-1][y]:
+            if x == 0 or visited[x - 1][y]:
                 return False
         return True
 

@@ -1,7 +1,0 @@
-[flake8]
-# E741: Some variable names can be short
-extend-ignore = E741
-# Modern editors and screens make it easier to look at 2x the code
-max-line-length = 160
-# Virtual environment has unrelated Python
-exclude = venv

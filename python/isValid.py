@@ -11,10 +11,10 @@ class Solution:
         To satisfy constraint 3, we check stack, match == close
         """
         open_st = []
-        close_open = {')': '(', '}': '{', ']': '['}
+        close_open = {")": "(", "}": "{", "]": "["}
         close_count, match_count = 0, 0
         for ch in s:
-            if ch in '({[':
+            if ch in "({[":
                 open_st.append(ch)
             else:
                 close_count += 1

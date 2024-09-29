@@ -33,7 +33,7 @@ class Solution:
 
         # We are done if we see a full tree
         if left_height == right_height:
-            return 2 ** left_height - 1
+            return 2**left_height - 1
 
         # Process left complete subtree and right complete subtree
         return 1 + self.countNodes(root.left) + self.countNodes(root.right)

@@ -16,9 +16,8 @@ For Python solutions:
 virtualenv venv # setup starts here
 source venv/bin/activate
 pip install -r requirements.txt
-flake8 python # validation starts here
+ruff check python # validation starts here
 mypy python
-pylint python
 ```
 
 For Java solutions:

@@ -38,10 +38,7 @@ class Solution:
             # If we found a full match, update result and reset progress
             if needle_prog == needle_size:
                 # Note that we must handle the initial case and nth case
-                match_at = (
-                    ptr - needle_prog if match_at == -1
-                    else min(match_at, ptr - needle_prog)
-                )
+                match_at = ptr - needle_prog if match_at == -1 else min(match_at, ptr - needle_prog)
                 needle_prog = 0
 
         return match_at

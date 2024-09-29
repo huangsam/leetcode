@@ -15,8 +15,8 @@ class Solution:
 
         # Store characters from longer word
         if len(word1) > len(word2):
-            merged_chars.extend(word1[i:i + diff_length])
+            merged_chars.extend(word1[i : i + diff_length])
         else:
-            merged_chars.extend(word2[i:i + diff_length])
+            merged_chars.extend(word2[i : i + diff_length])
 
         return "".join(merged_chars)

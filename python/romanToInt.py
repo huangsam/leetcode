@@ -16,10 +16,7 @@ class Solution:
         Otherwise, we continue to add the value of the current symbol
         to the total sum that we want.
         """
-        mapping = {
-            "I": 1, "V": 5, "X": 10, "L": 50,
-            "C": 100, "D": 500, "M": 1000
-        }
+        mapping = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
 
         if len(s) == 0:
             return 0

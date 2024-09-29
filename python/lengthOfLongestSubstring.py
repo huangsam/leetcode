@@ -7,7 +7,6 @@ class Solution:
 
         # Iterate through the string
         for right in range(len(s)):
-
             # We have a new unique character
             if s[right] not in char_set:
                 char_set.add(s[right])

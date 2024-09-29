@@ -1,4 +1,2 @@
-flake8
-isort
 mypy
-pylint
+ruff

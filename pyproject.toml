@@ -1,19 +1,5 @@
-[tool.pylint."messages control"]
-disable = [
-    # default stuff
-    "raw-checker-failed", "bad-inline-option", "locally-disabled", "file-ignored", "suppressed-message",
-    "useless-suppression", "deprecated-pragma", "use-symbolic-message-instead", "use-implicit-booleaness-not-comparison-to-string",
-    "use-implicit-booleaness-not-comparison-to-zero",
-    # custom stuff
-    "invalid-name",
-    "missing-function-docstring", "missing-class-docstring", "missing-module-docstring",
-    "too-few-public-methods",
-    "too-many-arguments", "too-many-positional-arguments",
-    "redefined-builtin",
-    "duplicate-code",
-    # ignore for now
-    "no-else-return",
-    "consider-using-max-builtin",
-    "consider-using-enumerate",
-    "consider-using-in"
-]
+[tool.ruff]
+line-length = 160
+
+[tool.ruff.lint]
+ignore = ["E741"]

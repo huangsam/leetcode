@@ -13,4 +13,4 @@ class Solution:
         each number i and tallying up the score. That would
         be a O(n lg n) algo in that case.
         """
-        return [bin(i)[2:].count('1') for i in range(n + 1)]
+        return [bin(i)[2:].count("1") for i in range(n + 1)]

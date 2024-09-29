@@ -49,7 +49,7 @@ class Solution:
         first.random = self.getRandom(new_list, old_ids, id_to_id, id_to_idx, 0)
 
         for i in range(1, len(new_list)):
-            prev, curr = new_list[i-1], new_list[i]
+            prev, curr = new_list[i - 1], new_list[i]
             prev.next = curr
             curr.random = self.getRandom(new_list, old_ids, id_to_id, id_to_idx, i)
 
