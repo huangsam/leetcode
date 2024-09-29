@@ -2,7 +2,7 @@
 from typing import List
 
 
-class Solution(object):
+class Solution:
     def moveZeroes(self, nums: List[int]) -> None:
         non_zero_found = 0
         for i in range(0, len(nums)):

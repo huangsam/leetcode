@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/hamming-distance/
-class Solution(object):
+class Solution:
     def hammingDistance(self, x: int, y: int) -> int:
         distance = 0
         xor_result = bin(x ^ y)[2:]

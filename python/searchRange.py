@@ -27,8 +27,8 @@ class Solution:
             if nums[mid] == target:
                 found = mid
                 break
-            elif nums[mid] < target:
-                lo, hi = mid + 1, hi
+            if nums[mid] < target:
+                lo = mid + 1
             else:
-                lo, hi = lo, mid - 1
+                hi = mid - 1
         return found

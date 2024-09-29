@@ -21,7 +21,7 @@ class Solution:
             mid = nums[m]
             last = nums[h]
             if mid > last:
-                l, h = m, h
+                l = m
             else:
-                l, h = l, m
+                h = m
         return min(nums[l : h + 1])

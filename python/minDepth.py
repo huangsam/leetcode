@@ -2,7 +2,7 @@
 from container.binary_tree import TreeNode
 
 
-class Solution(object):
+class Solution:
     def minDepth(self, root: TreeNode) -> int:
         if root is None:
             return 0

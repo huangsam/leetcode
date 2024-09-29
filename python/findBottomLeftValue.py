@@ -2,7 +2,7 @@
 from container.binary_tree import TreeNode
 
 
-class Solution(object):
+class Solution:
     def findBottomLeftValue(self, root: TreeNode) -> int:
         leftmost_value = root.val
         to_visit = [root]

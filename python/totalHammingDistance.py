@@ -2,7 +2,7 @@
 from typing import List
 
 
-class Solution(object):
+class Solution:
     def totalHammingDistance(self, nums: List[int]) -> int:
         count = 0
 

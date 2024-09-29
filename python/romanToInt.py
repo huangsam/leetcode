@@ -47,7 +47,7 @@ class Solution:
                     continue
 
                 # Do nothing, just let curr_seq continue to expand
-                elif prev_val == curr_val:
+                if prev_val == curr_val:
                     pass
 
                 # We are proceeding to a "lower" level, so then we can

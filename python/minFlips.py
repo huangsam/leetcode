@@ -17,10 +17,10 @@ class Solution:
         min_swaps = 0
 
         # Iterate through the flags, bit by bit
-        for a, b, c in zip(list_a, list_b, list_c):
-            if a | b == c:  # Skip if the operation matches as expected
+        for bit_a, bit_b, bit_c in zip(list_a, list_b, list_c):
+            if bit_a | bit_b == bit_c:  # Skip if the operation matches as expected
                 continue
-            if a == b == 1:  # Both bits must be flipped to go as expected
+            if bit_a == bit_b == 1:  # Both bits must be flipped to go as expected
                 min_swaps += 2
             else:  # Either bit can be flipped to go to False or True
                 min_swaps += 1

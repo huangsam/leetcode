@@ -2,7 +2,7 @@
 from typing import List
 
 
-class Solution(object):
+class Solution:
     def merge(self, nums1: List[int], nums2: List[int]) -> List[int]:
         nlen1 = len(nums1)
         nlen2 = len(nums2)

@@ -2,7 +2,7 @@
 from container.binary_tree import TreeNode
 
 
-class Solution(object):
+class Solution:
     def isLeafNode(self, root: TreeNode) -> bool:
         return root.left is None and root.right is None
 

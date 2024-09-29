@@ -2,7 +2,7 @@
 from typing import List
 
 
-class Solution(object):
+class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
         solution = set()
         nlen = len(nums)

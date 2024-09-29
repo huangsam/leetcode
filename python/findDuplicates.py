@@ -2,7 +2,7 @@
 from typing import List
 
 
-class Solution(object):
+class Solution:
     def findDuplicates(self, nums: List[int]) -> List[int]:
         d: dict[int, bool] = {}
         result = []

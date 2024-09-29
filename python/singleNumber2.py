@@ -3,7 +3,7 @@ from collections import defaultdict
 from typing import List
 
 
-class Solution(object):
+class Solution:
     def singleNumber(self, nums: List[int]) -> int:
         num_to_freq: defaultdict[int, int] = defaultdict(int)
         for num in nums:

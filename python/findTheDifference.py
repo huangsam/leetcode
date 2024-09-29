@@ -2,7 +2,7 @@ from collections import defaultdict
 
 
 # https://leetcode.com/problems/find-the-difference/
-class Solution(object):
+class Solution:
     def findTheDifference(self, s: str, t: str) -> str:
         s_letters: defaultdict[str, int] = defaultdict(int)
         for letter in s:

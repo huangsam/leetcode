@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/jewels-and-stones/
-class Solution(object):
+class Solution:
     def numJewelsInStones(self, J: str, S: str) -> int:
         j_tally = {}
         for ch in J:

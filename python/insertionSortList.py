@@ -2,7 +2,7 @@
 from container.linked_list import ListNode
 
 
-class Solution(object):
+class Solution:
     def insertionSortList(self, head: ListNode) -> ListNode:
         p = dummy = ListNode(0)
         cur = dummy.next = head

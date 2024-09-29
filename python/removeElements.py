@@ -2,7 +2,7 @@
 from container.linked_list import ListNode
 
 
-class Solution(object):
+class Solution:
     def removeElements(self, head: ListNode, val: int) -> ListNode:
         root_node = prev_node = ListNode(-1)
         prev_node.next = head

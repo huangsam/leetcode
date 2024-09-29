@@ -4,7 +4,7 @@ from typing import List, Optional
 from container.binary_tree import TreeNode
 
 
-class Solution(object):
+class Solution:
     def constructMaximumBinaryTree(self, nums: List[int]) -> Optional[TreeNode]:
         if len(nums) == 0:
             return None

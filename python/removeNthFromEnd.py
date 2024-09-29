@@ -2,7 +2,7 @@
 from container.linked_list import ListNode
 
 
-class Solution(object):
+class Solution:
     def removeNthFromEnd(self, head: ListNode, n: int) -> ListNode:
         node_list = []
         curr_node = head

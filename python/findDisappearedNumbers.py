@@ -2,7 +2,7 @@
 from typing import List
 
 
-class Solution(object):
+class Solution:
     def findDisappearedNumbers(self, nums: List[int]) -> List[int]:
         result = []
         n_len = len(nums)

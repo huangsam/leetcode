@@ -2,7 +2,7 @@
 from container.binary_tree import TreeNode
 
 
-class Solution(object):
+class Solution:
     def deleteNode(self, root: TreeNode, key: int) -> TreeNode:
         if root is None:
             return None

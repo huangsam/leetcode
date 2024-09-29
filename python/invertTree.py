@@ -2,7 +2,7 @@
 from container.binary_tree import TreeNode
 
 
-class Solution(object):
+class Solution:
     def invertTree(self, root: TreeNode) -> TreeNode:
         if root is None:
             return None

@@ -20,11 +20,11 @@ class Solution:
                 return True
             if nums[l] <= nums[m]:
                 if nums[l] <= target <= nums[m]:
-                    l, h = l, m - 1
+                    h = m - 1
                 else:
-                    l, h = m + 1, h
-            elif target >= nums[m] and target <= nums[h]:
-                l, h = m + 1, h
+                    l = m + 1
+            elif nums[m] <= target <= nums[h]:
+                l = m + 1
             else:
-                l, h = l, m - 1
+                h = m - 1
         return False

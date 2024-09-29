@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/basic-calculator-ii/
-class Solution(object):
+class Solution:
     def calculate(self, s: str) -> int:
         if not s:
             return 0

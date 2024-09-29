@@ -17,11 +17,11 @@ class Solution:
 
             # arrange lo, hi for overshoot
             if mid_sq > x:
-                lo, hi = lo, mid
+                hi = mid
 
             # arrange lo, hi for undershoot
             elif mid_sq < x:
-                lo, hi = mid, hi
+                lo = mid
 
         # handles the case when x is 0
         return 0

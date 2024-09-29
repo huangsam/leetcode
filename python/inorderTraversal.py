@@ -4,7 +4,7 @@ from typing import List
 from container.binary_tree import TreeNode
 
 
-class Solution(object):
+class Solution:
     def inorderTraversal(self, root: TreeNode) -> List[int]:
         if root is None:
             return []

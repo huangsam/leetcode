@@ -2,7 +2,7 @@
 from container.binary_tree import TreeNode
 
 
-class Solution(object):
+class Solution:
     def nodeHeight(self, root: TreeNode) -> int:
         if root is None:
             return 0
