@@ -1,4 +1,7 @@
 # https://leetcode.com/problems/rotate-array/
+from typing import List
+
+
 class Solution:
     @staticmethod
     def reverse(nums: List[int], a: int, b: int) -> None:

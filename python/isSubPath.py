@@ -1,4 +1,6 @@
 # https://leetcode.com/problems/linked-list-in-binary-tree/
+from typing import Optional
+
 
 # Definition for singly-linked list.
 class ListNode:

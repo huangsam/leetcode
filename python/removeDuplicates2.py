@@ -1,4 +1,7 @@
 # https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/
+from typing import List
+
+
 class Solution:
     @staticmethod
     def checkAdjustedDistance(a: int, b: int) -> int:

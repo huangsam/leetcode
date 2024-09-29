@@ -1,15 +1,18 @@
 # https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/
 from collections import defaultdict
+from typing import DefaultDict, Optional
 
 
 # Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
+
 class Solution:
     def deleteDuplicates(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        val_freq: DefaultDict[Any, int] = defaultdict(int)
+        val_freq: DefaultDict[int, int] = defaultdict(int)
         all_nodes = []
 
         curr = head

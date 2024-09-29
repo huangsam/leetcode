@@ -1,4 +1,6 @@
 # https://leetcode.com/problems/copy-list-with-random-pointer/
+from typing import Optional
+
 
 # Definition for a Node.
 class Node:
@@ -9,7 +11,7 @@ class Node:
 
 
 class Solution:
-    def copyRandomList(self, head: 'Optional[Node]') -> 'Optional[Node]':
+    def copyRandomList(self, head: Optional[Node]) -> Optional[Node]:
         """
         Iterate through the linked list, collect the ids of each list node
         and store them sequentially in an array, and store the random id that
@@ -60,7 +62,7 @@ class Solution:
         # Return head pointer
         return new_list[0]
 
-    def getRandom(self, new_list, old_ids, id_to_id, id_to_idx, n) -> 'Optional[Node]':
+    def getRandom(self, new_list, old_ids, id_to_id, id_to_idx, n) -> Optional[Node]:
         id_at_n = old_ids[n]
         random_at_n = id_to_id[id_at_n]
         random_idx = id_to_idx[random_at_n] if random_at_n else -1

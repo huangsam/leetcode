@@ -1,4 +1,6 @@
 # https://leetcode.com/problems/count-complete-tree-nodes/
+from typing import Optional
+
 
 # Definition for a binary tree node.
 class TreeNode:

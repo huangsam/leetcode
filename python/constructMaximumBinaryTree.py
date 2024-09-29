@@ -1,4 +1,6 @@
 # https://leetcode.com/problems/maximum-binary-tree/
+from typing import List
+
 
 # Definition for a binary tree node.
 class TreeNode(object):
@@ -9,11 +11,7 @@ class TreeNode(object):
 
 
 class Solution(object):
-    def constructMaximumBinaryTree(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: TreeNode
-        """
+    def constructMaximumBinaryTree(self, nums: List[int]) -> TreeNode:
         if len(nums) == 0:
             return None
 

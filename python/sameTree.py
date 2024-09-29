@@ -1,4 +1,6 @@
 # https://leetcode.com/problems/same-tree/
+from typing import Optional
+
 
 # Definition for a binary tree node.
 class TreeNode:

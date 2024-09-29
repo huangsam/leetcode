@@ -1,4 +1,7 @@
 # https://leetcode.com/problems/merge-intervals/
+from typing import List, Optional
+
+
 class Solution:
     def merge(self, intervals: List[List[int]]) -> List[List[int]]:
         # Sort by start time, and then sort by end time

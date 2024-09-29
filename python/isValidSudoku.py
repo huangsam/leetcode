@@ -1,3 +1,7 @@
+# https://leetcode.com/problems/valid-sudoku/
+from typing import Iterable, List
+
+
 class Solution:
     def isValidSudoku(self, board: List[List[str]]) -> bool:
         """
