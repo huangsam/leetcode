@@ -12,7 +12,7 @@ class Solution(object):
                 if i != j:
                     sums[(i, j)] = nums[i] + nums[j]
         for k in range(nlen):
-            for key, val in sums.iteritems():
+            for key, val in sums.items():
                 if nums[k] == -val:
                     i, j = key
                     if i != k and j != k:
