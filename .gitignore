@@ -1,6 +1,10 @@
 # System
 .DS_Store
 
+# IDE
+.idea/
+.vscode/
+
 # Python
 .mypy_cache/
 .ruff_cache/
