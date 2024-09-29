@@ -1,11 +1,6 @@
 # https://leetcode.com/problems/unique-paths/
 class Solution:
-    def uniquePaths(self, m, n):
-        """
-        :type m: int
-        :type n: int
-        :rtype: int
-        """
+    def uniquePaths(self, m: int, n: int) -> int:
         # initialize memo array
         memo = [[0] * n for i in range(m)]
 

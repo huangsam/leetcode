@@ -3,12 +3,7 @@ from container.binary_tree import TreeNode
 
 
 class Solution(object):
-    def mergeTrees(self, t1, t2):
-        """
-        :type t1: TreeNode
-        :type t2: TreeNode
-        :rtype: TreeNode
-        """
+    def mergeTrees(self, t1: TreeNode, t2: TreeNode) -> TreeNode:
         if t1 is None:
             return t2
         elif t2 is None:

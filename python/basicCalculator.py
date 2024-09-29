@@ -1,6 +1,6 @@
 # https://leetcode.com/problems/basic-calculator-ii/
 class Solution(object):
-    def calculate(self, s):
+    def calculate(self, s: str):
         if not s:
             return 0
         stack = []

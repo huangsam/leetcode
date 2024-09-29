@@ -4,20 +4,13 @@
 ANSWER = 4
 
 
-def isBadVersion(version):
-    """
-    :type version: int
-    :rtype: bool
-    """
+def isBadVersion(version: int) -> bool:
+    """Assume that this function is provided."""
     return version >= ANSWER
 
 
 class Solution:
-    def firstBadVersion(self, n):
-        """
-        :type n: int
-        :rtype: int
-        """
+    def firstBadVersion(self, n: int) -> int:
         l = 1
         l_bad = isBadVersion(l)
         if l_bad:

@@ -1,15 +1,8 @@
 # https://leetcode.com/problems/linked-list-in-binary-tree/
 from typing import Optional
 
+from container.binary_tree import TreeNode
 from container.linked_list import ListNode
-
-
-# Definition for a binary tree node.
-class TreeNode:
-    def __init__(self, val=0, left=None, right=None):
-        self.val = val
-        self.left = left
-        self.right = right
 
 
 class Solution:

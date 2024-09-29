@@ -1,14 +1,9 @@
 # https://leetcode.com/problems/sort-list/
-
-# Definition for singly-linked list.
-class ListNode:
-    def __init__(self, x):
-        self.val = x
-        self.next = None
+from container.linked_list import ListNode
 
 
 class Solution:
-    def sortList(self, head):
+    def sortList(self, head: ListNode) -> ListNode:
         """
         :type head: ListNode
         :rtype: ListNode
@@ -22,14 +17,14 @@ class Solution:
         r_sorted = self.sortList(right)
         return self.mergeSortedLists(l_sorted, r_sorted)
 
-    def getMiddle(self, head):
+    def getMiddle(self, head: ListNode) -> ListNode:
         slow, fast = head, head
         while fast and fast.next and fast.next.next:
             fast = fast.next.next
             slow = slow.next
         return slow
 
-    def mergeSortedLists(self, l1, l2):
+    def mergeSortedLists(self, l1: ListNode, l2: ListNode) -> ListNode:
         dummy = ListNode(None)
         node = dummy
         while l1 and l2:

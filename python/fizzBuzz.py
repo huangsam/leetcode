@@ -1,6 +1,9 @@
 # https://leetcode.com/problems/fizz-buzz/
+from typing import List
+
+
 class Solution(object):
-    def fizzBuzz(self, n):
+    def fizzBuzz(self, n: int) -> List[int]:
         """
         :type n: int
         :rtype: List[str]

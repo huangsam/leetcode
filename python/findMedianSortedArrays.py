@@ -1,6 +1,9 @@
 # https://leetcode.com/problems/median-of-two-sorted-arrays/
+from typing import List
+
+
 class Solution(object):
-    def merge(self, nums1, nums2):
+    def merge(self, nums1: List[int], nums2: List[int]) -> List[int]:
         nlen1 = len(nums1)
         nlen2 = len(nums2)
         c1, c2 = 0, 0
@@ -16,7 +19,7 @@ class Solution(object):
         arr += nums2[c2:]
         return arr
 
-    def findMedianSortedArrays(self, nums1, nums2):
+    def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
         """
         :type nums1: List[int]
         :type nums2: List[int]

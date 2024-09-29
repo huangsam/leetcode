@@ -1,10 +1,9 @@
 # https://leetcode.com/problems/move-zeroes/
+from typing import List
+
+
 class Solution(object):
-    def moveZeroes(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: void Do not return anything, modify nums in-place instead.
-        """
+    def moveZeroes(self, nums: List[int]) -> None:
         non_zero_found = 0
         for i in range(0, len(nums)):
             if nums[i] != 0:

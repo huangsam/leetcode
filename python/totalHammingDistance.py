@@ -1,10 +1,9 @@
 # https://leetcode.com/problems/total-hamming-distance/
+from typing import List
+
+
 class Solution(object):
-    def totalHammingDistance(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+    def totalHammingDistance(self, nums: List[int]) -> int:
         count = 0
 
         for i in range(32):

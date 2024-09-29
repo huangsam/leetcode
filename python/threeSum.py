@@ -1,10 +1,9 @@
 # https://leetcode.com/problems/3sum/
+from typing import List
+
+
 class Solution(object):
-    def threeSum(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: List[List[int]]
-        """
+    def threeSum(self, nums: List[int]) -> List[List[int]]:
         solution = set()
         nlen = len(nums)
         sums = {}

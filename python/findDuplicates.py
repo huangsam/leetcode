@@ -1,10 +1,9 @@
 # https://leetcode.com/problems/find-all-duplicates-in-an-array/
+from typing import List
+
+
 class Solution(object):
-    def findDuplicates(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: List[int]
-        """
+    def findDuplicates(self, nums: List[int]) -> List[int]:
         d = {}
         result = []
         for i in nums:

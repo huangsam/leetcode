@@ -1,13 +1,10 @@
 # https://leetcode.com/problems/single-number-iii/
+from typing import List
 from collections import defaultdict
 
 
 class Solution:
-    def singleNumber(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: List[int]
-        """
+    def singleNumber(self, nums: List[int]) -> List[int]:
         mapping = defaultdict(int)
         for num in nums:
             mapping[num] += 1
@@ -17,11 +14,7 @@ class Solution:
                 result.append(k)
         return result
 
-    def singleNumberBits(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: List[int]
-        """
+    def singleNumberBits(self, nums: List[int]) -> List[int]:
         left = 0
         right = 0
         xor = 0

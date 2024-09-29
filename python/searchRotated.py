@@ -1,11 +1,9 @@
 # https://leetcode.com/problems/search-in-rotated-sorted-array/
+from typing import List
+
+
 class Solution:
-    def search(self, nums, target):
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: int
-        """
+    def search(self, nums: List[int], target: int) -> int:
         l, h = 0, len(nums) - 1
         while l <= h:
             m = (l + h) // 2

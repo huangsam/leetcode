@@ -1,10 +1,9 @@
 # https://leetcode.com/problems/sort-colors/
+from typing import List
+
+
 class Solution:
-    def sortColors(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: void Do not return anything, modify nums in-place instead.
-        """
+    def sortColors(self, nums: List[int]) -> None:
         l, m, h = 0, 0, len(nums) - 1
         while m <= h:
             if nums[m] == 0:

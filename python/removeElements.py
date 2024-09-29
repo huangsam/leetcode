@@ -1,19 +1,9 @@
 # https://leetcode.com/problems/remove-linked-list-elements/
-
-# Definition for singly-linked list.
-class ListNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.next = None
+from container.linked_list import ListNode
 
 
 class Solution(object):
-    def removeElements(self, head, val):
-        """
-        :type head: ListNode
-        :type val: int
-        :rtype: ListNode
-        """
+    def removeElements(self, head: ListNode, val: int) -> ListNode:
         root_node = prev_node = ListNode(-1)
         prev_node.next = head
         cur_node = head

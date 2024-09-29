@@ -1,10 +1,9 @@
 # https://leetcode.com/problems/single-number-ii/
+from typing import List
+
+
 class Solution(object):
-    def singleNumber(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+    def singleNumber(self, nums: List[int]) -> int:
         num_to_freq = {}
         for num in nums:
             if num in num_to_freq:
