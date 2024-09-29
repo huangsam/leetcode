@@ -11,30 +11,30 @@ def isBadVersion(version: int) -> bool:
 
 class Solution:
     def firstBadVersion(self, n: int) -> int:
-        l = 1
-        l_bad = isBadVersion(l)
-        if l_bad:
-            return l
-        h = n
-        h_bad = isBadVersion(h)
+        lo = 1
+        lo_bad = isBadVersion(lo)
+        if lo_bad:
+            return lo
+        hi = n
+        hi_bad = isBadVersion(hi)
         result = -1
-        while l < h:
-            m = (l + h) // 2
-            m_bad = isBadVersion(m)
-            if l_bad:
-                # look between (l, m)
-                result = l
-                h = m
-                h_bad = isBadVersion(h)
-            elif m_bad:
-                # look between (l + 1, m)
-                result = m
-                l, h = l + 1, m
-                l_bad = isBadVersion(l)
-                h_bad = isBadVersion(h)
-            elif h_bad:
-                # look between (m + 1, h)
-                result = h
-                l = m + 1
-                l_bad = isBadVersion(l)
+        while lo < hi:
+            mid = (lo + hi) // 2
+            mid_bad = isBadVersion(mid)
+            if lo_bad:
+                # look between (lo, mid)
+                result = lo
+                hi = mid
+                hi_bad = isBadVersion(hi)
+            elif mid_bad:
+                # look between (lo + 1, mid)
+                result = mid
+                lo, hi = lo + 1, mid
+                lo_bad = isBadVersion(lo)
+                hi_bad = isBadVersion(hi)
+            elif hi_bad:
+                # look between (mid + 1, hi)
+                result = hi
+                lo = mid + 1
+                lo_bad = isBadVersion(lo)
         return result

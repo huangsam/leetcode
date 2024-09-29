@@ -1,5 +1,2 @@
 [tool.ruff]
 line-length = 160
-
-[tool.ruff.lint]
-ignore = ["E741"]

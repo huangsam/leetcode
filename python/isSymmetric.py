@@ -10,18 +10,18 @@ class Solution:
             raise ValueError("The input tree must have at least one node")
         return self.mirrorWorker(root.left, root.right)
 
-    def mirrorWorker(self, l: Optional[TreeNode], r: Optional[TreeNode]) -> bool:
-        if l is None and r is None:
+    def mirrorWorker(self, left: Optional[TreeNode], right: Optional[TreeNode]) -> bool:
+        if left is None and right is None:
             return True
-        elif not (l is not None and r is not None):
+        elif not (left is not None and right is not None):
             return False
 
-        if not self.mirrorWorker(l.left, r.right):
+        if not self.mirrorWorker(left.left, right.right):
             return False
-        elif not self.mirrorWorker(l.right, r.left):
+        elif not self.mirrorWorker(left.right, right.left):
             return False
 
-        if l.val != r.val:
+        if left.val != right.val:
             return False
 
         return True

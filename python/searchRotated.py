@@ -4,18 +4,18 @@ from typing import List
 
 class Solution:
     def search(self, nums: List[int], target: int) -> int:
-        l, h = 0, len(nums) - 1
-        while l <= h:
-            m = (l + h) // 2
-            if target == nums[m]:
-                return m
-            if nums[l] <= nums[m]:
-                if nums[l] <= target <= nums[m]:
-                    h = m - 1
+        lo, hi = 0, len(nums) - 1
+        while lo <= hi:
+            mid = (lo + hi) // 2
+            if target == nums[mid]:
+                return mid
+            if nums[lo] <= nums[mid]:
+                if nums[lo] <= target <= nums[mid]:
+                    hi = mid - 1
                 else:
-                    l = m + 1
-            elif nums[m] <= target <= nums[h]:
-                l = m + 1
+                    lo = mid + 1
+            elif nums[mid] <= target <= nums[hi]:
+                lo = mid + 1
             else:
-                h = m - 1
+                hi = mid - 1
         return -1

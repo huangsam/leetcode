@@ -4,24 +4,24 @@ from typing import List
 
 class Solution:
     def findMin(self, nums: List[int]) -> int:
-        l, h = 0, len(nums) - 1
-        m = (l + h) // 2
+        lo, hi = 0, len(nums) - 1
+        mid = (lo + hi) // 2
         if len(nums) <= 2:
             return min(nums)
-        mid = nums[m]
-        last = nums[h]
-        if mid > last:
-            return self.findMin(nums[m : h + 1])
-        return self.findMin(nums[l : m + 1])
+        mid_val = nums[mid]
+        last_val = nums[hi]
+        if mid_val > last_val:
+            return self.findMin(nums[mid : hi + 1])
+        return self.findMin(nums[lo : mid + 1])
 
     def findMinIterative(self, nums: List[int]) -> int:
-        l, h = 0, len(nums) - 1
-        while h - l > 2:
-            m = (l + h) // 2
-            mid = nums[m]
-            last = nums[h]
-            if mid > last:
-                l = m
+        lo, hi = 0, len(nums) - 1
+        while hi - lo > 2:
+            mid = (lo + hi) // 2
+            mid_val = nums[mid]
+            last_val = nums[hi]
+            if mid_val > last_val:
+                lo = mid
             else:
-                h = m
-        return min(nums[l : h + 1])
+                hi = mid
+        return min(nums[lo : hi + 1])

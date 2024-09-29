@@ -4,13 +4,13 @@ from typing import List
 
 class Solution:
     def findMin(self, nums: List[int]) -> int:
-        l, h = 0, len(nums) - 1
-        while l < h:
-            m = (l + h) // 2
-            if nums[m] > nums[h]:
-                l = m + 1
-            elif nums[m] < nums[h]:
-                h = m
+        lo, hi = 0, len(nums) - 1
+        while lo < hi:
+            mid = (lo + hi) // 2
+            if nums[mid] > nums[hi]:
+                lo = mid + 1
+            elif nums[mid] < nums[hi]:
+                hi = mid
             else:
-                h = h - 1
-        return nums[l]
+                hi = hi - 1
+        return nums[lo]
