@@ -1,5 +1,6 @@
 # https://leetcode.com/problems/valid-anagram/
 from collections import defaultdict
+from typing import DefaultDict
 
 
 class Solution:
@@ -9,7 +10,7 @@ class Solution:
         the letters of a different word or phrase, using all
         the original letters exactly once.
         """
-        s_count: defaultdict[str, int] = defaultdict(int)
+        s_count: DefaultDict[str, int] = defaultdict(int)
         for ch in s:
             s_count[ch] += 1
         for ch in t:

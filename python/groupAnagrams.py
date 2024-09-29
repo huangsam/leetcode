@@ -1,6 +1,6 @@
 # https://leetcode.com/problems/group-anagrams/
 from collections import defaultdict
-from typing import List
+from typing import DefaultDict, List
 
 
 class Solution:
@@ -17,7 +17,7 @@ class Solution:
         Lastly, we iterate through the values of the
         dictionary, returning it as a list of lists.
         """
-        strings_by_hash: defaultdict[int, list] = defaultdict(list)
+        strings_by_hash: DefaultDict[int, list] = defaultdict(list)
         for content in strs:
             strings_by_hash[self.getHash(content)].append(content)
         return list(strings_by_hash.values())

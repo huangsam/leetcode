@@ -1,9 +1,12 @@
 # https://leetcode.com/problems/basic-calculator-ii/
+from typing import List
+
+
 class Solution:
     def calculate(self, s: str) -> int:
         if not s:
             return 0
-        stack: list[int] = []
+        stack: List[int] = []
         num = 0
         op = "+"
         slen = len(s)

@@ -1,14 +1,16 @@
 # https://leetcode.com/problems/find-all-duplicates-in-an-array/
-from typing import List
+from typing import List, Set
 
 
 class Solution:
     def findDuplicates(self, nums: List[int]) -> List[int]:
-        d: dict[int, bool] = {}
+        seen: Set[int] = set()
         result = []
-        for i in nums:
-            if d.get(i, False):
-                result.append(i)
+        for num in nums:
+            # An integer appears twice
+            if num in seen:
+                result.append(num)
+            # An integer appears at least once
             else:
-                d[i] = True
+                seen.add(num)
         return result

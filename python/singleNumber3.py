@@ -1,11 +1,11 @@
 # https://leetcode.com/problems/single-number-iii/
 from collections import defaultdict
-from typing import List
+from typing import DefaultDict, List
 
 
 class Solution:
     def singleNumber(self, nums: List[int]) -> List[int]:
-        mapping: defaultdict[int, int] = defaultdict(int)
+        mapping: DefaultDict[int, int] = defaultdict(int)
         for num in nums:
             mapping[num] += 1
         result = []

@@ -1,6 +1,6 @@
 # https://leetcode.com/problems/majority-element/
 from collections import defaultdict
-from typing import List
+from typing import DefaultDict, List
 
 
 class Solution:
@@ -18,7 +18,7 @@ class Solution:
 
         Follow-up: Could you solve the problem in linear time and in O(1) space?
         """
-        counts_by_num: defaultdict[int, int] = defaultdict(int)
+        counts_by_num: DefaultDict[int, int] = defaultdict(int)
         for num in nums:
             counts_by_num[num] += 1
             if counts_by_num[num] > len(nums) / 2:
