@@ -16,7 +16,7 @@ For Python solutions:
 virtualenv venv  # setup starts here
 source venv/bin/activate
 pip install flake8
-flake8 python  # validation starts here
+flake8  # validation starts here
 ```
 
 For Java solutions:
