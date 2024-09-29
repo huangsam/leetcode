@@ -1,7 +1,6 @@
 [flake8]
-# E203: Black formatter made these conflicting changes
 # E741: Some variable names can be short
-extend-ignore = E203,E741
+extend-ignore = E741
 # Modern editors and screens make it easier to look at 2x the code
 max-line-length = 160
 # Virtual environment has unrelated Python
