@@ -1,15 +1,9 @@
 # https://leetcode.com/problems/balanced-binary-tree/
-
-# Definition for a binary tree node.
-class TreeNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
+from container.binary_tree import TreeNode
 
 
 class Solution(object):
-    def nodeHeight(self, root):
+    def nodeHeight(self, root: TreeNode) -> int:
         if root is None:
             return 0
         left_height = self.nodeHeight(root.left)
@@ -22,9 +16,5 @@ class Solution(object):
             return -1
         return max(left_height, right_height) + 1
 
-    def isBalanced(self, root):
-        """
-        :type root: TreeNode
-        :rtype: bool
-        """
+    def isBalanced(self, root: TreeNode) -> bool:
         return self.nodeHeight(root) != -1

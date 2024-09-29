@@ -1,13 +1,7 @@
 # https://leetcode.com/problems/maximum-binary-tree/
 from typing import List
 
-
-# Definition for a binary tree node.
-class TreeNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
+from container.binary_tree import TreeNode
 
 
 class Solution(object):

@@ -1,13 +1,7 @@
 # https://leetcode.com/problems/copy-list-with-random-pointer/
 from typing import Optional
 
-
-# Definition for a Node.
-class Node:
-    def __init__(self, x: int, next: 'Node' = None, random: 'Node' = None):
-        self.val = int(x)
-        self.next = next
-        self.random = random
+from container.random_linked_list import Node
 
 
 class Solution:

@@ -1,12 +1,7 @@
 # https://leetcode.com/problems/partition-list/
 from typing import Optional
 
-
-# Definition for singly-linked list.
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
+from container.linked_list import ListNode
 
 
 class Solution:

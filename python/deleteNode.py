@@ -1,20 +1,9 @@
 # https://leetcode.com/problems/delete-node-in-a-bst/
-
-# Definition for a binary tree node.
-class TreeNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
+from container.binary_tree import TreeNode
 
 
 class Solution(object):
-    def deleteNode(self, root, key):
-        """
-        :type root: TreeNode
-        :type key: int
-        :rtype: TreeNode
-        """
+    def deleteNode(self, root: TreeNode, key: int) -> TreeNode:
         if root is None:
             return None
         if key < root.val:

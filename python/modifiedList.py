@@ -1,12 +1,7 @@
 # https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/
 from typing import List, Optional
 
-
-# Definition for singly-linked list.
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
+from container.linked_list import ListNode
 
 
 class Solution:

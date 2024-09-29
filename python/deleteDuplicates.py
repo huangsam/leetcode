@@ -2,12 +2,7 @@
 from collections import defaultdict
 from typing import DefaultDict, Optional
 
-
-# Definition for singly-linked list.
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
+from container.linked_list import ListNode
 
 
 class Solution:

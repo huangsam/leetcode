@@ -1,19 +1,9 @@
 # https://leetcode.com/problems/find-bottom-left-tree-value/
-
-# Definition for a binary tree node.
-class TreeNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.left = None
-        self.right = None
+from container.binary_tree import TreeNode
 
 
 class Solution(object):
-    def findBottomLeftValue(self, root):
-        """
-        :type root: TreeNode
-        :rtype: int
-        """
+    def findBottomLeftValue(self, root: TreeNode) -> int:
         leftmost_value = root.val
         to_visit = [root]
 
