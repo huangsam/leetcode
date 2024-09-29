@@ -6,14 +6,14 @@ from container.binary_tree import TreeNode
 
 class Solution:
     def isSymmetric(self, root: Optional[TreeNode]) -> bool:
+        if not root:
+            raise ValueError("The input tree must have at least one node")
         return self.mirrorWorker(root.left, root.right)
 
     def mirrorWorker(self, l: Optional[TreeNode], r: Optional[TreeNode]) -> bool:
-        if not l and not r:
+        if l is None and r is None:
             return True
-        elif l and not r:
-            return False
-        elif r and not l:
+        elif not (l is not None and r is not None):
             return False
 
         if not self.mirrorWorker(l.left, r.right):

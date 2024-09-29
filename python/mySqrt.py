@@ -1,7 +1,8 @@
 # https://leetcode.com/problems/sqrtx/
 class Solution:
     def mySqrt(self, x: int) -> int:
-        lo, hi = 0, x
+        lo: int | float = 0
+        hi: int | float = x
         while lo < hi:
             mid = (lo + hi) / 2
             mid_sq = mid * mid

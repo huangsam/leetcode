@@ -32,7 +32,8 @@ class Solution:
         # Find point for breaking right (null or real)
         break_right: ListNode | None = head
         for _ in range(right):
-            break_right = break_right.next
+            if break_right:
+                break_right = break_right.next
 
         # Reverse between left < right, since we know that
         # left != right by this point. By the end, we have

@@ -17,12 +17,12 @@ class Solution:
         Lastly, we iterate through the values of the
         dictionary, returning it as a list of lists.
         """
-        strings_by_hash = defaultdict(list)
+        strings_by_hash: defaultdict[int, list] = defaultdict(list)
         for content in strs:
             strings_by_hash[self.getHash(content)].append(content)
         return list(strings_by_hash.values())
 
-    def getHash(self, content: str) -> str:
+    def getHash(self, content: str) -> int:
         freq = [0] * 26
         for ch in content:
             freq[ord(ch) - ord('a')] += 1

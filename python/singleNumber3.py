@@ -5,7 +5,7 @@ from collections import defaultdict
 
 class Solution:
     def singleNumber(self, nums: List[int]) -> List[int]:
-        mapping = defaultdict(int)
+        mapping: defaultdict[int, int] = defaultdict(int)
         for num in nums:
             mapping[num] += 1
         result = []
@@ -31,4 +31,4 @@ class Solution:
                 left ^= num
             else:
                 right ^= num
-        return (left, right)
+        return [left, right]

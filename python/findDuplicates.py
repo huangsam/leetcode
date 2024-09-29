@@ -4,7 +4,7 @@ from typing import List
 
 class Solution(object):
     def findDuplicates(self, nums: List[int]) -> List[int]:
-        d = {}
+        d: dict[int, bool] = {}
         result = []
         for i in nums:
             if d.get(i, False):

@@ -9,7 +9,7 @@ class Solution:
         the letters of a different word or phrase, using all
         the original letters exactly once.
         """
-        s_count = defaultdict(int)
+        s_count: defaultdict[str, int] = defaultdict(int)
         for ch in s:
             s_count[ch] += 1
         for ch in t:

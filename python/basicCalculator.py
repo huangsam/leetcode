@@ -1,9 +1,9 @@
 # https://leetcode.com/problems/basic-calculator-ii/
 class Solution(object):
-    def calculate(self, s: str):
+    def calculate(self, s: str) -> int:
         if not s:
             return 0
-        stack = []
+        stack: list[int] = []
         num = 0
         op = "+"
         slen = len(s)
@@ -20,11 +20,10 @@ class Solution(object):
                     stack.append(tmp * num)
                 else:
                     tmp = stack.pop()
-                    if tmp / num < 0 and tmp % num != 0:  # round negval down
-                        stack.append(tmp / num + 1)
+                    if tmp // num < 0 and tmp % num != 0:  # round negval down
+                        stack.append(tmp // num + 1)
                     else:
-                        stack.append(tmp / num)
+                        stack.append(tmp // num)
                 num = 0
                 op = s[i]
-        result = sum(stack)
-        return result
+        return sum(stack)

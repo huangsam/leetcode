@@ -14,7 +14,7 @@ class Solution(object):
         return result
 
     def inorderTraversalIterative(self, root: TreeNode) -> List[int]:
-        visited = []
+        visited: List[int] = []
         c = root
         s = []
         while c is not None or len(s) > 0:

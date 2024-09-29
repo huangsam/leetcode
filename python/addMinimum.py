@@ -9,7 +9,7 @@ class Solution:
         bc -> 1
         abc -> 0
         """
-        curr_seq = []
+        curr_seq: list[str] = []
         num_letters = 0
 
         for ch in word:

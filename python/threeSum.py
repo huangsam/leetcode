@@ -18,4 +18,4 @@ class Solution(object):
                     if i != k and j != k:
                         res = tuple(sorted([nums[i], nums[j], nums[k]]))
                         solution.add(res)
-        return sorted([res for res in solution])
+        return sorted(list(res) for res in solution)

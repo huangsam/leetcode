@@ -27,7 +27,7 @@ class Solution(object):
         """
         arr = self.merge(nums1, nums2)
         alen = len(arr)
-        middle = ((1 + len(arr)) / 2) - 1
+        middle = ((1 + len(arr)) // 2) - 1
         if alen % 2 == 0:
             left, right = middle, middle + 1
             answer = float(arr[left] + arr[right]) / 2.0

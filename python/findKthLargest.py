@@ -19,7 +19,7 @@ class Solution:
         At the end of the loop, the smallest item in the heap
         should be the kth largest item.
         """
-        min_heap = []
+        min_heap: List[int] = []
         for num in nums:
             if len(min_heap) < k:
                 heapq.heappush(min_heap, num)
