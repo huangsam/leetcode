@@ -15,7 +15,7 @@ For Python solutions:
 ```shell
 virtualenv venv # setup starts here
 source venv/bin/activate
-pip install flake8 mypy pylint
+pip install -r requirements.txt
 flake8 python # validation starts here
 mypy python
 pylint python
