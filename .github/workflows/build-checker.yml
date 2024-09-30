@@ -1,4 +1,4 @@
-name: Python application
+name: Build checker
 
 on:
   push:
@@ -13,11 +13,12 @@ jobs:
   python-build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
+    - name: Checkout code
+      uses: actions/checkout@v4
     - name: Set up Python 3.12
       uses: actions/setup-python@v3
       with:
-        python-version: "3.12"
+        python-version: '3.12'
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
@@ -28,3 +29,16 @@ jobs:
     - name: Type check with mypy
       run: |
         mypy python
+
+  java-build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    - name: Set up Java 17
+      uses: actions/setup-java@v3
+      with:
+        java-version: '17'
+    - name: Run Maven installation
+      run: |
+        mvn install
