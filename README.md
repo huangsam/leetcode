@@ -1,5 +1,7 @@
 # LeetCode
 
+![GitHub actions](https://github.com/huangsam/leetcode/actions/workflows/ci.yml/badge.svg)
+
 Python / Java Solutions of [LeetCode Questions](https://leetcode.com/).
 
 🐍 🐍 🐍 - 🏃‍♂️ 🏃‍♂️ 🏃‍♂️ - ☕ ☕ ☕
