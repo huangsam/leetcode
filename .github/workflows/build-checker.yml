@@ -40,6 +40,6 @@ jobs:
       with:
         java-version: '17'
         distribution: 'zulu'
-    - name: Run Maven installation
+    - name: Build artifact with Maven
       run: |
         mvn install
