@@ -2,9 +2,7 @@
 
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/huangsam/leetcode/ci.yml)
 
-
-
-Python / Java Solutions of [LeetCode Questions](https://leetcode.com/).
+Python / Java solutions for [LeetCode problems](https://leetcode.com/).
 
 🐍 🐍 🐍 - 🏃‍♂️ 🏃‍♂️ 🏃‍♂️ - ☕ ☕ ☕
 
