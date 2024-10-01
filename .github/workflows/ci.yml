@@ -9,6 +9,7 @@ permissions:
 
 jobs:
   python-build:
+    name: Python 3.12
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
@@ -29,6 +30,7 @@ jobs:
         mypy python
 
   java-build:
+    name: Java 17
     runs-on: ubuntu-latest
     steps:
     - name: Checkout code
