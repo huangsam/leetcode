@@ -1,6 +1,6 @@
 # LeetCode
 
-![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/huangsam/leetcode/ci.yml)
+[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/huangsam/leetcode/ci.yml)](https://github.com/huangsam/leetcode/actions)
 
 Python / Java solutions for [LeetCode problems](https://leetcode.com/).
 
