@@ -27,3 +27,5 @@ For Java solutions:
 ```shell
 mvn install # validation starts here
 ```
+
+Blah blah blah
