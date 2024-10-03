@@ -1,4 +1,7 @@
 # https://leetcode.com/problems/contains-duplicate-ii/
+from typing import Dict, List
+
+
 class Solution:
     def containsNearbyDuplicate(self, nums: List[int], k: int) -> bool:
         """
@@ -11,7 +14,7 @@ class Solution:
         we iterate idx[1] - idx[0], then idx[2] - idx[1] until we have
         exhausted all options.
         """
-        val_latest_index = {}
+        val_latest_index: Dict[int, int] = {}
 
         for idx, num in enumerate(nums):
             if num not in val_latest_index:
