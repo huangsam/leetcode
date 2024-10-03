@@ -1,7 +1,4 @@
 # https://leetcode.com/problems/contains-duplicate-ii/
-from collections import defaultdict
-
-
 class Solution:
     def containsNearbyDuplicate(self, nums: List[int], k: int) -> bool:
         """
