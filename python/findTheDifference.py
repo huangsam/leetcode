@@ -1,8 +1,8 @@
+# https://leetcode.com/problems/find-the-difference/
 from collections import defaultdict
 from typing import DefaultDict
 
 
-# https://leetcode.com/problems/find-the-difference/
 class Solution:
     def findTheDifference(self, s: str, t: str) -> str:
         s_letters: DefaultDict[str, int] = defaultdict(int)
