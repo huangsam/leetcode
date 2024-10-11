@@ -3,31 +3,29 @@
 import container.ListNode;
 
 public final class MergeTwoLists {
-    public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
-        ListNode result = new ListNode(-1);
-        ListNode current = result;
-        ListNode tmp = null;
-
-        while (true) {
-            if (l1 == null) {
-                current.next = l2;
-                break;
-            } else if (l2 == null) {
-                current.next = l1;
-                break;
+    /**
+     * Let us proceed by creating a dummy node to minimize null checks.
+     * Since list1 and list2 are sorted in increasing order, we can
+     * traverse from start to end and link them to next pointer from
+     * the dummy onwards. Once the looping is done, whichever one
+     * still has leftover can be appended to the tail of the new
+     * list. Returning the result should just be dummy.next.
+     */
+    public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+        ListNode dummy = new ListNode();
+        ListNode current = dummy;
+        while (list1 != null && list2 != null) {
+            if (list1.val < list2.val) {
+                current.next = new ListNode(list1.val);
+                list1 = list1.next;
             } else {
-                if (l1.val <= l2.val) {
-                    tmp = l1;
-                    l1 = l1.next;
-                } else {
-                    tmp = l2;
-                    l2 = l2.next;
-                }
+                current.next = new ListNode(list2.val);
+                list2 = list2.next;
             }
-            current.next = tmp;
             current = current.next;
         }
-        return result.next;
+        current.next = (list1 != null) ? list1 : list2;
+        return dummy.next;
     }
 
     public ListNode mergeTwoListsRecursive(ListNode l1, ListNode l2) {
