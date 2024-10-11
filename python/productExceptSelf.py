@@ -37,4 +37,3 @@ class Solution:
             left_val *= left_num
             right_val *= right_num
         return answer
-
