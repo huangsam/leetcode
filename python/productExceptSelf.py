@@ -9,17 +9,17 @@ class Solution:
 
         Multiply answer[i] by prefix product, before nums[i].
 
-        prefix @ num[0] -> $1
-        prefix @ num[1] -> $1 * 1
-        prefix @ num[2] -> $1 * 1 * 2
-        prefix @ num[3] -> $1 * 1 * 2 * 3
+        prefix @ nums[0] -> $1
+        prefix @ nums[1] -> $1 * 1
+        prefix @ nums[2] -> $1 * 1 * 2
+        prefix @ nums[3] -> $1 * 1 * 2 * 3
 
         Multiply answer[i] by suffix product, before nums[i].
 
-        suffix @ num[3] -> $1
-        suffix @ num[2] -> $1 * 4
-        suffix @ num[1] -> $1 * 4 * 3
-        suffix @ num[0] -> $1 * 4 * 3 * 2
+        suffix @ nums[3] -> $1
+        suffix @ nums[2] -> $1 * 4
+        suffix @ nums[1] -> $1 * 4 * 3
+        suffix @ nums[0] -> $1 * 4 * 3 * 2
         """
         answer = [1] * len(nums)
         left_val, right_val = 1, 1
@@ -37,3 +37,4 @@ class Solution:
             left_val *= left_num
             right_val *= right_num
         return answer
+
