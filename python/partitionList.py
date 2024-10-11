@@ -31,13 +31,20 @@ class Solution:
 
         while curr:
             temp = curr.next
+
+            # Add items to partial 1 with values < x
             if curr.val < x:
                 lt_tail.next = curr
                 lt_tail = curr
+
+            # Add items to partial 2 with values >= x
             else:
                 ge_tail.next = curr
                 ge_tail = curr
+
+            # Address next pointer on the tail node
             curr.next = None
+
             curr = temp
 
         # Partial 1 has some items to link to partial 2
