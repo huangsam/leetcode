@@ -12,27 +12,28 @@ class Solution:
         prefix @ num[0] -> $1
         prefix @ num[1] -> $1 * 1
         prefix @ num[2] -> $1 * 1 * 2
-        ...
+        prefix @ num[3] -> $1 * 1 * 2 * 3
 
         Multiply answer[i] by suffix product, before nums[i].
 
-        suffix @ num[0] -> $1 * 4 * 3 * 2
-        suffix @ num[1] -> $1 * 4 * 3
+        suffix @ num[3] -> $1
         suffix @ num[2] -> $1 * 4
-        ...
+        suffix @ num[1] -> $1 * 4 * 3
+        suffix @ num[0] -> $1 * 4 * 3 * 2
         """
         answer = [1] * len(nums)
+        left_val, right_val = 1, 1
+        for left_idx in range(len(nums)):
+            right_idx = len(nums) - left_idx - 1
 
-        # Multiply answer by prefix, just before including num
-        left = 1
-        for idx, num in enumerate(nums):
-            answer[idx] *= left
-            left *= num
+            left_num, right_num = nums[left_idx], nums[right_idx]
 
-        # Multiply answer by suffix, just before including num
-        right = 1
-        for idx, num in enumerate(nums[::-1]):
-            answer[len(nums) - idx - 1] *= right
-            right *= num
+            # Prefix product before nums[left_idx]
+            answer[left_idx] *= left_val
 
+            # Suffix product before nums[right_idx]
+            answer[right_idx] *= right_val
+
+            left_val *= left_num
+            right_val *= right_num
         return answer
