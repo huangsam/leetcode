@@ -5,31 +5,34 @@ from typing import List
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
         """
-        1,2,3,4 -> 1,2,6,24
-        24/1, 24/2, 24/3, 24/4
+        For example [1,2,3,4] ->
+
+        Multiply answer[i] by prefix product, before nums[i].
+
+        prefix @ num[0] -> $1
+        prefix @ num[1] -> $1 * 1
+        prefix @ num[2] -> $1 * 1 * 2
+        ...
+
+        Multiply answer[i] by suffix product, before nums[i].
+
+        suffix @ num[0] -> $1 * 4 * 3 * 2
+        suffix @ num[1] -> $1 * 4 * 3
+        suffix @ num[2] -> $1 * 4
+        ...
         """
-        # Figure out where the zeros are
-        zero_at = []
+        answer = [1] * len(nums)
 
-        # Figure out what the total non-zero product is
-        product = 1
-
+        # Multiply answer by prefix, just before including num
+        left = 1
         for idx, num in enumerate(nums):
-            if num != 0:
-                product *= num
-            else:
-                zero_at.append(idx)
+            answer[idx] *= left
+            left *= num
 
-        answer = [0] * len(nums)
-
-        if len(zero_at) >= 2:
-            return answer
-
-        if len(zero_at) == 1:
-            answer[zero_at[0]] = product
-            return answer
-
-        for i in range(len(nums)):
-            answer[i] = product // nums[i]
+        # Multiply answer by suffix, just before including num
+        right = 1
+        for idx, num in enumerate(nums[::-1]):
+            answer[len(nums) - idx - 1] *= right
+            right *= num
 
         return answer
