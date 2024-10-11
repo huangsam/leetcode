@@ -7,7 +7,9 @@ from container.linked_list import ListNode
 class Solution:
     def partition(self, head: Optional[ListNode], x: int) -> Optional[ListNode]:
         """
-        One approach:
+        Partition nodes < x and >= x, preserving the order of the nodes.
+
+        One approach to achieving the constraints above is to:
 
         - Build partial 1 with things < x
         - Build partial 2 with things >= x
