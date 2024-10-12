@@ -25,5 +25,5 @@ mypy python
 For Java solutions:
 
 ```shell
-mvn install # validation starts here
+gradle build # validation starts here
 ```
