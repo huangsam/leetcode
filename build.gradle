@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+    id 'checkstyle'
+}
+
+repositories {
+    mavenCentral()
+}
+
+checkstyle {
+    toolVersion = '10.18.2'
+}
+
+sourceSets {
+    main.java.srcDirs = ['java']
+}

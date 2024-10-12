@@ -44,6 +44,6 @@ jobs:
         with:
           java-version: '21'
           distribution: 'zulu'
-      - name: Build artifact with Maven
+      - name: Build source with Gradle
         run: |
-          mvn install
+          gradle build
