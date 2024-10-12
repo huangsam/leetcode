@@ -4,10 +4,6 @@ from typing import List
 
 
 class Solution:
-    @staticmethod
-    def checkAdjustedDistance(a: int, b: int) -> int:
-        return min(b - a, 2)
-
     def removeDuplicates(self, nums: List[int]) -> int:
         """
         Given an integer array nums sorted in non-decreasing order, remove
@@ -39,3 +35,7 @@ class Solution:
             return k + 2
 
         return k + 1
+
+    @staticmethod
+    def checkAdjustedDistance(a: int, b: int) -> int:
+        return min(b - a, 2)
