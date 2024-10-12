@@ -1,70 +1,42 @@
 // https://leetcode.com/problems/zigzag-conversion/
 public final class ZigZagConversion {
-    enum Direction {
-        SOUTH,
-        DIAGONAL
-    }
-
     /**
      * Apply zigzag conversion:
      * PAYPALISHIRING -> PAHNAPLSIIGYIR
      *
-     * Here are the things I'm thinking of.
-     *
-     * numRows = column size
-     * numRows-2 = diagonal size
-     *
-     * So we want to understand how long the string is. Then we want
-     * to go as follows:
-     *
-     * - Grab numRows chars
-     * - Append to a mapping where key = rawIndex, value = list of chars
-     * - Grab numRows-2
-     * - Append to a mapping where key = rawIndex-1, value = list of chars
-     * - If at any point we run out of characters, we stop the iteration
+     * Here are the steps to convert the string:
+     * - Setup an array of StringBuilder with numRows elements
+     * - Iterate through string and append each character to its depth row
+     * - Change direction when reaching the top or bottom row
+     * - Concatenate all rows to get the final result
      */
     public String convert(String s, int numRows) {
-        StringBuilder[] allRows = new StringBuilder[numRows];
-        for (int depth = 0; depth < numRows; depth++) {
-            allRows[depth] = new StringBuilder();
+        if (numRows == 1) {
+            return s; // No zigzag conversion needed
         }
 
-        helper(s, numRows, allRows, Direction.SOUTH, 0);
+        StringBuilder[] rows = new StringBuilder[numRows];
+        for (int i = 0; i < numRows; i++) {
+            rows[i] = new StringBuilder();
+        }
+
+        int depth = 0;
+        int direction = 1; // 1 for going down, -1 for going up
+
+        for (char ch : s.toCharArray()) {
+            rows[depth].append(ch);
+            depth += direction;
+
+            if (depth == numRows - 1 || depth == 0) {
+                direction *= -1;
+            }
+        }
 
         StringBuilder result = new StringBuilder();
-        for (int depth = 0; depth < numRows; depth++) {
-            result.append(allRows[depth].toString());
+        for (StringBuilder rowBuilder : rows) {
+            result.append(rowBuilder);
         }
 
         return result.toString();
-    }
-
-    public void helper(
-        String s,
-        int numRows,
-        StringBuilder[] allRows,
-        Direction direction,
-        int absoluteIndex
-    ) {
-        int iterations = (direction == Direction.SOUTH)
-            ? numRows : numRows - 2;
-
-        for (int i = 0; i < iterations; i++) {
-            if (absoluteIndex == s.length()) {
-                return;
-            }
-
-            int depth = (direction == Direction.SOUTH)
-                ? i : iterations - i;
-
-            allRows[depth].append(s.charAt(absoluteIndex));
-
-            absoluteIndex++;
-        }
-
-        Direction nextDirection = (direction == Direction.SOUTH)
-            ? Direction.DIAGONAL : Direction.SOUTH;
-
-        helper(s, numRows, allRows, nextDirection, absoluteIndex);
     }
 }
