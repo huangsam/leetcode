@@ -20,7 +20,8 @@ public final class SummaryRanges {
         }
 
         if (nums.length == 1) {
-            result.add(new Integer(nums[0]).toString());
+            Integer first = nums[0];
+            result.add(first.toString());
             return result;
         }
 

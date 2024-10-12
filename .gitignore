@@ -11,4 +11,5 @@
 venv/
 
 # Java
-target/
+.gradle/
+build/
