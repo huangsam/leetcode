@@ -1,4 +1,5 @@
 # https://leetcode.com/problems/minimum-flips-to-make-a-or-b-equal-to-c/
+
 class Solution:
     def minFlips(self, a: int, b: int, c: int) -> int:
         """
