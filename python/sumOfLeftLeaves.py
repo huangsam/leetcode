@@ -4,8 +4,10 @@ from container.binary_tree import TreeNode
 
 
 class Solution:
-    def isLeafNode(self, root: TreeNode) -> bool:
-        return root.left is None and root.right is None
+    def sumOfLeftLeaves(self, root: TreeNode) -> int:
+        if root is None or self.isLeafNode(root):
+            return 0
+        return self.sumWorkhorse(root)
 
     def sumWorkhorse(self, root: TreeNode) -> int:
         if root is None:
@@ -21,11 +23,5 @@ class Solution:
 
         return left_sum + right_sum
 
-    def sumOfLeftLeaves(self, root: TreeNode) -> int:
-        """
-        :type root: TreeNode
-        :rtype: int
-        """
-        if root is None or self.isLeafNode(root):
-            return 0
-        return self.sumWorkhorse(root)
+    def isLeafNode(self, root: TreeNode) -> bool:
+        return root.left is None and root.right is None

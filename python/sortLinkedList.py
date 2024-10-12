@@ -5,10 +5,6 @@ from container.linked_list import ListNode
 
 class Solution:
     def sortList(self, head: ListNode) -> ListNode:
-        """
-        :type head: ListNode
-        :rtype: ListNode
-        """
         if head is None or head.next is None:
             return head
         middle = self.getMiddle(head)

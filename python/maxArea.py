@@ -5,10 +5,6 @@ from typing import List
 
 class Solution:
     def maxArea(self, height: List[int]) -> int:
-        """
-        :type height: List[int]
-        :rtype: int
-        """
         i, j = 0, len(height) - 1
         water = 0
         while i < j:
