@@ -9,7 +9,7 @@ class Solution:
             mid = (lo + hi) / 2
             mid_sq = mid * mid
 
-            # the answer is close enough
+            # Answer is close enough
             if abs(x - mid_sq) < 0.0001:
                 floor, ceil = int(mid), int(mid) + 1
                 if ceil * ceil == x:
@@ -17,13 +17,13 @@ class Solution:
                 else:
                     return floor
 
-            # arrange lo, hi for overshoot
+            # Arrange lo, hi for overshoot
             if mid_sq > x:
                 hi = mid
 
-            # arrange lo, hi for undershoot
+            # Arrange lo, hi for undershoot
             elif mid_sq < x:
                 lo = mid
 
-        # handles the case when x is 0
+        # Handle case when x is 0
         return 0
