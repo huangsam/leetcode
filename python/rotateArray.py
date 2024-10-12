@@ -4,12 +4,6 @@ from typing import List
 
 
 class Solution:
-    @staticmethod
-    def reverse(nums: List[int], a: int, b: int) -> None:
-        while a < b:
-            nums[a], nums[b] = nums[b], nums[a]
-            a, b = a + 1, b - 1
-
     def rotate(self, nums: List[int], k: int) -> None:
         """
         Given an integer array nums, rotate the array to the
@@ -30,3 +24,8 @@ class Solution:
         self.reverse(nums, 0, n)
         self.reverse(nums, 0, op_count - 1)
         self.reverse(nums, op_count, n)
+
+    def reverse(self, nums: List[int], a: int, b: int) -> None:
+        while a < b:
+            nums[a], nums[b] = nums[b], nums[a]
+            a, b = a + 1, b - 1

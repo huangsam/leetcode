@@ -36,6 +36,5 @@ class Solution:
 
         return k + 1
 
-    @staticmethod
-    def checkAdjustedDistance(a: int, b: int) -> int:
+    def checkAdjustedDistance(self, a: int, b: int) -> int:
         return min(b - a, 2)
