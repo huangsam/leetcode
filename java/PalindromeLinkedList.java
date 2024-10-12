@@ -3,6 +3,16 @@
 import container.ListNode;
 
 public class PalindromeLinkedList {
+    /*
+     * Test cases to evaluate:
+     *
+     * [0] -> true
+     * [0, 0] -> true
+     * [1, 2, 3, 2, 1] -> true
+     * [3, 1, 3] -> true
+     * [2, 5, 4, 2] -> false
+     * [1, 2, 3] -> false
+     */
     public boolean isPalindrome(ListNode head) {
         ListNode prev = null;
         ListNode current = head;
@@ -22,13 +32,3 @@ public class PalindromeLinkedList {
         return true;
     }
 }
-
-/*
-Test cases:
-[0, 0]
-[1, 2, 3, 2, 1]
-[3, 1, 3]
-[2, 5, 4, 2]
-[1, 2, 3]
-[]
-*/
