@@ -24,8 +24,6 @@ public final class ZigZagConversion {
      * - If at any point we run out of characters, we stop the iteration
      */
     public String convert(String s, int numRows) {
-        StringBuilder result = new StringBuilder();
-
         StringBuilder[] allRows = new StringBuilder[numRows];
         for (int depth = 0; depth < numRows; depth++) {
             allRows[depth] = new StringBuilder();
@@ -33,6 +31,7 @@ public final class ZigZagConversion {
 
         helper(s, numRows, allRows, Direction.SOUTH, 0);
 
+        StringBuilder result = new StringBuilder();
         for (int depth = 0; depth < numRows; depth++) {
             result.append(allRows[depth].toString());
         }
