@@ -2,7 +2,7 @@
 
 import container.ListNode;
 
-public final class PalindromeLinkedList {
+public class PalindromeLinkedList {
     public boolean isPalindrome(ListNode head) {
         ListNode prev = null;
         ListNode current = head;

@@ -2,7 +2,7 @@
 
 import container.ListNode;
 
-public final class MergeTwoLists {
+public class MergeTwoLists {
     /**
      * Let us proceed by creating a dummy node to minimize null checks.
      * Since list1 and list2 are sorted in increasing order, we can

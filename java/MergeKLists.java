@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 import container.ListNode;
 
-public final class MergeKLists {
+public class MergeKLists {
     public ListNode mergeKLists(ListNode[] lists) {
         if (lists.length == 2) {
             return mergeTwoLists(lists[0], lists[1]);

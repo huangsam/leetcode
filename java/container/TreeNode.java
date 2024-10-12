@@ -3,7 +3,7 @@ package container;
 /**
  * Definition for a binary tree node.
  */
-public final class TreeNode {
+public class TreeNode {
     public int val;
     public TreeNode left;
     public TreeNode right;

@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/reverse-integer/
-public final class ReverseInteger {
+public class ReverseInteger {
     public static final int TEN = 10;
 
     public int reverse(int x) {

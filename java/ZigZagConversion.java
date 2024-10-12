@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/zigzag-conversion/
-public final class ZigZagConversion {
+public class ZigZagConversion {
     /**
      * Apply zigzag conversion:
      * PAYPALISHIRING -> PAHNAPLSIIGYIR

@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public final class SummaryRanges {
+public class SummaryRanges {
     /**
      * We want this:
      * [0,1,2,4,5,7] -> ["0->2","4->5","7"]

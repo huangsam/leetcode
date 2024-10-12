@@ -2,7 +2,7 @@
 
 import container.ListNode;
 
-public final class AddTwoNumbers {
+public class AddTwoNumbers {
     public static final int TEN = 10;
 
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {

@@ -1,5 +1,5 @@
 // https://leetcode.com/problems/palindrome-number/
-public final class PalindromeNumber {
+public class PalindromeNumber {
     public static final int TEN = 10;
 
     public boolean isPalindrome(int x) {
