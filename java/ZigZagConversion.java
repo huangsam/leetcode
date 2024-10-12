@@ -26,16 +26,13 @@ public final class ZigZagConversion {
     public String convert(String s, int numRows) {
         StringBuilder result = new StringBuilder();
 
-        // Initialize the mapping
         StringBuilder[] allRows = new StringBuilder[numRows];
-        for (int i = 0; i < numRows; i++) {
-            allRows[i] = new StringBuilder();
+        for (int depth = 0; depth < numRows; depth++) {
+            allRows[depth] = new StringBuilder();
         }
 
-        // Build the mapping
         helper(s, numRows, allRows, Direction.SOUTH, 0);
 
-        // Join the mapping strings together
         for (int depth = 0; depth < numRows; depth++) {
             result.append(allRows[depth].toString());
         }
