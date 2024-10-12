@@ -1,5 +1,6 @@
 # https://leetcode.com/problems/merge-strings-alternately/
 
+
 class Solution:
     def mergeAlternately(self, word1: str, word2: str) -> str:
         max_length = max(len(word1), len(word2))
