@@ -22,11 +22,10 @@ class Solution:
         for num in nums:
             xor ^= num
 
-        # find rightmost set bit
-        # since left and right are different
+        # Find rightmost set bit since left and right are different
         set_bit = xor & ~(xor - 1)
 
-        # run xor based on set bit
+        # Run xor based on set bit
         for num in nums:
             if num & set_bit != 0:
                 left ^= num
