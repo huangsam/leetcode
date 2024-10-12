@@ -1,4 +1,5 @@
 // https://leetcode.com/problems/palindrome-number/
+
 public class PalindromeNumber {
     public static final int TEN = 10;
 
