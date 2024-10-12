@@ -1,4 +1,5 @@
 # https://leetcode.com/problems/linked-list-cycle/
+
 from typing import Optional
 
 from container.linked_list import ListNode

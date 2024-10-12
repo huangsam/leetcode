@@ -1,4 +1,5 @@
 # https://leetcode.com/problems/copy-list-with-random-pointer/
+
 from typing import Optional
 
 from container.random_linked_list import Node

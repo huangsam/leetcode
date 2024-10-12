@@ -1,4 +1,5 @@
 # https://leetcode.com/problems/partition-list/
+
 from typing import Optional
 
 from container.linked_list import ListNode

@@ -1,4 +1,5 @@
 # https://leetcode.com/problems/valid-sudoku/
+
 from typing import Iterable, List
 
 

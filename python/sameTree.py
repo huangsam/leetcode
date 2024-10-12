@@ -1,4 +1,5 @@
 # https://leetcode.com/problems/same-tree/
+
 from typing import Optional
 
 from container.binary_tree import TreeNode

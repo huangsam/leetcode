@@ -1,4 +1,5 @@
 # https://leetcode.com/problems/minimum-depth-of-binary-tree/
+
 from container.binary_tree import TreeNode
 
 

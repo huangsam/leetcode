@@ -1,4 +1,5 @@
 # https://leetcode.com/problems/symmetric-tree/
+
 from typing import Optional
 
 from container.binary_tree import TreeNode
