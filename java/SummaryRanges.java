@@ -44,6 +44,6 @@ public class SummaryRanges {
     private String build(Integer left, Integer right) {
         return left.equals(right)
             ? left.toString()
-            : left.toString() + "->" + right.toString();
+            : left + "->" + right;
     }
 }
