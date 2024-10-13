@@ -6,14 +6,14 @@ import container.ListNode;
 
 public class MergeKLists {
     public ListNode mergeKLists(ListNode[] lists) {
-        if (lists.length == 2) {
-            return mergeTwoLists(lists[0], lists[1]);
+        if (lists.length == 0) {
+            return null;
         }
         if (lists.length == 1) {
             return lists[0];
         }
-        if (lists.length == 0) {
-            return null;
+        if (lists.length == 2) {
+            return mergeTwoLists(lists[0], lists[1]);
         }
         int half = lists.length / 2;
         return mergeTwoLists(
