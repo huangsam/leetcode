@@ -12,14 +12,11 @@ public class ReverseInteger {
             x *= -1;
         }
 
-        while (true) {
+        do {
             digit = x % TEN;
             result = (result * TEN) + digit;
             x /= TEN;
-            if (x == 0) {
-                break;
-            }
-        }
+        } while (x != 0);
 
         if (result % TEN != digit % TEN) {
             return 0;
