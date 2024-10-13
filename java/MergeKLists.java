@@ -8,33 +8,31 @@ public class MergeKLists {
     public ListNode mergeKLists(ListNode[] lists) {
         if (lists.length == 2) {
             return mergeTwoLists(lists[0], lists[1]);
-        } else if (lists.length == 1) {
+        }
+        if (lists.length == 1) {
             return lists[0];
-        } else if (lists.length == 0) {
+        }
+        if (lists.length == 0) {
             return null;
         }
         int half = lists.length / 2;
-        ListNode leftList = mergeKLists(Arrays.copyOfRange(lists, 0, half));
-        ListNode rightList = mergeKLists(Arrays.copyOfRange(lists, half, lists.length));
-        return mergeTwoLists(leftList, rightList);
+        return mergeTwoLists(
+            mergeKLists(Arrays.copyOfRange(lists, 0, half)),
+            mergeKLists(Arrays.copyOfRange(lists, half, lists.length))
+        );
     }
 
-    private ListNode mergeTwoLists(ListNode l1, ListNode l2) {
-        if (l1 == null) {
-            return l2;
+    public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+        if (list1 == null) {
+            return list2;
         }
-        if (l2 == null) {
-            return l1;
+        if (list2 == null) {
+            return list1;
         }
-        ListNode temp;
-        if (l1.val > l2.val) {
-            temp = l2;
-            temp.next = mergeTwoLists(l1, l2.next);
-            return temp;
-        } else {
-            temp = l1;
-            temp.next = mergeTwoLists(l1.next, l2);
-            return temp;
-        }
+        return (list1.val < list2.val)
+            ? new ListNode(
+            list1.val, mergeTwoLists(list1.next, list2))
+            : new ListNode(
+            list2.val, mergeTwoLists(list1, list2.next));
     }
 }
