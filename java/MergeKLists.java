@@ -31,8 +31,8 @@ public class MergeKLists {
         }
         return (list1.val < list2.val)
             ? new ListNode(
-            list1.val, mergeTwoLists(list1.next, list2))
+                list1.val, mergeTwoLists(list1.next, list2))
             : new ListNode(
-            list2.val, mergeTwoLists(list1, list2.next));
+                list2.val, mergeTwoLists(list1, list2.next));
     }
 }
