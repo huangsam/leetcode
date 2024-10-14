@@ -25,13 +25,6 @@ class Solution:
         if len(intervals) == 0:
             return [newInterval]
 
-        if len(intervals) == 1:
-            first, second = self.sort_swap(intervals[0], newInterval)
-            if self.has_overlap(first, second):
-                return [self.merge(first, second)]
-            else:
-                return [first, second]
-
         cleans: List[List[int]] = []
         overlaps: List[List[int]] = []
         for interval in intervals:
