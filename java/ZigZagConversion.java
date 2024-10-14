@@ -2,9 +2,6 @@
 
 public class ZigZagConversion {
     /**
-     * Apply zigzag conversion:
-     * PAYPALISHIRING -> PAHNAPLSIIGYIR
-     *
      * Here are the steps to convert the string:
      * - Setup an array of StringBuilder with numRows elements
      * - Iterate through string and append each character to its depth row

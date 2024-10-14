@@ -1,8 +1,8 @@
 // https://leetcode.com/problems/merge-k-sorted-lists/
 
-import java.util.Arrays;
-
 import container.ListNode;
+
+import java.util.Arrays;
 
 public class MergeKLists {
     public ListNode mergeKLists(ListNode[] lists) {
@@ -18,8 +18,7 @@ public class MergeKLists {
         int half = lists.length / 2;
         return mergeTwoLists(
             mergeKLists(Arrays.copyOfRange(lists, 0, half)),
-            mergeKLists(Arrays.copyOfRange(lists, half, lists.length))
-        );
+            mergeKLists(Arrays.copyOfRange(lists, half, lists.length)));
     }
 
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
@@ -30,9 +29,7 @@ public class MergeKLists {
             return list1;
         }
         return (list1.val < list2.val)
-            ? new ListNode(
-                list1.val, mergeTwoLists(list1.next, list2))
-            : new ListNode(
-                list2.val, mergeTwoLists(list1, list2.next));
+            ? new ListNode(list1.val, mergeTwoLists(list1.next, list2))
+            : new ListNode(list2.val, mergeTwoLists(list1, list2.next));
     }
 }

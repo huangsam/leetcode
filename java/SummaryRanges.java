@@ -5,10 +5,7 @@ import java.util.List;
 
 public class SummaryRanges {
     /**
-     * We want this:
-     * [0,1,2,4,5,7] -> ["0->2","4->5","7"]
-     *
-     * In order to achieve this:
+     * Here are the steps to build the range:
      * - Iterate through nums one by one
      * - When non-contiguous, append start->end to result
      * - Reset start marker and repeat the process

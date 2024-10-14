@@ -36,9 +36,7 @@ public class MergeTwoLists {
             return list1;
         }
         return (list1.val < list2.val)
-            ? new ListNode(
-                list1.val, mergeTwoListsRecursive(list1.next, list2))
-            : new ListNode(
-                list2.val, mergeTwoListsRecursive(list1, list2.next));
+            ? new ListNode(list1.val, mergeTwoListsRecursive(list1.next, list2))
+            : new ListNode(list2.val, mergeTwoListsRecursive(list1, list2.next));
     }
 }
