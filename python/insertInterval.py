@@ -55,7 +55,7 @@ class Solution:
             else:
                 result.append(clean)
 
-        if result_has_overlap is False:
+        if not result_has_overlap:
             if merged_overlap < result[0]:
                 result.appendleft(merged_overlap)
             else:
