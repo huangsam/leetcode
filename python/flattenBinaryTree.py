@@ -1,5 +1,7 @@
 # https://leetcode.com/problems/flatten-binary-tree-to-linked-list/
 
+from typing import Optional
+
 from container.binary_tree import TreeNode
 
 
@@ -33,5 +35,3 @@ class Solution:
 
         # Connect the left.tail with the right.head
         curr.right = right
-
-        return root
