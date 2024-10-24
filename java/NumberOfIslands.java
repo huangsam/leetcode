@@ -35,10 +35,10 @@ public class NumberOfIslands {
         visited[i][j] = true;
 
         // Traverse in all 4 directions
-        traverseAndTrack(grid, i + 1, j, visited);
-        traverseAndTrack(grid, i - 1, j, visited);
-        traverseAndTrack(grid, i, j + 1, visited);
-        traverseAndTrack(grid, i, j - 1, visited);
+        traverseAndTrack(grid, i + 1, j, visited); // down
+        traverseAndTrack(grid, i - 1, j, visited); // up
+        traverseAndTrack(grid, i, j + 1, visited); // right
+        traverseAndTrack(grid, i, j - 1, visited); // left
     }
 
     private int rowCount(char[][] grid) {
