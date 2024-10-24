@@ -21,7 +21,7 @@ public class MergeKLists {
             mergeKLists(Arrays.copyOfRange(lists, half, lists.length)));
     }
 
-    public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+    private ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         if (list1 == null) {
             return list2;
         }

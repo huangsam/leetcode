@@ -10,7 +10,7 @@ public class SortedArrayToBST {
         return helper(nums, 0, nums.length - 1);
     }
 
-    public TreeNode helper(int[] nums, int low, int high) {
+    private TreeNode helper(int[] nums, int low, int high) {
         if (low > high) {
             return null;
         }

@@ -21,7 +21,7 @@ public class PalindromeNumber {
         return true;
     }
 
-    public int length(int x) {
+    private int length(int x) {
         int count = 0;
         while (x != 0) {
             x /= TEN;
@@ -30,7 +30,7 @@ public class PalindromeNumber {
         return count;
     }
 
-    public int digit(int x, int index) {
+    private int digit(int x, int index) {
         int divisor = 1;
         while (index != 0) {
             index -= 1;

@@ -1,7 +1,7 @@
 // https://leetcode.com/problems/reverse-integer/
 
 public class ReverseInteger {
-    public static final int TEN = 10;
+    private static final int TEN = 10;
 
     public int reverse(int x) {
         int result = 0;
