@@ -28,7 +28,6 @@ class RandomizedSet {
         if (!valueToIndex.containsKey(val)) {
             return false;
         }
-
         int index = valueToIndex.get(val);
         int lastIndex = values.size() - 1;
         int lastItem = values.get(lastIndex);
