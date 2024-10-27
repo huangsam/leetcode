@@ -5,33 +5,21 @@ public class LetterCombinations {
         if (digits.length() == 0) {
             return Arrays.asList();
         }
-
-        List<StringBuilder> builders = new ArrayList<>();
-
-        char[] digitArray = digits.toCharArray();
-
-        for (char letter : getLetters(digitArray[0])) {
-            StringBuilder builder = new StringBuilder();
-            builder.append(letter);
-            builders.add(builder);
-        }
-
-        for (int i = 1; i < digitArray.length; i++) {
-            List<StringBuilder> nextBuilders = new ArrayList<>();
-            for (char letter : getLetters(digitArray[i])) {
-                for (StringBuilder builder : builders) {
-                    StringBuilder nextBuilder = new StringBuilder(builder.toString());
-                    nextBuilder.append(letter);
-                    nextBuilders.add(nextBuilder);
-                }
-            }
-            builders = nextBuilders;
-        }
-
-        return builders.stream().map(sb -> sb.toString()).toList();
+        List<String> result = new ArrayList<>();
+        helper(digits, 0, new StringBuilder(), result);
+        return result;
     }
 
-    private char[] getLetters(char digit) {
-        return digitToLetters[(int) (digit - '0') - 1].toCharArray();
+    private void helper(String digits, int index, StringBuilder builder, List<String> result) {
+        if (index == digits.length()) {
+            result.add(builder.toString());
+            return;
+        }
+        char[] letters = digitToLetters[(int) (digits.charAt(index) - '0') - 1].toCharArray();
+        for (char letter : letters) {
+            builder.append(letter);
+            helper(digits, index + 1, builder, result);
+            builder.deleteCharAt(builder.length() - 1);
+        }
     }
 }
