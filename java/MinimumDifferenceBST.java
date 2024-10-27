@@ -3,7 +3,7 @@
 import container.TreeNode;
 
 public class MinimumDifferenceBST {
-    private TreeNode last;
+    private TreeNode last = null;
 
     /**
      * We assume that the input is a binary search tree with at least two
