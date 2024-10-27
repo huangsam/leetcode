@@ -16,6 +16,12 @@ public class LetterCombinations {
         return result;
     }
 
+    /**
+     * We go through different letters associated with each digit. When
+     * we add a new letter to the mix, we increment the index by one.
+     * When we reach the end, we have a valid combo and record it in
+     * the list of results. Assume that order does not matter.
+     */
     private void helper(String digits, int index, StringBuilder builder, List<String> result) {
         if (index == digits.length()) {
             result.add(builder.toString());
