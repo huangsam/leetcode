@@ -11,8 +11,7 @@ public class TotalNQueens {
      * how many answers we got.
      */
     public int totalNQueens(int n) {
-        int[][] grid = new int[n][n];
-        helper(grid, 0);
+        helper(new int[n][n], 0);
         return numberOfSolutions;
     }
 
