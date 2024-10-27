@@ -12,7 +12,9 @@ public class KthSmallestBST {
         } catch (RuntimeException e) {
             return last.val;
         }
-        return -1; // This should not happen!
+
+        // This should not happen!
+        return -1;
     }
 
     private void helper(TreeNode root, int k) {
