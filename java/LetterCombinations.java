@@ -1,5 +1,11 @@
+// https://leetcode.com/problems/letter-combinations-of-a-phone-number/
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class LetterCombinations {
-    private static final String[] digitToLetters = {"", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+    private static final String[] LETTERS = {"", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
 
     public List<String> letterCombinations(String digits) {
         if (digits.length() == 0) {
@@ -15,7 +21,7 @@ public class LetterCombinations {
             result.add(builder.toString());
             return;
         }
-        char[] letters = digitToLetters[(int) (digits.charAt(index) - '0') - 1].toCharArray();
+        char[] letters = LETTERS[(int) (digits.charAt(index) - '0') - 1].toCharArray();
         for (char letter : letters) {
             builder.append(letter);
             helper(digits, index + 1, builder, result);
