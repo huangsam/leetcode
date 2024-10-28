@@ -16,6 +16,7 @@ class Solution:
             self.result.append(nums)
             return
 
+        # Only look forward to avoid duplicates
         start = nums[-1] + 1 if nums else 1
 
         # Traverse start to n with enough buffer for k items
