@@ -15,5 +15,7 @@ class Solution:
         if len(available) == 0:
             self.result.append(arr)
             return
+
+        # We look at numbers in forward and backward directions
         for num in available:
             self.helper(available - {num}, arr + [num])
