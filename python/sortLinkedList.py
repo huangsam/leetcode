@@ -22,7 +22,7 @@ class Solution:
         return slow
 
     def mergeSortedLists(self, l1: ListNode, l2: ListNode) -> ListNode:
-        dummy = ListNode(None)
+        dummy = ListNode()
         node = dummy
         while l1 and l2:
             if l1.val < l2.val:
