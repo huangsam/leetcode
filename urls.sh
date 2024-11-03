@@ -11,8 +11,8 @@ Here are the grep options explained:
     -h = Supress prefixing of filename
     -r = Read all files under each directory
 
-We then apply sort and uniq to enforce unique links. That is because
-uniq only detects duplicates on adjacent lines.
+We then apply sort and uniq to enforce unique links. The sort is needed
+because uniq only detects duplicates on adjacent lines.
 eof
 
 grep -o -a -h -r "https://leetcode.com.*" {java,python} | sort | uniq
