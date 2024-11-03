@@ -1,9 +1,10 @@
 #!/bin/bash
+set -euo pipefail
 
 # Match for LeetCode URLs in all solution folders
 
-<<'eof'
-We use grep to find all LeetCode URLs in the various folders.
+: << 'eof'
+We use grep to collect LeetCode URLs from each solution folder.
 
 Here are the grep options explained:
     -o = Print matching parts of matching line
