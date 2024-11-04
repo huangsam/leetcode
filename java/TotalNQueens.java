@@ -19,7 +19,7 @@ public class TotalNQueens {
      * Proceed through columns until we reach the end, checking
      * whether any of the rows would be safe from a left-looking
      * POV. When we are at the end, we are guaranteed to have a
-     * solution and we add to the total counter.
+     * solution, and we add to the total counter.
      */
     private void helper(int[][] grid, int col) {
         if (col == grid.length) {

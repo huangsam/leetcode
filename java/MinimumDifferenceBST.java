@@ -28,6 +28,6 @@ public class MinimumDifferenceBST {
 
         int rightResult = getMinimumDifference(root.right);
 
-        return (int) Math.min(Math.min(leftResult, result), rightResult);
+        return Math.min(Math.min(leftResult, result), rightResult);
     }
 }

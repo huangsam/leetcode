@@ -7,8 +7,8 @@ import java.util.Map;
 import java.util.Random;
 
 class RandomizedSet {
-    private List<Integer> values;
-    private Map<Integer, Integer> valueToIndex;
+    private final List<Integer> values;
+    private final Map<Integer, Integer> valueToIndex;
 
     public RandomizedSet() {
         values = new ArrayList<>();

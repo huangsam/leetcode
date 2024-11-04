@@ -8,9 +8,9 @@ public class AddTwoNumbers {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode result = new ListNode(-1);
         ListNode current = result;
-        ListNode tmp = null;
+        ListNode tmp;
         boolean carry = false;
-        int val = 0;
+        int val;
 
         while (l1 != null && l2 != null) {
             val = l1.val + l2.val;

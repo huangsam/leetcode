@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/product-of-array-except-self/
 
+import java.util.Arrays;
+
 public class ProductExceptSelf {
     /**
      * Product of all the elements of nums except nums[i].
@@ -25,9 +27,7 @@ public class ProductExceptSelf {
         int rightProduct = 1;
 
         int[] result = new int[nums.length];
-        for (int i = 0; i < result.length; i++) {
-            result[i] = 1;
-        }
+        Arrays.fill(result, 1);
 
         // Apply left and right transforms together
         for (int l = 0, r = result.length - 1; l < result.length; l++, r--) {

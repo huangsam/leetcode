@@ -4,8 +4,8 @@ import java.util.Deque;
 import java.util.LinkedList;
 
 public class MinStack {
-    private Deque<Integer> standard;
-    private Deque<Integer> minimum;
+    private final Deque<Integer> standard;
+    private final Deque<Integer> minimum;
 
     public MinStack() {
         standard = new LinkedList<>();
@@ -14,17 +14,17 @@ public class MinStack {
 
     public void push(int val) {
         standard.addFirst(val);
-        if (minimum.size() == 0 || minimum.getFirst() >= val) {
+        if (minimum.isEmpty() || minimum.getFirst() >= val) {
             minimum.addFirst(val);
         }
     }
 
     public void pop() {
-        if (standard.size() == 0) {
+        if (standard.isEmpty()) {
             return;
         }
         Integer removed = standard.removeFirst();
-        if (minimum.size() > 0 && removed.equals(minimum.getFirst())) {
+        if (!minimum.isEmpty() && removed.equals(minimum.getFirst())) {
             minimum.removeFirst();
         }
     }
