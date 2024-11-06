@@ -5,6 +5,14 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class LongestConsecutive {
+    /**
+     * By using a set, we're able to tell if adjacent neighbors to a current
+     * value exist in the dataset, just by doing {@code val-1} or {@code val+1}.
+     * In those cases, we simply go up and down as much as possible until we
+     * arrive at the lower end and the higher end. If our current length is
+     * greater than the max seen so far, then we save the new result and
+     * continue until the end of the {@code nums} array.
+     */
     public int longestConsecutive(int[] nums) {
         int result = 0;
 
@@ -18,12 +26,12 @@ public class LongestConsecutive {
 
                 while (allNums.contains(lower)) {
                     currentLength++;
-                    allNums.remove(lower--); // avoid duplicate traversals
+                    allNums.remove(lower--);
                 }
 
                 while (allNums.contains(higher)) {
                     currentLength++;
-                    allNums.remove(higher++); // avoid duplicate traversals
+                    allNums.remove(higher++);
                 }
 
                 result = Math.max(result, currentLength);
