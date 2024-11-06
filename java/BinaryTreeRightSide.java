@@ -34,5 +34,5 @@ public class BinaryTreeRightSide {
         return result;
     }
 
-    private static record DepthNode(int depth, TreeNode node) {}
+    private record DepthNode(int depth, TreeNode node) {}
 }
