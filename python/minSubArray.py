@@ -4,7 +4,7 @@ from typing import List
 
 
 class Solution:
-    MAX_VALUE = 2 ** 32
+    MAX_VALUE = 2**32
 
     def minSubArrayLen(self, target: int, nums: List[int]) -> int:
         """

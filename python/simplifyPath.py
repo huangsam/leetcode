@@ -15,10 +15,10 @@ class Solution:
         """
         path_stack: List[str] = []
 
-        for token in path.split('/'):
-            if token in {'', '.'}:
+        for token in path.split("/"):
+            if token in {"", "."}:
                 continue
-            elif token == '..':
+            elif token == "..":
                 if len(path_stack) > 0:
                     _ = path_stack.pop()
             else:
