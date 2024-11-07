@@ -10,7 +10,7 @@ public class AddTwoNumbers {
             return null; // Both lists empty
         }
 
-        ListNode result = new ListNode(0); // No dummy value needed
+        ListNode result = new ListNode(0); // Avoids extra null checks
         ListNode current = result;
         boolean carry = false;
 
@@ -28,6 +28,6 @@ public class AddTwoNumbers {
             l2 = (l2 != null) ? l2.next : null;
         }
 
-        return result;
+        return result.next;
     }
 }
