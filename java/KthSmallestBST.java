@@ -7,14 +7,8 @@ public class KthSmallestBST {
     private int current = 0;
 
     public int kthSmallest(TreeNode root, int k) {
-        try {
-            helper(root, k);
-        } catch (RuntimeException e) {
-            return last.val;
-        }
-
-        // This should not happen!
-        return -1;
+        helper(root, k);
+        return last.val;
     }
 
     private void helper(TreeNode root, int k) {
@@ -24,13 +18,10 @@ public class KthSmallestBST {
 
         helper(root.left, k);
 
-        last = root;
-
-        current += 1;
-
-        // Unconditionally short-circuit with the kth node
+        current++;
         if (current == k) {
-            throw new RuntimeException();
+            last = root;
+            return; // Early return to avoid unnecessary recursion
         }
 
         helper(root.right, k);
