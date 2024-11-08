@@ -12,7 +12,7 @@ public class MergeKLists {
         }
 
         PriorityQueue<ListNode> queue = new PriorityQueue<>(
-            Comparator.comparingInt(n -> n.val));
+            Comparator.comparingInt(node -> node.val));
 
         for (ListNode node : lists) {
             if (node != null) {
