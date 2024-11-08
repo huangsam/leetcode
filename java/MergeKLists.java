@@ -2,34 +2,36 @@
 
 import container.ListNode;
 
-import java.util.Arrays;
+import java.util.Comparator;
+import java.util.PriorityQueue;
 
 public class MergeKLists {
     public ListNode mergeKLists(ListNode[] lists) {
         if (lists.length == 0) {
             return null;
         }
-        if (lists.length == 1) {
-            return lists[0];
-        }
-        if (lists.length == 2) {
-            return mergeTwoLists(lists[0], lists[1]);
-        }
-        int half = lists.length / 2;
-        return mergeTwoLists(
-            mergeKLists(Arrays.copyOfRange(lists, 0, half)),
-            mergeKLists(Arrays.copyOfRange(lists, half, lists.length)));
-    }
 
-    private ListNode mergeTwoLists(ListNode list1, ListNode list2) {
-        if (list1 == null) {
-            return list2;
+        PriorityQueue<ListNode> queue = new PriorityQueue<>(
+            Comparator.comparingInt(n -> n.val));
+
+        for (ListNode node : lists) {
+            if (node != null) {
+                queue.add(node);
+            }
         }
-        if (list2 == null) {
-            return list1;
+
+        ListNode dummy = new ListNode();
+        ListNode current = dummy;
+
+        while (!queue.isEmpty()) {
+            ListNode lowest = queue.poll();
+            current.next = lowest;
+            current = current.next;
+            if (lowest.next != null) {
+                queue.add(lowest.next);
+            }
         }
-        return (list1.val < list2.val)
-            ? new ListNode(list1.val, mergeTwoLists(list1.next, list2))
-            : new ListNode(list2.val, mergeTwoLists(list1, list2.next));
+
+        return dummy.next;
     }
 }
