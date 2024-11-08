@@ -29,7 +29,7 @@ public class JumpGameTwo {
     }
 
     /** Approach with dynamic programming */
-    public int jumpOriginal(int[] nums) {
+    public int jumpDynamic(int[] nums) {
         int[] minJumps = new int[nums.length];
         Arrays.fill(minJumps, Integer.MAX_VALUE - 1);
         minJumps[nums.length - 1] = 0;

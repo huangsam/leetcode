@@ -27,7 +27,7 @@ class Solution:
                 jump_power -= 1
         return True
 
-    def canJumpOriginal(self, nums: List[int]) -> bool:
+    def canJumpDynamic(self, nums: List[int]) -> bool:
         """
         Approach (sub-efficient):
         - Initialize reachable array
