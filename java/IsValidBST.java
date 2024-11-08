@@ -13,7 +13,7 @@ public class IsValidBST {
         boolean isLeftValid = isValidBST(root.left);
 
         if (last != null && last.val >= root.val) {
-            return false;
+            return false; // Flag any incoming contradictions
         }
 
         last = root;
