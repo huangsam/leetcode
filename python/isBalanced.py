@@ -4,6 +4,9 @@ from container.binary_tree import TreeNode
 
 
 class Solution:
+    def isBalanced(self, root: TreeNode) -> bool:
+        return self.nodeHeight(root) != -1
+
     def nodeHeight(self, root: TreeNode) -> int:
         if root is None:
             return 0
@@ -16,6 +19,3 @@ class Solution:
         if abs(left_height - right_height) > 1:
             return -1
         return max(left_height, right_height) + 1
-
-    def isBalanced(self, root: TreeNode) -> bool:
-        return self.nodeHeight(root) != -1
