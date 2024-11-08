@@ -10,7 +10,7 @@ public class AddTwoNumbers {
             return null; // Both lists empty
         }
 
-        ListNode result = new ListNode(0); // Avoids extra null checks
+        ListNode result = new ListNode(); // Avoids extra null checks
         ListNode current = result;
         boolean carry = false;
 
