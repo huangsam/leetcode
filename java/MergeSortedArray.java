@@ -12,18 +12,13 @@ public class MergeSortedArray {
         if (n == 0) {
             return;
         }
-        int n1_index = m - 1;
-        int n2_index = n - 1;
-        int reverse = m + n - 1;
-        while (n1_index >= 0 && n2_index >= 0) {
-            if (nums1[n1_index] > nums2[n2_index]) {
-                nums1[reverse--] = nums1[n1_index--];
-            } else {
-                nums1[reverse--] = nums2[n2_index--];
-            }
-        }
-        while (n2_index >= 0) {
-            nums1[reverse--] = nums2[n2_index--];
+        int firstIndex = m - 1;
+        int secondIndex = n - 1;
+        int mergeIndex = m + n - 1;
+        while (secondIndex >= 0) {
+            nums1[mergeIndex--] = (firstIndex >= 0 && nums1[firstIndex] > nums2[secondIndex])
+                ? nums1[firstIndex--]
+                : nums2[secondIndex--];
         }
     }
 }
