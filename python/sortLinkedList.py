@@ -1,10 +1,12 @@
 # https://leetcode.com/problems/sort-list/
 
+from typing import Optional
+
 from container.linked_list import ListNode
 
 
 class Solution:
-    def sortList(self, head: ListNode) -> ListNode:
+    def sortList(self, head: Optional[ListNode]) -> Optional[ListNode]:
         if head is None or head.next is None:
             return head
         middle = self.getMiddle(head)
@@ -21,7 +23,7 @@ class Solution:
             slow = slow.next
         return slow
 
-    def mergeSortedLists(self, l1: ListNode, l2: ListNode) -> ListNode:
+    def mergeSortedLists(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
         dummy = ListNode()
         node = dummy
         while l1 and l2:

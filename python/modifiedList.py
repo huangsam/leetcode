@@ -17,18 +17,18 @@ class Solution:
         prev = None
 
         while current is not None:
-            next = current.next
+            tmp = current.next
 
             # Should be an O(1) check given that num_set is bounded
             # to 10^5
             if current.val in num_set:
                 # Case 1: Current is the first node
                 if first is current:
-                    first = next
+                    first = tmp
 
                 # Case 2: Current is not the first node
                 elif prev is not None:
-                    prev.next = next
+                    prev.next = tmp
 
                 # Current is cleared away and prev remains. So prev
                 # pointer does not need to change at all
@@ -37,7 +37,7 @@ class Solution:
                 # at this node as we iterate through the OG list
                 prev = current
 
-            current = next
+            current = tmp
 
         # We ultimately want the head of the modified linked list
         return first

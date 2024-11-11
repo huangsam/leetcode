@@ -10,7 +10,6 @@ class Solution:
         while curr_node is not None:
             node_list.append(curr_node)
             curr_node = curr_node.next
-        node_to_delete = None
         nlen = len(node_list)
         node_to_delete = node_list[nlen - n]
         if nlen - n > 0:

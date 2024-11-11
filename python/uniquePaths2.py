@@ -7,7 +7,7 @@ class Solution:
     def uniquePathsWithObstacles(self, obstacleGrid: List[List[int]]) -> int:
         # initialize memo array
         rows, cols = len(obstacleGrid), len(obstacleGrid[0])
-        memo = [[0] * cols for i in range(rows)]
+        memo = [[0] * cols for _ in range(rows)]
 
         # go through each row, m-1 --> 0
         for r in range(rows - 1, -1, -1):

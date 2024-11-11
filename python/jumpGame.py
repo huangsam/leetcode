@@ -32,17 +32,17 @@ class Solution:
         Approach (sub-efficient):
         - Initialize reachable array
         - Base case is reachable[0] = True
-        - For each position i, mark i..i+nval as reachable
-        - Check if nlen-1 is reachable
+        - For each position i, mark i...i+n_val as reachable
+        - Check if n_len-1 is reachable
         """
         if len(nums) <= 1:
             return True
-        nlen = len(nums)
-        reachable = [False] * nlen
+        n_len = len(nums)
+        reachable = [False] * n_len
         reachable[0] = True
-        for nidx, nval in enumerate(nums):
-            if reachable[nidx] is False:
+        for n_idx, n_val in enumerate(nums):
+            if reachable[n_idx] is False:
                 continue
-            for i in range(nidx + 1, min(nidx + nval + 1, nlen)):
+            for i in range(n_idx + 1, min(n_idx + n_val + 1, n_len)):
                 reachable[i] = True
-        return reachable[nlen - 1]
+        return reachable[n_len - 1]

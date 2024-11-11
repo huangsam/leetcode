@@ -14,8 +14,8 @@ class Solution:
 
         The simplest way is to disconnect the left <= right subset
         from the linked list, reverse it and reconnect it back to
-        the list afterwards. Assuming that left > 1 or right still
-        has at least one node afterwards.
+        the list afterward. Assuming that left > 1 or right still
+        has at least one node afterward.
 
         Keep in mind that left can equal right. So in that case, nothing
         needs to be done as it were.

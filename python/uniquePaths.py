@@ -4,7 +4,7 @@
 class Solution:
     def uniquePaths(self, m: int, n: int) -> int:
         # initialize memo array
-        memo = [[0] * n for i in range(m)]
+        memo = [[0] * n for _ in range(m)]
 
         # go through each row, m-1 --> 0
         for r in range(m - 1, -1, -1):

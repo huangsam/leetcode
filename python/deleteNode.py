@@ -1,10 +1,12 @@
 # https://leetcode.com/problems/delete-node-in-a-bst/
 
+from typing import Optional
+
 from container.binary_tree import TreeNode
 
 
 class Solution:
-    def deleteNode(self, root: TreeNode, key: int) -> TreeNode:
+    def deleteNode(self, root: Optional[TreeNode], key: int) -> Optional[TreeNode]:
         if root is None:
             return None
         if key < root.val:
@@ -16,8 +18,8 @@ class Solution:
                 return root.right
             elif root.right is None:
                 return root.left
-            minNode = self.findMin(root.right)
-            root.val = minNode.val
+            min_node = self.findMin(root.right)
+            root.val = min_node.val
             root.right = self.deleteNode(root.right, root.val)
         return root
 
