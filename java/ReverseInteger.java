@@ -19,13 +19,9 @@ public class ReverseInteger {
         } while (x != 0);
 
         if (result % TEN != digit % TEN) {
-            return 0;
+            return 0; // Handle overflow and underflow cases
         }
 
-        if (isNegative) {
-            return -1 * result;
-        }
-
-        return result;
+        return isNegative ? -result : result;
     }
 }
