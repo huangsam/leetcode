@@ -16,19 +16,17 @@ public class BinaryTreeRightSide {
 
         while (!deque.isEmpty()) { // BFS traversal
             DepthNode current = deque.removeLast();
-            int currDepth = current.depth;
-            TreeNode currNode = current.node;
-            if (currNode == null) {
+            if (current.node == null) {
                 continue;
             }
 
             // Collect rightmost value from the new row
-            if (currDepth > result.size()) {
-                result.add(currNode.val);
+            if (current.depth > result.size()) {
+                result.add(current.node.val);
             }
 
-            deque.addFirst(new DepthNode(currDepth + 1, currNode.right));
-            deque.addFirst(new DepthNode(currDepth + 1, currNode.left));
+            deque.addFirst(new DepthNode(current.depth + 1, current.node.right));
+            deque.addFirst(new DepthNode(current.depth + 1, current.node.left));
         }
 
         return result;
