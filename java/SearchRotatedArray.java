@@ -5,9 +5,6 @@ public class SearchRotatedArray {
         int lo = 0, hi = nums.length - 1;
         if (nums[lo] > nums[hi]) {
             int pivot = findPivot(nums);
-            if (nums[pivot] < target) {
-                return -1;
-            }
             if (nums[pivot] == target) {
                 return pivot;
             }
