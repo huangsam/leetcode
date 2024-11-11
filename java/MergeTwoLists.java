@@ -5,11 +5,11 @@ import container.ListNode;
 public class MergeTwoLists {
     /**
      * Let us proceed by creating a dummy node to minimize null checks.
-     * Since list1 and list2 are sorted in increasing order, we can
-     * traverse from start to end and link them to next pointer from
-     * the dummy onwards. Once the looping is done, whichever one
-     * still has leftover can be appended to the tail of the new
-     * list. Returning the result should just be dummy.next.
+     * Since {@code list1} and {@code list2} are sorted in increasing
+     * order, we can traverse from start to end and link them to next
+     * pointer from the dummy onwards. Once the looping is done, whichever
+     * one still has leftover can be appended to the tail of the new list.
+     * Returning the result should just be {@code dummy.next}.
      */
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         ListNode dummy = new ListNode();

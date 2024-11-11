@@ -4,23 +4,24 @@ import java.util.Arrays;
 
 public class ProductExceptSelf {
     /**
-     * Product of all the elements of nums except nums[i].
+     * Product of all the elements of {@code nums} except
+     * {@code nums[i]}. What we need to do is:
      *
-     * What we need to do in this case is:
-     * - Use cumulative product of left side without l-1
-     * - Use cumulative product of right side without r+1
-     * - Left product fills from left to right
-     * - Right product fills from right to left
+     * <ul>
+     *     <li>Use cumulative product of left side without l-1</li>
+     *     <li>Use cumulative product of right side without r+1</li>
+     *     <li>Left product fills from left to right</li>
+     *     <li>Right product fills from right to left</li>
+     * </ul>
      *
-     * [1, 2, 3, 4]
-     * ->
-     * [1, 1, 1, 1] (new array)
-     * ->
+     * Here is an example for demonstrative purposes:
+     *
+     * <pre>
+     * [1, 2, 3, 4] (original)
      * [1, 1, 2, 6] (left transform)
-     * ->
      * [24, 12, 4, 1] (right transform)
-     * ->
      * [24, 12, 8, 6] (combined transform)
+     * </pre>
      */
     public int[] productExceptSelf(int[] nums) {
         int leftProduct = 1;

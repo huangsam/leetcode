@@ -6,6 +6,13 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
+/**
+ * Your RandomizedSet object will be instantiated and called as such:
+ * RandomizedSet obj = new RandomizedSet();
+ * boolean param_1 = obj.insert(val);
+ * boolean param_2 = obj.remove(val);
+ * int param_3 = obj.getRandom();
+ */
 class RandomizedSet {
     private final List<Integer> values;
     private final Map<Integer, Integer> valueToIndex;
@@ -46,11 +53,3 @@ class RandomizedSet {
         return values.get(new Random().nextInt(values.size()));
     }
 }
-
-/**
- * Your RandomizedSet object will be instantiated and called as such:
- * RandomizedSet obj = new RandomizedSet();
- * boolean param_1 = obj.insert(val);
- * boolean param_2 = obj.remove(val);
- * int param_3 = obj.getRandom();
- */

@@ -6,10 +6,13 @@ import java.util.List;
 public class SummaryRanges {
     /**
      * Here are the steps to build the range:
-     * - Iterate through nums one by one
-     * - When non-contiguous, append start->end to result
-     * - Reset start marker and repeat the process
-     * - After iteration, add last start->end and return result
+     *
+     * <ul>
+     *     <li>Iterate through {@code nums} one by one</li>
+     *     <li>When non-contiguous, append {@code start->end} to result</li>
+     *     <li>Reset start marker and repeat the process</li>
+     *     <li>After iteration, add last {@code start->end} and return result</li>
+     * </ul>
      */
     public List<String> summaryRanges(int[] nums) {
         List<String> result = new ArrayList<>();
@@ -38,8 +41,6 @@ public class SummaryRanges {
     }
 
     private String build(Integer left, Integer right) {
-        return left.equals(right)
-            ? left.toString()
-            : left + "->" + right;
+        return left.equals(right) ? left.toString() : left + "->" + right;
     }
 }

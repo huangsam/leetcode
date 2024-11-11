@@ -3,6 +3,14 @@
 import java.util.Deque;
 import java.util.LinkedList;
 
+/**
+ * Your MinStack object will be instantiated and called as such:
+ * MinStack obj = new MinStack();
+ * obj.push(val);
+ * obj.pop();
+ * int param_3 = obj.top();
+ * int param_4 = obj.getMin();
+ */
 public class MinStack {
     private final Deque<Integer> standard;
     private final Deque<Integer> minimum;
@@ -37,12 +45,3 @@ public class MinStack {
         return minimum.getFirst();
     }
 }
-
-/**
- * Your MinStack object will be instantiated and called as such:
- * MinStack obj = new MinStack();
- * obj.push(val);
- * obj.pop();
- * int param_3 = obj.top();
- * int param_4 = obj.getMin();
- */

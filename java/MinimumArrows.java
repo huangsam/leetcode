@@ -10,11 +10,14 @@ public class MinimumArrows {
      * are sorting by end time, because we are counting the number
      * of non-overlapping intervals based on {@code previous.end}
      * and {@code current.start}. When we encounter an overlap based
-     * on these two fields, we increment the count by one.
+     * on these two fields, we increment the count by one. Check out
+     * these inputs to get an intuition.
      *
-     * <pre>1,6 -> 2,8 -> 7,12 -> 10,16</pre>
-     *
-     * <pre>1,10 -> 2,4 -> 4,6 -> 7,7</pre>
+     * <pre>
+     * 1,6 -> 2,8 -> 7,12 -> 10,16 (min 2)
+     * 1,2 -> 3,4 -> 5,6 -> 7,8 (min 4)
+     * 2,4 -> 4,6 -> 7,8 -> 1,10 (min 2)
+     * </pre>
      */
     public int findMinArrowShots(int[][] points) {
         Arrays.sort(points, Comparator.comparingInt(a -> a[1]));

@@ -26,7 +26,6 @@ public class LongestCommonPrefix {
         }
 
         for (int i = 0; i < minLength; i++) {
-            boolean isBadMatch = false;
             char currentChar = strs[0].charAt(i);
             for (int j = 1; j < strs.length; j++) {
                 if (currentChar != strs[j].charAt(i)) {
