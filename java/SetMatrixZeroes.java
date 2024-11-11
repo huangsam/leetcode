@@ -7,9 +7,9 @@ public class SetMatrixZeroes {
      * Once we have the set of all rows and columns that need to be
      * zeroed out, then we actually do the operations. The primary
      * way to resort to O(1) memory usage is by using the top row
-     * left column to sort all the rows and columns for which a
-     * zero was encountered. That way, we do not need to have two
-     * HashSet instances to keep track of this data.
+     * and left column to collect all columns and rows where a zero
+     * was encountered. That way, we do not need to have two
+     * {@code HashSet} instances for tracking these occurrences.
      */
     public void setZeroes(int[][] matrix) {
         int height = matrix.length;
