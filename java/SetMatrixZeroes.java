@@ -1,36 +1,59 @@
 // https://leetcode.com/problems/set-matrix-zeroes/
 
-import java.util.HashSet;
-import java.util.Set;
-
 public class SetMatrixZeroes {
     /**
-     * We do an initial scan for all zeroes. Whenever we spot a
-     * zero in the matrix, we take stock of its row and its
-     * column in set-like structures. Once we have the set of
-     * all rows and columns that need to be zeroed out, then
-     * we actually do the operations as it were.
+     * We do an initial scan for all zeros. Whenever we spot a
+     * zero in the matrix, we take stock of its row and its column.
+     * Once we have the set of all rows and columns that need to be
+     * zeroed out, then we actually do the operations. The primary
+     * way to resort to O(1) memory usage is by using the top row
+     * left column to sort all the rows and columns for which a
+     * zero was encountered. That way, we do not need to have two
+     * HashSet instances to keep track of this data.
      */
     public void setZeroes(int[][] matrix) {
-        Set<Integer> zeroRows = new HashSet<>();
-        Set<Integer> zeroCols = new HashSet<>();
-        for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j < matrix[0].length; j++) {
+        int height = matrix.length;
+        int width = matrix[0].length;
+
+        boolean leftSet = false;
+        for (int i = 0; i < height; i++) {
+            leftSet |= matrix[i][0] == 0;
+        }
+
+        boolean topSet = false;
+        for (int i = 0; i < width; i++) {
+            topSet |= matrix[0][i] == 0;
+        }
+
+        // Scan for zeros, using left and top as notes
+        for (int i = 1; i < height; i++) {
+            for (int j = 1; j < width; j++) {
                 if (matrix[i][j] == 0) {
-                    zeroRows.add(i);
-                    zeroCols.add(j);
+                    matrix[i][0] = 0;
+                    matrix[0][j] = 0;
                 }
             }
         }
-        zeroRows.forEach(row -> {
-            for (int col = 0; col < matrix[0].length; col++) {
-                matrix[row][col] = 0;
+
+        // Set zeros in the middle
+        for (int i = 1; i < height; i++) {
+            for (int j = 1; j < width; j++) {
+                if (matrix[i][0] == 0 || matrix[0][j] == 0) {
+                    matrix[i][j] = 0;
+                }
             }
-        });
-        zeroCols.forEach(col -> {
-            for (int row = 0; row < matrix.length; row++) {
-                matrix[row][col] = 0;
+        }
+
+        if (leftSet) {
+            for (int i = 0; i < height; i++) {
+                matrix[i][0] = 0;
             }
-        });
+        }
+
+        if (topSet) {
+            for (int i = 0; i < width; i++) {
+                matrix[0][i] = 0;
+            }
+        }
     }
 }
