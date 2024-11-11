@@ -27,10 +27,10 @@ public class SearchRotatedArray {
             if (mid > lo && nums[mid] < nums[mid - 1]) {
                 return mid - 1;
             }
-            if (nums[mid] < nums[lo]) { // pivot lies in first half
-                hi = mid - 1;
-            } else { // pivot lies in second half
-                lo = mid + 1;
+            if (nums[mid] < nums[lo]) {
+                hi = mid - 1; // Pivot lies in lower half
+            } else {
+                lo = mid + 1; // Pivot lies in upper half
             }
         }
         return -1;
