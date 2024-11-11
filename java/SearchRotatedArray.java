@@ -17,17 +17,7 @@ public class SearchRotatedArray {
                 lo = pivot + 1;
             }
         }
-        while (lo <= hi) {
-            int mid = (lo + hi) / 2;
-            if (nums[mid] == target) {
-                return mid;
-            } else if (nums[mid] > target) {
-                hi = mid - 1;
-            } else {
-                lo = mid + 1;
-            }
-        }
-        return -1;
+        return binarySearch(nums, target, lo, hi);
     }
 
     private int findPivot(int[] nums) {
@@ -43,6 +33,20 @@ public class SearchRotatedArray {
             if (nums[mid] < nums[lo]) { // pivot lies in first half
                 hi = mid - 1;
             } else { // pivot lies in second half
+                lo = mid + 1;
+            }
+        }
+        return -1;
+    }
+
+    private int binarySearch(int[] nums, int target, int lo, int hi) {
+        while (lo <= hi) {
+            int mid = (lo + hi) / 2;
+            if (nums[mid] == target) {
+                return mid;
+            } else if (nums[mid] > target) {
+                hi = mid - 1;
+            } else {
                 lo = mid + 1;
             }
         }
