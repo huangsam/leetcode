@@ -11,10 +11,10 @@ public class SearchRotatedArray {
             if (nums[pivot] == target) {
                 return pivot;
             }
-            if (nums[lo] <= target) { // search target in [lo, pivot)
-                hi = pivot - 1;
-            } else { // search target in (pivot, hi]
-                lo = pivot + 1;
+            if (nums[lo] <= target) {
+                hi = pivot - 1; // Search target in [lo, pivot)
+            } else {
+                lo = pivot + 1; // Search target in (pivot, hi]
             }
         }
         return binarySearch(nums, target, lo, hi);
