@@ -16,9 +16,11 @@ public class MergeSortedArray {
         int secondIndex = n - 1;
         int mergeIndex = m + n - 1;
         while (secondIndex >= 0) {
-            nums1[mergeIndex--] = (firstIndex >= 0 && nums1[firstIndex] > nums2[secondIndex])
-                ? nums1[firstIndex--]
-                : nums2[secondIndex--];
+            if (firstIndex >= 0 && nums1[firstIndex] > nums2[secondIndex]) {
+                nums1[mergeIndex--] = nums1[firstIndex--];
+            } else {
+                nums1[mergeIndex--] = nums2[secondIndex--];
+            }
         }
     }
 }
