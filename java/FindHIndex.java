@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/h-index/description/
+
 public class FindHIndex {
     public int hIndex(int[] citations) {
         // Values of h-index are [0, citations.length]
