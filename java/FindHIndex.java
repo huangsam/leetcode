@@ -1,4 +1,4 @@
-// https://leetcode.com/problems/h-index/description/
+// https://leetcode.com/problems/h-index/
 
 public class FindHIndex {
     public int hIndex(int[] citations) {
