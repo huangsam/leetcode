@@ -10,7 +10,7 @@ public class FindHIndex {
             frequency[index]++;
         }
 
-        // Start from right to left for finding maximum index faster
+        // Go from right to left to find the maximum h-index
         int sum = 0;
         for (int i = frequency.length - 1; i > 0; i--) {
             sum += frequency[i];
