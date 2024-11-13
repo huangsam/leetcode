@@ -9,7 +9,7 @@ public class IntToRoman {
      * we reach 0.
      */
     public String intToRoman(int num) {
-        Roman[] romans = new Roman[] { // Includes 900, 400, 90, 40, 9, 4
+        Roman[] romans = new Roman[] {
             new Roman(1000, "M"), new Roman(900, "CM"),
             new Roman(500, "D"), new Roman(400, "CD"),
             new Roman(100, "C"), new Roman(90, "XC"),
