@@ -1,24 +1,27 @@
 # https://leetcode.com/problems/longest-substring-without-repeating-characters/
 
+from typing import Set
+
 
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
-        max_length = 0
-        char_set = set()
-        left = 0
-
-        # Iterate through the string
+        """
+        Start by iterating through the entire string. We'll have a left
+        and right pointer indicating a substring with the range
+        [left, right]. If we encounter new characters, we increment right
+        by one and update the maximum length as needed. If we encounter a
+        duplicate, we increment left until that is no longer the case.
+        """
+        max_length: int = 0
+        char_seen: Set[str] = set()
+        left: int = 0
         for right in range(len(s)):
-            # We have a new unique character
-            if s[right] not in char_set:
-                char_set.add(s[right])
+            if s[right] not in char_seen:
+                char_seen.add(s[right])
                 max_length = max(max_length, right - left + 1)
-
-            # We have an old character that came up again
             else:
-                while s[right] in char_set:
-                    char_set.remove(s[left])
+                while s[right] in char_seen:
+                    char_seen.remove(s[left])
                     left += 1
-                char_set.add(s[right])
-
+                char_seen.add(s[right])
         return max_length
