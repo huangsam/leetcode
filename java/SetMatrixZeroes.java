@@ -5,11 +5,13 @@ public class SetMatrixZeroes {
      * We do an initial scan for all zeros. Whenever we spot a
      * zero in the matrix, we take stock of its row and its column.
      * Once we have the set of all rows and columns that need to be
-     * zeroed out, then we actually do the operations. The primary
-     * way to resort to O(1) memory usage is by using the top row
-     * and left column to collect all columns and rows where a zero
-     * was encountered. That way, we do not need to have two
-     * {@code HashSet} instances for tracking these occurrences.
+     * zeroed out, then we actually do the operations.
+     *
+     * <p> The primary way to resort to O(1) memory usage is by
+     * using the top row and left column to collect all columns
+     * and rows where a zero was encountered. That way, we do not
+     * need to have two {@code HashSet} instances for tracking
+     * these occurrences.
      */
     public void setZeroes(int[][] matrix) {
         int height = matrix.length;
