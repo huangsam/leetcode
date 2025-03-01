@@ -10,15 +10,13 @@ class Solution:
         if len(nums) == 0:
             return None
 
-        max_num = None
-        max_ind = None
+        max_num = nums[0]
+        max_ind = 0
         for ind, num in enumerate(nums):
-            if max_num is None and max_ind is None:
+            if max_num < num:
                 max_num = num
                 max_ind = ind
-            elif max_num < num:
-                max_num = num
-                max_ind = ind
+
         root = TreeNode(max_num)
         if isinstance(max_ind, int):
             root.left = self.constructMaximumBinaryTree(nums[:max_ind])
