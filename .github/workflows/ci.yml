@@ -9,18 +9,20 @@ on:
 permissions:
   contents: read
 
+# For programming language versions supported by Leetcode
+# https://support.leetcode.com/hc/en-us/articles/360011833974-What-are-the-environments-for-the-programming-languages
 jobs:
   python-build:
-    name: Python 3.12
+    name: Python 3.11
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      - name: Set up Python 3.12
+      - name: Set up Python 3.11
         uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
+          python-version: '3.11'
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
