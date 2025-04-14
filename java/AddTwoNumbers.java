@@ -5,6 +5,14 @@ import container.ListNode;
 public class AddTwoNumbers {
     private static final int TEN = 10;
 
+    /**
+     * Adds two numbers represented as linked lists and returns the sum as a linked list.
+     * Each node in the input linked lists contains a single digit, and the digits are stored
+     * in reverse order, meaning the 1's digit is at the head of the list.
+     *
+     * The method handles cases where the input lists have different lengths and also accounts
+     * for any carry that may result from the addition.
+     */
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         if (l1 == null && l2 == null) {
             return null; // Both lists empty

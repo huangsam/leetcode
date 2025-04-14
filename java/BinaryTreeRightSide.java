@@ -8,6 +8,13 @@ import java.util.Deque;
 import java.util.List;
 
 public class BinaryTreeRightSide {
+    /**
+     * Returns a list of integers representing the values of the nodes visible
+     * from the right side of a binary tree when viewed from top to bottom.
+     *
+     * This method performs a breadth-first search (BFS) traversal of the binary
+     * tree, ensuring that the rightmost node at each depth is added to the result.
+     */
     public List<Integer> rightSideView(TreeNode root) {
         List<Integer> result = new ArrayList<>();
 
