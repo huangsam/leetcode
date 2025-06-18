@@ -20,6 +20,7 @@ public class MinimumArrows {
      * </pre>
      */
     public int findMinArrowShots(int[][] points) {
+        // Sort by end time
         Arrays.sort(points, Comparator.comparingInt(a -> a[1]));
 
         int count = 1;
