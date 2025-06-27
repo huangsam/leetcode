@@ -1,6 +1,6 @@
 # https://lefthook.dev/configuration/output.html
 output:
-  - meta
+  - failure
   - summary
 
 # https://lefthook.dev/configuration/Hook.html
