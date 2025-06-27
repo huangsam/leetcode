@@ -33,6 +33,9 @@ jobs:
       - name: Type check with mypy
         run: |
           mypy python
+      - name: Import check with isort
+        run: |
+          isort --check-only python
 
   java-build:
     name: Java 21
