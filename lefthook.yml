@@ -1,0 +1,21 @@
+# https://lefthook.dev/configuration/output.html
+output:
+  - meta
+  - summary
+
+# https://lefthook.dev/configuration/Hook.html
+pre-commit:
+  parallel: true
+  commands:
+    gradle-check:
+      glob: "*.java"
+      run: ./gradlew build
+    ruff-check:
+      glob: "*.py"
+      run: ruff check python
+    mypy-check:
+      glob: "*.py"
+      run: mypy python
+    isort-check:
+      glob: "*.py"
+      run: isort --check-only python
