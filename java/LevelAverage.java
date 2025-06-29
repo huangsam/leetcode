@@ -8,6 +8,11 @@ import java.util.List;
 public class LevelAverage {
     private final List<SumCount> depthList = new ArrayList<>();
 
+    /**
+     * This method calculates the average value of nodes at each level in a binary tree.
+     * Once the tree is traversed, it computes the average for each level
+     * by dividing the total sum of node values at that level by the count of nodes.
+     */
     public List<Double> averageOfLevels(TreeNode root) {
         helper(root, 0);
         return depthList.stream()
@@ -15,6 +20,10 @@ public class LevelAverage {
             .toList();
     }
 
+    /**
+     * Helper function to traverse the tree and calculate the sum and count
+     * of nodes at each depth. It uses a depth-first search approach.
+     */
     private void helper(TreeNode root, int depth) {
         if (root == null) {
             return;
