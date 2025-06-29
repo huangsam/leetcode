@@ -10,11 +10,11 @@ class Solution:
         0..n using dynamic programming with the bottoms-up
         approach.
 
-        If i is even, i can be written as 2k, where k is an integer
-        shifted right by one bit and the least significant bit is 0.
+        If i is even, i can be written as 2k, where k is
+        shifted right by one bit and the LSB is 0.
 
-        If i is odd, i can be written as 2k + 1, where k is an integer
-        shifted right by one bit and the least significant bit is 1.
+        If i is odd, i can be written as 2k + 1, where k is
+        shifted right by one bit and the LSB is 1.
         """
         dp = [0] * (n + 1)
         for i in range(1, n + 1):
