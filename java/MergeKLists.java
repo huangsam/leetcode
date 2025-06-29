@@ -11,6 +11,7 @@ public class MergeKLists {
             return null;
         }
 
+        // Use a priority queue to keep track of the smallest node across all lists
         PriorityQueue<ListNode> queue = new PriorityQueue<>(
             Comparator.comparingInt(node -> node.val));
 
@@ -23,6 +24,8 @@ public class MergeKLists {
         ListNode dummy = new ListNode();
         ListNode current = dummy;
 
+        // While there are nodes in the queue, poll the smallest node and add its
+        // next node back to the queue if it exists
         while (!queue.isEmpty()) {
             ListNode lowest = queue.poll();
             current.next = lowest;
