@@ -20,14 +20,14 @@ class Solution:
             # The 'or' condition acts as a trigger to process the number and current operator
             if ch in ("+", "-", "/", "*") or i == len(s) - 1:
                 match op:
-                    case '+':
+                    case "+":
                         stack.append(num)
-                    case '-':
+                    case "-":
                         stack.append(-num)
-                    case '*':
+                    case "*":
                         tmp = stack.pop()
                         stack.append(tmp * num)
-                    case '/':
+                    case "/":
                         tmp = stack.pop()
                         if tmp // num < 0 and tmp % num != 0:
                             stack.append(tmp // num + 1)
