@@ -10,6 +10,11 @@ public class SortedArrayToBST {
         return helper(nums, 0, nums.length - 1);
     }
 
+    /**
+     * This function recursively constructs a balanced binary search tree (BST) from a sorted array.
+     * It finds the middle element of the current subarray to be the root, and then recursively
+     * constructs the left and right subtrees from the left and right halves of the array.
+     */
     private TreeNode helper(int[] nums, int low, int high) {
         if (low > high) {
             return null;
