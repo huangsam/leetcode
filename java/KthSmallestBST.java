@@ -8,9 +8,7 @@ public class KthSmallestBST {
 
     /**
      * We use a helper function to perform an in-order traversal of the BST.
-     * The in-order traversal visits nodes in ascending order for a BST.
-     * We keep track of the number of nodes visited so far using a counter.
-     * When the counter reaches k, we set the last visited node as the result.
+     * The helper terminates when we reach the k-th smallest element.
      * This approach ensures we only traverse the tree as much as necessary,
      */
     public int kthSmallest(TreeNode root, int k) {
@@ -18,6 +16,11 @@ public class KthSmallestBST {
         return last.val;
     }
 
+    /**
+     * Helper function to perform in-order traversal.
+     * It increments the current count and checks if it matches k.
+     * If it does, it sets the last node to the current node.
+     */
     private void helper(TreeNode root, int k) {
         if (root == null) {
             return;
