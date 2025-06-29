@@ -6,6 +6,11 @@ import java.util.List;
 public class LetterCombinations {
     private static final String[] LETTERS = {"", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
 
+    /**
+     * We go through each digit in the input string and find the corresponding
+     * letters. We use a recursive helper function to build combinations of
+     * letters. If the input string is empty, we return an empty list.
+     */
     public List<String> letterCombinations(String digits) {
         if (digits.isEmpty()) {
             return List.of();
