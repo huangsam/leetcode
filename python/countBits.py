@@ -7,11 +7,16 @@ class Solution:
     def countBits(self, n: int) -> List[int]:
         """
         Get the binary representation for each number i from
-        0..n and literally count the number of 1s in each
-        string.
+        0..n using dynamic programming with the bottoms-up
+        approach.
 
-        The alternative is to xor/and the powers of 2 to the
-        each number i and tallying up the score. That would
-        be a O(n lg n) algo in that case.
+        If i is even, i can be written as 2k, where k is an integer
+        shifted right by one bit and the least significant bit is 0.
+
+        If i is odd, i can be written as 2k + 1, where k is an integer
+        shifted right by one bit and the least significant bit is 1.
         """
-        return [bin(i)[2:].count("1") for i in range(n + 1)]
+        dp = [0] * (n + 1)
+        for i in range(1, n + 1):
+            dp[i] = dp[i // 2] + (i % 2)
+        return dp
