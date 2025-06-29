@@ -10,7 +10,7 @@ public class SetMatrixZeroes {
      * <p> The primary way to resort to O(1) memory usage is by
      * using the top row and left column to collect all columns
      * and rows where a zero was encountered. That way, we do not
-     * need to have two {@code HashSet} instances for tracking
+     * need to have two {@link java.util.HashSet} instances for tracking
      * these occurrences.
      */
     public void setZeroes(int[][] matrix) {
