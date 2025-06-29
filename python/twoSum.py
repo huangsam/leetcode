@@ -16,25 +16,15 @@ class Solution:
 
         Assume there is exactly one solution for any of the provided inputs.
         """
-        mapping = {}
-
         # Store the initial mapping that we'll use to check nums with
-        for idx, num in enumerate(nums):
-            mapping[target - num] = idx
+        complement_map = {target - val: idx for idx, val in enumerate(nums)}
 
         # Return the index pairing that is expected for this function
-        for idx, num in enumerate(nums):
-            # If the two numbers don't add up, don't bother
-            if num not in mapping:
-                continue
-
-            other_idx = mapping[num]
-
-            # If the same element is used twice, don't bother
-            if other_idx == idx:
-                continue
-
-            # The index pairing is of size 2
-            return [idx, other_idx]
+        for idx, val in enumerate(nums):
+            if new_idx := complement_map.get(val):
+                # If the same element is used twice, don't bother
+                if new_idx != idx:
+                    # The index pairing is of size 2
+                    return [new_idx, idx]
 
         raise RuntimeError("There should be exactly one solution")
