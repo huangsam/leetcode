@@ -14,10 +14,14 @@ class Solution:
         if len(inorder) == 0:
             return None
 
+        # The first element in preorder is the root of the tree
         idx = inorder.index(prequeue.popleft())
         root = TreeNode(inorder[idx])
 
+        # Recursively build the left subtree
         root.left = self._build(prequeue, inorder[:idx])
+
+        # Recursively build the right subtree
         root.right = self._build(prequeue, inorder[idx + 1 :])
 
         return root
