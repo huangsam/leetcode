@@ -5,23 +5,23 @@ from container.binary_tree import TreeNode
 
 class Solution:
     def sumOfLeftLeaves(self, root: TreeNode) -> int:
-        if root is None or self.isLeafNode(root):
+        if root is None or self._isLeafNode(root):
             return 0
-        return self.sumWorkhorse(root)
+        return self._sumWorkhorse(root)
 
-    def sumWorkhorse(self, root: TreeNode) -> int:
+    def _sumWorkhorse(self, root: TreeNode) -> int:
         if root is None:
             return 0
-        elif self.isLeafNode(root):
+        elif self._isLeafNode(root):
             return root.val
 
-        left_sum = self.sumWorkhorse(root.left)
-        right_sum = self.sumWorkhorse(root.right)
+        left_sum = self._sumWorkhorse(root.left)
+        right_sum = self._sumWorkhorse(root.right)
 
-        if root.right and self.isLeafNode(root.right):
+        if root.right and self._isLeafNode(root.right):
             right_sum = 0
 
         return left_sum + right_sum
 
-    def isLeafNode(self, root: TreeNode) -> bool:
+    def _isLeafNode(self, root: TreeNode) -> bool:
         return root.left is None and root.right is None

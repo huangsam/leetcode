@@ -47,17 +47,17 @@ class Solution:
             idx += 1
 
         first = new_list[0]
-        first.random = self.getRandom(new_list, old_ids, id_to_id, id_to_idx, 0)
+        first.random = self._getRandom(new_list, old_ids, id_to_id, id_to_idx, 0)
 
         for i in range(1, len(new_list)):
             prev, curr = new_list[i - 1], new_list[i]
             prev.next = curr
-            curr.random = self.getRandom(new_list, old_ids, id_to_id, id_to_idx, i)
+            curr.random = self._getRandom(new_list, old_ids, id_to_id, id_to_idx, i)
 
         # Return head pointer
         return new_list[0]
 
-    def getRandom(self, new_list, old_ids, id_to_id, id_to_idx, n) -> Optional[Node]:
+    def _getRandom(self, new_list, old_ids, id_to_id, id_to_idx, n) -> Optional[Node]:
         id_at_n = old_ids[n]
         random_at_n = id_to_id[id_at_n]
         random_idx = id_to_idx[random_at_n] if random_at_n else -1

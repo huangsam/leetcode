@@ -14,11 +14,11 @@ class Solution:
         for i in range(len(s)):
             # Odd length palindromes (e.g., "aba")
             # The returned indices will be (start, end_inclusive)
-            start1, end1 = self._longestAroundCenter(s, i, i)
+            start1, end1 = self._expandAroundCenter(s, i, i)
             len1 = end1 - start1 + 1
 
             # Even length palindromes (e.g., "abba")
-            start2, end2 = self._longestAroundCenter(s, i, i + 1)
+            start2, end2 = self._expandAroundCenter(s, i, i + 1)
             len2 = end2 - start2 + 1
 
             # Determine which palindrome (odd or even) is longer for the current center
@@ -36,7 +36,7 @@ class Solution:
 
         return s[longest_start : longest_start + longest_length]
 
-    def _longestAroundCenter(self, s: str, left: int, right: int) -> Tuple[int, int]:
+    def _expandAroundCenter(self, s: str, left: int, right: int) -> Tuple[int, int]:
         # Expand outwards from the center(s)
         while left >= 0 and right < len(s) and s[left] == s[right]:
             left -= 1

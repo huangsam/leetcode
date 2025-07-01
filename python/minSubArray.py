@@ -24,7 +24,7 @@ class Solution:
             current_sum += nums[right]
             right += 1
             while current_sum >= target:
-                min_length = self.newMin(min_length, left, right)
+                min_length = self._newMin(min_length, left, right)
                 current_sum -= nums[left]
                 left += 1
 
@@ -33,5 +33,5 @@ class Solution:
 
         return min_length
 
-    def newMin(self, current: int, left: int, right: int) -> int:
+    def _newMin(self, current: int, left: int, right: int) -> int:
         return min(current, right - left)

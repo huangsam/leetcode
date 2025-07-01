@@ -28,9 +28,9 @@ class Solution:
             current = current.next
 
         # Cross-check match count with target sequence size
-        return len(target_seq) == self.matchWorker(root, target_seq)
+        return len(target_seq) == self._matchWorker(root, target_seq)
 
-    def matchWorker(self, root, target_seq) -> int:
+    def _matchWorker(self, root, target_seq) -> int:
         """Return number of matches relative to sequence.
 
         0 -> if 0 numbers match
@@ -42,8 +42,8 @@ class Solution:
         if root is None:
             return 0
 
-        left_old = self.matchWorker(root.left, target_seq)
-        right_old = self.matchWorker(root.right, target_seq)
+        left_old = self._matchWorker(root.left, target_seq)
+        right_old = self._matchWorker(root.right, target_seq)
 
         # Propogate answer if the sequence fully matched before
         if max(left_old, right_old) == len(target_seq):

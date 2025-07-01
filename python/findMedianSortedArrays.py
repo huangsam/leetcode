@@ -5,7 +5,7 @@ from typing import List
 
 class Solution:
     def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
-        arr = self.merge(nums1, nums2)
+        arr = self._merge(nums1, nums2)
         alen = len(arr)
         middle = ((1 + len(arr)) // 2) - 1
         if alen % 2 == 0:
@@ -15,7 +15,7 @@ class Solution:
             answer = arr[middle]
         return answer
 
-    def merge(self, nums1: List[int], nums2: List[int]) -> List[int]:
+    def _merge(self, nums1: List[int], nums2: List[int]) -> List[int]:
         nlen1 = len(nums1)
         nlen2 = len(nums2)
         c1, c2 = 0, 0

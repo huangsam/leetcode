@@ -8,14 +8,14 @@ class Solution:
         self.result: List[List[int]] = []
 
     def permute(self, nums: List[int]) -> List[List[int]]:
-        self.helper(set(nums), [])
+        self._helper(set(nums), [])
         return self.result
 
-    def helper(self, available: Set[int], arr: List[int]) -> None:
+    def _helper(self, available: Set[int], arr: List[int]) -> None:
         if len(available) == 0:
             self.result.append(arr)
             return
 
         # We look at numbers in forward and backward directions
         for num in available:
-            self.helper(available - {num}, arr + [num])
+            self._helper(available - {num}, arr + [num])

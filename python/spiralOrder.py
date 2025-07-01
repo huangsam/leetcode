@@ -19,7 +19,7 @@ class Solution:
         Note that r=right, d=down, l=left, u=up.
         """
         # Boolean flags to keep us sane
-        visited = [[False] * self.width(matrix) for _ in range(self.height(matrix))]
+        visited = [[False] * self._width(matrix) for _ in range(self._height(matrix))]
 
         # The final result
         result = []
@@ -38,11 +38,11 @@ class Solution:
             visited[x][y] = True
 
             # Change direction as needed
-            direction = self.nextDirection(matrix, visited, direction, x, y)
+            direction = self._nextDirection(matrix, visited, direction, x, y)
 
             # If direction changed but still cannot proceed, then
             # it's time to circuit break
-            if not self.canMove(matrix, visited, direction, x, y):
+            if not self._canMove(matrix, visited, direction, x, y):
                 break
 
             # Continue to traverse based on current direction
@@ -57,19 +57,19 @@ class Solution:
 
         return result
 
-    def nextDirection(self, matrix, visited, direction, x, y) -> str:
+    def _nextDirection(self, matrix, visited, direction, x, y) -> str:
         next_direction = {"r": "d", "d": "l", "l": "u", "u": "r"}
-        if self.canMove(matrix, visited, direction, x, y):
+        if self._canMove(matrix, visited, direction, x, y):
             return direction
         else:
             return next_direction[direction]
 
-    def canMove(self, matrix, visited, direction, x, y) -> bool:
+    def _canMove(self, matrix, visited, direction, x, y) -> bool:
         if direction == "r":
-            if y == self.width(matrix) - 1 or visited[x][y + 1]:
+            if y == self._width(matrix) - 1 or visited[x][y + 1]:
                 return False
         elif direction == "d":
-            if x == self.height(matrix) - 1 or visited[x + 1][y]:
+            if x == self._height(matrix) - 1 or visited[x + 1][y]:
                 return False
         elif direction == "l":
             if y == 0 or visited[x][y - 1]:
@@ -79,8 +79,8 @@ class Solution:
                 return False
         return True
 
-    def width(self, matrix) -> int:
+    def _width(self, matrix) -> int:
         return len(matrix[0])
 
-    def height(self, matrix) -> int:
+    def _height(self, matrix) -> int:
         return len(matrix)

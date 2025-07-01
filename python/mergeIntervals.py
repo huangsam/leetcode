@@ -13,7 +13,7 @@ class Solution:
 
         for curr_interval in intervals[1:]:
             prev_interval = result[-1]
-            new_interval = self.newInterval(prev_interval, curr_interval)
+            new_interval = self._newInterval(prev_interval, curr_interval)
 
             # For overlap use case
             if new_interval is not None:
@@ -25,7 +25,7 @@ class Solution:
 
         return result
 
-    def newInterval(self, first, second) -> Optional[List[int]]:
+    def _newInterval(self, first, second) -> Optional[List[int]]:
         start_1, end_1 = first
         start_2, end_2 = second
 

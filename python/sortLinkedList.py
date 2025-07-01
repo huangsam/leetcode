@@ -9,21 +9,21 @@ class Solution:
     def sortList(self, head: Optional[ListNode]) -> Optional[ListNode]:
         if head is None or head.next is None:
             return head
-        middle = self.getMiddle(head)
+        middle = self._getMiddle(head)
         right = middle.next
         middle.next = None
         l_sorted = self.sortList(head)
         r_sorted = self.sortList(right)
-        return self.mergeSortedLists(l_sorted, r_sorted)
+        return self._mergeSortedLists(l_sorted, r_sorted)
 
-    def getMiddle(self, head: ListNode) -> ListNode:
+    def _getMiddle(self, head: ListNode) -> ListNode:
         slow, fast = head, head
         while fast and fast.next and fast.next.next:
             fast = fast.next.next
             slow = slow.next
         return slow
 
-    def mergeSortedLists(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
+    def _mergeSortedLists(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
         dummy = ListNode()
         node = dummy
         while l1 and l2:

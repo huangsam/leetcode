@@ -18,12 +18,12 @@ class Solution:
                 return root.right
             elif root.right is None:
                 return root.left
-            min_node = self.findMin(root.right)
+            min_node = self._findMin(root.right)
             root.val = min_node.val
             root.right = self.deleteNode(root.right, root.val)
         return root
 
-    def findMin(self, node):
+    def _findMin(self, node):
         while node.left:
             node = node.left
         return node

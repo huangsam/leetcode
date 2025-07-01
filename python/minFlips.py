@@ -12,9 +12,9 @@ class Solution:
 
         For any changes to a or b, they should be added to the tally of total swaps.
         """
-        list_a = self.toList(a)
-        list_b = self.toList(b)
-        list_c = self.toList(c)
+        list_a = self._toList(a)
+        list_b = self._toList(b)
+        list_c = self._toList(c)
 
         min_swaps = 0
 
@@ -29,6 +29,6 @@ class Solution:
 
         return min_swaps
 
-    def toList(self, num: int) -> list[bool]:
+    def _toList(self, num: int) -> list[bool]:
         # Note that 2^32 > 10^9 which is the limit of numbers possible
         return [i == "1" for i in format(num, "032b")]

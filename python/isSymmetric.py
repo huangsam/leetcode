@@ -9,17 +9,17 @@ class Solution:
     def isSymmetric(self, root: Optional[TreeNode]) -> bool:
         if not root:
             raise ValueError("The input tree must have at least one node")
-        return self.mirrorWorker(root.left, root.right)
+        return self._mirrorWorker(root.left, root.right)
 
-    def mirrorWorker(self, left: Optional[TreeNode], right: Optional[TreeNode]) -> bool:
+    def _mirrorWorker(self, left: Optional[TreeNode], right: Optional[TreeNode]) -> bool:
         if left is None and right is None:
             return True
         elif not (left is not None and right is not None):
             return False
 
-        if not self.mirrorWorker(left.left, right.right):
+        if not self._mirrorWorker(left.left, right.right):
             return False
-        elif not self.mirrorWorker(left.right, right.left):
+        elif not self._mirrorWorker(left.right, right.left):
             return False
 
         if left.val != right.val:

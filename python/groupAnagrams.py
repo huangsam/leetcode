@@ -20,10 +20,10 @@ class Solution:
         """
         strings_by_hash: DefaultDict[int, list] = defaultdict(list)
         for content in strs:
-            strings_by_hash[self.getHash(content)].append(content)
+            strings_by_hash[self._getHash(content)].append(content)
         return list(strings_by_hash.values())
 
-    def getHash(self, content: str) -> int:
+    def _getHash(self, content: str) -> int:
         freq = [0] * 26
         for ch in content:
             freq[ord(ch) - ord("a")] += 1
