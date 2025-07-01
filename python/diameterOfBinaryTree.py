@@ -8,6 +8,11 @@ class Solution:
         """Calculate the diameter of a binary tree."""
         if root is None:
             return 0
+
+        # The diameter is the maximum of the following:
+        # 1. The diameter of the left subtree
+        # 2. The diameter of the right subtree
+        # 3. The longest path through the root from left to right
         left_depth = self._maxDepth(root.left)
         right_depth = self._maxDepth(root.right)
         left_diameter = self.diameterOfBinaryTree(root.left)
