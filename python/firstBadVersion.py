@@ -22,18 +22,18 @@ class Solution:
             mid = (lo + hi) // 2
             mid_bad = isBadVersion(mid)
             if lo_bad:
-                # look between (lo, mid)
+                # Look between (lo, mid)
                 result = lo
                 hi = mid
                 hi_bad = isBadVersion(hi)
             elif mid_bad:
-                # look between (lo + 1, mid)
+                # Look between (lo + 1, mid)
                 result = mid
                 lo, hi = lo + 1, mid
                 lo_bad = isBadVersion(lo)
                 hi_bad = isBadVersion(hi)
             elif hi_bad:
-                # look between (mid + 1, hi)
+                # Look between (mid + 1, hi)
                 result = hi
                 lo = mid + 1
                 lo_bad = isBadVersion(lo)
