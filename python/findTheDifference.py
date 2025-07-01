@@ -7,9 +7,9 @@ class Solution:
         counts = [0] * 26
 
         for letter in s:
-            counts[ord(letter) - ord('a')] += 1
+            counts[ord(letter) - ord("a")] += 1
         for letter in t:
-            idx = ord(letter) - ord('a')
+            idx = ord(letter) - ord("a")
             counts[idx] -= 1
             if counts[idx] < 0:
                 return letter
