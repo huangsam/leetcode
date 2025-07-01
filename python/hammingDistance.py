@@ -4,8 +4,14 @@
 class Solution:
     def hammingDistance(self, x: int, y: int) -> int:
         distance = 0
-        xor_result = bin(x ^ y)[2:]
-        for bit in xor_result:
-            if bit == "1":
+
+        # Calculate the XOR of x and y
+        xor_result = x ^ y
+
+        # Count the number of '1's in the binary output
+        while xor_result > 0:
+            if xor_result & 1:
                 distance += 1
+            xor_result >>= 1
+
         return distance
