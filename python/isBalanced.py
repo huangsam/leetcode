@@ -12,12 +12,15 @@ class Solution:
     def _nodeHeight(self, root: Optional[TreeNode]) -> int:
         if root is None:
             return 0
+        # Calculate the height of the left and right subtrees
         left_height = self._nodeHeight(root.left)
-        if left_height == -1:
-            return -1
         right_height = self._nodeHeight(root.right)
-        if right_height == -1:
+
+        # Case 1: Either subtree is unbalanced
+        if left_height == -1 or right_height == -1:
             return -1
-        if abs(left_height - right_height) > 1:
+        # Case 2: The current node is unbalanced
+        elif abs(left_height - right_height) > 1:
             return -1
+
         return max(left_height, right_height) + 1
