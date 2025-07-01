@@ -10,6 +10,7 @@ class Solution:
         if len(nums) == 0:
             return None
 
+        # Find the maximum number and its index in the list
         max_num = nums[0]
         max_ind = 0
         for ind, num in enumerate(nums):
@@ -17,6 +18,7 @@ class Solution:
                 max_num = num
                 max_ind = ind
 
+        # Create the root node with the maximum number
         root = TreeNode(max_num)
         if isinstance(max_ind, int):
             root.left = self.constructMaximumBinaryTree(nums[:max_ind])
