@@ -23,7 +23,7 @@ class Solution:
 
         while cur < len(nums):
             if nums[uniq] != nums[cur]:
-                dist = self.checkAdjustedDistance(uniq, cur)
+                dist = self._checkAdjustedDistance(uniq, cur)
                 nums[k : k + dist] = [nums[k]] * dist
                 k += dist
                 nums[k] = nums[cur]
@@ -36,5 +36,5 @@ class Solution:
 
         return k + 1
 
-    def checkAdjustedDistance(self, a: int, b: int) -> int:
+    def _checkAdjustedDistance(self, a: int, b: int) -> int:
         return min(b - a, 2)
