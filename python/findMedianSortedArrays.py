@@ -3,6 +3,7 @@
 from typing import List
 
 
+# TODO: Make this solution more efficient
 class Solution:
     def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
         arr = self._merge(nums1, nums2)

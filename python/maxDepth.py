@@ -7,7 +7,9 @@ class Solution:
     def maxDepth(self, root: TreeNode) -> int:
         if root is None:
             return 0
+
+        # Use post-order traversal to calculate the maximum depth
         left_depth = 1 + self.maxDepth(root.left)
         right_depth = 1 + self.maxDepth(root.right)
-        max_depth = max(left_depth, right_depth)
-        return max_depth
+
+        return max(left_depth, right_depth)
