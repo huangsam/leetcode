@@ -10,13 +10,22 @@ class Solution:
             mid = (lo + hi) // 2
             if target == nums[mid]:
                 return mid
+
+            # Case 1: The left half is sorted
             if nums[lo] <= nums[mid]:
+                # Target is inside this sorted left half
                 if nums[lo] <= target <= nums[mid]:
                     hi = mid - 1
+                # Target is outside this sorted left half
                 else:
                     lo = mid + 1
-            elif nums[mid] <= target <= nums[hi]:
-                lo = mid + 1
+
+            # Case 2: The right half is sorted
             else:
-                hi = mid - 1
+                # Target is inside this sorted right half
+                if nums[mid] <= target <= nums[hi]:
+                    lo = mid + 1
+                # Target is outside this sorted right half
+                else:
+                    hi = mid - 1
         return -1
