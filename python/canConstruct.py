@@ -11,11 +11,13 @@ class Solution:
         """
         ransom_mapping = {}
 
+        # Collecting the frequency of characters in ransom note
         for ch in ransomNote:
             if ch not in ransom_mapping:
                 ransom_mapping[ch] = 0
             ransom_mapping[ch] += 1
 
+        # Subtracting the frequency of characters in magazine
         for ch in magazine:
             if ch in ransom_mapping:
                 ransom_mapping[ch] -= 1
