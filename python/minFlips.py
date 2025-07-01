@@ -3,32 +3,26 @@
 
 class Solution:
     def minFlips(self, a: int, b: int, c: int) -> int:
-        """
-        Get binary representations of a, b, c and join them together.
+        # Calculate longest length
+        longest = 0
+        a_tmp, b_tmp, c_tmp = a, b, c
+        while a_tmp | b_tmp | c_tmp:
+            a_tmp = a_tmp >> 1
+            b_tmp = b_tmp >> 1
+            c_tmp = c_tmp >> 1
+            longest += 1
 
-        Iterate through them simultaneously, provided that they are the same length.
-
-        For any output bit that does not match c, a and/or b should change.
-
-        For any changes to a or b, they should be added to the tally of total swaps.
-        """
-        list_a = self._toList(a)
-        list_b = self._toList(b)
-        list_c = self._toList(c)
-
-        min_swaps = 0
-
-        # Iterate through the flags, bit by bit
-        for bit_a, bit_b, bit_c in zip(list_a, list_b, list_c):
-            if bit_a | bit_b == bit_c:  # Skip if the operation matches as expected
+        # Calculate the number of moves from [0, longest)
+        result = 0
+        for shift in range(longest):
+            a_one = (a >> shift) & 1
+            b_one = (b >> shift) & 1
+            c_one = (c >> shift) & 1
+            if a_one | b_one == c_one:
                 continue
-            if bit_a == bit_b == 1:  # Both bits must be flipped to go as expected
-                min_swaps += 2
-            else:  # Either bit can be flipped to go to False or True
-                min_swaps += 1
+            if c_one == 1:
+                result += 1
+            else:
+                result += 1 + (a_one & b_one)
 
-        return min_swaps
-
-    def _toList(self, num: int) -> list[bool]:
-        # Note that 2^32 > 10^9 which is the limit of numbers possible
-        return [i == "1" for i in format(num, "032b")]
+        return result
