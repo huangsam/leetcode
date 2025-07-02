@@ -11,7 +11,7 @@ class Solution:
         Figure out height of left and right hand side.
 
         If they are equal then you can stop. Otherwise, you
-        continue traversing the left and right subtrees, all
+        continue traversing the left and right subtrees, both
         of which are complete trees.
         """
         if not root:
