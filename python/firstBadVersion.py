@@ -11,30 +11,19 @@ def isBadVersion(version: int) -> bool:
 
 class Solution:
     def firstBadVersion(self, n: int) -> int:
-        lo = 1
-        lo_bad = isBadVersion(lo)
-        if lo_bad:
-            return lo
-        hi = n
-        hi_bad = isBadVersion(hi)
-        result = -1
+        lo, hi = 1, n
         while lo < hi:
-            mid = (lo + hi) // 2
-            mid_bad = isBadVersion(mid)
-            if lo_bad:
-                # Look between (lo, mid)
-                result = lo
+            mid = lo + (hi - lo) // 2
+
+            # Case 1: The first bad version could be right here or
+            # it could be earlier
+            if isBadVersion(mid):
                 hi = mid
-                hi_bad = isBadVersion(hi)
-            elif mid_bad:
-                # Look between (lo + 1, mid)
-                result = mid
-                lo, hi = lo + 1, mid
-                lo_bad = isBadVersion(lo)
-                hi_bad = isBadVersion(hi)
-            elif hi_bad:
-                # Look between (mid + 1, hi)
-                result = hi
+            # Case 2: The first bad version must be to the right of
+            # this particular version, so let's go up
+            else:
                 lo = mid + 1
-                lo_bad = isBadVersion(lo)
-        return result
+
+        # By this time, we have the first bad version since we have
+        # effectively converged on a single point
+        return lo
