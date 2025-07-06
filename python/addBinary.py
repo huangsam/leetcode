@@ -9,30 +9,19 @@ class Solution:
         return bin(int(a, 2) + int(b, 2))[2:]
 
     def addBinaryManual(self, a: str, b: str) -> str:
-        a_idx = len(a) - 1
-        b_idx = len(b) - 1
-        buffer: Deque[str] = deque()
+        a_idx, b_idx = len(a) - 1, len(b) - 1
         carry = 0
-
-        while a_idx >= 0 or b_idx >= 0:
+        buffer: Deque[str] = deque()
+        while a_idx >= 0 or b_idx >= 0 or carry:
             a_val = int(a[a_idx]) if a_idx >= 0 else 0
             b_val = int(b[b_idx]) if b_idx >= 0 else 0
 
-            ab_sum = a_val + b_val + carry
-            carry = ab_sum >= 2
+            # Sum of val and carry is up to 3, so divmod works here
+            carry, digit = divmod(a_val + b_val + carry, 2)
 
-            if ab_sum % 2:
-                buffer.appendleft("1")
-            else:
-                buffer.appendleft("0")
+            # Append digits from right to left
+            buffer.appendleft(str(digit))
 
-            # Move from right to left
             a_idx -= 1
             b_idx -= 1
-
-        # Handle edge case here
-        if carry:
-            buffer.appendleft("1")
-
-        # This should be the final result
         return "".join(buffer)
