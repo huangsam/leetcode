@@ -6,7 +6,7 @@ from typing import Deque
 
 class Solution:
     def addBinary(self, a: str, b: str) -> str:
-        return bin(int(f"0b{a}", 2) + int(f"0b{b}", 2))[2:]
+        return bin(int(a, 2) + int(b, 2))[2:]
 
     def addBinaryManual(self, a: str, b: str) -> str:
         a_idx = len(a) - 1
