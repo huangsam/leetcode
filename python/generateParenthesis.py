@@ -1,40 +1,27 @@
-from collections import deque
-from typing import Deque, List
+# https://leetcode.com/problems/generate-parentheses/
+
+from typing import List
 
 
-# TODO: Implement backtracking solution
 class Solution:
     def generateParenthesis(self, n: int) -> List[str]:
         result: List[str] = []
-
-        # To process all possible combinations
-        boundary = 2 ** (n * 2)
-        for i in range(1, boundary):
-            pattern = self._buildPattern(i)
-            if self._isValidPattern(pattern, n * 2):
-                result.append(pattern)
-
+        self._backtrack("", 0, 0, n, result)
         return result
 
-    def _buildPattern(self, i: int) -> str:
-        sequence: Deque[str] = deque()
-        while i > 0:
-            ch = "(" if i & 1 else ")"
-            sequence.appendleft(ch)
-            i >>= 1
-        return "".join(sequence)
+    def _backtrack(self, current_string: str, open_count: int, close_count: int, n: int, result_list: List[str]):
+        # Base Case: We've formed a complete, valid parenthesis string
+        if open_count == close_count == n:
+            result_list.append(current_string)
+            return
 
-    def _isValidPattern(self, pattern: str, size: int) -> bool:
-        if len(pattern) != size:
-            return False
+        # Recursive Step 1: Add an opening parenthesis if allowed
+        # We start with '(' as that must be the opening piece of any valid string
+        # Getting out of this loop implies that we "remove" a character from here
+        if open_count < n:
+            self._backtrack(current_string + "(", open_count + 1, close_count, n, result_list)
 
-        st: List[str] = []
-        for val in pattern:
-            if val == "(":
-                st.append(val)
-            elif len(st) == 0:
-                return False
-            else:
-                st.pop()
-
-        return len(st) == 0
+        # Recursive Step 2: Add a closing parenthesis if allowed
+        # We end with ')' as that must be the closing piece of any valid string
+        if close_count < open_count:
+            self._backtrack(current_string + ")", open_count, close_count + 1, n, result_list)
