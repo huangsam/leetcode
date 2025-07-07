@@ -16,7 +16,7 @@ class Solution:
             a_val = int(a[a_idx]) if a_idx >= 0 else 0
             b_val = int(b[b_idx]) if b_idx >= 0 else 0
 
-            # Sum of val and carry is up to 3, so divmod works here
+            # Sum of val and carry goes up to 3, so divmod works here
             carry, digit = divmod(a_val + b_val + carry, 2)
 
             # Append digits from right to left
