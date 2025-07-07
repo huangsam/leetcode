@@ -9,11 +9,6 @@ class Solution:
         - Each row must contain the digits 1-9 without repetition.
         - Each column must contain the digits 1-9 without repetition.
         - Each box must contain the digits 1-9 without repetition.
-
-        Solving the rows and columns should be easy.
-        Solving the 3x3 boxes requires additional logic to get the index.
-
-        We can skip validating characters which are dots.
         """
         row_masks = [0] * 9
         col_masks = [0] * 9
@@ -24,6 +19,7 @@ class Solution:
             for c in range(9):
                 if board[r][c] == ".":
                     continue
+
                 val = int(board[r][c])
 
                 # Check rows
