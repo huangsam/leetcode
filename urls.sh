@@ -16,4 +16,4 @@ We then apply sort and uniq to enforce unique links. The sort is needed
 because uniq only detects duplicates on adjacent lines.
 eof
 
-grep -o -a -h -r "https://leetcode.com.*" {java,python} | sort | uniq | sed 's/^/🔗 /'
+grep -o -a -h -r 'https://leetcode.com.*' {java,python} | sort | uniq | sed 's/^/🔗 /'
