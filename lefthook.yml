@@ -12,10 +12,10 @@ pre-commit:
       run: ./gradlew build
     ruff-check:
       glob: "*.py"
-      run: ruff check python
+      run: uv run ruff check python
     mypy-check:
       glob: "*.py"
-      run: mypy python
+      run: uv run mypy python
     isort-check:
       glob: "*.py"
-      run: isort --check-only python
+      run: uv run isort --check-only python
