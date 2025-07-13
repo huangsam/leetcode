@@ -15,11 +15,8 @@ Run `bash urls.sh` to see the URLs for all attempted problems.
 For Python solutions:
 
 ```shell
-virtualenv venv # setup starts here
-source venv/bin/activate
-pip install -r requirements.txt
-ruff check python # validation starts here
-mypy python
+uv run ruff check python
+uv run mypy python
 ```
 
 For Java solutions:
