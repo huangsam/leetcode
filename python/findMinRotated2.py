@@ -11,7 +11,7 @@ class Solution:
             if nums[mid] > nums[hi]:
                 lo = mid + 1  # Minimum is in the right half
             elif nums[mid] < nums[hi]:
-                hi = mid      # Minimum is in the left half including mid
+                hi = mid  # Minimum is in the left half including mid
             else:
-                hi = hi - 1   # Cannot determine, reduce search space
+                hi = hi - 1  # Cannot determine, reduce search space
         return nums[lo]
