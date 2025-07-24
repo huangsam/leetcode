@@ -24,7 +24,7 @@ class Solution:
     def _binarySearch(self, nums: List[int], target: int, lo: int, hi: int):
         found = -1
         while lo <= hi:
-            mid = (lo + hi) // 2
+            mid = lo + (hi - lo) // 2
             if nums[mid] == target:
                 found = mid
                 break

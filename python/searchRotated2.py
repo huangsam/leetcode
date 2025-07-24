@@ -13,7 +13,7 @@ class Solution:
             while hi > lo and nums[hi] == nums[hi - 1]:
                 hi -= 1
 
-            mid = (lo + hi) // 2
+            mid = lo + (hi - lo) // 2
             if target == nums[mid]:
                 return True
 
