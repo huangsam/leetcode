@@ -9,9 +9,12 @@ class Solution:
         while lo < hi:
             mid = lo + (hi - lo) // 2
             if nums[mid] > nums[hi]:
-                lo = mid + 1  # Minimum is in the right half
+                # Minimum is in the right half (excluding mid)
+                lo = mid + 1
             elif nums[mid] < nums[hi]:
-                hi = mid  # Minimum is in the left half including mid
+                # Minimum is in the left half (including mid)
+                hi = mid
             else:
-                hi = hi - 1  # Cannot determine, reduce search space
+                # Cannot determine, reduce search space
+                hi = hi - 1
         return nums[lo]
