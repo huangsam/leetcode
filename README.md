@@ -22,7 +22,7 @@ uv run mypy python
 For Java solutions:
 
 ```shell
-gradle build # validation starts here
+gradle build
 ```
 
 ## Additional resources
