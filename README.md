@@ -27,16 +27,11 @@ gradle build
 
 ## Additional resources
 
-If you're already looking into LeetCode, then these resources can complement your learning.
-
-### Coding repos
+If you're already looking into LeetCode, then these resources can complement your learning:
 
 - 🎓 [jwasham/coding-interview-university](https://github.com/jwasham/coding-interview-university)
-- 🤝 [yangshun/tech-interview-handbook](https://github.com/yangshun/tech-interview-handbook)
 - 📚 [thealgorithms](https://github.com/thealgorithms)
-
-### System repos
-
+- 🤝 [yangshun/tech-interview-handbook](https://github.com/yangshun/tech-interview-handbook)
 - 🏛️ [donnemartin/system-design-primer](https://github.com/donnemartin/system-design-primer)
 - 🏗️ [practical-tutorials/project-based-learning](https://github.com/practical-tutorials/project-based-learning)
 - 🛠️ [codecrafters-io/build-your-own-x](https://github.com/codecrafters-io/build-your-own-x)
