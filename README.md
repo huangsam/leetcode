@@ -29,9 +29,10 @@ gradle build
 
 If you're already looking into LeetCode, these resources are helpful too:
 
-- <https://github.com/donnemartin/system-design-primer>
-- <https://github.com/jwasham/coding-interview-university>
-- <https://github.com/kamranahmedse/developer-roadmap>
-- <https://github.com/practical-tutorials/project-based-learning>
-- <https://github.com/thealgorithms>
-- <https://github.com/yangshun/tech-interview-handbook>
+- 🛠️ <https://github.com/codecrafters-io/build-your-own-x>
+- 🏗️ <https://github.com/practical-tutorials/project-based-learning>
+- 📚 <https://github.com/thealgorithms>
+- 🎓 <https://github.com/jwasham/coding-interview-university>
+- 🏛️ <https://github.com/donnemartin/system-design-primer>
+- 🗺️ <https://github.com/kamranahmedse/developer-roadmap>
+- 🤝 <https://github.com/yangshun/tech-interview-handbook>
