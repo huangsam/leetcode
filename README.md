@@ -27,7 +27,7 @@ gradle build
 
 ## Additional resources
 
-If you're looking at LeetCode, you're going to find these resources helpful:
+If you're already looking into LeetCode, these resources are helpful too:
 
 - <https://github.com/donnemartin/system-design-primer>
 - <https://github.com/jwasham/coding-interview-university>
