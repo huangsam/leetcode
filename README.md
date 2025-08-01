@@ -24,3 +24,15 @@ For Java solutions:
 ```shell
 gradle build # validation starts here
 ```
+
+## Additional resources
+
+If you're looking at LeetCode, you're going to find these resources helpful:
+
+- <https://github.com/ashishps1/awesome-behavioral-interviews>
+- <https://github.com/donnemartin/system-design-primer>
+- <https://github.com/jwasham/coding-interview-university>
+- <https://github.com/kamranahmedse/developer-roadmap>
+- <https://github.com/practical-tutorials/project-based-learning>
+- <https://github.com/thealgorithms>
+- <https://github.com/yangshun/tech-interview-handbook>
