@@ -29,7 +29,6 @@ gradle build
 
 If you're looking at LeetCode, you're going to find these resources helpful:
 
-- <https://github.com/ashishps1/awesome-behavioral-interviews>
 - <https://github.com/donnemartin/system-design-primer>
 - <https://github.com/jwasham/coding-interview-university>
 - <https://github.com/kamranahmedse/developer-roadmap>
