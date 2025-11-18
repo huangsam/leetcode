@@ -13,3 +13,6 @@ venv/
 # Java
 .gradle/
 build/
+
+# Study plan
+study/
