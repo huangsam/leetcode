@@ -19,7 +19,7 @@ class Solution:
         right_sum = self._sumWorkhorse(root.right)
 
         if root.right and self._isLeafNode(root.right):
-            right_sum = 0
+            right_sum = 0  # Right leaves don't count
 
         return left_sum + right_sum
 

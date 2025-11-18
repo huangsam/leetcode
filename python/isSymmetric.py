@@ -9,18 +9,18 @@ class Solution:
     def isSymmetric(self, root: Optional[TreeNode]) -> bool:
         if not root:
             raise ValueError("The input tree must have at least one node")
-        return self._mirrorWorker(root.left, root.right)
+        return self._mirrorWorker(root.left, root.right)  # Check if left and right subtrees are mirrors
 
     def _mirrorWorker(self, left: Optional[TreeNode], right: Optional[TreeNode]) -> bool:
         if left is None and right is None:
-            return True
+            return True  # Both null, symmetric
         elif not (left is not None and right is not None):
-            return False
+            return False  # One is null, the other isn't
 
         if not self._mirrorWorker(left.left, right.right):
-            return False
+            return False  # Left's left should match right's right
         elif not self._mirrorWorker(left.right, right.left):
-            return False
+            return False  # Left's right should match right's left
 
         if left.val != right.val:
             return False

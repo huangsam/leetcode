@@ -17,6 +17,7 @@ class Solution:
         return self._mergeSortedLists(l_sorted, r_sorted)
 
     def _getMiddle(self, head: ListNode) -> ListNode:
+        """Find the middle of the linked list using slow and fast pointers."""
         slow, fast = head, head
         while fast and fast.next and fast.next.next:
             fast = fast.next.next
@@ -24,6 +25,7 @@ class Solution:
         return slow
 
     def _mergeSortedLists(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
+        """Merge two sorted linked lists."""
         dummy = ListNode()
         node = dummy
         while l1 and l2:

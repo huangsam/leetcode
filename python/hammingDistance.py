@@ -4,10 +4,8 @@
 class Solution:
     def hammingDistance(self, x: int, y: int) -> int:
         distance = 0
-        xor_result = x ^ y
-
+        xor_result = x ^ y  # XOR will have 1s where bits differ
         while xor_result > 0:
-            xor_result, remainder = divmod(xor_result, 2)
-            distance += remainder
-
+            xor_result, remainder = divmod(xor_result, 2)  # Get the least significant bit
+            distance += remainder  # Add 1 if the bit was set
         return distance

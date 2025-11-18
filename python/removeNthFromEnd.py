@@ -14,8 +14,8 @@ class Solution:
         node_to_delete = node_list[nlen - n]
         if nlen - n > 0:
             prev_node = node_list[nlen - n - 1]
-            prev_node.next = node_to_delete.next
+            prev_node.next = node_to_delete.next  # Bypass the node
         else:
-            head = node_to_delete.next
-        node_to_delete.next = None
+            head = node_to_delete.next  # Remove head
+        node_to_delete.next = None  # Clean up removed node
         return head
