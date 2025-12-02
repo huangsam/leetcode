@@ -5,6 +5,7 @@ from typing import List
 
 class Solution:
     def totalHammingDistance(self, nums: List[int]) -> int:
+        """Calculate the total Hamming distance between all pairs of integers in the list."""
         count = 0
         for i in range(32):  # Check each bit position
             mask = 1 << i
