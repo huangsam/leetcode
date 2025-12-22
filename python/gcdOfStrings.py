@@ -8,7 +8,7 @@ class Solution:
         # Step 1: Necessary Condition Check
         # If a common divisor exists, str1 + str2 must equal str2 + str1.
         if str1 + str2 != str2 + str1:
-            return "" # No common divisor pattern found
+            return ""  # No common divisor pattern found
 
         # Step 2: Determine the length of the Greatest Common Divisor
         # The length of the GCD string is the GCD of the lengths of the two strings.
