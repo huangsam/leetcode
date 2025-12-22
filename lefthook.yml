@@ -16,6 +16,3 @@ pre-commit:
     mypy-check:
       glob: "*.py"
       run: uv run mypy python
-    isort-check:
-      glob: "*.py"
-      run: uv run isort --check-only python

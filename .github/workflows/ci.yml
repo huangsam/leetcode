@@ -13,27 +13,21 @@ permissions:
 # https://support.leetcode.com/hc/en-us/articles/360011833974-What-are-the-environments-for-the-programming-languages
 jobs:
   python-build:
-    name: Python 3.11
+    name: Python
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v5
-      - name: Set up Python 3.11
-        uses: actions/setup-python@v6
-        with:
-          python-version: '3.11'
+        uses: actions/checkout@v6
       - name: Setup latest version of uv
         uses: astral-sh/setup-uv@v7
-      - name: Lint with ruff
+      - name: Run lint
         run: uv run ruff check python
-      - name: Type check with mypy
+      - name: Run type hints
         run: uv run mypy python
-      - name: Import check with isort
-        run: uv run isort --check-only python
 
   java-build:
-    name: Java 25
+    name: Java
     runs-on: ubuntu-latest
 
     steps:
