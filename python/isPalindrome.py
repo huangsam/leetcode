@@ -4,8 +4,24 @@
 class Solution:
     def isPalindrome(self, s: str) -> bool:
         """
-        Collect all letters and numbers, converting them to lowercase as we go.
-        Then see if the reverse iteration is the same as the forward iteration.
+        Check if string is palindrome using two-pointer approach.
         """
-        char_list = [ch.lower() for ch in s if ch.isalnum()]
-        return all(char_list[i] == char_list[len(char_list) - i - 1] for i in range(len(char_list)))
+        left, right = 0, len(s) - 1
+
+        while left < right:
+            # Skip non-alphanumeric characters from left
+            while left < right and not s[left].isalnum():
+                left += 1
+
+            # Skip non-alphanumeric characters from right
+            while left < right and not s[right].isalnum():
+                right -= 1
+
+            # Compare characters (case-insensitive)
+            if s[left].lower() != s[right].lower():
+                return False
+
+            left += 1
+            right -= 1
+
+        return True

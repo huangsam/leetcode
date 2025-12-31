@@ -7,7 +7,9 @@ from container.binary_tree import TreeNode
 
 class Solution:
     def constructMaximumBinaryTree(self, nums: List[int]) -> Optional[TreeNode]:
-        """Construct maximum binary tree from array."""
+        """
+        Construct maximum binary tree from array.
+        """
         if not nums:
             return None
 

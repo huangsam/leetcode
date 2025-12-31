@@ -9,59 +9,27 @@ from container.linked_list import ListNode
 class Solution:
     def isSubPath(self, head: Optional[ListNode], root: Optional[TreeNode]) -> bool:
         """
-        Some observations so far:
-
-        Subpath does not have to start from root. It can be at root, it
-        can be in the middle of tree, or touch the bottom of the tree.
-        All are valid.
-
-        The typical preorder and inorder will not provide an easy
-        solution. Postorder seems to be the most natural, since you
-        get the result upwards at the top of the root node. Since we
-        want to have a boolean outcome at the end of the day.
+        Check if linked list is a subpath in binary tree.
         """
-        # Traverse head to get target_seq
-        current = head
-        target_seq = []
-        while current:
-            target_seq.append(current.val)
-            current = current.next
+        if not head:
+            return True
+        if not root:
+            return False
 
-        # Cross-check match count with target sequence size
-        return len(target_seq) == self._matchWorker(root, target_seq)
+        # Try matching from current node, or search in left/right subtrees
+        return self._matches(head, root) or self.isSubPath(head, root.left) or self.isSubPath(head, root.right)
 
-    def _matchWorker(self, root, target_seq) -> int:
-        """Return number of matches relative to sequence.
-
-        0 -> if 0 numbers match
-        1 -> if 1 number matches
-        2 -> if 2 numbers match in a row
-        ...
+    def _matches(self, list_node: Optional[ListNode], tree_node: Optional[TreeNode]) -> bool:
         """
-        # Null has 0 matches by default
-        if root is None:
-            return 0
+        Check if linked list matches path starting from current tree node.
+        """
+        if not list_node:
+            return True  # Reached end of list - full match
+        if not tree_node:
+            return False  # Reached end of tree path - no match
 
-        left_old = self._matchWorker(root.left, target_seq)
-        right_old = self._matchWorker(root.right, target_seq)
+        # Values must match, and rest of list must match in left or right subtree
+        if list_node.val != tree_node.val:
+            return False
 
-        # Propogate answer if the sequence fully matched before
-        if max(left_old, right_old) == len(target_seq):
-            return len(target_seq)
-
-        # The old answers act as an offset for target_seq
-        left_index = len(target_seq) - left_old - 1
-        right_index = len(target_seq) - right_old - 1
-
-        left_new, right_new = 0, 0
-
-        # See if left nodes match the sequence
-        if left_index >= 0 and target_seq[left_index] == root.val:
-            left_new = left_old + 1
-
-        # See if right nodes match the sequence
-        if right_index >= 0 and target_seq[right_index] == root.val:
-            right_new = right_old + 1
-
-        # Return the biggest answer, whether or not a match is found
-        return max(left_new, right_new)
+        return self._matches(list_node.next, tree_node.left) or self._matches(list_node.next, tree_node.right)
