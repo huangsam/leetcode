@@ -10,3 +10,6 @@ requires-python = ">=3.11"
 
 [tool.ruff]
 line-length = 160
+
+[tool.ruff.lint]
+extend-select = ["I"]
