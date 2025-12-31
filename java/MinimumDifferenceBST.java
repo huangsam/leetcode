@@ -3,8 +3,6 @@
 import container.TreeNode;
 
 public class MinimumDifferenceBST {
-    private TreeNode last = null;
-
     /**
      * We assume that the input is a binary search tree with at least two
      * nodes. Based on this, we can always assume there is a previous node
@@ -16,18 +14,34 @@ public class MinimumDifferenceBST {
      * all results.
      */
     public int getMinimumDifference(TreeNode root) {
-        if (root == null) {
-            return Integer.MAX_VALUE;
+        MinTracker tracker = new MinTracker();
+        helper(root, tracker);
+        return tracker.minDiff;
+    }
+
+    /**
+     * Helper method for in-order traversal.
+     */
+    private void helper(TreeNode node, MinTracker tracker) {
+        if (node == null) {
+            return;
         }
 
-        int leftResult = getMinimumDifference(root.left);
+        helper(node.left, tracker);
 
-        int result = (last != null) ? root.val - last.val : Integer.MAX_VALUE;
+        if (tracker.prev != null) {
+            tracker.minDiff = Math.min(tracker.minDiff, node.val - tracker.prev.val);
+        }
+        tracker.prev = node;
 
-        last = root;
+        helper(node.right, tracker);
+    }
 
-        int rightResult = getMinimumDifference(root.right);
-
-        return Math.min(Math.min(leftResult, result), rightResult);
+    /**
+     * Wrapper class to track minimum difference and previous node during traversal.
+     */
+    private static class MinTracker {
+        TreeNode prev = null;
+        int minDiff = Integer.MAX_VALUE;
     }
 }

@@ -3,28 +3,33 @@
 import container.TreeNode;
 
 public class IsValidBST {
-    private TreeNode last = null;
-
     /**
      * We process the answer recursively with in-order traversal. The idea is to
      * look for a previous entry if it exists and see if that entry is less than,
      * or equal to, the current entry.
      */
     public boolean isValidBST(TreeNode root) {
-        if (root == null) {
+        return isValidBST(root, null, null);
+    }
+
+    /**
+     * Helper method that validates BST property with min and max bounds.
+     * @param node Current node being validated
+     * @param min Minimum allowed value (exclusive)
+     * @param max Maximum allowed value (exclusive)
+     */
+    private boolean isValidBST(TreeNode node, Integer min, Integer max) {
+        if (node == null) {
             return true;
         }
 
-        boolean isLeftValid = isValidBST(root.left);
-
-        if (last != null && last.val >= root.val) {
-            return false; // Flag any incoming contradictions
+        // Check if current node violates BST property
+        if ((min != null && node.val <= min) || (max != null && node.val >= max)) {
+            return false;
         }
 
-        last = root;
-
-        boolean isRightValid = isValidBST(root.right);
-
-        return isLeftValid && isRightValid;
+        // Recursively validate left and right subtrees with updated bounds
+        return isValidBST(node.left, min, node.val) &&
+               isValidBST(node.right, node.val, max);
     }
 }

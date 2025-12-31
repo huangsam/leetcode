@@ -3,37 +3,46 @@
 import container.TreeNode;
 
 public class KthSmallestBST {
-    private TreeNode last = null;
-    private int current = 0;
-
     /**
      * We use a helper function to perform an in-order traversal of the BST.
      * The helper terminates when we reach the k-th smallest element.
-     * This approach ensures we only traverse the tree as much as necessary,
+     * This approach ensures we only traverse the tree as much as necessary.
      */
     public int kthSmallest(TreeNode root, int k) {
-        helper(root, k);
-        return last.val;
+        Counter counter = new Counter();
+        TreeNode result = helper(root, k, counter);
+        return result.val;
     }
 
     /**
      * Helper function to perform in-order traversal.
      * It increments the current count and checks if it matches k.
-     * If it does, it sets the last node to the current node.
      */
-    private void helper(TreeNode root, int k) {
+    private TreeNode helper(TreeNode root, int k, Counter counter) {
         if (root == null) {
-            return;
+            return null;
         }
 
-        helper(root.left, k);
-
-        current++;
-        if (current == k) {
-            last = root;
-            return; // Early return to avoid unnecessary recursion
+        // Search left subtree first
+        TreeNode left = helper(root.left, k, counter);
+        if (left != null) {
+            return left; // Found in left subtree
         }
 
-        helper(root.right, k);
+        // Process current node
+        counter.count++;
+        if (counter.count == k) {
+            return root;
+        }
+
+        // Search right subtree
+        return helper(root.right, k, counter);
+    }
+
+    /**
+     * Wrapper class to hold mutable counter state.
+     */
+    private static class Counter {
+        int count = 0;
     }
 }
