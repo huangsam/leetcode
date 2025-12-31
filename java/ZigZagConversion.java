@@ -26,11 +26,15 @@ public class ZigZagConversion {
 
         for (char ch : s.toCharArray()) {
             rows[depth].append(ch);
-            depth += direction;
 
-            if (depth == numRows - 1 || depth == 0) {
-                direction *= -1;
+            // Change direction only when hitting actual boundaries
+            if (depth == 0) {
+                direction = 1;  // At top, must go down
+            } else if (depth == numRows - 1) {
+                direction = -1; // At bottom, must go up
             }
+
+            depth += direction;
         }
 
         StringBuilder result = new StringBuilder();

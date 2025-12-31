@@ -15,9 +15,6 @@ public class LongestCommonPrefix {
         if (strs.length == 0) {
             return "";
         }
-        if (strs.length == 1) {
-            return strs[0];
-        }
 
         int minLength = strs[0].length();
         StringBuilder prefix = new StringBuilder();

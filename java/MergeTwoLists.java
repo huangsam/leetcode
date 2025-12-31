@@ -16,10 +16,10 @@ public class MergeTwoLists {
         ListNode current = dummy;
         while (list1 != null && list2 != null) {
             if (list1.val < list2.val) {
-                current.next = new ListNode(list1.val);
+                current.next = list1; // Reuse existing node
                 list1 = list1.next;
             } else {
-                current.next = new ListNode(list2.val);
+                current.next = list2; // Reuse existing node
                 list2 = list2.next;
             }
             current = current.next;
@@ -28,6 +28,10 @@ public class MergeTwoLists {
         return dummy.next;
     }
 
+    /**
+     * Recursive approach - creates new nodes (less efficient but demonstrates recursion).
+     * Space: O(n+m) for call stack and new nodes.
+     */
     public ListNode mergeTwoListsRecursive(ListNode list1, ListNode list2) {
         if (list1 == null) {
             return list2;
