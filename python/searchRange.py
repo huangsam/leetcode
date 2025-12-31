@@ -5,32 +5,35 @@ from typing import List
 
 class Solution:
     def searchRange(self, nums: List[int], target: int) -> List[int]:
-        found = self._binarySearch(nums, target, 0, len(nums) - 1)  # Find any occurrence
-        if found == -1:
+        """Find first and last position of target in sorted array."""
+        if not nums:
             return [-1, -1]
-        left, right = found, found
-        while True:  # Expand left
-            result = self._binarySearch(nums, target, 0, left - 1)
-            if result == -1:
-                break
-            left = result
-        while True:  # Expand right
-            result = self._binarySearch(nums, target, right + 1, len(nums) - 1)
-            if result == -1:
-                break
-            right = result
+
+        left = self._findBoundary(nums, target, True)
+        if left == -1:
+            return [-1, -1]
+
+        right = self._findBoundary(nums, target, False)
         return [left, right]
 
-    def _binarySearch(self, nums: List[int], target: int, lo: int, hi: int):
-        """Binary search helper to find the target."""
-        found = -1
+    def _findBoundary(self, nums: List[int], target: int, find_left: bool) -> int:
+        """Binary search to find leftmost or rightmost occurrence."""
+        lo, hi = 0, len(nums) - 1
+        result = -1
+
         while lo <= hi:
             mid = lo + (hi - lo) // 2
+
             if nums[mid] == target:
-                found = mid
-                break
-            if nums[mid] < target:
+                result = mid
+                # Continue searching in the appropriate direction
+                if find_left:
+                    hi = mid - 1  # Search left for first occurrence
+                else:
+                    lo = mid + 1  # Search right for last occurrence
+            elif nums[mid] < target:
                 lo = mid + 1
             else:
                 hi = mid - 1
-        return found
+
+        return result

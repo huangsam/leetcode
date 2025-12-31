@@ -7,20 +7,17 @@ from container.binary_tree import TreeNode
 
 class Solution:
     def constructMaximumBinaryTree(self, nums: List[int]) -> Optional[TreeNode]:
-        if len(nums) == 0:
+        """Construct maximum binary tree from array."""
+        if not nums:
             return None
 
-        # Find the maximum number and its index in the list
-        max_num = nums[0]
-        max_ind = 0
-        for ind, num in enumerate(nums):
-            if max_num < num:
-                max_num = num
-                max_ind = ind
+        # Find the maximum number and its index using built-in functions
+        max_num = max(nums)
+        max_ind = nums.index(max_num)
 
         # Create the root node with the maximum number
         root = TreeNode(max_num)
-        if isinstance(max_ind, int):
-            root.left = self.constructMaximumBinaryTree(nums[:max_ind])
-            root.right = self.constructMaximumBinaryTree(nums[(max_ind + 1) :])
+        root.left = self.constructMaximumBinaryTree(nums[:max_ind])
+        root.right = self.constructMaximumBinaryTree(nums[max_ind + 1 :])
+
         return root

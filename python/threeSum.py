@@ -5,23 +5,38 @@ from typing import List
 
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
-        solution = set()
-        nlen = len(nums)
-        sums = {}
+        """Find all unique triplets that sum to zero."""
+        nums.sort()
+        result = []
+        n = len(nums)
 
-        # Do initial caching
-        for i in range(nlen):
-            for j in range(nlen):
-                if i != j:
-                    sums[(i, j)] = nums[i] + nums[j]
+        for i in range(n - 2):
+            # Skip duplicates for first number
+            if i > 0 and nums[i] == nums[i - 1]:
+                continue
 
-        # Run an O(n^2) loop to find pairs that sum to -nums[k]
-        for k in range(nlen):
-            for key, val in sums.items():
-                if nums[k] == -val:
-                    i, j = key
-                    if i != k and j != k:
-                        res = tuple(sorted([nums[i], nums[j], nums[k]]))
-                        solution.add(res)
+            # Two-pointer approach for remaining two numbers
+            left, right = i + 1, n - 1
+            target = -nums[i]
 
-        return sorted(list(res) for res in solution)
+            while left < right:
+                current_sum = nums[left] + nums[right]
+
+                if current_sum == target:
+                    result.append([nums[i], nums[left], nums[right]])
+
+                    # Skip duplicates for second number
+                    while left < right and nums[left] == nums[left + 1]:
+                        left += 1
+                    # Skip duplicates for third number
+                    while left < right and nums[right] == nums[right - 1]:
+                        right -= 1
+
+                    left += 1
+                    right -= 1
+                elif current_sum < target:
+                    left += 1
+                else:
+                    right -= 1
+
+        return result
