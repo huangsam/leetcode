@@ -9,6 +9,7 @@ public class SummaryRanges {
      * Space: O(n)
      *
      * Here are the steps to build the range:
+     *
      * <ul>
      *     <li>Iterate through {@code nums} one by one</li>
      *     <li>When non-contiguous, append {@code start->end} to result</li>
