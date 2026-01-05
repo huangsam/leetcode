@@ -8,7 +8,7 @@ class Solution:
         """
         Time: O(1)
         Space: O(1)
-        
+
         - Each row must contain the digits 1-9 without repetition.
         - Each column must contain the digits 1-9 without repetition.
         - Each box must contain the digits 1-9 without repetition.

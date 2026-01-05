@@ -8,7 +8,7 @@ class Solution:
         """
         Time: O(n)
         Space: O(n)
-        
+
         1. Find all indices which have duplicates
         2. For each list of indices, see if any nC2 option satisfies
         3. Return True on first match. Return False with no matches

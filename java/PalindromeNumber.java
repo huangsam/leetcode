@@ -1,8 +1,10 @@
 // https://leetcode.com/problems/palindrome-number/
 
 public class PalindromeNumber {
-    public static final int TEN = 10;    /**
-     * Time: O(log(n)
+    public static final int TEN = 10;
+
+    /**
+     * Time: O(log(n))
      * Space: O(1)
      *
      * We can check if a number is a palindrome by comparing its digits from the start and end.

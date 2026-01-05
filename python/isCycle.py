@@ -10,7 +10,7 @@ class Solution:
         """
         Time: O(n)
         Space: O(1)
-        
+
         To check cycle, we can use O(n) memory to store all
         seen nodes and report when the next one matches any
         of the seen ones. To do this with O(1) memory, we need

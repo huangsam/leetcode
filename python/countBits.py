@@ -8,7 +8,7 @@ class Solution:
         """
         Time: O(n)
         Space: O(n)
-        
+
         Get the binary representation for each number i from
         0..n using dynamic programming with the bottoms-up
         approach.

@@ -10,7 +10,7 @@ class Solution:
         """
         Time: O(n)
         Space: O(1)
-        
+
         We reverse a subset of the singly linked list from
         left <= right. Anything less than left and anything greater
         than right keeps the same ordering.

@@ -10,7 +10,7 @@ class Solution:
         """
         Time: O(n)
         Space: O(n)
-        
+
         Create a deep copy of a linked list with random pointers.
         """
         if not head:

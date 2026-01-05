@@ -10,7 +10,7 @@ class Solution:
         """
         Time: O(n)
         Space: O(1)
-        
+
         Partition nodes < x and >= x, preserving the order of the nodes.
 
         One approach to achieving the constraints above is to:

@@ -8,7 +8,7 @@ class Solution:
         """
         Time: O(n)
         Space: O(h)
-        
+
         Calculate the diameter of a binary tree.
         """
         self.diameter = 0

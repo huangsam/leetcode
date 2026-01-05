@@ -4,7 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class LetterCombinations {
-    private static final String[] LETTERS = {"", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};    /**
+    private static final String[] LETTERS = {"", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+
+    /**
      * Time: O(4^n)
      * Space: O(n)
      *

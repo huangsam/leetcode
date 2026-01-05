@@ -6,7 +6,7 @@ class Solution:
         """
         Time: O(n)
         Space: O(n)
-        
+
         Check if parentheses are valid.
 
         Constraints:

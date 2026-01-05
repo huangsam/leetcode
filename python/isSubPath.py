@@ -11,7 +11,7 @@ class Solution:
         """
         Time: O(n * m)
         Space: O(h)
-        
+
         Check if linked list is a subpath in binary tree.
         """
         if not head:

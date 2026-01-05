@@ -6,7 +6,7 @@ class Solution:
         """
         Time: O(n)
         Space: O(1)
-        
+
         Check if string is palindrome using two-pointer approach.
         """
         left, right = 0, len(s) - 1

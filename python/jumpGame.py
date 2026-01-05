@@ -8,7 +8,7 @@ class Solution:
         """
         Time: O(n)
         Space: O(1)
-        
+
         You are given an integer array nums. You are initially
         positioned at the array's first index, and each element
         in the array represents your maximum jump length at
@@ -34,7 +34,7 @@ class Solution:
         """
         Time: O(n^2)
         Space: O(n)
-        
+
         Approach (sub-efficient):
         - Initialize reachable array
         - Base case is reachable[0] = True

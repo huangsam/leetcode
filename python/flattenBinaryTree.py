@@ -10,7 +10,7 @@ class Solution:
         """
         Time: O(n)
         Space: O(h)
-        
+
         Do not return anything, modify root in-place instead.
         """
         if root is None:

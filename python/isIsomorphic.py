@@ -8,7 +8,7 @@ class Solution:
         """
         Time: O(n)
         Space: O(n)
-        
+
         Check if two strings are isomorphic.
 
         Assume that the length of s and t are identical and non-empty.

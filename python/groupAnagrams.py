@@ -9,7 +9,7 @@ class Solution:
         """
         Time: O(n * k)
         Space: O(n * k)
-        
+
         Assume that anagram is simply a map of alpha counts.
 
         Then we will generate a hash based on the frequency

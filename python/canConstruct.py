@@ -6,7 +6,7 @@ class Solution:
         """
         Time: O(n + m)
         Space: O(n)
-        
+
         We are going to collect the mapping of character frequencies
         for ransom note. Then we subtract the frequencies when iterating
         through magazine. If ransom mapping has all values <= 0, then we

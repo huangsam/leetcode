@@ -10,7 +10,7 @@ class Solution:
         """
         Time: O(n^2)
         Space: O(n)
-        
+
         Construct maximum binary tree from array.
         """
         if not nums:

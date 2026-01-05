@@ -1,7 +1,9 @@
 // https://leetcode.com/problems/n-queens-ii/
 
 public class TotalNQueens {
-    private int numberOfSolutions = 0;    /**
+    private int numberOfSolutions = 0;
+
+    /**
      * Time: O(n!)
      * Space: O(n)
      *

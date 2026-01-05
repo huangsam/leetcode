@@ -8,7 +8,7 @@ class Solution:
         """
         Time: O(n)
         Space: O(1)
-        
+
         For example [1,2,3,4] ->
 
         Multiply answer[i] by prefix product, before nums[i].

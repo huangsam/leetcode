@@ -6,7 +6,7 @@ class Solution:
         """
         Time: O(n)
         Space: O(1)
-        
+
         Starting from left to right...
 
         When the symbol I is detected, followed by more Is, we are

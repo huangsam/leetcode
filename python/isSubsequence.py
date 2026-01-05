@@ -6,7 +6,7 @@ class Solution:
         """
         Time: O(n)
         Space: O(1)
-        
+
         Look for characters of s in t in an orderly fashion. Ignore
         characters that do not match. Keep a counter of characters in
         s that match. If we have the counter match the length of s, then
