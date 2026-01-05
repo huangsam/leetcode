@@ -3,6 +3,10 @@
 import container.ListNode;
 
 class SwapPairs {
+    /**
+     * Time: O(n)
+     * Space: O(1)
+     */
     public ListNode swapPairs(ListNode head) {
         ListNode dummy = new ListNode(-1);
         ListNode prev = dummy;

@@ -9,6 +9,9 @@ import java.util.List;
 
 public class BinaryTreeRightSide {
     /**
+     * Time: O(n)
+     * Space: O(h)
+     *
      * Returns a list of integers representing the values of the nodes visible
      * from the right side of a binary tree when viewed from top to bottom.
      *

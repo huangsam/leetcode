@@ -5,6 +5,9 @@ import java.util.Comparator;
 
 public class MinimumArrows {
     /**
+     * Time: O(n * log(n)
+     * Space: O(1)
+     *
      * Usually for interval problems, we sort by start time to merge
      * intervals in an orderly fashion. However, for this problem we
      * are sorting by end time, because we are counting the number

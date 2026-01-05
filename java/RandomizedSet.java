@@ -22,6 +22,10 @@ class RandomizedSet {
         valueToIndex = new HashMap<>();
     }
 
+    /**
+     * Time: O(1)
+     * Space: O(n)
+     */
     public boolean insert(int val) {
         if (valueToIndex.containsKey(val)) {
             return false;

@@ -7,6 +7,9 @@ public class LetterCombinations {
     private static final String[] LETTERS = {"", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
 
     /**
+     * Time: O(4^n)
+     * Space: O(n)
+     *
      * We go through each digit in the input string and find the corresponding
      * letters. We use a recursive helper function to build combinations of
      * letters. If the input string is empty, we return an empty list.

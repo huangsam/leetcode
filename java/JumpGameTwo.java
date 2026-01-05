@@ -3,7 +3,12 @@
 import java.util.Arrays;
 
 public class JumpGameTwo {
-    /** Approach with near-far intuition */
+    /**
+     * Time: O(n)
+     * Space: O(1)
+     *
+     * Approach with near-far intuition
+     */
     public int jump(int[] nums) {
         int near = 0;
         int far = 0;

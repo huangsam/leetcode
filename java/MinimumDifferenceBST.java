@@ -4,6 +4,9 @@ import container.TreeNode;
 
 public class MinimumDifferenceBST {
     /**
+     * Time: O(n)
+     * Space: O(h)
+     *
      * We assume that the input is a binary search tree with at least two
      * nodes. Based on this, we can always assume there is a previous node
      * and a current node. As we perform inorder traversal, we can check

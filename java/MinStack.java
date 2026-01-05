@@ -20,6 +20,10 @@ public class MinStack {
         minimum = new LinkedList<>();
     }
 
+    /**
+     * Time: O(1)
+     * Space: O(n)
+     */
     public void push(int val) {
         standard.addFirst(val);
         if (minimum.isEmpty() || minimum.getFirst() >= val) {

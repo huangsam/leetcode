@@ -2,6 +2,9 @@
 
 public class LongestCommonPrefix {
     /**
+     * Time: O(n * m)
+     * Space: O(1)
+     *
      * We first check if the array is empty or has only one element.
      * If that's not the case, we find the minimum length of all
      * the strings.

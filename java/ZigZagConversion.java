@@ -2,6 +2,9 @@
 
 public class ZigZagConversion {
     /**
+     * Time: O(n)
+     * Space: O(n)
+     *
      * Here are the steps to convert the string:
      *
      * <ul>

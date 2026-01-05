@@ -2,6 +2,9 @@
 
 public class FindHIndex {
     /**
+     * Time: O(n)
+     * Space: O(n)
+     *
      * Computes the h-index of a researcher given an array of their paper citations.
      * The h-index is the maximum value h such that the researcher has at least h papers
      * cited at least h times.

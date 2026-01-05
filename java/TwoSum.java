@@ -4,6 +4,9 @@ import java.util.HashMap;
 
 public class TwoSum {
     /**
+     * Time: O(n)
+     * Space: O(n)
+     *
      * We create a mapping of the numbers we have seen so far. While
      * we do this, we also check if the complement of the current
      * number (i.e., target - nums[i]) exists in the map. If it

@@ -2,6 +2,9 @@
 
 public class SetMatrixZeroes {
     /**
+     * Time: O(m * n)
+     * Space: O(1)
+     *
      * We do an initial scan for all zeros. Whenever we spot a
      * zero in the matrix, we take stock of its row and its column.
      * Once we have the set of all rows and columns that need to be

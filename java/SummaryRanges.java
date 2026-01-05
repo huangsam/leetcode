@@ -5,6 +5,9 @@ import java.util.List;
 
 public class SummaryRanges {
     /**
+     * Time: O(n)
+     * Space: O(n)
+     *
      * Here are the steps to build the range:
      *
      * <ul>
