@@ -6,6 +6,9 @@ from typing import List
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
         """
+        Time: O(n)
+        Space: O(1)
+
         You want to maximize your profit by choosing a single
         day to buy one stock and choosing a different day in
         the future to sell that stock.

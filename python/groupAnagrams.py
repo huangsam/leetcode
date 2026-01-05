@@ -7,6 +7,9 @@ from typing import DefaultDict, List
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         """
+        Time: O(n * k)
+        Space: O(n * k)
+
         Assume that anagram is simply a map of alpha counts.
 
         Then we will generate a hash based on the frequency

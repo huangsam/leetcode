@@ -3,6 +3,10 @@
 
 class Solution:
     def uniquePaths(self, m: int, n: int) -> int:
+        """
+        Time: O(m * n)
+        Space: O(m * n)
+        """
         # Initialize memo array
         memo = [[0] * n for _ in range(m)]
 

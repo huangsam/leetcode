@@ -4,6 +4,9 @@
 class Solution:
     def wordPattern(self, pattern: str, s: str) -> bool:
         """
+        Time: O(n)
+        Space: O(n)
+
         Each letter in pattern maps to exactly one unique word in s.
         Each unique word in s maps to exactly one letter in pattern.
         No two letters map to the same word.

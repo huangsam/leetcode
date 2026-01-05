@@ -5,6 +5,10 @@ from typing import List
 
 class Solution:
     def findPeakElement(self, nums: List[int]) -> int:
+        """
+        Time: O(log(n))
+        Space: O(1)
+        """
         lo, hi = 0, len(nums) - 1
 
         while lo < hi:

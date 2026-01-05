@@ -3,6 +3,10 @@
 
 class Solution:
     def mergeAlternately(self, word1: str, word2: str) -> str:
+        """
+        Time: O(n + m)
+        Space: O(n + m)
+        """
         max_length = max(len(word1), len(word2))
         diff_length = abs(len(word1) - len(word2))
 

@@ -3,6 +3,10 @@
 
 class Solution:
     def mySqrt(self, x: int) -> int:
+        """
+        Time: O(log(x))
+        Space: O(1)
+        """
         lo: int | float = 0
         hi: int | float = x
         while lo < hi:

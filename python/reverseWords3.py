@@ -3,6 +3,10 @@
 
 class Solution:
     def reverseWords(self, s: str) -> str:
+        """
+        Time: O(n)
+        Space: O(n)
+        """
         string = ""
         for word in s.split():
             string += word[::-1] + " "

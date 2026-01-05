@@ -6,6 +6,9 @@ from typing import Dict, List
 class Solution:
     def containsNearbyDuplicate(self, nums: List[int], k: int) -> bool:
         """
+        Time: O(n)
+        Space: O(n)
+
         1. Find all indices which have duplicates
         2. For each list of indices, see if any nC2 option satisfies
         3. Return True on first match. Return False with no matches

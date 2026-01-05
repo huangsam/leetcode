@@ -5,7 +5,12 @@ from container.binary_tree import TreeNode
 
 class Solution:
     def diameterOfBinaryTree(self, root: TreeNode) -> int:
-        """Calculate the diameter of a binary tree."""
+        """
+        Time: O(n)
+        Space: O(h)
+
+        Calculate the diameter of a binary tree.
+        """
         self.diameter = 0
 
         def depth(node: TreeNode) -> int:

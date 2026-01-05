@@ -7,6 +7,9 @@ from typing import List
 class Solution:
     def findKthLargest(self, nums: List[int], k: int) -> int:
         """
+        Time: O(n * log(k))
+        Space: O(k)
+
         Max heap gives largest element while min heap gives
         smallest element. Python offers min heap, so we'll
         keep pushing items in until k size. The heappush

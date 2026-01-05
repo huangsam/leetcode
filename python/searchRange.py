@@ -5,7 +5,12 @@ from typing import List
 
 class Solution:
     def searchRange(self, nums: List[int], target: int) -> List[int]:
-        """Find first and last position of target in sorted array."""
+        """
+        Time: O(log(n))
+        Space: O(1)
+
+        Find first and last position of target in sorted array.
+        """
         if not nums:
             return [-1, -1]
 

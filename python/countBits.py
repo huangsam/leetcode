@@ -6,6 +6,9 @@ from typing import List
 class Solution:
     def countBits(self, n: int) -> List[int]:
         """
+        Time: O(n)
+        Space: O(n)
+
         Get the binary representation for each number i from
         0..n using dynamic programming with the bottoms-up
         approach.

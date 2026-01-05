@@ -5,6 +5,10 @@ from typing import List
 
 class Solution:
     def findDisappearedNumbers(self, nums: List[int]) -> List[int]:
+        """
+        Time: O(n)
+        Space: O(1)
+        """
         result = []
 
         # Use the index of the array to mark the presence of numbers

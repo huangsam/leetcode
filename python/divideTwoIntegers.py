@@ -3,6 +3,10 @@
 
 class Solution:
     def divide(self, dividend: int, divisor: int) -> int:
+        """
+        Time: O(log(n))
+        Space: O(1)
+        """
         # Assume we are dealing with an environment that could only store
         # integers within the 32-bit signed integer range
         MAX_INT = 2**31 - 1

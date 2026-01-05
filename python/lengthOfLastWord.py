@@ -4,6 +4,9 @@
 class Solution:
     def lengthOfLastWord(self, s: str) -> int:
         """
+        Time: O(n)
+        Space: O(1)
+
         Keep iterating until right_at sees a character.
         Keep iterating until left_at does not see a character.
         Note that first and last characters must be checked.

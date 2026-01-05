@@ -5,6 +5,10 @@ from typing import List
 
 class Solution:
     def moveZeroes(self, nums: List[int]) -> None:
+        """
+        Time: O(n)
+        Space: O(1)
+        """
         # Tracks position of the next non-zero element
         non_zero_found = 0
 
@@ -16,6 +20,10 @@ class Solution:
                 non_zero_found += 1
 
     def moveZeroesSingleWrite(self, nums: List[int]) -> None:
+        """
+        Time: O(n)
+        Space: O(1)
+        """
         slow = 0
 
         # First partition: fill in non-zero elements

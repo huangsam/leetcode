@@ -8,6 +8,9 @@ from container.linked_list import ListNode
 class Solution:
     def partition(self, head: Optional[ListNode], x: int) -> Optional[ListNode]:
         """
+        Time: O(n)
+        Space: O(1)
+
         Partition nodes < x and >= x, preserving the order of the nodes.
 
         One approach to achieving the constraints above is to:

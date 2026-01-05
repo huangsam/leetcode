@@ -8,6 +8,10 @@ from container.binary_tree import TreeNode
 
 class Solution:
     def buildTree(self, preorder: List[int], inorder: List[int]) -> Optional[TreeNode]:
+        """
+        Time: O(n)
+        Space: O(n)
+        """
         # Build index map for O(1) lookups
         inorder_map = {val: idx for idx, val in enumerate(inorder)}
         return self._build(deque(preorder), inorder, 0, len(inorder) - 1, inorder_map)

@@ -6,6 +6,9 @@ from typing import List
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
         """
+        Time: O(n)
+        Space: O(1)
+
         For example [1,2,3,4] ->
 
         Multiply answer[i] by prefix product, before nums[i].

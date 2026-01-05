@@ -5,6 +5,10 @@ from typing import Dict, List
 
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
+        """
+        Time: O(n)
+        Space: O(n)
+        """
         # Keep track of the numbers we have seen so far and their indices
         seen_numbers: Dict[int, int] = {}
 

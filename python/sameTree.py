@@ -7,6 +7,10 @@ from container.binary_tree import TreeNode
 
 class Solution:
     def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
+        """
+        Time: O(n)
+        Space: O(h)
+        """
         # Check base cases for similar structure
         if p is None and q is None:
             return True

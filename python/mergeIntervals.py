@@ -5,6 +5,10 @@ from typing import List, Optional
 
 class Solution:
     def merge(self, intervals: List[List[int]]) -> List[List[int]]:
+        """
+        Time: O(n * log(n))
+        Space: O(n)
+        """
         # Sort by start time, and then sort by end time
         intervals.sort()
 

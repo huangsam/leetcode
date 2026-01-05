@@ -5,6 +5,10 @@ from typing import List, Set
 
 class Solution:
     def findDuplicates(self, nums: List[int]) -> List[int]:
+        """
+        Time: O(n)
+        Space: O(n)
+        """
         seen: Set[int] = set()
         result = []
         for num in nums:
