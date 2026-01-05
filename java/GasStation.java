@@ -1,7 +1,6 @@
 // https://leetcode.com/problems/gas-station/
 
 public class GasStation {
-
     /**
      * Time: O(n)
      * Space: O(1)

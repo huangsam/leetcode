@@ -1,7 +1,6 @@
 // https://leetcode.com/problems/number-of-islands/
 
 public class NumberOfIslands {
-
     /**
      * Time: O(m * n)
      * Space: O(m * n)

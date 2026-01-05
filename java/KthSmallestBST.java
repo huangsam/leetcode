@@ -3,7 +3,6 @@
 import container.TreeNode;
 
 public class KthSmallestBST {
-
     /**
      * Time: O(h + k)
      * Space: O(h)

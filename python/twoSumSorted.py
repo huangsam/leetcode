@@ -8,7 +8,7 @@ class Solution:
         """
         Time: O(n)
         Space: O(1)
-        """        """
+
         We know that there is exactly one solution and that the input
         list is sorted in increasing order. Then we know that the
         first item is min and last item is max. We start with min + max

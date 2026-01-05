@@ -3,7 +3,6 @@
 import helper.VersionControl;
 
 public class FirstBadVersion extends VersionControl {
-
     /**
      * Time: O(log(n))
      * Space: O(1)

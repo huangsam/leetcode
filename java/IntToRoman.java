@@ -1,7 +1,6 @@
 // https://leetcode.com/problems/integer-to-roman/
 
 public class IntToRoman {
-
     /**
      * Time: O(1)
      * Space: O(1)

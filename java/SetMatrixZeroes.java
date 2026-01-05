@@ -1,7 +1,6 @@
 // https://leetcode.com/problems/set-matrix-zeroes/
 
 public class SetMatrixZeroes {
-
     /**
      * Time: O(m * n)
      * Space: O(1)

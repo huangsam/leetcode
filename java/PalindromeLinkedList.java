@@ -3,7 +3,6 @@
 import container.ListNode;
 
 public class PalindromeLinkedList {
-
     /**
      * Time: O(n)
      * Space: O(1)

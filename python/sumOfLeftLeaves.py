@@ -8,7 +8,8 @@ class Solution:
         """
         Time: O(n)
         Space: O(h)
-        """        if root is None or self._isLeafNode(root):
+        """
+        if root is None or self._isLeafNode(root):
             return 0
         return self._sumWorkhorse(root)
 

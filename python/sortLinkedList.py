@@ -10,7 +10,8 @@ class Solution:
         """
         Time: O(n * log(n))
         Space: O(log(n))
-        """        if head is None or head.next is None:
+        """
+        if head is None or head.next is None:
             return head
         middle = self._getMiddle(head)
         right = middle.next

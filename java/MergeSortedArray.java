@@ -1,7 +1,6 @@
 // https://leetcode.com/problems/merge-sorted-array/
 
 public class MergeSortedArray {
-
     /**
      * Time: O(m + n)
      * Space: O(1)

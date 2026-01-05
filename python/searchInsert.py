@@ -8,7 +8,7 @@ class Solution:
         """
         Time: O(log(n))
         Space: O(1)
-        """        """
+
         Similar to regular binary search. But the main difference
         in this case is that we are looking for an insert position
         between two numbers (for middle case) or an insert position

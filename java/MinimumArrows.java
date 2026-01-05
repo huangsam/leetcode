@@ -4,7 +4,6 @@ import java.util.Arrays;
 import java.util.Comparator;
 
 public class MinimumArrows {
-
     /**
      * Time: O(n * log(n)
      * Space: O(1)

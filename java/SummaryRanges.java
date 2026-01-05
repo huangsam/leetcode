@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SummaryRanges {
-
     /**
      * Time: O(n)
      * Space: O(n)

@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class LevelAverage {
-
     /**
      * Time: O(n)
      * Space: O(w)

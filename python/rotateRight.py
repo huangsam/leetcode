@@ -10,7 +10,7 @@ class Solution:
         """
         Time: O(n)
         Space: O(1)
-        """        """
+
         One possible approach is as follows:
 
         - Get length of list in one pass

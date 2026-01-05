@@ -1,7 +1,6 @@
 // https://leetcode.com/problems/longest-common-prefix/
 
 public class LongestCommonPrefix {
-
     /**
      * Time: O(n * m)
      * Space: O(1)

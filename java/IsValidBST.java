@@ -3,7 +3,6 @@
 import container.TreeNode;
 
 public class IsValidBST {
-
     /**
      * Time: O(n)
      * Space: O(h)

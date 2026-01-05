@@ -10,7 +10,8 @@ class Solution:
         """
         Time: O(n)
         Space: O(h)
-        """        self.complement_set: Set[int] = set()
+        """
+        self.complement_set: Set[int] = set()
 
     def findTarget(self, root: Optional[TreeNode], k: int) -> bool:
         """

@@ -1,7 +1,6 @@
 // https://leetcode.com/problems/h-index/
 
 public class FindHIndex {
-
     /**
      * Time: O(n)
      * Space: O(n)

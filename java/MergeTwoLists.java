@@ -3,7 +3,6 @@
 import container.ListNode;
 
 public class MergeTwoLists {
-
     /**
      * Time: O(m + n)
      * Space: O(1)

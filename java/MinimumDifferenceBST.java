@@ -3,7 +3,6 @@
 import container.TreeNode;
 
 public class MinimumDifferenceBST {
-
     /**
      * Time: O(n)
      * Space: O(h)
