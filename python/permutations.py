@@ -9,6 +9,8 @@ class Solution:
 
     def permute(self, nums: List[int]) -> List[List[int]]:
         """
+        Return all possible permutations of an array of distinct integers.
+        
         Complexity:
         - Time: O(n! * n)
         - Space: O(n! * n)

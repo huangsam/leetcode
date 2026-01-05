@@ -9,6 +9,8 @@ class Solution:
 
     def combine(self, n: int, k: int) -> List[List[int]]:
         """
+        Return all possible combinations of k numbers chosen from the range [1, n].
+        
         Complexity:
         - Time: O(C(n, k) * k)
         - Space: O(C(n, k) * k)

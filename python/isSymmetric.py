@@ -8,6 +8,8 @@ from container.binary_tree import TreeNode
 class Solution:
     def isSymmetric(self, root: Optional[TreeNode]) -> bool:
         """
+        Determine if a binary tree is symmetric around its center.
+        
         - Time: O(n)
         - Space: O(h)
         """

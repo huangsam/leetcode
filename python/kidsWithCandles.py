@@ -4,6 +4,8 @@ from typing import List
 class Solution:
     def kidsWithCandies(self, candies: List[int], extraCandies: int) -> List[bool]:
         """
+        Determine which kids will have the greatest number of candies.
+        
         Complexity:
         - Time: O(n)
         - Space: O(n)
