@@ -7,7 +7,10 @@ from container.binary_tree import TreeNode
 
 class Solution:
     def __init__(self) -> None:
-        self.complement_set: Set[int] = set()
+        """
+        Time: O(n)
+        Space: O(h)
+        """        self.complement_set: Set[int] = set()
 
     def findTarget(self, root: Optional[TreeNode], k: int) -> bool:
         """

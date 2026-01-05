@@ -5,7 +5,10 @@ from typing import List
 
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
-        """Find all unique triplets that sum to zero."""
+        """
+        Time: O(n^2)
+        Space: O(n)
+        """        """Find all unique triplets that sum to zero."""
         nums.sort()
         result = []
         n = len(nums)

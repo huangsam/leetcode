@@ -5,7 +5,10 @@ from typing import List
 
 class Solution:
     def sortColors(self, nums: List[int]) -> None:
-        lo, mid, hi = 0, 0, len(nums) - 1
+        """
+        Time: O(n)
+        Space: O(1)
+        """        lo, mid, hi = 0, 0, len(nums) - 1
         while mid <= hi:
             # If the current element is 0, swap it with the element at lo
             if nums[mid] == 0:

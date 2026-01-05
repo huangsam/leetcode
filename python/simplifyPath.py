@@ -6,6 +6,9 @@ from typing import List
 class Solution:
     def simplifyPath(self, path: str) -> str:
         """
+        Time: O(n)
+        Space: O(n)
+        """        """
         Assume that no spaces exist in folder names and file names.
         Then we can split by '/' to identify all incoming tokens.
         For each token, we check if it's a '.', '..' or something

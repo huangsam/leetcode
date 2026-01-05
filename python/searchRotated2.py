@@ -5,7 +5,10 @@ from typing import List
 
 class Solution:
     def search(self, nums: List[int], target: int) -> bool:
-        lo, hi = 0, len(nums) - 1
+        """
+        Time: O(n)
+        Space: O(1)
+        """        lo, hi = 0, len(nums) - 1
         while lo <= hi:
             # Handle duplicate elements at the boundaries
             while lo < hi and nums[lo] == nums[lo + 1]:

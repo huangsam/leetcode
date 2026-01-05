@@ -6,6 +6,9 @@ from typing import List
 class Solution:
     def rotate(self, matrix: List[List[int]]) -> None:
         """
+        Time: O(n^2)
+        Space: O(1)
+        """        """
         Do not return anything, modify matrix in-place instead.
 
         Observation for 3x3:

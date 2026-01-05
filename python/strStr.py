@@ -4,6 +4,9 @@
 class Solution:
     def strStr(self, haystack: str, needle: str) -> int:
         """
+        Time: O(n * m)
+        Space: O(1)
+        """        """
         Start from the beginning. Whenever there is a match of needle in
         haystack, then we start iterating and keep track of index. If there
         is a full match, then we store the minimum result, as we are looking

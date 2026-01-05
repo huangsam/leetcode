@@ -7,7 +7,10 @@ from container.linked_list import ListNode
 
 class Solution:
     def sortList(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        if head is None or head.next is None:
+        """
+        Time: O(n * log(n))
+        Space: O(log(n))
+        """        if head is None or head.next is None:
             return head
         middle = self._getMiddle(head)
         right = middle.next

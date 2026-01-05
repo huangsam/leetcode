@@ -6,6 +6,9 @@ from typing import List
 class Solution:
     def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
         """
+        Time: O(m * n)
+        Space: O(1)
+        """        """
         Start at (0,0), go right until you hit the end.
         then you go down until you hit the end. Then you
         go left until you hit the end. Then you go up until
