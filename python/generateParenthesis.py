@@ -6,8 +6,9 @@ from typing import List
 class Solution:
     def generateParenthesis(self, n: int) -> List[str]:
         """
-        Time: O(4^n / sqrt(n))
-        Space: O(4^n / sqrt(n))
+        Complexity:
+        - Time: O(4^n / sqrt(n))
+        - Space: O(4^n / sqrt(n))
         """
         result: List[str] = []
         self._backtrack("", 0, 0, n, result)

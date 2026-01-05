@@ -4,8 +4,9 @@
 class Solution:
     def canConstruct(self, ransomNote: str, magazine: str) -> bool:
         """
-        Time: O(n + m)
-        Space: O(n)
+        Complexity:
+        - Time: O(n + m)
+        - Space: O(n)
 
         We are going to collect the mapping of character frequencies
         for ransom note. Then we subtract the frequencies when iterating

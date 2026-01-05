@@ -6,8 +6,9 @@ from typing import List
 class Solution:
     def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
         """
-        Time: O(log(min(m, n)))
-        Space: O(1)
+        Complexity:
+        - Time: O(log(min(m, n)))
+        - Space: O(1)
         """
         # Ensure nums1 is the shorter array for efficient binary search
         if len(nums1) > len(nums2):

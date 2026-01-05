@@ -4,8 +4,9 @@
 class Solution:
     def romanToInt(self, s: str) -> int:
         """
-        Time: O(n)
-        Space: O(1)
+        Complexity:
+        - Time: O(n)
+        - Space: O(1)
 
         Starting from left to right...
 

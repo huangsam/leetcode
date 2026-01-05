@@ -4,8 +4,9 @@
 class Solution:
     def findTheDifference(self, s: str, t: str) -> str:
         """
-        Time: O(n)
-        Space: O(1)
+        Complexity:
+        - Time: O(n)
+        - Space: O(1)
         """
         # For lowercase English letters
         counts = [0] * 26

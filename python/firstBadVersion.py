@@ -12,8 +12,9 @@ def isBadVersion(version: int) -> bool:
 class Solution:
     def firstBadVersion(self, n: int) -> int:
         """
-        Time: O(log(n))
-        Space: O(1)
+        Complexity:
+        - Time: O(log(n))
+        - Space: O(1)
         """
         lo, hi = 1, n
         while lo < hi:

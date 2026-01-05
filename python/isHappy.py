@@ -6,8 +6,9 @@ from typing import Set
 class Solution:
     def isHappy(self, n: int) -> bool:
         """
-        Time: O(log(n))
-        Space: O(log(n))
+        Complexity:
+        - Time: O(log(n))
+        - Space: O(log(n))
         """
         seen_nums: Set[int] = set()
         current = n

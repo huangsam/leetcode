@@ -6,8 +6,9 @@ from typing import List
 class Solution:
     def twoSum(self, numbers: List[int], target: int) -> List[int]:
         """
-        Time: O(n)
-        Space: O(1)
+        Complexity:
+        - Time: O(n)
+        - Space: O(1)
 
         We know that there is exactly one solution and that the input
         list is sorted in increasing order. Then we know that the

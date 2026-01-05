@@ -6,8 +6,9 @@ from typing import List
 class Solution:
     def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
         """
-        Time: O(m + n)
-        Space: O(1)
+        Complexity:
+        - Time: O(m + n)
+        - Space: O(1)
 
         You are given two integer arrays nums1 and nums2, sorted in
         non-decreasing order, and two integers m and n, representing

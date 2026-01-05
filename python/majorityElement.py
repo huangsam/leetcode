@@ -7,8 +7,9 @@ from typing import DefaultDict, List
 class Solution:
     def majorityElement(self, nums: List[int]) -> int:
         """
-        Time: O(n)
-        Space: O(n)
+        Complexity:
+        - Time: O(n)
+        - Space: O(n)
 
         Given an array nums of size n, return the majority element.
 

@@ -7,8 +7,9 @@ from typing import DefaultDict, List
 class Solution:
     def singleNumber(self, nums: List[int]) -> List[int]:
         """
-        Time: O(n)
-        Space: O(1)
+        Complexity:
+        - Time: O(n)
+        - Space: O(1)
         """
         mapping: DefaultDict[int, int] = defaultdict(int)
         for num in nums:

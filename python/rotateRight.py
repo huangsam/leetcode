@@ -8,8 +8,9 @@ from container.linked_list import ListNode
 class Solution:
     def rotateRight(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
         """
-        Time: O(n)
-        Space: O(1)
+        Complexity:
+        - Time: O(n)
+        - Space: O(1)
 
         One possible approach is as follows:
 

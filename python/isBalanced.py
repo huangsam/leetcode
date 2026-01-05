@@ -8,8 +8,9 @@ from container.binary_tree import TreeNode
 class Solution:
     def isBalanced(self, root: Optional[TreeNode]) -> bool:
         """
-        Time: O(n)
-        Space: O(h)
+        Complexity:
+        - Time: O(n)
+        - Space: O(h)
         """
         return self._nodeHeight(root) != -1
 

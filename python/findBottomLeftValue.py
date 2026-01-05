@@ -6,8 +6,9 @@ from container.binary_tree import TreeNode
 class Solution:
     def findBottomLeftValue(self, root: TreeNode) -> int:
         """
-        Time: O(n)
-        Space: O(w)
+        Complexity:
+        - Time: O(n)
+        - Space: O(w)
         """
         leftmost_value = root.val
         to_visit = [root]

@@ -4,8 +4,9 @@
 class Solution:
     def minFlips(self, a: int, b: int, c: int) -> int:
         """
-        Time: O(log(max(a, b, c)))
-        Space: O(1)
+        Complexity:
+        - Time: O(log(max(a, b, c)))
+        - Space: O(1)
         """
         result = 0
         while a > 0 or b > 0 or c > 0:

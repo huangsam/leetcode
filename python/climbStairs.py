@@ -4,8 +4,9 @@
 class Solution:
     def climbStairs(self, n: int) -> int:
         """
-        Time: O(n)
-        Space: O(1)
+        Complexity:
+        - Time: O(n)
+        - Space: O(1)
         """
         if n <= 1:
             return 1

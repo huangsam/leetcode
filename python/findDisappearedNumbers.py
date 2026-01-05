@@ -6,8 +6,9 @@ from typing import List
 class Solution:
     def findDisappearedNumbers(self, nums: List[int]) -> List[int]:
         """
-        Time: O(n)
-        Space: O(1)
+        Complexity:
+        - Time: O(n)
+        - Space: O(1)
         """
         result = []
 

@@ -6,8 +6,9 @@ import math
 class Solution:
     def gcdOfStrings(self, str1: str, str2: str) -> str:
         """
-        Time: O(n + m)
-        Space: O(n + m)
+        Complexity:
+        - Time: O(n + m)
+        - Space: O(n + m)
         """
         # Step 1: Necessary Condition Check
         # If a common divisor exists, str1 + str2 must equal str2 + str1.

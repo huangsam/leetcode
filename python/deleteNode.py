@@ -8,8 +8,9 @@ from container.binary_tree import TreeNode
 class Solution:
     def deleteNode(self, root: Optional[TreeNode], key: int) -> Optional[TreeNode]:
         """
-        Time: O(h)
-        Space: O(h)
+        Complexity:
+        - Time: O(h)
+        - Space: O(h)
         """
         if root is None:
             return None

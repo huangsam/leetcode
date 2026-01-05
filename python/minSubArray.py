@@ -8,8 +8,9 @@ class Solution:
 
     def minSubArrayLen(self, target: int, nums: List[int]) -> int:
         """
-        Time: O(n)
-        Space: O(1)
+        Complexity:
+        - Time: O(n)
+        - Space: O(1)
 
         Slide left and right as you will. Right increases until
         the current_sum beats or matches the target. Left increases

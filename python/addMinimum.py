@@ -6,8 +6,9 @@ from typing import List
 class Solution:
     def addMinimum(self, word: str) -> int:
         """
-        Time: O(n)
-        Space: O(n)
+        Complexity:
+        - Time: O(n)
+        - Space: O(n)
 
         a -> 2
         b -> 2

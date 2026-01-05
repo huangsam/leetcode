@@ -6,8 +6,9 @@ from typing import List
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
         """
-        Time: O(n)
-        Space: O(1)
+        Complexity:
+        - Time: O(n)
+        - Space: O(1)
 
         On each day, you may decide to buy and/or sell the stock. You can
         only hold at most one share of the stock at any time. However, you

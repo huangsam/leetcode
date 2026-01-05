@@ -6,8 +6,9 @@ from container.linked_list import ListNode
 class Solution:
     def removeElements(self, head: ListNode, val: int) -> ListNode:
         """
-        Time: O(n)
-        Space: O(1)
+        Complexity:
+        - Time: O(n)
+        - Space: O(1)
         """
         root_node = prev_node = ListNode(-1)  # Dummy node to handle head removal
         prev_node.next = head

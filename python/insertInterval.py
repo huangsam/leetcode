@@ -6,8 +6,9 @@ from typing import List
 class Solution:
     def insert(self, intervals: List[List[int]], newInterval: List[int]) -> List[List[int]]:
         """
-        Time: O(n)
-        Space: O(n)
+        Complexity:
+        - Time: O(n)
+        - Space: O(n)
         """
         result: List[List[int]] = []
         i = 0

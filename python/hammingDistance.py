@@ -4,8 +4,9 @@
 class Solution:
     def hammingDistance(self, x: int, y: int) -> int:
         """
-        Time: O(log(max(x, y)))
-        Space: O(1)
+        Complexity:
+        - Time: O(log(max(x, y)))
+        - Space: O(1)
         """
         distance = 0
         xor_result = x ^ y  # XOR will have 1s where bits differ

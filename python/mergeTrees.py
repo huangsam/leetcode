@@ -6,8 +6,9 @@ from container.binary_tree import TreeNode
 class Solution:
     def mergeTrees(self, t1: TreeNode, t2: TreeNode) -> TreeNode:
         """
-        Time: O(n)
-        Space: O(h)
+        Complexity:
+        - Time: O(n)
+        - Space: O(h)
         """
         if t1 is None:
             return t2

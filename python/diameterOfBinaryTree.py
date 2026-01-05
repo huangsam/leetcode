@@ -6,8 +6,9 @@ from container.binary_tree import TreeNode
 class Solution:
     def diameterOfBinaryTree(self, root: TreeNode) -> int:
         """
-        Time: O(n)
-        Space: O(h)
+        Complexity:
+        - Time: O(n)
+        - Space: O(h)
 
         Calculate the diameter of a binary tree.
         """

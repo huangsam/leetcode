@@ -4,8 +4,9 @@
 class Solution:
     def myPow(self, x: float, n: int) -> float:
         """
-        Time: O(log(n))
-        Space: O(1)
+        Complexity:
+        - Time: O(log(n))
+        - Space: O(1)
         """
         # Handle the case where n is 0
         if n == 0:

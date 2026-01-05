@@ -8,8 +8,9 @@ from container.binary_tree import TreeNode
 class Solution:
     def __init__(self) -> None:
         """
-        Time: O(n)
-        Space: O(h)
+        Complexity:
+        - Time: O(n)
+        - Space: O(h)
         """
         self.complement_set: Set[int] = set()
 

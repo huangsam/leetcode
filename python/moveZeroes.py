@@ -6,8 +6,9 @@ from typing import List
 class Solution:
     def moveZeroes(self, nums: List[int]) -> None:
         """
-        Time: O(n)
-        Space: O(1)
+        Complexity:
+        - Time: O(n)
+        - Space: O(1)
         """
         # Tracks position of the next non-zero element
         non_zero_found = 0
@@ -21,8 +22,9 @@ class Solution:
 
     def moveZeroesSingleWrite(self, nums: List[int]) -> None:
         """
-        Time: O(n)
-        Space: O(1)
+        Complexity:
+        - Time: O(n)
+        - Space: O(1)
         """
         slow = 0
 

@@ -8,8 +8,9 @@ from container.linked_list import ListNode
 class Solution:
     def modifiedList(self, nums: List[int], head: Optional[ListNode]) -> Optional[ListNode]:
         """
-        Time: O(n + m)
-        Space: O(n)
+        Complexity:
+        - Time: O(n + m)
+        - Space: O(n)
         """
         # Create hash set to avoid an expensive O(N) lookup on nums
         num_set = set(nums)

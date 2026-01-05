@@ -8,8 +8,9 @@ from container.binary_tree import TreeNode
 class Solution:
     def hasPathSum(self, root: Optional[TreeNode], targetSum: int) -> bool:
         """
-        Time: O(n)
-        Space: O(h)
+        Complexity:
+        - Time: O(n)
+        - Space: O(h)
         """
         # No node
         if not root:

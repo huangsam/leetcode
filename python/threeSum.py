@@ -6,8 +6,9 @@ from typing import List
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
         """
-        Time: O(n^2)
-        Space: O(n)
+        Complexity:
+        - Time: O(n^2)
+        - Space: O(n)
 
         Find all unique triplets that sum to zero.
         """

@@ -6,8 +6,9 @@ from typing import List
 class Solution:
     def fizzBuzz(self, n: int) -> List[str]:
         """
-        Time: O(n)
-        Space: O(n)
+        Complexity:
+        - Time: O(n)
+        - Space: O(n)
         """
         result = []
         for i in range(1, n + 1):

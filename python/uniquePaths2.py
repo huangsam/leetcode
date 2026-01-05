@@ -6,8 +6,9 @@ from typing import List
 class Solution:
     def uniquePathsWithObstacles(self, obstacleGrid: List[List[int]]) -> int:
         """
-        Time: O(m * n)
-        Space: O(m * n)
+        Complexity:
+        - Time: O(m * n)
+        - Space: O(m * n)
         """
         # Initialize memo array
         rows, cols = len(obstacleGrid), len(obstacleGrid[0])

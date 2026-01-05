@@ -4,8 +4,9 @@
 class Solution:
     def reverseVowels(self, s: str) -> str:
         """
-        Time: O(n)
-        Space: O(n)
+        Complexity:
+        - Time: O(n)
+        - Space: O(n)
 
         This illustrates the two-pointer technique.
         It only uses O(n) space without auxilliary structures.

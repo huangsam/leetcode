@@ -6,8 +6,9 @@ from typing import List
 class Solution:
     def searchInsert(self, nums: List[int], target: int) -> int:
         """
-        Time: O(log(n))
-        Space: O(1)
+        Complexity:
+        - Time: O(log(n))
+        - Space: O(1)
 
         Similar to regular binary search. But the main difference
         in this case is that we are looking for an insert position

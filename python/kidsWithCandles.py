@@ -4,8 +4,9 @@ from typing import List
 class Solution:
     def kidsWithCandies(self, candies: List[int], extraCandies: int) -> List[bool]:
         """
-        Time: O(n)
-        Space: O(n)
+        Complexity:
+        - Time: O(n)
+        - Space: O(n)
 
         Start by finding the max possible value. Then create a boolean list
         of len(candies) where you literally go through a second pass. Can I be

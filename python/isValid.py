@@ -4,8 +4,9 @@
 class Solution:
     def isValid(self, s: str) -> bool:
         """
-        Time: O(n)
-        Space: O(n)
+        Complexity:
+        - Time: O(n)
+        - Space: O(n)
 
         Check if parentheses are valid.
 

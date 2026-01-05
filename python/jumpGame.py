@@ -6,8 +6,9 @@ from typing import List
 class Solution:
     def canJump(self, nums: List[int]) -> bool:
         """
-        Time: O(n)
-        Space: O(1)
+        Complexity:
+        - Time: O(n)
+        - Space: O(1)
 
         You are given an integer array nums. You are initially
         positioned at the array's first index, and each element
@@ -32,8 +33,8 @@ class Solution:
 
     def canJumpDynamic(self, nums: List[int]) -> bool:
         """
-        Time: O(n^2)
-        Space: O(n)
+        - Time: O(n^2)
+        - Space: O(n)
 
         Approach (sub-efficient):
         - Initialize reachable array

@@ -8,8 +8,9 @@ from container.linked_list import ListNode
 class Solution:
     def hasCycle(self, head: Optional[ListNode]) -> bool:
         """
-        Time: O(n)
-        Space: O(1)
+        Complexity:
+        - Time: O(n)
+        - Space: O(1)
 
         To check cycle, we can use O(n) memory to store all
         seen nodes and report when the next one matches any

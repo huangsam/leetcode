@@ -8,8 +8,9 @@ from container.linked_list import ListNode
 class Solution:
     def reverseBetween(self, head: Optional[ListNode], left: int, right: int) -> Optional[ListNode]:
         """
-        Time: O(n)
-        Space: O(1)
+        Complexity:
+        - Time: O(n)
+        - Space: O(1)
 
         We reverse a subset of the singly linked list from
         left <= right. Anything less than left and anything greater
