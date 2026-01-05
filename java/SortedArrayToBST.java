@@ -3,6 +3,11 @@
 import container.TreeNode;
 
 public class SortedArrayToBST {
+
+    /**
+     * Time: O(n)
+     * Space: O(log(n))
+     */
     public TreeNode sortedArrayToBST(int[] nums) {
         if (nums.length == 0) {
             return null;

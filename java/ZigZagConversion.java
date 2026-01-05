@@ -1,9 +1,12 @@
 // https://leetcode.com/problems/zigzag-conversion/
 
 public class ZigZagConversion {
+
     /**
-     * Here are the steps to convert the string:
+     * Time: O(n)
+     * Space: O(n)
      *
+     * Here are the steps to convert the string:
      * <ul>
      *     <li>Set up an array of StringBuilder with numRows elements</li>
      *     <li>Iterate through string and append each character to its depth row</li>

@@ -3,7 +3,7 @@
 import java.util.Deque;
 import java.util.LinkedList;
 
-/**
+    /**
  * Your MinStack object will be instantiated and called as such:
  * MinStack obj = new MinStack();
  * obj.push(val);
@@ -20,6 +20,10 @@ public class MinStack {
         minimum = new LinkedList<>();
     }
 
+    /**
+     * Time: O(1)
+     * Space: O(n)
+     */
     public void push(int val) {
         standard.addFirst(val);
         if (minimum.isEmpty() || minimum.getFirst() >= val) {

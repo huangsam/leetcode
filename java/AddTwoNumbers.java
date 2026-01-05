@@ -3,13 +3,13 @@
 import container.ListNode;
 
 public class AddTwoNumbers {
-    private static final int TEN = 10;
-
-    /**
+    private static final int TEN = 10;    /**
+     * Time: O(max(m, n)
+     * Space: O(max(m, n)
+     *
      * Adds two numbers represented as linked lists and returns the sum as a linked list.
      * Each node in the input linked lists contains a single digit, and the digits are stored
      * in reverse order, meaning the 1's digit is at the head of the list.
-     *
      * <p> The method handles cases where the input lists have different lengths and also accounts
      * for any carry that may result from the addition.
      */

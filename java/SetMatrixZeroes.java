@@ -1,12 +1,15 @@
 // https://leetcode.com/problems/set-matrix-zeroes/
 
 public class SetMatrixZeroes {
+
     /**
+     * Time: O(m * n)
+     * Space: O(1)
+     *
      * We do an initial scan for all zeros. Whenever we spot a
      * zero in the matrix, we take stock of its row and its column.
      * Once we have the set of all rows and columns that need to be
      * zeroed out, then we actually do the operations.
-     *
      * <p> The primary way to resort to O(1) memory usage is by
      * using the top row and left column to collect all columns
      * and rows where a zero was encountered. That way, we do not

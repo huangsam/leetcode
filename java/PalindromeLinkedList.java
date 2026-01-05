@@ -3,9 +3,12 @@
 import container.ListNode;
 
 public class PalindromeLinkedList {
+
     /**
-     * Test cases to evaluate:
+     * Time: O(n)
+     * Space: O(1)
      *
+     * Test cases to evaluate:
      * <pre>
      * [0] -> true
      * [0, 0] -> true

@@ -6,7 +6,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class LevelAverage {
+
     /**
+     * Time: O(n)
+     * Space: O(w)
+     *
      * This method calculates the average value of nodes at each level in a binary tree.
      * Once the tree is traversed, it computes the average for each level
      * by dividing the total sum of node values at that level by the count of nodes.

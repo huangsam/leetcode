@@ -4,9 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SummaryRanges {
+
     /**
-     * Here are the steps to build the range:
+     * Time: O(n)
+     * Space: O(n)
      *
+     * Here are the steps to build the range:
      * <ul>
      *     <li>Iterate through {@code nums} one by one</li>
      *     <li>When non-contiguous, append {@code start->end} to result</li>

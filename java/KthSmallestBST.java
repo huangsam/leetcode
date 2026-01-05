@@ -3,7 +3,11 @@
 import container.TreeNode;
 
 public class KthSmallestBST {
+
     /**
+     * Time: O(h + k)
+     * Space: O(h)
+     *
      * We use a helper function to perform an in-order traversal of the BST.
      * The helper terminates when we reach the k-th smallest element.
      * This approach ensures we only traverse the tree as much as necessary.

@@ -3,7 +3,12 @@
 import java.util.Arrays;
 
 public class JumpGameTwo {
-    /** Approach with near-far intuition */
+
+/** Approach with near-far intuition */
+    /**
+     * Time: O(n)
+     * Space: O(1)
+     */
     public int jump(int[] nums) {
         int near = 0;
         int far = 0;
@@ -28,7 +33,7 @@ public class JumpGameTwo {
         return jumps;
     }
 
-    /** Approach with dynamic programming */
+/** Approach with dynamic programming */
     public int jumpDynamic(int[] nums) {
         int[] minJumps = new int[nums.length];
         Arrays.fill(minJumps, Integer.MAX_VALUE - 1);

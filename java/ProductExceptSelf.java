@@ -3,19 +3,20 @@
 import java.util.Arrays;
 
 public class ProductExceptSelf {
+
     /**
+     * Time: O(n)
+     * Space: O(1)
+     *
      * Product of all the elements of {@code nums} except
      * {@code nums[i]}. What we need to do is:
-     *
      * <ul>
      *     <li>Use cumulative product of left side without l-1</li>
      *     <li>Use cumulative product of right side without r+1</li>
      *     <li>Left product fills from left to right</li>
      *     <li>Right product fills from right to left</li>
      * </ul>
-     *
      * Here is an example for demonstrative purposes:
-     *
      * <pre>
      * [1, 2, 3, 4] (original)
      * [1, 1, 2, 6] (left transform)

@@ -1,6 +1,11 @@
 // https://leetcode.com/problems/number-of-islands/
 
 public class NumberOfIslands {
+
+    /**
+     * Time: O(m * n)
+     * Space: O(m * n)
+     */
     public int numIslands(char[][] grid) {
         int result = 0;
         boolean[][] visited = new boolean[rowCount(grid)][colCount(grid)];

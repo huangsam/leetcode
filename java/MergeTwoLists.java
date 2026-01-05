@@ -3,7 +3,11 @@
 import container.ListNode;
 
 public class MergeTwoLists {
+
     /**
+     * Time: O(m + n)
+     * Space: O(1)
+     *
      * Let us proceed by creating a dummy node to minimize null checks.
      * Since {@code list1} and {@code list2} are sorted in increasing
      * order, we can traverse from start to end and link them to next

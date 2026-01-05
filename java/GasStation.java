@@ -1,16 +1,18 @@
 // https://leetcode.com/problems/gas-station/
 
 public class GasStation {
+
     /**
+     * Time: O(n)
+     * Space: O(1)
+     *
      * Return starting point for completing a circuit. Note
      * that the current gas and differences help us with determining
      * that start point more easily.
-     *
      * <pre>
      * gas = [1,2,3,4,5], cost = [3,4,5,1,2]
      * sum(gas) = 15, sum(cost) = 15
      * diff = [-2,-2,-2,3,3]
-     *
      * gas = [2,3,4], cost = [3,4,3]
      * sum(gas) = 9, sum(cost) = 10
      * diff = [-1,-1,1]

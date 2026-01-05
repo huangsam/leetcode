@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
-/**
+    /**
  * Your RandomizedSet object will be instantiated and called as such:
  * RandomizedSet obj = new RandomizedSet();
  * boolean param_1 = obj.insert(val);
@@ -22,6 +22,10 @@ class RandomizedSet {
         valueToIndex = new HashMap<>();
     }
 
+    /**
+     * Time: O(1)
+     * Space: O(n)
+     */
     public boolean insert(int val) {
         if (valueToIndex.containsKey(val)) {
             return false;

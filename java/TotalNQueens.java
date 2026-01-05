@@ -1,9 +1,10 @@
 // https://leetcode.com/problems/n-queens-ii/
 
 public class TotalNQueens {
-    private int numberOfSolutions = 0;
-
-    /**
+    private int numberOfSolutions = 0;    /**
+     * Time: O(n!)
+     * Space: O(n)
+     *
      * We know that 1 <= n <= 9, so time complexity isn't going to be
      * as big of a problem in this case. We just need to make sure
      * that we get the correct answer by backtracking solution. So

@@ -4,6 +4,10 @@ public class ReverseInteger {
     private static final int INT_MAX = 2147483647; // 2^31 - 1
     private static final int INT_MIN = -2147483648; // -2^31
 
+    /**
+     * Time: O(log(n))
+     * Space: O(1)
+     */
     public int reverse(int x) {
         // Determine sign; work with positive 'x' for reversal
         // Handle MIN_INT explicitly as abs(MIN_INT) overflows 32-bit int
