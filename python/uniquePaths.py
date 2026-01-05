@@ -6,7 +6,8 @@ class Solution:
         """
         Time: O(m * n)
         Space: O(m * n)
-        """        # Initialize memo array
+        """
+        # Initialize memo array
         memo = [[0] * n for _ in range(m)]
 
         # Go through each row, m-1 --> 0

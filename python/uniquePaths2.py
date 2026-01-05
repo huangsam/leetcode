@@ -8,7 +8,8 @@ class Solution:
         """
         Time: O(m * n)
         Space: O(m * n)
-        """        # Initialize memo array
+        """
+        # Initialize memo array
         rows, cols = len(obstacleGrid), len(obstacleGrid[0])
         memo = [[0] * cols for _ in range(rows)]
 

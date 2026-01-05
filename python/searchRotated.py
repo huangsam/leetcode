@@ -8,7 +8,8 @@ class Solution:
         """
         Time: O(log(n))
         Space: O(1)
-        """        lo, hi = 0, len(nums) - 1
+        """
+        lo, hi = 0, len(nums) - 1
         while lo <= hi:
             mid = lo + (hi - lo) // 2
             if target == nums[mid]:

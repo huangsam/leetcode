@@ -8,7 +8,8 @@ class Solution:
         """
         Time: O(n)
         Space: O(1)
-        """        single = 0
+        """
+        single = 0
         for num in nums:
             single ^= num  # XOR all numbers
         return single

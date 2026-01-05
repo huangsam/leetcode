@@ -9,7 +9,8 @@ class Solution:
         """
         Time: O(n)
         Space: O(1)
-        """        mapping: DefaultDict[int, int] = defaultdict(int)
+        """
+        mapping: DefaultDict[int, int] = defaultdict(int)
         for num in nums:
             mapping[num] += 1
         result = []

@@ -9,7 +9,8 @@ class Solution:
         """
         Time: O(n)
         Space: O(1)
-        """        num_to_freq: DefaultDict[int, int] = defaultdict(int)
+        """
+        num_to_freq: DefaultDict[int, int] = defaultdict(int)
         for num in nums:
             num_to_freq[num] += 1
         for num, freq in num_to_freq.items():

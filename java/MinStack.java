@@ -3,7 +3,7 @@
 import java.util.Deque;
 import java.util.LinkedList;
 
-    /**
+/**
  * Your MinStack object will be instantiated and called as such:
  * MinStack obj = new MinStack();
  * obj.push(val);
