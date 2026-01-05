@@ -33,9 +33,7 @@ public class JumpGameTwo {
         return jumps;
     }
 
-    /**
-     * Approach with dynamic programming
-     */
+    /** Approach with dynamic programming */
     public int jumpDynamic(int[] nums) {
         int[] minJumps = new int[nums.length];
         Arrays.fill(minJumps, Integer.MAX_VALUE - 1);
