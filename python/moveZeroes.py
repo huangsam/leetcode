@@ -6,6 +6,8 @@ from typing import List
 class Solution:
     def moveZeroes(self, nums: List[int]) -> None:
         """
+        Move all zeros to the end of an array.
+        
         Complexity:
         - Time: O(n)
         - Space: O(1)

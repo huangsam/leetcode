@@ -9,6 +9,8 @@ from container.linked_list import ListNode
 class Solution:
     def isSubPath(self, head: Optional[ListNode], root: Optional[TreeNode]) -> bool:
         """
+        Check if a linked list is a subpath in a binary tree.
+        
         Complexity:
         - Time: O(n * m)
         - Space: O(h)

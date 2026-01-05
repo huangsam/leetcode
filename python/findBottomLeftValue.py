@@ -6,6 +6,8 @@ from container.binary_tree import TreeNode
 class Solution:
     def findBottomLeftValue(self, root: TreeNode) -> int:
         """
+        Find the leftmost value in the last row of a binary tree.
+        
         Complexity:
         - Time: O(n)
         - Space: O(w)

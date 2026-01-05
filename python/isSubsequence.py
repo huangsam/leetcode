@@ -4,6 +4,8 @@
 class Solution:
     def isSubsequence(self, s: str, t: str) -> bool:
         """
+        Determine if s is a subsequence of t.
+        
         Complexity:
         - Time: O(n)
         - Space: O(1)

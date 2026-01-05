@@ -12,6 +12,8 @@ def isBadVersion(version: int) -> bool:
 class Solution:
     def firstBadVersion(self, n: int) -> int:
         """
+        Find the first bad version using binary search.
+        
         Complexity:
         - Time: O(log(n))
         - Space: O(1)

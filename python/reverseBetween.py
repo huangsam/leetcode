@@ -8,6 +8,8 @@ from container.linked_list import ListNode
 class Solution:
     def reverseBetween(self, head: Optional[ListNode], left: int, right: int) -> Optional[ListNode]:
         """
+        Reverse a portion of a linked list from position left to right.
+        
         Complexity:
         - Time: O(n)
         - Space: O(1)

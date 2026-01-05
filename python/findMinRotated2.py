@@ -6,6 +6,8 @@ from typing import List
 class Solution:
     def findMin(self, nums: List[int]) -> int:
         """
+        Find the minimum element in a rotated sorted array with duplicates.
+        
         Complexity:
         - Time: O(n)
         - Space: O(1)

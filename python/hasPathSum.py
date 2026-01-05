@@ -8,6 +8,8 @@ from container.binary_tree import TreeNode
 class Solution:
     def hasPathSum(self, root: Optional[TreeNode], targetSum: int) -> bool:
         """
+        Determine if the tree has a root-to-leaf path with a given sum.
+        
         Complexity:
         - Time: O(n)
         - Space: O(h)

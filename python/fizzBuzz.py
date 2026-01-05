@@ -6,6 +6,8 @@ from typing import List
 class Solution:
     def fizzBuzz(self, n: int) -> List[str]:
         """
+        Return a string array where multiples of 3 are "Fizz", 5 are "Buzz", and both are "FizzBuzz".
+        
         Complexity:
         - Time: O(n)
         - Space: O(n)

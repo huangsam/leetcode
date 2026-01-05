@@ -8,6 +8,8 @@ from container.linked_list import ListNode
 class Solution:
     def partition(self, head: Optional[ListNode], x: int) -> Optional[ListNode]:
         """
+        Partition a linked list around a value x.
+        
         Complexity:
         - Time: O(n)
         - Space: O(1)

@@ -8,6 +8,8 @@ from container.binary_tree import TreeNode
 class Solution:
     def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
         """
+        Determine if two binary trees are identical.
+        
         Complexity:
         - Time: O(n)
         - Space: O(h)

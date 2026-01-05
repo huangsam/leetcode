@@ -6,6 +6,8 @@ from typing import List
 class Solution:
     def searchRange(self, nums: List[int], target: int) -> List[int]:
         """
+        Find the starting and ending position of a target value.
+        
         Complexity:
         - Time: O(log(n))
         - Space: O(1)

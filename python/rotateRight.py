@@ -8,6 +8,8 @@ from container.linked_list import ListNode
 class Solution:
     def rotateRight(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
         """
+        Rotate a linked list to the right by k places.
+        
         Complexity:
         - Time: O(n)
         - Space: O(1)

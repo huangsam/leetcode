@@ -4,6 +4,8 @@
 class Solution:
     def findTheDifference(self, s: str, t: str) -> str:
         """
+        Find the letter that was added to string t.
+        
         Complexity:
         - Time: O(n)
         - Space: O(1)

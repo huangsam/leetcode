@@ -4,6 +4,8 @@
 class Solution:
     def isPowerOfFour(self, num: int) -> bool:
         """
+        Determine if a number is a power of four.
+        
         Complexity:
         - Time: O(1)
         - Space: O(1)

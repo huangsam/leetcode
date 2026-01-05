@@ -6,6 +6,8 @@ from typing import List
 class Solution:
     def canPlaceFlowers(self, flowerbed: List[int], n: int) -> bool:
         """
+        Determine if n flowers can be planted without violating the no-adjacent rule.
+        
         Complexity:
         - Time: O(n)
         - Space: O(1)

@@ -6,6 +6,8 @@ from typing import List
 class Solution:
     def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
         """
+        Merge two sorted arrays into one sorted array.
+        
         Complexity:
         - Time: O(m + n)
         - Space: O(1)

@@ -4,6 +4,8 @@
 class Solution:
     def uniquePaths(self, m: int, n: int) -> int:
         """
+        Count the number of unique paths in a grid from top-left to bottom-right.
+        
         Complexity:
         - Time: O(m * n)
         - Space: O(m * n)

@@ -6,6 +6,8 @@ from typing import Set
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         """
+        Find the length of the longest substring without repeating characters.
+        
         Complexity:
         - Time: O(n)
         - Space: O(min(n, m))

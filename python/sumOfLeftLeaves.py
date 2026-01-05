@@ -6,6 +6,8 @@ from container.binary_tree import TreeNode
 class Solution:
     def sumOfLeftLeaves(self, root: TreeNode) -> int:
         """
+        Calculate the sum of all left leaves in a binary tree.
+        
         Complexity:
         - Time: O(n)
         - Space: O(h)

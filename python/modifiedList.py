@@ -8,6 +8,8 @@ from container.linked_list import ListNode
 class Solution:
     def modifiedList(self, nums: List[int], head: Optional[ListNode]) -> Optional[ListNode]:
         """
+        Remove nodes from linked list that are present in array.
+        
         Complexity:
         - Time: O(n + m)
         - Space: O(n)

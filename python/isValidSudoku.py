@@ -6,6 +6,8 @@ from typing import List
 class Solution:
     def isValidSudoku(self, board: List[List[str]]) -> bool:
         """
+        Determine if a 9x9 Sudoku board is valid.
+        
         Complexity:
         - Time: O(1)
         - Space: O(1)

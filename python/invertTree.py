@@ -8,6 +8,8 @@ from container.binary_tree import TreeNode
 class Solution:
     def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
         """
+        Invert a binary tree (mirror it).
+        
         Complexity:
         - Time: O(n)
         - Space: O(h)

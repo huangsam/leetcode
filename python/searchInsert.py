@@ -6,6 +6,8 @@ from typing import List
 class Solution:
     def searchInsert(self, nums: List[int], target: int) -> int:
         """
+        Find the index where a target would be inserted in a sorted array.
+        
         Complexity:
         - Time: O(log(n))
         - Space: O(1)

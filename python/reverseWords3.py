@@ -4,6 +4,8 @@
 class Solution:
     def reverseWords(self, s: str) -> str:
         """
+        Reverse characters in each word while preserving word order.
+        
         Complexity:
         - Time: O(n)
         - Space: O(n)

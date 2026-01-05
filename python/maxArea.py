@@ -6,6 +6,8 @@ from typing import List
 class Solution:
     def maxArea(self, height: List[int]) -> int:
         """
+        Find two lines that together with x-axis form a container with most water.
+        
         Complexity:
         - Time: O(n)
         - Space: O(1)

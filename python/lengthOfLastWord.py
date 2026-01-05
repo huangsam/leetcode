@@ -4,6 +4,8 @@
 class Solution:
     def lengthOfLastWord(self, s: str) -> int:
         """
+        Return the length of the last word in a string.
+        
         Complexity:
         - Time: O(n)
         - Space: O(1)

@@ -8,6 +8,8 @@ from container.linked_list import ListNode
 class Solution:
     def sortList(self, head: Optional[ListNode]) -> Optional[ListNode]:
         """
+        Sort a linked list in ascending order.
+        
         Complexity:
         - Time: O(n * log(n))
         - Space: O(log(n))

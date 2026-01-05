@@ -6,6 +6,8 @@ from typing import Dict, List
 class Solution:
     def containsNearbyDuplicate(self, nums: List[int], k: int) -> bool:
         """
+        Determine if array contains duplicate values within k distance.
+        
         Complexity:
         - Time: O(n)
         - Space: O(n)

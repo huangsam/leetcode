@@ -8,6 +8,8 @@ from container.random_linked_list import Node
 class Solution:
     def copyRandomList(self, head: Optional[Node]) -> Optional[Node]:
         """
+        Create a deep copy of a linked list with random pointers.
+        
         Complexity:
         - Time: O(n)
         - Space: O(n)

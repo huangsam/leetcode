@@ -9,6 +9,8 @@ from container.binary_tree import TreeNode
 class Solution:
     def buildTree(self, preorder: List[int], inorder: List[int]) -> Optional[TreeNode]:
         """
+        Build a binary tree from preorder and inorder traversal arrays.
+        
         Complexity:
         - Time: O(n)
         - Space: O(n)

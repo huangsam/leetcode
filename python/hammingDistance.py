@@ -4,6 +4,8 @@
 class Solution:
     def hammingDistance(self, x: int, y: int) -> int:
         """
+        Calculate the Hamming distance between two integers.
+        
         Complexity:
         - Time: O(log(max(x, y)))
         - Space: O(1)

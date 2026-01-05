@@ -4,6 +4,8 @@
 class Solution:
     def climbStairs(self, n: int) -> int:
         """
+        Calculate the number of distinct ways to climb n stairs.
+        
         Complexity:
         - Time: O(n)
         - Space: O(1)

@@ -6,6 +6,8 @@ from typing import Tuple
 class Solution:
     def longestPalindrome(self, s: str) -> str:
         """
+        Longest palindromic substring.
+        
         Complexity:
         - Time: O(n^2)
         - Space: O(1)

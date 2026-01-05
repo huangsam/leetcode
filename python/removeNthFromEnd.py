@@ -6,6 +6,8 @@ from container.linked_list import ListNode
 class Solution:
     def removeNthFromEnd(self, head: ListNode, n: int) -> ListNode:
         """
+        Remove the nth node from the end of a linked list.
+        
         Complexity:
         - Time: O(n)
         - Space: O(n)

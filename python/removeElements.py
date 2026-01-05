@@ -6,6 +6,8 @@ from container.linked_list import ListNode
 class Solution:
     def removeElements(self, head: ListNode, val: int) -> ListNode:
         """
+        Remove all nodes with a specific value from a linked list.
+        
         Complexity:
         - Time: O(n)
         - Space: O(1)

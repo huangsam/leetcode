@@ -7,6 +7,8 @@ from typing import DefaultDict, List
 class Solution:
     def singleNumber(self, nums: List[int]) -> List[int]:
         """
+        Find two elements that appear only once when others appear twice.
+        
         Complexity:
         - Time: O(n)
         - Space: O(1)

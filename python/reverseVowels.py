@@ -4,6 +4,8 @@
 class Solution:
     def reverseVowels(self, s: str) -> str:
         """
+        Reverse only the vowels in a string.
+        
         Complexity:
         - Time: O(n)
         - Space: O(n)

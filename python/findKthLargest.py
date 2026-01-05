@@ -7,6 +7,8 @@ from typing import List
 class Solution:
     def findKthLargest(self, nums: List[int], k: int) -> int:
         """
+        Find the kth largest element in an unsorted array.
+        
         Complexity:
         - Time: O(n * log(k))
         - Space: O(k)

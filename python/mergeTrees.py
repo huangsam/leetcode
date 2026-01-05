@@ -6,6 +6,8 @@ from container.binary_tree import TreeNode
 class Solution:
     def mergeTrees(self, t1: TreeNode, t2: TreeNode) -> TreeNode:
         """
+        Merge two binary trees.
+        
         Complexity:
         - Time: O(n)
         - Space: O(h)

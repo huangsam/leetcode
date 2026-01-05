@@ -6,6 +6,8 @@ from typing import List
 class Solution:
     def insert(self, intervals: List[List[int]], newInterval: List[int]) -> List[List[int]]:
         """
+        Insert a new interval into a sorted list of non-overlapping intervals.
+        
         Complexity:
         - Time: O(n)
         - Space: O(n)

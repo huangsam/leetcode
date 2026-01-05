@@ -6,6 +6,8 @@ from container.binary_tree import TreeNode
 class Solution:
     def diameterOfBinaryTree(self, root: TreeNode) -> int:
         """
+        Find the diameter (longest path) of a binary tree.
+        
         Complexity:
         - Time: O(n)
         - Space: O(h)

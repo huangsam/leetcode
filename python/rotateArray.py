@@ -6,6 +6,8 @@ from typing import List
 class Solution:
     def rotate(self, nums: List[int], k: int) -> None:
         """
+        Rotate an array to the right by k steps.
+        
         Complexity:
         - Time: O(n)
         - Space: O(1)

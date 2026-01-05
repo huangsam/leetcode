@@ -6,6 +6,8 @@ from typing import List
 class Solution:
     def calculate(self, s: str) -> int:
         """
+        Implement a basic calculator to evaluate a simple expression string.
+        
         Complexity:
         - Time: O(n)
         - Space: O(n)

@@ -9,6 +9,8 @@ from container.linked_list import ListNode
 class Solution:
     def deleteDuplicates(self, head: Optional[ListNode]) -> Optional[ListNode]:
         """
+        Remove duplicates from sorted list ii.
+        
         Complexity:
         - Time: O(n)
         - Space: O(n)

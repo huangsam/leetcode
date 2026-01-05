@@ -6,6 +6,8 @@ from typing import List
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
         """
+        Find the maximum profit from buying and selling stock multiple times.
+        
         Complexity:
         - Time: O(n)
         - Space: O(1)

@@ -6,6 +6,8 @@ from typing import List
 class Solution:
     def canJump(self, nums: List[int]) -> bool:
         """
+        Determine if you can reach the last index of an array.
+        
         Complexity:
         - Time: O(n)
         - Space: O(1)

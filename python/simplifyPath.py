@@ -6,6 +6,8 @@ from typing import List
 class Solution:
     def simplifyPath(self, path: str) -> str:
         """
+        Simplify a Unix-style file path.
+        
         Complexity:
         - Time: O(n)
         - Space: O(n)

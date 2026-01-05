@@ -4,6 +4,8 @@
 class Solution:
     def isPalindrome(self, s: str) -> bool:
         """
+        Valid palindrome.
+        
         Complexity:
         - Time: O(n)
         - Space: O(1)

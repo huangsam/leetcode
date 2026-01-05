@@ -6,6 +6,8 @@ from typing import List
 class Solution:
     def totalHammingDistance(self, nums: List[int]) -> int:
         """
+        Calculate the total Hamming distance between all pairs of integers.
+        
         Complexity:
         - Time: O(n)
         - Space: O(1)
