@@ -8,6 +8,9 @@ from container.binary_tree import TreeNode
 class Solution:
     def countNodes(self, root: Optional[TreeNode]) -> int:
         """
+        Time: O(log^2(n))
+        Space: O(log(n))
+        
         Figure out height of left and right hand side.
 
         If they are equal then you can stop. Otherwise, you

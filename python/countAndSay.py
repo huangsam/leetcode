@@ -5,6 +5,10 @@ from typing import List
 
 class Solution:
     def countAndSay(self, n: int) -> str:
+        """
+        Time: O(n * m)
+        Space: O(m)
+        """
         if n == 1:
             return "1"
 

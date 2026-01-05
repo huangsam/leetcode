@@ -8,6 +8,10 @@ from container.linked_list import ListNode
 
 class Solution:
     def deleteDuplicates(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        """
+        Time: O(n)
+        Space: O(n)
+        """
         val_freq: DefaultDict[int, int] = defaultdict(int)
         all_nodes = []
 

@@ -6,9 +6,17 @@ from typing import Deque
 
 class Solution:
     def addBinary(self, a: str, b: str) -> str:
+        """
+        Time: O(n + m)
+        Space: O(1)
+        """
         return bin(int(a, 2) + int(b, 2))[2:]
 
     def addBinaryManual(self, a: str, b: str) -> str:
+        """
+        Time: O(max(n, m))
+        Space: O(max(n, m))
+        """
         a_idx, b_idx = len(a) - 1, len(b) - 1
         carry = 0
         buffer: Deque[str] = deque()

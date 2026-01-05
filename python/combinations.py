@@ -8,6 +8,10 @@ class Solution:
         self.result: List[List[int]] = []
 
     def combine(self, n: int, k: int) -> List[List[int]]:
+        """
+        Time: O(C(n, k) * k)
+        Space: O(C(n, k) * k)
+        """
         self._helper(n, k, [])
         return self.result
 
