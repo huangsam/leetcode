@@ -10,7 +10,7 @@ class Solution:
         """
         Time: O(log^2(n))
         Space: O(log(n))
-        
+
         Figure out height of left and right hand side.
 
         If they are equal then you can stop. Otherwise, you
