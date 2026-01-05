@@ -8,7 +8,7 @@ from container.binary_tree import TreeNode
 class Solution:
     def deleteNode(self, root: Optional[TreeNode], key: int) -> Optional[TreeNode]:
         """
-        Delete node in a bst.
+        Delete a node in a BST.
         
         Complexity:
         - Time: O(h)

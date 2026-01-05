@@ -6,7 +6,7 @@ from typing import List
 class Solution:
     def addMinimum(self, word: str) -> int:
         """
-        Minimum additions to make valid string.
+        Find minimum additions to make a valid string.
         
         Complexity:
         - Time: O(n)

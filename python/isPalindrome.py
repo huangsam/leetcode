@@ -4,7 +4,7 @@
 class Solution:
     def isPalindrome(self, s: str) -> bool:
         """
-        Valid palindrome.
+        Determine if a string is a valid palindrome.
         
         Complexity:
         - Time: O(n)
