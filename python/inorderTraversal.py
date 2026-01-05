@@ -7,6 +7,10 @@ from container.binary_tree import TreeNode
 
 class Solution:
     def inorderTraversal(self, root: TreeNode) -> List[int]:
+        """
+        Time: O(n)
+        Space: O(h)
+        """
         if root is None:
             return []
 
@@ -18,6 +22,10 @@ class Solution:
         return result
 
     def inorderTraversalIterative(self, root: TreeNode) -> List[int]:
+        """
+        Time: O(n)
+        Space: O(h)
+        """
         visited: List[int] = []
         c = root
         s = []

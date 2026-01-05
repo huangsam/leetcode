@@ -8,6 +8,9 @@ from container.binary_tree import TreeNode
 class Solution:
     def flatten(self, root: Optional[TreeNode]) -> None:
         """
+        Time: O(n)
+        Space: O(h)
+        
         Do not return anything, modify root in-place instead.
         """
         if root is None:

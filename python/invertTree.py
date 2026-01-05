@@ -7,6 +7,10 @@ from container.binary_tree import TreeNode
 
 class Solution:
     def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
+        """
+        Time: O(n)
+        Space: O(h)
+        """
         if root is None:
             return None
 

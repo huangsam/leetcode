@@ -5,6 +5,10 @@ from container.linked_list import ListNode
 
 class Solution:
     def insertionSortList(self, head: ListNode) -> ListNode:
+        """
+        Time: O(n^2)
+        Space: O(1)
+        """
         p = dummy = ListNode(0)  # Dummy head for the sorted list
         cur = dummy.next = head
         while cur and cur.next:
