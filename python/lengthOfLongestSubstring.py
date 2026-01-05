@@ -6,6 +6,9 @@ from typing import Set
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         """
+        Time: O(n)
+        Space: O(min(n, m))
+        
         Start by iterating through the entire string. We'll have a left
         and right pointer indicating a substring with the range
         [left, right]. If we encounter new characters, we increment right

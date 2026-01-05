@@ -4,6 +4,9 @@
 class Solution:
     def isPalindrome(self, s: str) -> bool:
         """
+        Time: O(n)
+        Space: O(1)
+        
         Check if string is palindrome using two-pointer approach.
         """
         left, right = 0, len(s) - 1

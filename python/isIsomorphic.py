@@ -6,6 +6,9 @@ from typing import Dict
 class Solution:
     def isIsomorphic(self, s: str, t: str) -> bool:
         """
+        Time: O(n)
+        Space: O(n)
+        
         Check if two strings are isomorphic.
 
         Assume that the length of s and t are identical and non-empty.

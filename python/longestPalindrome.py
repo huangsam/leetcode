@@ -5,6 +5,10 @@ from typing import Tuple
 
 class Solution:
     def longestPalindrome(self, s: str) -> str:
+        """
+        Time: O(n^2)
+        Space: O(1)
+        """
         if not s:
             return ""
 

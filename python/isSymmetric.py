@@ -7,6 +7,10 @@ from container.binary_tree import TreeNode
 
 class Solution:
     def isSymmetric(self, root: Optional[TreeNode]) -> bool:
+        """
+        Time: O(n)
+        Space: O(h)
+        """
         if not root:
             raise ValueError("The input tree must have at least one node")
         return self._mirrorWorker(root.left, root.right)  # Check if left and right subtrees are mirrors

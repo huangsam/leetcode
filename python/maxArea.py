@@ -5,6 +5,10 @@ from typing import List
 
 class Solution:
     def maxArea(self, height: List[int]) -> int:
+        """
+        Time: O(n)
+        Space: O(1)
+        """
         i, j = 0, len(height) - 1  # Start from both ends
         water = 0
         while i < j:
