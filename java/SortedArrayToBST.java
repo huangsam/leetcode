@@ -4,8 +4,11 @@ import container.TreeNode;
 
 public class SortedArrayToBST {
     /**
-     * Time: O(n)
-     * Space: O(log(n))
+     * <p>Complexity:
+     * <ul>
+     *     <li>Time: O(n)</li>
+     *     <li>Space: O(log(n))</li>
+     * </ul>
      */
     public TreeNode sortedArrayToBST(int[] nums) {
         if (nums.length == 0) {

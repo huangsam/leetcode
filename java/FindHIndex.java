@@ -2,9 +2,6 @@
 
 public class FindHIndex {
     /**
-     * Time: O(n)
-     * Space: O(n)
-     *
      * Computes the h-index of a researcher given an array of their paper citations.
      * The h-index is the maximum value h such that the researcher has at least h papers
      * cited at least h times.
@@ -19,6 +16,12 @@ public class FindHIndex {
      * h-index is `i`. The first such `i` encountered is the maximum h-index.
      *
      * <p> If no valid `i` is found (e.g., no paper has at least 1 citation), the h-index is 0.
+     *
+     * <p>Complexity:
+     * <ul>
+     *     <li>Time: O(n)</li>
+     *     <li>Space: O(n)</li>
+     * </ul>
      */
     public int hIndex(int[] citations) {
         // Values of h-index are [0, citations.length]

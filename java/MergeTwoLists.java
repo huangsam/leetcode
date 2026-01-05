@@ -4,15 +4,18 @@ import container.ListNode;
 
 public class MergeTwoLists {
     /**
-     * Time: O(m + n)
-     * Space: O(1)
-     *
      * Let us proceed by creating a dummy node to minimize null checks.
      * Since {@code list1} and {@code list2} are sorted in increasing
      * order, we can traverse from start to end and link them to next
      * pointer from the dummy onwards. Once the looping is done, whichever
      * one still has leftover can be appended to the tail of the new list.
      * Returning the result should just be {@code dummy.next}.
+     *
+     * <p>Complexity:
+     * <ul>
+     *     <li>Time: O(m + n)</li>
+     *     <li>Space: O(1)</li>
+     * </ul>
      */
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
         ListNode dummy = new ListNode();
@@ -33,7 +36,11 @@ public class MergeTwoLists {
 
     /**
      * Recursive approach - creates new nodes (less efficient but demonstrates recursion).
-     * Space: O(n+m) for call stack and new nodes.
+     *
+     * <p>Complexity:
+     * <ul>
+     *     <li>Space: O(n+m) for call stack and new nodes.</li>
+     * </ul>
      */
     public ListNode mergeTwoListsRecursive(ListNode list1, ListNode list2) {
         if (list1 == null) {

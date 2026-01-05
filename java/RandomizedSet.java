@@ -23,8 +23,11 @@ class RandomizedSet {
     }
 
     /**
-     * Time: O(1)
-     * Space: O(n)
+     * <p>Complexity:
+     * <ul>
+     *     <li>Time: O(1)</li>
+     *     <li>Space: O(n)</li>
+     * </ul>
      */
     public boolean insert(int val) {
         if (valueToIndex.containsKey(val)) {

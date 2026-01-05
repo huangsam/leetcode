@@ -4,9 +4,6 @@ import java.util.Arrays;
 
 public class ProductExceptSelf {
     /**
-     * Time: O(n)
-     * Space: O(1)
-     *
      * Product of all the elements of {@code nums} except
      * {@code nums[i]}. What we need to do is:
      *
@@ -25,6 +22,12 @@ public class ProductExceptSelf {
      * [24, 12, 4, 1] (right transform)
      * [24, 12, 8, 6] (combined transform)
      * </pre>
+     *
+     * <p>Complexity:
+     * <ul>
+     *     <li>Time: O(n)</li>
+     *     <li>Space: O(1)</li>
+     * </ul>
      */
     public int[] productExceptSelf(int[] nums) {
         int leftProduct = 1;

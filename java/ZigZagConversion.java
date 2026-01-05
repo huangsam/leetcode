@@ -2,9 +2,6 @@
 
 public class ZigZagConversion {
     /**
-     * Time: O(n)
-     * Space: O(n)
-     *
      * Here are the steps to convert the string:
      *
      * <ul>
@@ -12,6 +9,12 @@ public class ZigZagConversion {
      *     <li>Iterate through string and append each character to its depth row</li>
      *     <li>Change direction when reaching the top or bottom row</li>
      *     <li>Concatenate all rows to get the final result</li>
+     * </ul>
+     *
+     * <p>Complexity:
+     * <ul>
+     *     <li>Time: O(n)</li>
+     *     <li>Space: O(n)</li>
      * </ul>
      */
     public String convert(String s, int numRows) {

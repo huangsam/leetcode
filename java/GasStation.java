@@ -2,9 +2,6 @@
 
 public class GasStation {
     /**
-     * Time: O(n)
-     * Space: O(1)
-     *
      * Return starting point for completing a circuit. Note
      * that the current gas and differences help us with determining
      * that start point more easily.
@@ -17,6 +14,12 @@ public class GasStation {
      * sum(gas) = 9, sum(cost) = 10
      * diff = [-1,-1,1]
      * </pre>
+     *
+     * <p>Complexity:
+     * <ul>
+     *     <li>Time: O(n)</li>
+     *     <li>Space: O(1)</li>
+     * </ul>
      */
     public int canCompleteCircuit(int[] gas, int[] cost) {
         int totalDifference = 0;

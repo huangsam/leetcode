@@ -4,13 +4,16 @@ public class PalindromeNumber {
     public static final int TEN = 10;
 
     /**
-     * Time: O(log(n))
-     * Space: O(1)
-     *
      * We can check if a number is a palindrome by comparing its digits from the start and end.
      * If the digits at the corresponding positions are equal, we continue checking inward.
      * If we find any mismatch, we return false. If we reach the middle without mismatches,
      * we return true.
+     *
+     * <p>Complexity:
+     * <ul>
+     *     <li>Time: O(log(n))</li>
+     *     <li>Space: O(1)</li>
+     * </ul>
      */
     public boolean isPalindrome(int x) {
         if (x < 0) {

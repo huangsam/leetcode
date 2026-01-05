@@ -2,8 +2,11 @@
 
 public class NumberOfIslands {
     /**
-     * Time: O(m * n)
-     * Space: O(m * n)
+     * <p>Complexity:
+     * <ul>
+     *     <li>Time: O(m * n)</li>
+     *     <li>Space: O(m * n)</li>
+     * </ul>
      */
     public int numIslands(char[][] grid) {
         int result = 0;

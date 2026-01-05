@@ -4,12 +4,15 @@ import container.TreeNode;
 
 public class IsValidBST {
     /**
-     * Time: O(n)
-     * Space: O(h)
-     *
      * We process the answer recursively with in-order traversal. The idea is to
      * look for a previous entry if it exists and see if that entry is less than,
      * or equal to, the current entry.
+     *
+     * <p>Complexity:
+     * <ul>
+     *     <li>Time: O(n)</li>
+     *     <li>Space: O(h)</li>
+     * </ul>
      */
     public boolean isValidBST(TreeNode root) {
         return isValidBST(root, null, null);

@@ -5,8 +5,11 @@ public class ReverseInteger {
     private static final int INT_MIN = -2147483648; // -2^31
 
     /**
-     * Time: O(log(n))
-     * Space: O(1)
+     * <p>Complexity:
+     * <ul>
+     *     <li>Time: O(log(n))</li>
+     *     <li>Space: O(1)</li>
+     * </ul>
      */
     public int reverse(int x) {
         // Determine sign; work with positive 'x' for reversal

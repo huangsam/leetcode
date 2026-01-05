@@ -4,9 +4,6 @@ import container.ListNode;
 
 public class PalindromeLinkedList {
     /**
-     * Time: O(n)
-     * Space: O(1)
-     *
      * Test cases to evaluate:
      * <pre>
      * [0] -> true
@@ -16,6 +13,12 @@ public class PalindromeLinkedList {
      * [2, 5, 4, 2] -> false
      * [1, 2, 3] -> false
      * </pre>
+     *
+     * <p>Complexity:
+     * <ul>
+     *     <li>Time: O(n)</li>
+     *     <li>Space: O(1)</li>
+     * </ul>
      */
     public boolean isPalindrome(ListNode head) {
         ListNode prev = null;

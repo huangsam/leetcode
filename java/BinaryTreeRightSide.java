@@ -9,14 +9,17 @@ import java.util.List;
 
 public class BinaryTreeRightSide {
     /**
-     * Time: O(n)
-     * Space: O(h)
-     *
      * Returns a list of integers representing the values of the nodes visible
      * from the right side of a binary tree when viewed from top to bottom.
      *
      * <p> This method performs a breadth-first search (BFS) traversal of the binary
      * tree, ensuring that the rightmost node at each depth is added to the result.
+     *
+     * <p>Complexity:
+     * <ul>
+     *     <li>Time: O(n)</li>
+     *     <li>Space: O(h)</li>
+     * </ul>
      */
     public List<Integer> rightSideView(TreeNode root) {
         List<Integer> result = new ArrayList<>();

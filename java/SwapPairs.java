@@ -4,8 +4,11 @@ import container.ListNode;
 
 class SwapPairs {
     /**
-     * Time: O(n)
-     * Space: O(1)
+     * <p>Complexity:
+     * <ul>
+     *     <li>Time: O(n)</li>
+     *     <li>Space: O(1)</li>
+     * </ul>
      */
     public ListNode swapPairs(ListNode head) {
         ListNode dummy = new ListNode(-1);

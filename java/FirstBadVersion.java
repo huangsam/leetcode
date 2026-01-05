@@ -4,9 +4,6 @@ import helper.VersionControl;
 
 public class FirstBadVersion extends VersionControl {
     /**
-     * Time: O(log(n))
-     * Space: O(1)
-     *
      * Identify first bad version with. Assume that all versions
      * after a bad version are also bad. We keep checking all
      * items for a bad version with a binary search approach.
@@ -17,6 +14,12 @@ public class FirstBadVersion extends VersionControl {
      *
      * <p> Whenever we find a bad version, we track the minimum found so far.
      * The minimum version is the first bad version.
+     *
+     * <p>Complexity:
+     * <ul>
+     *     <li>Time: O(log(n))</li>
+     *     <li>Space: O(1)</li>
+     * </ul>
      */
     public int firstBadVersion(int n) {
         int lo = 1, hi = n, first = n;

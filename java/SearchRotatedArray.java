@@ -2,8 +2,11 @@
 
 public class SearchRotatedArray {
     /**
-     * Time: O(log(n))
-     * Space: O(1)
+     * <p>Complexity:
+     * <ul>
+     *     <li>Time: O(log(n))</li>
+     *     <li>Space: O(1)</li>
+     * </ul>
      */
     public int search(int[] nums, int target) {
         int lo = 0, hi = nums.length - 1;

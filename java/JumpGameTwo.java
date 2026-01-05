@@ -4,10 +4,13 @@ import java.util.Arrays;
 
 public class JumpGameTwo {
     /**
-     * Time: O(n)
-     * Space: O(1)
-     *
      * Approach with near-far intuition
+     *
+     * <p>Complexity:
+     * <ul>
+     *     <li>Time: O(n)</li>
+     *     <li>Space: O(1)</li>
+     * </ul>
      */
     public int jump(int[] nums) {
         int near = 0;

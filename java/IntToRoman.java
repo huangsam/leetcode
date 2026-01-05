@@ -2,14 +2,17 @@
 
 public class IntToRoman {
     /**
-     * Time: O(1)
-     * Space: O(1)
-     *
      * Convert integer to Roman numeral. We start by holding
      * all the Roman mappings in an array, along with edge cases
      * like 900, 400, 90, 40, 9, 4. We then iterate through the
      * array and keep subtracting the value from the number until
      * we reach 0.
+     *
+     * <p>Complexity:
+     * <ul>
+     *     <li>Time: O(1)</li>
+     *     <li>Space: O(1)</li>
+     * </ul>
      */
     public String intToRoman(int num) {
         Roman[] romans = new Roman[] {

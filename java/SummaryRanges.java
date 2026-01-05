@@ -5,9 +5,6 @@ import java.util.List;
 
 public class SummaryRanges {
     /**
-     * Time: O(n)
-     * Space: O(n)
-     *
      * Here are the steps to build the range:
      *
      * <ul>
@@ -15,6 +12,12 @@ public class SummaryRanges {
      *     <li>When non-contiguous, append {@code start->end} to result</li>
      *     <li>Reset start marker and repeat the process</li>
      *     <li>After iteration, add last {@code start->end} and return result</li>
+     * </ul>
+     *
+     * <p>Complexity:
+     * <ul>
+     *     <li>Time: O(n)</li>
+     *     <li>Space: O(n)</li>
      * </ul>
      */
     public List<String> summaryRanges(int[] nums) {

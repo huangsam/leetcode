@@ -4,9 +4,6 @@ import container.TreeNode;
 
 public class MinimumDifferenceBST {
     /**
-     * Time: O(n)
-     * Space: O(h)
-     *
      * We assume that the input is a binary search tree with at least two
      * nodes. Based on this, we can always assume there is a previous node
      * and a current node. As we perform inorder traversal, we can check
@@ -15,6 +12,12 @@ public class MinimumDifferenceBST {
      * them, otherwise we return positive infinity. Then at the root node, we
      * collect the results from left and right sides, and get the minimum of
      * all results.
+     *
+     * <p>Complexity:
+     * <ul>
+     *     <li>Time: O(n)</li>
+     *     <li>Space: O(h)</li>
+     * </ul>
      */
     public int getMinimumDifference(TreeNode root) {
         MinTracker tracker = new MinTracker();

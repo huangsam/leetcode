@@ -7,8 +7,11 @@ import java.util.PriorityQueue;
 
 public class MergeKLists {
     /**
-     * Time: O(n * log(k))
-     * Space: O(k)
+     * <p>Complexity:
+     * <ul>
+     *     <li>Time: O(n * log(k))</li>
+     *     <li>Space: O(k)</li>
+     * </ul>
      */
     public ListNode mergeKLists(ListNode[] lists) {
         if (lists.length == 0) {

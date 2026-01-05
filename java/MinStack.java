@@ -21,8 +21,11 @@ public class MinStack {
     }
 
     /**
-     * Time: O(1)
-     * Space: O(n)
+     * <p>Complexity:
+     * <ul>
+     *     <li>Time: O(1)</li>
+     *     <li>Space: O(n)</li>
+     * </ul>
      */
     public void push(int val) {
         standard.addFirst(val);

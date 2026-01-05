@@ -2,9 +2,6 @@
 
 public class LongestCommonPrefix {
     /**
-     * Time: O(n * m)
-     * Space: O(1)
-     *
      * We first check if the array is empty or has only one element.
      * If that's not the case, we find the minimum length of all
      * the strings.
@@ -13,6 +10,12 @@ public class LongestCommonPrefix {
      * characters at the same index. If they're the same, we append
      * the character to the prefix. If they're not, we return the
      * prefix. If we reach the end of the loop, we return the prefix.
+     *
+     * <p>Complexity:
+     * <ul>
+     *     <li>Time: O(n * m)</li>
+     *     <li>Space: O(1)</li>
+     * </ul>
      */
     public String longestCommonPrefix(String[] strs) {
         if (strs.length == 0) {

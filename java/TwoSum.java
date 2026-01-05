@@ -4,14 +4,17 @@ import java.util.HashMap;
 
 public class TwoSum {
     /**
-     * Time: O(n)
-     * Space: O(n)
-     *
      * We create a mapping of the numbers we have seen so far. While
      * we do this, we also check if the complement of the current
      * number (i.e., target - nums[i]) exists in the map. If it
      * does, we return the indices of the two numbers that add up to
      * the target.
+     *
+     * <p>Complexity:
+     * <ul>
+     *     <li>Time: O(n)</li>
+     *     <li>Space: O(n)</li>
+     * </ul>
      */
     public int[] twoSum(int[] nums, int target) {
         HashMap<Integer, Integer> seenValues = new HashMap<>();

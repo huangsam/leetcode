@@ -2,14 +2,17 @@
 
 public class MergeSortedArray {
     /**
-     * Time: O(m + n)
-     * Space: O(1)
-     *
      * Assume that {@code nums1} has m items and is m + n long. Assume that
      * {@code nums2} has n items and is n long. We know that m + n is >= 1
      * but either m or n can have 0 items in the list. Given that {@code nums1}
      * is non-populated on the right hand side, it's easier to do in-place
      * sorting from the right hand side.
+     *
+     * <p>Complexity:
+     * <ul>
+     *     <li>Time: O(m + n)</li>
+     *     <li>Space: O(1)</li>
+     * </ul>
      */
     public void merge(int[] nums1, int m, int[] nums2, int n) {
         if (n == 0) {
