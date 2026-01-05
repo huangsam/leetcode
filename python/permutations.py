@@ -8,6 +8,10 @@ class Solution:
         self.result: List[List[int]] = []
 
     def permute(self, nums: List[int]) -> List[List[int]]:
+        """
+        Time: O(n! * n)
+        Space: O(n! * n)
+        """
         self._helper(set(nums), [])
         return self.result
 

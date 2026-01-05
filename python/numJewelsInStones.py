@@ -3,6 +3,10 @@
 
 class Solution:
     def numJewelsInStones(self, J: str, S: str) -> int:
+        """
+        Time: O(n + m)
+        Space: O(n)
+        """
         j_tally = {}  # Dictionary to count jewels in stones
         for ch in J:
             j_tally[ch] = 0  # Initialize counts

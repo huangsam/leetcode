@@ -3,6 +3,10 @@
 
 class Solution:
     def reverseWords(self, s: str) -> str:
+        """
+        Time: O(n)
+        Space: O(n)
+        """
         reversed_words = []
 
         # Process all tokens in reverse order
