@@ -4,6 +4,8 @@
 class Solution:
     def numJewelsInStones(self, J: str, S: str) -> int:
         """
+        Count how many stones are also jewels.
+
         Complexity:
         - Time: O(n + m)
         - Space: O(n)

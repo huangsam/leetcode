@@ -7,6 +7,8 @@ from typing import DefaultDict, List
 class Solution:
     def majorityElement(self, nums: List[int]) -> int:
         """
+        Find the majority element that appears more than n/2 times.
+
         Complexity:
         - Time: O(n)
         - Space: O(n)

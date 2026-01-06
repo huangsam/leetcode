@@ -8,6 +8,8 @@ from container.binary_tree import TreeNode
 class Solution:
     def flatten(self, root: Optional[TreeNode]) -> None:
         """
+        Flatten a binary tree to a linked list in-place.
+
         Complexity:
         - Time: O(n)
         - Space: O(h)

@@ -6,6 +6,8 @@ from typing import List
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
         """
+        Return an array where each element is the product of all others.
+
         Complexity:
         - Time: O(n)
         - Space: O(1)

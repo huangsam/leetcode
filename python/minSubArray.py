@@ -8,6 +8,8 @@ class Solution:
 
     def minSubArrayLen(self, target: int, nums: List[int]) -> int:
         """
+        Find the minimum length of a contiguous subarray with sum >= target.
+
         Complexity:
         - Time: O(n)
         - Space: O(1)

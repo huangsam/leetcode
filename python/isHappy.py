@@ -6,6 +6,8 @@ from typing import Set
 class Solution:
     def isHappy(self, n: int) -> bool:
         """
+        Determine if a number is a happy number.
+
         Complexity:
         - Time: O(log(n))
         - Space: O(log(n))

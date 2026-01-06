@@ -4,6 +4,8 @@
 class Solution:
     def mySqrt(self, x: int) -> int:
         """
+        Calculate the square root of x rounded down to nearest integer.
+
         Complexity:
         - Time: O(log(x))
         - Space: O(1)

@@ -4,6 +4,8 @@
 class Solution:
     def divide(self, dividend: int, divisor: int) -> int:
         """
+        Divide two integers without using multiplication or division operators.
+
         Complexity:
         - Time: O(log(n))
         - Space: O(1)

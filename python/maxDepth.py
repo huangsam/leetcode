@@ -6,6 +6,8 @@ from container.binary_tree import TreeNode
 class Solution:
     def maxDepth(self, root: TreeNode) -> int:
         """
+        Find the maximum depth of a binary tree.
+
         Complexity:
         - Time: O(n)
         - Space: O(h)

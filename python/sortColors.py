@@ -6,6 +6,8 @@ from typing import List
 class Solution:
     def sortColors(self, nums: List[int]) -> None:
         """
+        Sort an array with values 0, 1, and 2 in-place.
+
         Complexity:
         - Time: O(n)
         - Space: O(1)

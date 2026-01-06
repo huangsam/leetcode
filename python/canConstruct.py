@@ -4,6 +4,8 @@
 class Solution:
     def canConstruct(self, ransomNote: str, magazine: str) -> bool:
         """
+        Determine if a ransom note can be constructed from magazine letters.
+
         Complexity:
         - Time: O(n + m)
         - Space: O(n)

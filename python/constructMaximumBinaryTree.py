@@ -8,6 +8,8 @@ from container.binary_tree import TreeNode
 class Solution:
     def constructMaximumBinaryTree(self, nums: List[int]) -> Optional[TreeNode]:
         """
+        Construct a maximum binary tree from an array.
+
         Complexity:
         - Time: O(n^2)
         - Space: O(n)

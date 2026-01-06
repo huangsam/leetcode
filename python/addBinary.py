@@ -7,6 +7,8 @@ from typing import Deque
 class Solution:
     def addBinary(self, a: str, b: str) -> str:
         """
+        Add two binary strings and return the result as a binary string.
+
         Complexity:
         - Time: O(n + m)
         - Space: O(1)

@@ -6,6 +6,8 @@ import math
 class Solution:
     def gcdOfStrings(self, str1: str, str2: str) -> str:
         """
+        Find the largest string that divides both str1 and str2.
+
         Complexity:
         - Time: O(n + m)
         - Space: O(n + m)

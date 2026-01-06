@@ -6,6 +6,8 @@ from typing import List
 class Solution:
     def generateParenthesis(self, n: int) -> List[str]:
         """
+        Generate all combinations of well-formed parentheses.
+
         Complexity:
         - Time: O(4^n / sqrt(n))
         - Space: O(4^n / sqrt(n))

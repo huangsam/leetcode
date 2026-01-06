@@ -6,6 +6,8 @@ from typing import List
 class Solution:
     def countAndSay(self, n: int) -> str:
         """
+        Generate the nth term of the count-and-say sequence.
+
         Complexity:
         - Time: O(n * m)
         - Space: O(m)

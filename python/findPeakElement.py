@@ -6,6 +6,8 @@ from typing import List
 class Solution:
     def findPeakElement(self, nums: List[int]) -> int:
         """
+        Find a peak element in an array where nums[i] > nums[i+1] and nums[i] > nums[i-1].
+
         Complexity:
         - Time: O(log(n))
         - Space: O(1)

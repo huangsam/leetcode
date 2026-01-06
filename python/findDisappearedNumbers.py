@@ -6,6 +6,8 @@ from typing import List
 class Solution:
     def findDisappearedNumbers(self, nums: List[int]) -> List[int]:
         """
+        Find all numbers that disappeared from an array of size n.
+
         Complexity:
         - Time: O(n)
         - Space: O(1)

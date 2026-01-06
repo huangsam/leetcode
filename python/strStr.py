@@ -4,6 +4,8 @@
 class Solution:
     def strStr(self, haystack: str, needle: str) -> int:
         """
+        Find the first occurrence of a substring in a string.
+
         Complexity:
         - Time: O(n * m)
         - Space: O(1)

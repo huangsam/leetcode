@@ -4,6 +4,8 @@
 class Solution:
     def myPow(self, x: float, n: int) -> float:
         """
+        Implement pow(x, n) to calculate x raised to the power n.
+
         Complexity:
         - Time: O(log(n))
         - Space: O(1)

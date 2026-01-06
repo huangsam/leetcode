@@ -6,6 +6,8 @@ from typing import List
 class Solution:
     def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
         """
+        Return all elements of a matrix in spiral order.
+
         Complexity:
         - Time: O(m * n)
         - Space: O(1)

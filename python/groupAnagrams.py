@@ -7,6 +7,8 @@ from typing import DefaultDict, List
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         """
+        Group anagrams together from a list of strings.
+
         Complexity:
         - Time: O(n * k)
         - Space: O(n * k)

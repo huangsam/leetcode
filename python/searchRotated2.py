@@ -6,6 +6,8 @@ from typing import List
 class Solution:
     def search(self, nums: List[int], target: int) -> bool:
         """
+        Search for a target in a rotated sorted array with duplicates.
+
         Complexity:
         - Time: O(n)
         - Space: O(1)

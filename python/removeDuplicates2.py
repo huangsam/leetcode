@@ -6,6 +6,8 @@ from typing import List
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
         """
+        Remove duplicates from sorted array allowing at most 2 duplicates.
+
         Complexity:
         - Time: O(n)
         - Space: O(1)

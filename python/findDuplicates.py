@@ -6,6 +6,8 @@ from typing import List, Set
 class Solution:
     def findDuplicates(self, nums: List[int]) -> List[int]:
         """
+        Find all elements that appear twice in an array.
+
         Complexity:
         - Time: O(n)
         - Space: O(n)

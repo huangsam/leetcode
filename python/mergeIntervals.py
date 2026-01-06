@@ -6,6 +6,8 @@ from typing import List, Optional
 class Solution:
     def merge(self, intervals: List[List[int]]) -> List[List[int]]:
         """
+        Merge overlapping intervals.
+
         Complexity:
         - Time: O(n * log(n))
         - Space: O(n)

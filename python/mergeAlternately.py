@@ -4,6 +4,8 @@
 class Solution:
     def mergeAlternately(self, word1: str, word2: str) -> str:
         """
+        Merge two strings alternately.
+
         Complexity:
         - Time: O(n + m)
         - Space: O(n + m)

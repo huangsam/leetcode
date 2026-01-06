@@ -6,6 +6,8 @@ from typing import List
 class Solution:
     def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
         """
+        Find the median of two sorted arrays.
+
         Complexity:
         - Time: O(log(min(m, n)))
         - Space: O(1)

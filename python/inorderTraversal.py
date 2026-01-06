@@ -8,6 +8,8 @@ from container.binary_tree import TreeNode
 class Solution:
     def inorderTraversal(self, root: TreeNode) -> List[int]:
         """
+        Perform inorder traversal of a binary tree.
+
         Complexity:
         - Time: O(n)
         - Space: O(h)

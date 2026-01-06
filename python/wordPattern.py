@@ -4,6 +4,8 @@
 class Solution:
     def wordPattern(self, pattern: str, s: str) -> bool:
         """
+        Determine if a string follows a given pattern.
+
         Complexity:
         - Time: O(n)
         - Space: O(n)

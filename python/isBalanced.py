@@ -8,6 +8,8 @@ from container.binary_tree import TreeNode
 class Solution:
     def isBalanced(self, root: Optional[TreeNode]) -> bool:
         """
+        Determine if a binary tree is height-balanced.
+
         Complexity:
         - Time: O(n)
         - Space: O(h)

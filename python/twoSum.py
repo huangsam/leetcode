@@ -6,6 +6,8 @@ from typing import Dict, List
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         """
+        Find two numbers that add up to a target value.
+
         Complexity:
         - Time: O(n)
         - Space: O(n)

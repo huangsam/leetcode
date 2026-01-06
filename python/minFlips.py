@@ -4,6 +4,8 @@
 class Solution:
     def minFlips(self, a: int, b: int, c: int) -> int:
         """
+        Find minimum bit flips to make a OR b equal to c.
+
         Complexity:
         - Time: O(log(max(a, b, c)))
         - Space: O(1)

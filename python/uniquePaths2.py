@@ -6,6 +6,8 @@ from typing import List
 class Solution:
     def uniquePathsWithObstacles(self, obstacleGrid: List[List[int]]) -> int:
         """
+        Count unique paths in a grid with obstacles from top-left to bottom-right.
+
         Complexity:
         - Time: O(m * n)
         - Space: O(m * n)

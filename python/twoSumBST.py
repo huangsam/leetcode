@@ -8,6 +8,8 @@ from container.binary_tree import TreeNode
 class Solution:
     def __init__(self) -> None:
         """
+        Find two numbers in a BST that add up to a target value.
+
         Complexity:
         - Time: O(n)
         - Space: O(h)

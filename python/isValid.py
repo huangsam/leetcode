@@ -4,6 +4,8 @@
 class Solution:
     def isValid(self, s: str) -> bool:
         """
+        Determine if a string of brackets is valid.
+
         Complexity:
         - Time: O(n)
         - Space: O(n)

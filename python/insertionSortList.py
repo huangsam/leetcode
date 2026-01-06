@@ -6,6 +6,8 @@ from container.linked_list import ListNode
 class Solution:
     def insertionSortList(self, head: ListNode) -> ListNode:
         """
+        Sort a linked list using insertion sort.
+
         Complexity:
         - Time: O(n^2)
         - Space: O(1)

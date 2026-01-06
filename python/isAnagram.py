@@ -7,6 +7,8 @@ from typing import DefaultDict
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
         """
+        Determine if two strings are anagrams.
+
         Complexity:
         - Time: O(n + m)
         - Space: O(n)

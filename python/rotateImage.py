@@ -6,6 +6,8 @@ from typing import List
 class Solution:
     def rotate(self, matrix: List[List[int]]) -> None:
         """
+        Rotate a 2D matrix 90 degrees clockwise.
+
         Complexity:
         - Time: O(n^2)
         - Space: O(1)

@@ -8,6 +8,8 @@ from container.linked_list import ListNode
 class Solution:
     def hasCycle(self, head: Optional[ListNode]) -> bool:
         """
+        Determine if a linked list has a cycle.
+
         Complexity:
         - Time: O(n)
         - Space: O(1)

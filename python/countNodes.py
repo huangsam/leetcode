@@ -8,6 +8,8 @@ from container.binary_tree import TreeNode
 class Solution:
     def countNodes(self, root: Optional[TreeNode]) -> int:
         """
+        Count the number of nodes in a complete binary tree.
+
         Complexity:
         - Time: O(log^2(n))
         - Space: O(log(n))

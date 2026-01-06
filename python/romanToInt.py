@@ -4,6 +4,8 @@
 class Solution:
     def romanToInt(self, s: str) -> int:
         """
+        Convert a Roman numeral to an integer.
+
         Complexity:
         - Time: O(n)
         - Space: O(1)
