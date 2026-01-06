@@ -17,6 +17,8 @@ class Solution:
 
     def addBinaryManual(self, a: str, b: str) -> str:
         """
+        Add two binary strings without converting them to integers. This method simulates the addition process.
+
         Complexity:
         - Time: O(max(n, m))
         - Space: O(max(n, m))

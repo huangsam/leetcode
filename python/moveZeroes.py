@@ -6,7 +6,7 @@ from typing import List
 class Solution:
     def moveZeroes(self, nums: List[int]) -> None:
         """
-        Move all zeros to the end of an array.
+        Move all zeros to the end of an array with the typical swap approach.
 
         Complexity:
         - Time: O(n)
@@ -24,6 +24,8 @@ class Solution:
 
     def moveZeroesSingleWrite(self, nums: List[int]) -> None:
         """
+        Move all zeros to the end of an array with a single write.
+
         Complexity:
         - Time: O(n)
         - Space: O(1)

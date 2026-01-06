@@ -26,6 +26,8 @@ class Solution:
 
     def inorderTraversalIterative(self, root: TreeNode) -> List[int]:
         """
+        Perform inorder traversal of a binary tree using an iterative approach.
+
         Complexity:
         - Time: O(n)
         - Space: O(h)

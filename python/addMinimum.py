@@ -12,12 +12,13 @@ class Solution:
         - Time: O(n)
         - Space: O(n)
 
-        a -> 2
-        b -> 2
-        c -> 2
-        ab -> 1
-        bc -> 1
-        abc -> 0
+        Here are some examples of how the scoring works:
+        - a -> 2
+        - b -> 2
+        - c -> 2
+        - ab -> 1
+        - bc -> 1
+        - abc -> 0
         """
         curr_seq: List[str] = []
         num_letters = 0
