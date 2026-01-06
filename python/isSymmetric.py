@@ -10,6 +10,7 @@ class Solution:
         """
         Determine if a binary tree is symmetric around its center.
 
+        Complexity:
         - Time: O(n)
         - Space: O(h)
         """
