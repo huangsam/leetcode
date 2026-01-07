@@ -4,7 +4,11 @@ import container.ListNode;
 
 public class PalindromeLinkedList {
     /**
-     * Test cases to evaluate:
+     * Checks if a singly linked list is a palindrome by creating a reversed copy
+     * of the original list and then comparing the two lists node by node.
+     *
+     * <p>Test cases to evaluate:
+     *
      * <pre>
      * [0] -> true
      * [0, 0] -> true
@@ -15,6 +19,7 @@ public class PalindromeLinkedList {
      * </pre>
      *
      * <p>Complexity:
+     *
      * <ul>
      *     <li>Time: O(n)</li>
      *     <li>Space: O(1)</li>

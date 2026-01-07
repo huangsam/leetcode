@@ -16,6 +16,7 @@ public class FirstBadVersion extends VersionControl {
      * The minimum version is the first bad version.
      *
      * <p>Complexity:
+     *
      * <ul>
      *     <li>Time: O(log(n))</li>
      *     <li>Space: O(1)</li>

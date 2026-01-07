@@ -20,6 +20,7 @@ public class MinimumArrows {
      * </pre>
      *
      * <p>Complexity:
+     *
      * <ul>
      *     <li>Time: O(n * log(n))</li>
      *     <li>Space: O(1)</li>

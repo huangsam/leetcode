@@ -2,7 +2,13 @@
 
 public class SearchRotatedArray {
     /**
+     * Searches for a target value in a rotated sorted array
+     * by first identifying the pivot point where the rotation
+     * occurs, and then performing a binary search in the
+     * appropriate subarray.
+     *
      * <p>Complexity:
+     *
      * <ul>
      *     <li>Time: O(log(n))</li>
      *     <li>Space: O(1)</li>

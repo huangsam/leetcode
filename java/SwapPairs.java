@@ -4,7 +4,11 @@ import container.ListNode;
 
 class SwapPairs {
     /**
+     * Swaps every two adjacent nodes in a linked list and returns the modified list.
+     * If the list has an odd number of nodes, the last node remains unchanged.
+     *
      * <p>Complexity:
+     *
      * <ul>
      *     <li>Time: O(n)</li>
      *     <li>Space: O(1)</li>

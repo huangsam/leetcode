@@ -12,6 +12,7 @@ public class MergeTwoLists {
      * Returning the result should just be {@code dummy.next}.
      *
      * <p>Complexity:
+     *
      * <ul>
      *     <li>Time: O(m + n)</li>
      *     <li>Space: O(1)</li>
@@ -38,6 +39,7 @@ public class MergeTwoLists {
      * Recursive approach - creates new nodes (less efficient but demonstrates recursion).
      *
      * <p>Complexity:
+     *
      * <ul>
      *     <li>Space: O(n+m) for call stack and new nodes.</li>
      * </ul>

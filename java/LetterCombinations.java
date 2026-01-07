@@ -12,6 +12,7 @@ public class LetterCombinations {
      * letters. If the input string is empty, we return an empty list.
      *
      * <p>Complexity:
+     *
      * <ul>
      *     <li>Time: O(4^n)</li>
      *     <li>Space: O(n)</li>

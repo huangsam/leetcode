@@ -18,6 +18,7 @@ public class FindHIndex {
      * <p> If no valid `i` is found (e.g., no paper has at least 1 citation), the h-index is 0.
      *
      * <p>Complexity:
+     *
      * <ul>
      *     <li>Time: O(n)</li>
      *     <li>Space: O(n)</li>

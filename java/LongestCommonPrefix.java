@@ -12,6 +12,7 @@ public class LongestCommonPrefix {
      * prefix. If we reach the end of the loop, we return the prefix.
      *
      * <p>Complexity:
+     *
      * <ul>
      *     <li>Time: O(n * m)</li>
      *     <li>Space: O(1)</li>

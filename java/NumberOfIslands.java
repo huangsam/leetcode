@@ -2,7 +2,11 @@
 
 public class NumberOfIslands {
     /**
+     * Calculate number of islands by traversing the grid and
+     * marking visited land cells.
+     *
      * <p>Complexity:
+     *
      * <ul>
      *     <li>Time: O(m * n)</li>
      *     <li>Space: O(m * n)</li>

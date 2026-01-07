@@ -11,6 +11,7 @@ public class TotalNQueens {
      * how many answers we got.
      *
      * <p>Complexity:
+     *
      * <ul>
      *     <li>Time: O(n!)</li>
      *     <li>Space: O(n)</li>

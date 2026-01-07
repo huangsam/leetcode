@@ -7,7 +7,13 @@ import java.util.PriorityQueue;
 
 public class MergeKLists {
     /**
+     * Merges k sorted linked lists into a single sorted linked list.
+     * The method uses a priority queue (min-heap) to efficiently retrieve
+     * the smallest node among the heads of the k lists, and iteratively
+     * builds the merged list by always appending the smallest node.
+     *
      * <p>Complexity:
+     *
      * <ul>
      *     <li>Time: O(n * log(k))</li>
      *     <li>Space: O(k)</li>

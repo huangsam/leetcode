@@ -14,6 +14,7 @@ public class LongestConsecutive {
      * continue until the end of the {@code nums} array.
      *
      * <p>Complexity:
+     *
      * <ul>
      *     <li>Time: O(n)</li>
      *     <li>Space: O(n)</li>
