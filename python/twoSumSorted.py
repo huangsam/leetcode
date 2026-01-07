@@ -8,15 +8,16 @@ class Solution:
         """
         Find two numbers in a sorted array that add up to a target value.
 
-        Complexity:
-        - Time: O(n)
-        - Space: O(1)
 
         We know that there is exactly one solution and that the input
         list is sorted in increasing order. Then we know that the
         first item is min and last item is max. We start with min + max
         and see if that matches target. Then we adjust by trying
         different min/max values until the target hits.
+
+        Complexity:
+        - Time: O(n)
+        - Space: O(1)
         """
         left, right = 0, len(numbers) - 1
         while left < right:

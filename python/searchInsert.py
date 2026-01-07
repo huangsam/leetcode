@@ -8,9 +8,6 @@ class Solution:
         """
         Find the index where a target would be inserted in a sorted array.
 
-        Complexity:
-        - Time: O(log(n))
-        - Space: O(1)
 
         Similar to regular binary search. But the main difference
         in this case is that we are looking for an insert position
@@ -19,6 +16,10 @@ class Solution:
         to zero is sufficient. For the right side, returning the lo
         pointer is sufficient since it should be only one number
         higher than the highest number possible.
+
+        Complexity:
+        - Time: O(log(n))
+        - Space: O(1)
         """
         lo = 0
         hi = len(nums) - 1

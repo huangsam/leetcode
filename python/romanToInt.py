@@ -6,9 +6,6 @@ class Solution:
         """
         Convert a Roman numeral to an integer.
 
-        Complexity:
-        - Time: O(n)
-        - Space: O(1)
 
         Starting from left to right...
 
@@ -23,6 +20,10 @@ class Solution:
 
         Otherwise, we continue to add the value of the current symbol
         to the total sum that we want.
+
+        Complexity:
+        - Time: O(n)
+        - Space: O(1)
         """
         mapping = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
 

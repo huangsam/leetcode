@@ -8,11 +8,12 @@ class Solution:
         """
         Find the diameter (longest path) of a binary tree.
 
+
+        Calculate the diameter of a binary tree.
+
         Complexity:
         - Time: O(n)
         - Space: O(h)
-
-        Calculate the diameter of a binary tree.
         """
         self.diameter = 0
 

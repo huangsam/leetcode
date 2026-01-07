@@ -8,9 +8,6 @@ class Solution:
         """
         Determine if you can reach the last index of an array.
 
-        Complexity:
-        - Time: O(n)
-        - Space: O(1)
 
         You are given an integer array nums. You are initially
         positioned at the array's first index, and each element
@@ -22,6 +19,10 @@ class Solution:
         - If we have negative jump power, then we cannot proceed
         - If a higher jump power exists, replace the previous one
         - Making it to the end implies we had enough jump power
+
+        Complexity:
+        - Time: O(n)
+        - Space: O(1)
         """
         jump_power = 0
         for idx, num in enumerate(nums):

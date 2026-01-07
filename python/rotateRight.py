@@ -10,9 +10,6 @@ class Solution:
         """
         Rotate a linked list to the right by k places.
 
-        Complexity:
-        - Time: O(n)
-        - Space: O(1)
 
         One possible approach is as follows:
 
@@ -23,6 +20,10 @@ class Solution:
         - Unlink left.next from the target node
         - Link tail.next to the original head
         - Return the target node
+
+        Complexity:
+        - Time: O(n)
+        - Space: O(1)
         """
         if not head:
             return None

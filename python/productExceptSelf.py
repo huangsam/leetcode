@@ -8,9 +8,6 @@ class Solution:
         """
         Return an array where each element is the product of all others.
 
-        Complexity:
-        - Time: O(n)
-        - Space: O(1)
 
         For example [1,2,3,4] ->
 
@@ -27,6 +24,10 @@ class Solution:
         suffix @ nums[2] -> $1 * 4
         suffix @ nums[1] -> $1 * 4 * 3
         suffix @ nums[0] -> $1 * 4 * 3 * 2
+
+        Complexity:
+        - Time: O(n)
+        - Space: O(1)
         """
         answer = [1] * len(nums)
         left_val, right_val = 1, 1

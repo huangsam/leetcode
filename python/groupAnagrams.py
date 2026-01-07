@@ -9,9 +9,6 @@ class Solution:
         """
         Group anagrams together from a list of strings.
 
-        Complexity:
-        - Time: O(n * k)
-        - Space: O(n * k)
 
         Assume that anagram is simply a map of alpha counts.
 
@@ -23,6 +20,10 @@ class Solution:
 
         Lastly, we iterate through the values of the
         dictionary, returning it as a list of lists.
+
+        Complexity:
+        - Time: O(n * k)
+        - Space: O(n * k)
         """
         strings_by_hash: DefaultDict[int, list] = defaultdict(list)
         for content in strs:

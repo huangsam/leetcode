@@ -10,15 +10,16 @@ class Solution:
         """
         Find the minimum length of a contiguous subarray with sum >= target.
 
-        Complexity:
-        - Time: O(n)
-        - Space: O(1)
 
         Slide left and right as you will. Right increases until
         the current_sum beats or matches the target. Left increases
         until the current_sum is lower than the target. Continue
         updating min_length in all cases. We return the minimum possible
         length at the end of the iteration.
+
+        Complexity:
+        - Time: O(n)
+        - Space: O(1)
         """
         left, right = 0, 0
 

@@ -8,9 +8,6 @@ class Solution:
         """
         Rotate an array to the right by k steps.
 
-        Complexity:
-        - Time: O(n)
-        - Space: O(1)
 
         Given an integer array nums, rotate the array to the
         right by k steps, where k is non-negative.
@@ -22,6 +19,10 @@ class Solution:
         - Reverse all numbers to correct positions in reverse order
         - Reverse k numbers back to correct order
         - Reverse remainder back to correct order
+
+        Complexity:
+        - Time: O(n)
+        - Space: O(1)
         """
         if k < 0:
             raise ValueError("Assume k is non-negative")

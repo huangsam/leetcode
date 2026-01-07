@@ -8,13 +8,14 @@ class Solution:
         """
         Determine if a 9x9 Sudoku board is valid.
 
-        Complexity:
-        - Time: O(1)
-        - Space: O(1)
 
         - Each row must contain the digits 1-9 without repetition.
         - Each column must contain the digits 1-9 without repetition.
         - Each box must contain the digits 1-9 without repetition.
+
+        Complexity:
+        - Time: O(1)
+        - Space: O(1)
         """
         row_masks = [0] * 9
         col_masks = [0] * 9

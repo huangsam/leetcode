@@ -6,15 +6,16 @@ class Solution:
         """
         Find the first occurrence of a substring in a string.
 
-        Complexity:
-        - Time: O(n * m)
-        - Space: O(1)
 
         Start from the beginning. Whenever there is a match of needle in
         haystack, then we start iterating and keep track of index. If there
         is a full match, then we store the minimum result, as we are looking
         for the first occurrence of needle. If we end up with no match,
         we will return -1 instead of a non-negative integer.
+
+        Complexity:
+        - Time: O(n * m)
+        - Space: O(1)
         """
         # End result that we're looking for
         match_at = -1

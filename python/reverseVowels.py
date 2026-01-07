@@ -6,14 +6,15 @@ class Solution:
         """
         Reverse only the vowels in a string.
 
-        Complexity:
-        - Time: O(n)
-        - Space: O(n)
 
         This illustrates the two-pointer technique.
         It only uses O(n) space without auxilliary structures.
         If we did it with a one-pass approach, we would have needed extra
         space to store the vowels and their indices for swapping later on.
+
+        Complexity:
+        - Time: O(n)
+        - Space: O(n)
         """
         # 1. Convert to list because strings are immutable
         chars = list(s)

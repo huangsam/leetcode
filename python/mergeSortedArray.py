@@ -8,9 +8,6 @@ class Solution:
         """
         Merge two sorted arrays into one sorted array.
 
-        Complexity:
-        - Time: O(m + n)
-        - Space: O(1)
 
         You are given two integer arrays nums1 and nums2, sorted in
         non-decreasing order, and two integers m and n, representing
@@ -26,6 +23,10 @@ class Solution:
         - Add max of nums1[i] and nums2[j] until either one runs out
         - Add leftover of nums2 if any items remain
         - There is nothing to do for leftover of nums1, so we're done
+
+        Complexity:
+        - Time: O(m + n)
+        - Space: O(1)
         """
         if n == 0:
             return

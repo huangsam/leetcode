@@ -8,9 +8,6 @@ class Solution:
         """
         Count the number of 1 bits for every number from 0 to n.
 
-        Complexity:
-        - Time: O(n)
-        - Space: O(n)
 
         Get the binary representation for each number i from
         0..n using dynamic programming with the bottoms-up
@@ -21,6 +18,10 @@ class Solution:
 
         If i is odd, i can be written as 2k + 1, where k is
         shifted right by one bit and the LSB is 1.
+
+        Complexity:
+        - Time: O(n)
+        - Space: O(n)
         """
         dp = [0] * (n + 1)
         for i in range(1, n + 1):

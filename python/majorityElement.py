@@ -9,9 +9,6 @@ class Solution:
         """
         Find the majority element that appears more than n/2 times.
 
-        Complexity:
-        - Time: O(n)
-        - Space: O(n)
 
         Given an array nums of size n, return the majority element.
 
@@ -24,6 +21,10 @@ class Solution:
         - While doing so, report any number that occurs over [n/2]
 
         Follow-up: Could you solve the problem in linear time and in O(1) space?
+
+        Complexity:
+        - Time: O(n)
+        - Space: O(n)
         """
         counts_by_num: DefaultDict[int, int] = defaultdict(int)
         for num in nums:

@@ -8,9 +8,6 @@ class Solution:
         """
         Remove all occurrences of a value from an array in-place.
 
-        Complexity:
-        - Time: O(n)
-        - Space: O(1)
 
         Given an integer array nums and an integer val, remove all
         occurrences of val in nums in-place. The order of the elements
@@ -22,6 +19,10 @@ class Solution:
         - Assume that order of <= n_edit does not matter
         - When we find a mismatch, we add it to the left and raise n_edit
         - Return n_edit after all is said and done
+
+        Complexity:
+        - Time: O(n)
+        - Space: O(1)
         """
         n_cur = 0
         n_edit = 0

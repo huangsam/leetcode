@@ -8,10 +8,6 @@ class Solution:
         """
         Find minimum additions to make a valid string.
 
-        Complexity:
-        - Time: O(n)
-        - Space: O(n)
-
         Here are some examples of how the scoring works:
         - a -> 2
         - b -> 2
@@ -19,6 +15,10 @@ class Solution:
         - ab -> 1
         - bc -> 1
         - abc -> 0
+
+        Complexity:
+        - Time: O(n)
+        - Space: O(n)
         """
         curr_seq: List[str] = []
         num_letters = 0

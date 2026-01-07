@@ -6,14 +6,15 @@ class Solution:
         """
         Determine if s is a subsequence of t.
 
-        Complexity:
-        - Time: O(n)
-        - Space: O(1)
 
         Look for characters of s in t in an orderly fashion. Ignore
         characters that do not match. Keep a counter of characters in
         s that match. If we have the counter match the length of s, then
         we return true. Otherwise, we return false.
+
+        Complexity:
+        - Time: O(n)
+        - Space: O(1)
         """
         # How many characters in s that match
         char_count = 0

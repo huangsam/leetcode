@@ -8,9 +8,6 @@ class Solution:
         """
         Simplify a Unix-style file path.
 
-        Complexity:
-        - Time: O(n)
-        - Space: O(n)
 
         Assume that no spaces exist in folder names and file names.
         Then we can split by '/' to identify all incoming tokens.
@@ -18,6 +15,10 @@ class Solution:
         else. '.' is a no-op as it points to the current directory.
         A '..' is the previous directory, so we pop it out.
         Everything else is a new name so we add it.
+
+        Complexity:
+        - Time: O(n)
+        - Space: O(n)
         """
         path_stack: List[str] = []
 

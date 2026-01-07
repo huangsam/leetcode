@@ -8,9 +8,6 @@ class Solution:
         """
         Return all elements of a matrix in spiral order.
 
-        Complexity:
-        - Time: O(m * n)
-        - Space: O(1)
 
         Start at (0,0), go right until you hit the end.
         then you go down until you hit the end. Then you
@@ -23,6 +20,10 @@ class Solution:
         and the next direction cannot be traversed.
 
         Note that r=right, d=down, l=left, u=up.
+
+        Complexity:
+        - Time: O(m * n)
+        - Space: O(1)
         """
         # Boolean flags to keep us sane
         visited = [[False] * self._width(matrix) for _ in range(self._height(matrix))]

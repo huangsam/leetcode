@@ -6,11 +6,12 @@ class Solution:
         """
         Determine if a string is a valid palindrome.
 
+
+        We can do this using a two-pointer approach.
+
         Complexity:
         - Time: O(n)
         - Space: O(1)
-
-        We can do this using a two-pointer approach.
         """
         left, right = 0, len(s) - 1
 

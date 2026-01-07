@@ -9,13 +9,14 @@ class Solution:
         """
         Determine if two strings are anagrams.
 
-        Complexity:
-        - Time: O(n + m)
-        - Space: O(n)
 
         An Anagram is a word or phrase formed by rearranging
         the letters of a different word or phrase, using all
         the original letters exactly once.
+
+        Complexity:
+        - Time: O(n + m)
+        - Space: O(n)
         """
         s_count: DefaultDict[str, int] = defaultdict(int)
         for ch in s:

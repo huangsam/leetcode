@@ -6,9 +6,6 @@ class Solution:
         """
         Determine if a string of brackets is valid.
 
-        Complexity:
-        - Time: O(n)
-        - Space: O(n)
 
         Check if parentheses are valid.
 
@@ -18,6 +15,10 @@ class Solution:
         - Close brackets has a corresponding open bracket
 
         Simplified: Stack alone is sufficient to validate.
+
+        Complexity:
+        - Time: O(n)
+        - Space: O(n)
         """
         stack = []
         close_to_open = {")": "(", "}": "{", "]": "["}

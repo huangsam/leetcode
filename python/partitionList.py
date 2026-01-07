@@ -10,9 +10,6 @@ class Solution:
         """
         Partition a linked list around a value x.
 
-        Complexity:
-        - Time: O(n)
-        - Space: O(1)
 
         Partition nodes < x and >= x, preserving the order of the nodes.
 
@@ -24,6 +21,10 @@ class Solution:
         - Track the head and tail of both partial lists
         - Link tail of partial 1 with head of partial 2
         - Return head of the partial 1
+
+        Complexity:
+        - Time: O(n)
+        - Space: O(1)
         """
         if not head:
             return None

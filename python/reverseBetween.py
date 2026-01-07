@@ -10,9 +10,6 @@ class Solution:
         """
         Reverse a portion of a linked list from position left to right.
 
-        Complexity:
-        - Time: O(n)
-        - Space: O(1)
 
         We reverse a subset of the singly linked list from
         left <= right. Anything less than left and anything greater
@@ -25,6 +22,10 @@ class Solution:
 
         Keep in mind that left can equal right. So in that case, nothing
         needs to be done as it were.
+
+        Complexity:
+        - Time: O(n)
+        - Space: O(1)
         """
         if not head:
             return None

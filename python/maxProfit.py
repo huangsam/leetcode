@@ -8,9 +8,6 @@ class Solution:
         """
         Find the maximum profit from buying and selling stock once.
 
-        Complexity:
-        - Time: O(n)
-        - Space: O(1)
 
         You want to maximize your profit by choosing a single
         day to buy one stock and choosing a different day in
@@ -28,6 +25,10 @@ class Solution:
         - If the current price is <= prev, update smallest
         - If the current price is > prev, calculate profit
         - Return the best positive profit you can find
+
+        Complexity:
+        - Time: O(n)
+        - Space: O(1)
         """
         if len(prices) < 1:
             raise ValueError("Got non-empty list of prices")

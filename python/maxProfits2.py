@@ -8,9 +8,6 @@ class Solution:
         """
         Find the maximum profit from buying and selling stock multiple times.
 
-        Complexity:
-        - Time: O(n)
-        - Space: O(1)
 
         On each day, you may decide to buy and/or sell the stock. You can
         only hold at most one share of the stock at any time. However, you
@@ -22,6 +19,10 @@ class Solution:
         - Handle base cases of empty prices and one price
         - Calculate profit whenever stock drops
         - Calculate leftover profits at the very end
+
+        Complexity:
+        - Time: O(n)
+        - Space: O(1)
         """
         # Handle base cases appropriately
         if len(prices) <= 1:

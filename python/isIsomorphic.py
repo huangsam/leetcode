@@ -8,9 +8,6 @@ class Solution:
         """
         Determine if two strings are isomorphic.
 
-        Complexity:
-        - Time: O(n)
-        - Space: O(n)
 
         Assume that the length of s and t are identical and non-empty.
 
@@ -18,6 +15,10 @@ class Solution:
         char in s will be mapped to a char in t until a) there is a
         mapping mismatch or b) the entirety of s and t have been
         iterated. We return false for a, true for b.
+
+        Complexity:
+        - Time: O(n)
+        - Space: O(n)
         """
         # To check for discrepancies in mapping
         s_to_t: Dict[str, str] = {}

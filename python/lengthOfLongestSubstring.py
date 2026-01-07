@@ -8,15 +8,16 @@ class Solution:
         """
         Find the length of the longest substring without repeating characters.
 
-        Complexity:
-        - Time: O(n)
-        - Space: O(min(n, m))
 
         Start by iterating through the entire string. We'll have a left
         and right pointer indicating a substring with the range
         [left, right]. If we encounter new characters, we increment right
         by one and update the maximum length as needed. If we encounter a
         duplicate, we increment left until that is no longer the case.
+
+        Complexity:
+        - Time: O(n)
+        - Space: O(min(n, m))
         """
         max_length: int = 0
         char_seen: Set[str] = set()

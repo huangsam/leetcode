@@ -9,9 +9,6 @@ class Solution:
         """
         Find the kth largest element in an unsorted array.
 
-        Complexity:
-        - Time: O(n * log(k))
-        - Space: O(k)
 
         Max heap gives largest element while min heap gives
         smallest element. Python offers min heap, so we'll
@@ -25,6 +22,10 @@ class Solution:
 
         At the end of the loop, the smallest item in the heap
         should be the kth largest item.
+
+        Complexity:
+        - Time: O(n * log(k))
+        - Space: O(k)
         """
         min_heap: List[int] = []
         for num in nums:

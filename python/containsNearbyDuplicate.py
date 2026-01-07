@@ -8,9 +8,6 @@ class Solution:
         """
         Determine if array contains duplicate values within k distance.
 
-        Complexity:
-        - Time: O(n)
-        - Space: O(n)
 
         1. Find all indices which have duplicates
         2. For each list of indices, see if any nC2 option satisfies
@@ -20,6 +17,10 @@ class Solution:
         a subset of the nC2 options - where they are neighbors. Thus,
         we iterate idx[1] - idx[0], then idx[2] - idx[1] until we have
         exhausted all options.
+
+        Complexity:
+        - Time: O(n)
+        - Space: O(n)
         """
         val_latest_index: Dict[int, int] = {}
 

@@ -8,9 +8,6 @@ class Solution:
         """
         Remove duplicates from a sorted array in-place.
 
-        Complexity:
-        - Time: O(n)
-        - Space: O(1)
 
         Given an integer array nums sorted in non-decreasing order, remove
         the duplicates in-place such that each unique element appears only once.
@@ -23,6 +20,10 @@ class Solution:
         - Iterate through numbers until a non-duplicate is found
         - Move non-duplicate over to next unique position
         - Return unique position + 1, since the offset starts at 0
+
+        Complexity:
+        - Time: O(n)
+        - Space: O(1)
         """
         if len(nums) <= 1:
             return len(nums)

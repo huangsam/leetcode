@@ -8,9 +8,6 @@ class Solution:
         """
         Remove duplicates from sorted array allowing at most 2 duplicates.
 
-        Complexity:
-        - Time: O(n)
-        - Space: O(1)
 
         Given an integer array nums sorted in non-decreasing order, remove
         some duplicates in-place such that each unique element appears at
@@ -22,6 +19,10 @@ class Solution:
             - Set kth value as new unique
         - Go through Nth unique. If there are two or more items
             - Set range value as Nth unique
+
+        Complexity:
+        - Time: O(n)
+        - Space: O(1)
         """
         k = 0
         uniq = 0

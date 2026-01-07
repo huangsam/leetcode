@@ -10,15 +10,16 @@ class Solution:
         """
         Count the number of nodes in a complete binary tree.
 
-        Complexity:
-        - Time: O(log^2(n))
-        - Space: O(log(n))
 
         Figure out height of left and right hand side.
 
         If they are equal then you can stop. Otherwise, you
         continue traversing the left and right subtrees, both
         of which are complete trees.
+
+        Complexity:
+        - Time: O(log^2(n))
+        - Space: O(log(n))
         """
         if not root:
             return 0

@@ -8,9 +8,6 @@ class Solution:
         """
         Rotate a 2D matrix 90 degrees clockwise.
 
-        Complexity:
-        - Time: O(n^2)
-        - Space: O(1)
 
         Do not return anything, modify matrix in-place instead.
 
@@ -22,6 +19,10 @@ class Solution:
             starts at 0,0 -> 0,3 -> 3,3 -> 3,0 (size 4)
             starts at 1,1 -> 1,2 -> 2,2 -> 2,1 (size 2)
             ends at 2,2 due to size 0 (size 0)
+
+        Complexity:
+        - Time: O(n^2)
+        - Space: O(1)
         """
         size, start = len(matrix), 0
         while size > 1:

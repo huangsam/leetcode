@@ -6,13 +6,14 @@ class Solution:
         """
         Return the length of the last word in a string.
 
-        Complexity:
-        - Time: O(n)
-        - Space: O(1)
 
         Keep iterating until right_at sees a character.
         Keep iterating until left_at does not see a character.
         Note that first and last characters must be checked.
+
+        Complexity:
+        - Time: O(n)
+        - Space: O(1)
         """
         right_at = len(s) - 1
         while right_at >= 0:

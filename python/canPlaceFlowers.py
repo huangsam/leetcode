@@ -8,13 +8,14 @@ class Solution:
         """
         Determine if n flowers can be planted without violating the no-adjacent rule.
 
-        Complexity:
-        - Time: O(n)
-        - Space: O(1)
 
         Simply iterate through the flowerbed and plant flowers where possible.
         Keep track of how many flowers we have planted.
         If we reach the required number of flowers, return True. Otherwise, False.
+
+        Complexity:
+        - Time: O(n)
+        - Space: O(1)
         """
         if n == 0:
             return True
