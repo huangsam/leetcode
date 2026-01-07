@@ -6,7 +6,6 @@ class Solution:
         """
         Return the length of the last word in a string.
 
-
         Keep iterating until right_at sees a character.
         Keep iterating until left_at does not see a character.
         Note that first and last characters must be checked.

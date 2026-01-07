@@ -8,7 +8,6 @@ class Solution:
         """
         Find the length of the longest substring without repeating characters.
 
-
         Start by iterating through the entire string. We'll have a left
         and right pointer indicating a substring with the range
         [left, right]. If we encounter new characters, we increment right

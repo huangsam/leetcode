@@ -8,7 +8,6 @@ class Solution:
         """
         Find the maximum profit from buying and selling stock multiple times.
 
-
         On each day, you may decide to buy and/or sell the stock. You can
         only hold at most one share of the stock at any time. However, you
         can buy it then immediately sell it on the same day.

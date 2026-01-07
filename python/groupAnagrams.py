@@ -9,7 +9,6 @@ class Solution:
         """
         Group anagrams together from a list of strings.
 
-
         Assume that anagram is simply a map of alpha counts.
 
         Then we will generate a hash based on the frequency

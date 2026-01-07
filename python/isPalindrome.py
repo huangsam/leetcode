@@ -6,7 +6,6 @@ class Solution:
         """
         Determine if a string is a valid palindrome.
 
-
         We can do this using a two-pointer approach.
 
         Complexity:

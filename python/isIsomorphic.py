@@ -8,7 +8,6 @@ class Solution:
         """
         Determine if two strings are isomorphic.
 
-
         Assume that the length of s and t are identical and non-empty.
 
         We will traverse the characters of s and t, one by one. Each

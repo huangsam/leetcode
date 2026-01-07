@@ -11,9 +11,6 @@ class Solution:
         """
         Check if a linked list is a subpath in a binary tree.
 
-
-        Check if linked list is a subpath in binary tree.
-
         Complexity:
         - Time: O(n * m)
         - Space: O(h)

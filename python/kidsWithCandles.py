@@ -6,7 +6,6 @@ class Solution:
         """
         Determine which kids will have the greatest number of candies.
 
-
         Start by finding the max possible value. Then create a boolean list
         of len(candies) where you literally go through a second pass. Can I be
         more efficient simply by relying the i and i-1? No I don't think so

@@ -6,9 +6,6 @@ class Solution:
         """
         Determine if a string of brackets is valid.
 
-
-        Check if parentheses are valid.
-
         Constraints:
         - Open brackets must be closed by the same type
         - Open brackets must be closed in the correct order
