@@ -9,7 +9,6 @@ class Solution:
         """
         Find the kth largest element in an unsorted array.
 
-
         Max heap gives largest element while min heap gives
         smallest element. Python offers min heap, so we'll
         keep pushing items in until k size. The heappush

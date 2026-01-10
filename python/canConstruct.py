@@ -6,7 +6,6 @@ class Solution:
         """
         Determine if a ransom note can be constructed from magazine letters.
 
-
         We are going to collect the mapping of character frequencies
         for ransom note. Then we subtract the frequencies when iterating
         through magazine. If ransom mapping has all values <= 0, then we

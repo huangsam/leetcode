@@ -10,9 +10,7 @@ class Solution:
         """
         Count the number of nodes in a complete binary tree.
 
-
         Figure out height of left and right hand side.
-
         If they are equal then you can stop. Otherwise, you
         continue traversing the left and right subtrees, both
         of which are complete trees.

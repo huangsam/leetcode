@@ -8,7 +8,6 @@ class Solution:
         """
         Count the number of 1 bits for every number from 0 to n.
 
-
         Get the binary representation for each number i from
         0..n using dynamic programming with the bottoms-up
         approach.

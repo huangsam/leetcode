@@ -10,7 +10,6 @@ class Solution:
         """
         Flatten a binary tree to a linked list in-place.
 
-
         Do not return anything, modify root in-place instead.
 
         Complexity:

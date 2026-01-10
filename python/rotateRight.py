@@ -10,7 +10,6 @@ class Solution:
         """
         Rotate a linked list to the right by k places.
 
-
         One possible approach is as follows:
 
         - Get length of list in one pass

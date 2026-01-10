@@ -6,7 +6,6 @@ class Solution:
         """
         Convert a Roman numeral to an integer.
 
-
         Starting from left to right...
 
         When the symbol I is detected, followed by more Is, we are

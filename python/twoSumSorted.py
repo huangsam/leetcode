@@ -8,7 +8,6 @@ class Solution:
         """
         Find two numbers in a sorted array that add up to a target value.
 
-
         We know that there is exactly one solution and that the input
         list is sorted in increasing order. Then we know that the
         first item is min and last item is max. We start with min + max

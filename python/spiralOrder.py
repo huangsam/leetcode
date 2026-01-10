@@ -8,7 +8,6 @@ class Solution:
         """
         Return all elements of a matrix in spiral order.
 
-
         Start at (0,0), go right until you hit the end.
         then you go down until you hit the end. Then you
         go left until you hit the end. Then you go up until

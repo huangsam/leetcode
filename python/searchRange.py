@@ -8,9 +8,6 @@ class Solution:
         """
         Find the starting and ending position of a target value.
 
-
-        Find first and last position of target in sorted array.
-
         Complexity:
         - Time: O(log(n))
         - Space: O(1)

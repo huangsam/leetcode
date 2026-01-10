@@ -8,9 +8,6 @@ class Solution:
         """
         Calculate the total Hamming distance between all pairs of integers.
 
-
-        Calculate the total Hamming distance between all pairs of integers in the list.
-
         Complexity:
         - Time: O(n)
         - Space: O(1)

@@ -8,9 +8,6 @@ class Solution:
         """
         Find all unique triplets in an array that sum to zero.
 
-
-        Find all unique triplets that sum to zero.
-
         Complexity:
         - Time: O(n^2)
         - Space: O(n)
