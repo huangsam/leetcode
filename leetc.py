@@ -33,6 +33,10 @@ def detail(url_fragment: str):
             difficulty
             likes
             dislikes
+            topicTags {
+                name
+                slug
+            }
             content
         }
     }
@@ -48,9 +52,8 @@ def detail(url_fragment: str):
 @click.argument("username", required=False, default="huangsam")
 def progress(username: str):
     """Get user progress summary on LeetCode problems."""
-    # This query provides summary stats and doesn't require auth
     query = """
-    query userProblemsSolved($username: String!) {
+    query userProgress($username: String!) {
         allQuestionsCount {
             difficulty
             count
