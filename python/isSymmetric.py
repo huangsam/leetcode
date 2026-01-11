@@ -10,7 +10,9 @@ class Solution:
         """
         Determine if a binary tree is symmetric around its center.
 
-        Use a recursive helper function to check if two subtrees are mirrors: they must have the same structure and node values, with the left subtree of one matching the right subtree of the other, and vice versa.
+        Use a recursive helper function to check if two subtrees are mirrors:
+        they must have the same structure and node values, with the left subtree
+        of one matching the right subtree of the other, and vice versa.
 
         Complexity:
         - Time: O(n)

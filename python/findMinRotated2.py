@@ -8,7 +8,8 @@ class Solution:
         """
         Find the minimum element in a rotated sorted array with duplicates.
 
-        Use binary search: if nums[mid] > nums[hi], min in right half. If nums[mid] < nums[hi], min in left.
+        Use binary search: if nums[mid] > nums[hi], min in right half. If
+        nums[mid] < nums[hi], min in left.
 
         If nums[mid] == nums[hi], decrement hi to handle duplicates.
 

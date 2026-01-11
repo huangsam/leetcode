@@ -8,7 +8,8 @@ class Solution:
         """
         Find two lines that together with x-axis form a container with most water.
 
-        Use two pointers, i at start, j at end. Compute area = (j - i) * min(height[i], height[j]), update max.
+        Use two pointers, i at start, j at end. Compute area = (j - i) *
+        min(height[i], height[j]), update max.
 
         Move the pointer with the smaller height inward to potentially find larger area.
 

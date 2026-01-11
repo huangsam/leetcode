@@ -20,7 +20,8 @@ class Solution:
             - If no, update the map with the current index (to keep the most recent occurrence).
 
         This works because we only need to track the latest index for each number. If a duplicate
-        is found but the distance > k, we update to the current index, effectively sliding the window.
+        is found but the distance > k, we update to the current index, effectively
+        sliding the window.
 
         Complexity:
         - Time: O(n) - single pass through the array

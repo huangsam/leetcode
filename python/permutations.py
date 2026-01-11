@@ -13,7 +13,8 @@ class Solution:
 
         Use backtracking: start with an empty path and a set of available numbers.
 
-        For each available number, add it to the path, recurse with the updated set, then remove it to backtrack.
+        For each available number, add it to the path, recurse with the updated
+        set, then remove it to backtrack.
 
         When path length equals nums length, add to result.
 

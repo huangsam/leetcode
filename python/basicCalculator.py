@@ -10,7 +10,8 @@ class Solution:
 
         Use a stack to handle operations. Iterate through the string, building numbers.
 
-        When an operator is encountered, apply the previous operator to the current number and push to stack.
+        When an operator is encountered, apply the previous operator to the current
+        number and push to stack.
 
         Finally, sum the stack.
 

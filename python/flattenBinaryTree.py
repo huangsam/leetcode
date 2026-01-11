@@ -10,9 +10,11 @@ class Solution:
         """
         Flatten a binary tree to a linked list in-place.
 
-        Recursively flatten left and right subtrees. Then, set root.right to the flattened left subtree.
+        Recursively flatten left and right subtrees. Then, set root.right to the
+        flattened left subtree.
 
-        Find the end of the flattened left, set its right to the flattened right. Set root.left to None.
+        Find the end of the flattened left, set its right to the flattened right.
+        Set root.left to None.
 
         Complexity:
         - Time: O(n)

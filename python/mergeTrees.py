@@ -10,7 +10,8 @@ class Solution:
 
         Recursively traverse both trees: if one node is None, return the other.
 
-        Otherwise, create a new node with value t1.val + t2.val, and set left to merge of lefts, right to merge of rights.
+        Otherwise, create a new node with value t1.val + t2.val, and set left to
+        merge of lefts, right to merge of rights.
 
         Complexity:
         - Time: O(n)

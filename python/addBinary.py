@@ -9,9 +9,11 @@ class Solution:
         """
         Add two binary strings and return the result as a binary string.
 
-        Convert the binary strings to integers using base 2, sum them, and convert the result back to a binary string.
+        Convert the binary strings to integers using base 2, sum them, and
+        convert the result back to a binary string.
 
-        This approach is efficient and leverages Python's arbitrary-precision integers to handle large binary numbers.
+        This approach is efficient and leverages Python's arbitrary-precision
+        integers to handle large binary numbers.
 
         Complexity:
         - Time: O(n + m)
@@ -21,7 +23,8 @@ class Solution:
 
     def addBinaryManual(self, a: str, b: str) -> str:
         """
-        Add two binary strings without converting them to integers. This method simulates the addition process.
+        Add two binary strings without converting them to integers. This method
+        simulates the addition process.
 
         Complexity:
         - Time: O(max(n, m))

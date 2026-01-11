@@ -8,7 +8,8 @@ class Solution:
         """
         Find the element that appears only once in an array.
 
-        XOR all numbers: pairs of identical numbers XOR to 0, and 0 XOR single number = single number.
+        XOR all numbers: pairs of identical numbers XOR to 0, and 0 XOR single
+        number = single number.
 
         This works because XOR is associative, commutative, and a ^ a = 0, 0 ^ b = b.
 

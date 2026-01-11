@@ -6,7 +6,8 @@ from typing import List
 class Solution:
     def fizzBuzz(self, n: int) -> List[str]:
         """
-        Return a string array where multiples of 3 are "Fizz", 5 are "Buzz", and both are "FizzBuzz".
+        Return a string array where multiples of 3 are "Fizz", 5 are "Buzz", and
+        both are "FizzBuzz".
 
         Iterate from 1 to n, checking each number's divisibility by 3 and 5 in order, and append
         the corresponding string to the result list.
