@@ -10,7 +10,6 @@ class Solution:
         """
         Reverse a portion of a linked list from position left to right.
 
-
         We reverse a subset of the singly linked list from
         left <= right. Anything less than left and anything greater
         than right keeps the same ordering.

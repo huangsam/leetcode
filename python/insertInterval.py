@@ -8,7 +8,8 @@ class Solution:
         """
         Insert a new interval into a sorted list of non-overlapping intervals.
 
-        Iterate: add intervals that end before new starts. Then find the merge range with new, update start and end.
+        Iterate: add intervals that end before new starts. Then find the merge
+        range with new, update start and end.
 
         Finally add the remaining intervals.
 

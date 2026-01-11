@@ -9,15 +9,13 @@ class Solution:
         """
         Find the kth largest element in an unsorted array.
 
-        Max heap gives largest element while min heap gives
-        smallest element. Python offers min heap, so we'll
-        keep pushing items in until k size. The heappush
-        operation will continue balancing everything inside.
+        Max heap gives largest element while min heap gives smallest element.
+        Python offers min heap, so we'll keep pushing items in until k size.
+        The heappush operation will continue balancing everything inside.
 
-        Once the heap become k-size, we check if the current
-        item is greater than the smallest item. Then we will pop
-        out the smallest item and rebalance everything else in
-        the heap with the new item.
+        Once the heap become k-size, we check if the current item is greater
+        than the smallest item. Then we will pop out the smallest item and
+        rebalance everything else in the heap with the new item.
 
         At the end of the loop, the smallest item in the heap
         should be the kth largest item.

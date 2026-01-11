@@ -16,8 +16,8 @@ class Solution:
         As we iterate through the array:
         - If a number is not in the map, add it with its current index.
         - If it is in the map, check if the difference between current index and stored index <= k.
-          - If yes, return True.
-          - If no, update the map with the current index (to keep the most recent occurrence).
+            - If yes, return True.
+            - If no, update the map with the current index (to keep the most recent occurrence).
 
         This works because we only need to track the latest index for each number. If a duplicate
         is found but the distance > k, we update to the current index, effectively sliding the window.

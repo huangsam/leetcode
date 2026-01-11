@@ -11,7 +11,8 @@ class Solution:
         Use modified binary search: find the mid, if target == nums[mid], return.
         Else, determine which half is sorted.
 
-        If left half is sorted, check if target is in left range, else search right. If right half is sorted, check accordingly.
+        If left half is sorted, check if target is in left range, else search right.
+        If right half is sorted, check accordingly.
 
         Complexity:
         - Time: O(log(n))

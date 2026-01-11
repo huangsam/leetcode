@@ -6,7 +6,6 @@ class Solution:
         """
         Reverse only the vowels in a string.
 
-
         This illustrates the two-pointer technique.
         It only uses O(n) space without auxilliary structures.
         If we did it with a one-pass approach, we would have needed extra

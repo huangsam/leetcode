@@ -11,14 +11,14 @@ class Solution:
 
         Assume that anagram is simply a map of alpha counts.
 
-        Then we will generate a hash based on the frequency
-        count of all 26 letters in the alphabet.
+        Then we will generate a hash based on the frequency count of
+        all 26 letters in the alphabet.
 
-        Then each of the strings with the exact same
-        hash will fall under the same key.
+        Then each of the strings with the exact same hash will fall
+        under the same key.
 
-        Lastly, we iterate through the values of the
-        dictionary, returning it as a list of lists.
+        Lastly, we iterate through the values of the dictionary, returning
+        it as a list of lists.
 
         Complexity:
         - Time: O(n * k)
