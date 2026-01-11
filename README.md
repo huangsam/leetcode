@@ -10,26 +10,41 @@ Sharpen your coding skills with these solutions—feel free to explore, learn, a
 
 The URL of each solution is embedded at the top of the file.
 
-Run `bash urls.sh` to see the URLs for all attempted problems.
+Run `uv run python leetc.py urls` to see the URLs for all attempted problems.
 
-## Validation
+## Getting started
 
-For Python solutions:
+To validate Python solutions:
 
 ```shell
 uv run ruff check python
 uv run mypy python
 ```
 
-For Java solutions:
+To validate Java solutions:
 
 ```shell
 gradle build
 ```
 
+### CLI tool for LeetCode
+
+To get details on problems and progress without visiting the website, use the `leetc` CLI tool:
+
+```shell
+# List URLs for all solutions in the repository
+uv run leetc.py urls
+
+# Get details for a specific problem
+uv run leetc.py detail $URL_FRAGMENT
+
+# Get your overall progress summary
+uv run leetc.py progress $USERNAME
+```
+
 ## Additional resources
 
-If you're already looking into LeetCode, then these resources can complement your learning:
+These resources can complement learning via LeetCode:
 
 - 🎓 [jwasham/coding-interview-university](https://github.com/jwasham/coding-interview-university)
 - 📚 [thealgorithms](https://github.com/thealgorithms)

@@ -6,20 +6,25 @@ from typing import Dict, List
 class Solution:
     def containsNearbyDuplicate(self, nums: List[int], k: int) -> bool:
         """
-        Determine if array contains duplicate values within k distance.
+        Determine if there are two distinct indices i and j in the array such that
+        nums[i] == nums[j] and abs(i - j) <= k.
 
-        1. Find all indices which have duplicates
-        2. For each list of indices, see if any nC2 option satisfies
-        3. Return True on first match. Return False with no matches
+        This problem requires checking for duplicates within a sliding window of size k.
+        A naive approach would be to check all pairs, but that's O(n^2).
 
-        Note that all indices are sorted so we're really looking at
-        a subset of the nC2 options - where they are neighbors. Thus,
-        we iterate idx[1] - idx[0], then idx[2] - idx[1] until we have
-        exhausted all options.
+        Optimal approach: Use a hash map to track the most recent index of each number.
+        As we iterate through the array:
+        - If a number is not in the map, add it with its current index.
+        - If it is in the map, check if the difference between current index and stored index <= k.
+          - If yes, return True.
+          - If no, update the map with the current index (to keep the most recent occurrence).
+
+        This works because we only need to track the latest index for each number. If a duplicate
+        is found but the distance > k, we update to the current index, effectively sliding the window.
 
         Complexity:
-        - Time: O(n)
-        - Space: O(n)
+        - Time: O(n) - single pass through the array
+        - Space: O(min(n, unique_elements)) - worst case O(n) if all elements are unique
         """
         val_latest_index: Dict[int, int] = {}
 
