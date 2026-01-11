@@ -10,8 +10,6 @@ Sharpen your coding skills with these solutions—feel free to explore, learn, a
 
 The URL of each solution is embedded at the top of the file.
 
-Run `uv run python leetc.py urls` to see the URLs for all attempted problems.
-
 ## Getting started
 
 To validate Python solutions:
@@ -27,7 +25,7 @@ To validate Java solutions:
 gradle build
 ```
 
-### CLI tool for LeetCode
+### Insights tooling
 
 To get details on problems and progress without visiting the website, use the `leetc` CLI tool:
 
