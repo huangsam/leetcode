@@ -10,6 +10,10 @@ class Solution:
         """
         Determine if two binary trees are identical.
 
+        Use a recursive approach: both trees are the same if both are None, or both
+        are not None, have the same value, and their left and right subtrees
+        are identical.
+
         Complexity:
         - Time: O(n)
         - Space: O(h)

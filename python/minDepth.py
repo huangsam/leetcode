@@ -8,6 +8,10 @@ class Solution:
         """
         Find the minimum depth of a binary tree.
 
+        Recursively calculate: if root is None, return 0. Compute left and right depths.
+
+        If one is 0 (empty subtree), return the other +1. Else, return min(left, right) +1.
+
         Complexity:
         - Time: O(n)
         - Space: O(h)

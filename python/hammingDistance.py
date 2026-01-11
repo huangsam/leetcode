@@ -6,6 +6,10 @@ class Solution:
         """
         Calculate the Hamming distance between two integers.
 
+        XOR the two numbers to identify bits that differ. Then count the number of 1s in the XOR result.
+
+        Use a loop to divide by 2 and add the remainder each time until the number is 0.
+
         Complexity:
         - Time: O(log(max(x, y)))
         - Space: O(1)

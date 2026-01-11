@@ -8,6 +8,13 @@ class Solution:
         """
         Find two numbers that add up to a target value.
 
+        Use a hashmap to store the numbers we have seen so far along with their indices.
+        For each number in the array, calculate its complement (target - num) and check
+        if it exists in the hashmap. If it does, return the indices; otherwise, add
+        the current number to the hashmap.
+
+        This approach ensures we find the pair in a single pass through the array.
+
         Complexity:
         - Time: O(n)
         - Space: O(n)

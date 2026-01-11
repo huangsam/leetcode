@@ -8,6 +8,10 @@ class Solution:
         """
         Find the leftmost value in the last row of a binary tree.
 
+        Use level-order traversal with a queue. For each level, the first node dequeued is the leftmost.
+
+        Update the result with this value at the start of each level, so the last update is for the bottom level.
+
         Complexity:
         - Time: O(n)
         - Space: O(w)

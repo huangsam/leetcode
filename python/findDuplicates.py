@@ -8,6 +8,10 @@ class Solution:
         """
         Find all elements that appear twice in an array.
 
+        Use a set to track numbers seen so far. For each number, if it's already in the set, add to result.
+
+        This finds duplicates in O(n) time and space.
+
         Complexity:
         - Time: O(n)
         - Space: O(n)

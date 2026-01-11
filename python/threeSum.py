@@ -8,6 +8,11 @@ class Solution:
         """
         Find all unique triplets in an array that sum to zero.
 
+        Sort the array. For each index i, use two pointers j (i+1) and k (end)
+        to find pairs where nums[j] + nums[k] = -nums[i].
+
+        Skip duplicates for i, j, k to ensure uniqueness.
+
         Complexity:
         - Time: O(n^2)
         - Space: O(n)

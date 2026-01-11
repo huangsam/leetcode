@@ -10,6 +10,12 @@ class Solution:
         """
         Create a deep copy of a linked list with random pointers.
 
+        First pass: create copy nodes and interleave with originals (original -> copy -> original -> copy).
+
+        Second pass: set random pointers for copies.
+
+        Third pass: separate the two lists.
+
         Complexity:
         - Time: O(n)
         - Space: O(n)

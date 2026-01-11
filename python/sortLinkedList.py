@@ -10,6 +10,10 @@ class Solution:
         """
         Sort a linked list in ascending order.
 
+        We implement merge sort for linked lists. First, find the middle of the list
+        using slow and fast pointers. Recursively sort the left and right halves,
+        then merge the two sorted lists into one sorted list.
+
         Complexity:
         - Time: O(n * log(n))
         - Space: O(log(n))

@@ -6,6 +6,10 @@ class Solution:
         """
         Merge two strings alternately.
 
+        Iterate through the indices up to the length of the shorter string, appending
+        one character from each alternately. Then append the remaining characters from
+        the longer string.
+
         Complexity:
         - Time: O(n + m)
         - Space: O(n + m)

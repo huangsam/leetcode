@@ -7,23 +7,20 @@ from container.binary_tree import TreeNode
 
 class Solution:
     def __init__(self) -> None:
-        """
-        Find two numbers in a BST that add up to a target value.
-
-        Complexity:
-        - Time: O(n)
-        - Space: O(h)
-        """
         self.complement_set: Set[int] = set()
 
     def findTarget(self, root: Optional[TreeNode], k: int) -> bool:
         """
-        Like other two-sum problems, we can use a cache to store
-        the complements of the values we have seen so far. The
-        complement is the value we need to find in order to reach
-        the target sum `k`. We traverse the tree in-order, checking
-        if the current node's value is in the complement set.
-        If it is, we have found two values that sum to `k`.
+        Find two numbers in a BST that add up to a target value.
+
+        Like other two-sum problems, use a set to store complements of seen values.
+
+        Traverse the tree in-order, for each node, check if k - node.val is in the set.
+        If yes, return true. Else add node.val to set.
+
+        Complexity:
+        - Time: O(n)
+        - Space: O(h)
         """
         if root is None:
             return False

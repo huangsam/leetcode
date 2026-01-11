@@ -11,6 +11,10 @@ class Solution:
         """
         Return all possible combinations of k numbers chosen from the range [1, n].
 
+        Use backtracking: start from 1, for each number, add to current path, recurse with start+1, then backtrack.
+
+        When path length == k, add to result.
+
         Complexity:
         - Time: O(C(n, k) * k)
         - Space: O(C(n, k) * k)

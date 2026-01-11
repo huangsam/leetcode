@@ -8,6 +8,8 @@ class Solution:
         """
         Move all zeros to the end of an array with the typical swap approach.
 
+        Use a two-pointer approach: iterate through the array, and when a non-zero element is found, swap it with the element at the current "non-zero" position, then increment that position. This effectively moves all zeros to the end in-place.
+
         Complexity:
         - Time: O(n)
         - Space: O(1)

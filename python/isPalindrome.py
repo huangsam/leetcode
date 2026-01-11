@@ -6,7 +6,9 @@ class Solution:
         """
         Determine if a string is a valid palindrome.
 
-        We can do this using a two-pointer approach.
+        Use a two-pointer approach: start one pointer at the beginning and one at the
+        end. Move them towards the center, skipping non-alphanumeric characters, and
+        compare the alphanumeric characters case-insensitively.
 
         Complexity:
         - Time: O(n)

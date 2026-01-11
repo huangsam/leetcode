@@ -8,6 +8,10 @@ class Solution:
         """
         Find the largest string that divides both str1 and str2.
 
+        For strings to have a common divisor string, str1 + str2 must equal str2 + str1.
+        If so, the length of the GCD string is the GCD of the lengths of str1 and str2.
+        The GCD string is the prefix of str1 of that length.
+
         Complexity:
         - Time: O(n + m)
         - Space: O(n + m)

@@ -10,6 +10,8 @@ class Solution:
         """
         Determine if the tree has a root-to-leaf path with a given sum.
 
+        Use a recursive approach: if the root is None, return false. Subtract the current node's value from targetSum and check if the left or right subtree has a path summing to the new targetSum. For leaf nodes, check if targetSum equals the node's value.
+
         Complexity:
         - Time: O(n)
         - Space: O(h)

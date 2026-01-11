@@ -8,6 +8,10 @@ class Solution:
         """
         Find all numbers that disappeared from an array of size n.
 
+        Use the array itself to mark presence: for each num, negate nums[abs(num)-1].
+
+        Then iterate, if nums[i] > 0, i+1 is missing.
+
         Complexity:
         - Time: O(n)
         - Space: O(1)

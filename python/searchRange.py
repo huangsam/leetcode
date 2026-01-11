@@ -8,6 +8,11 @@ class Solution:
         """
         Find the starting and ending position of a target value.
 
+        Perform two binary searches: one to find the leftmost index where nums[i] >= target,
+        another for the rightmost where nums[i] <= target.
+
+        If the range is valid and nums[left] == target, return [left, right], else [-1, -1].
+
         Complexity:
         - Time: O(log(n))
         - Space: O(1)

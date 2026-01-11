@@ -8,6 +8,10 @@ class Solution:
         """
         Search for a target in a rotated sorted array with duplicates.
 
+        Use modified binary search: skip duplicates at lo and hi to handle worst case.
+
+        Then check which half is sorted, and decide to search left or right based on target.
+
         Complexity:
         - Time: O(n)
         - Space: O(1)

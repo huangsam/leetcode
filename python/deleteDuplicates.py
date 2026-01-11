@@ -11,6 +11,8 @@ class Solution:
         """
         Remove duplicates from a sorted linked list, keeping only unique elements.
 
+        First, count frequencies of each value. Then, iterate through nodes, linking only those with frequency 1.
+
         Complexity:
         - Time: O(n)
         - Space: O(n)

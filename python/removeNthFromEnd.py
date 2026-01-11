@@ -8,6 +8,10 @@ class Solution:
         """
         Remove the nth node from the end of a linked list.
 
+        Collect all nodes in a list for easy indexing. The node to remove is at index len - n.
+
+        Link the node before it to the node after it, effectively removing it from the list.
+
         Complexity:
         - Time: O(n)
         - Space: O(n)

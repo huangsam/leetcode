@@ -6,6 +6,11 @@ class Solution:
         """
         Calculate the number of distinct ways to climb n stairs.
 
+        This problem is equivalent to finding the nth Fibonacci number, as
+        the number of ways to reach step n is the sum of ways to reach step
+        n-1 and n-2. Use an iterative approach with two variables to compute
+        it efficiently in O(n) time and O(1) space.
+
         Complexity:
         - Time: O(n)
         - Space: O(1)

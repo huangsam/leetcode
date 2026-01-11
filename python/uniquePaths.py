@@ -6,6 +6,12 @@ class Solution:
         """
         Count the number of unique paths in a grid from top-left to bottom-right.
 
+        Use dynamic programming with a 2D memo array where memo[r][c] is the number
+        of ways to reach the end from (r,c).
+
+        Fill the array from bottom-right to top-left: for each cell, add the ways from
+        below and right, with base cases of 1 for the last row and column.
+
         Complexity:
         - Time: O(m * n)
         - Space: O(m * n)

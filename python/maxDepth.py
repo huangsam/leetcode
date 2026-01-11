@@ -8,6 +8,8 @@ class Solution:
         """
         Find the maximum depth of a binary tree.
 
+        Use a recursive approach: if the root is None, return 0. Otherwise, recursively calculate the maximum depth of the left and right subtrees and return the greater one plus one.
+
         Complexity:
         - Time: O(n)
         - Space: O(h)

@@ -6,6 +6,8 @@ class Solution:
         """
         Reverse characters in each word while preserving word order.
 
+        Split the string into words, reverse the characters in each word using string slicing, then join the reversed words with spaces.
+
         Complexity:
         - Time: O(n)
         - Space: O(n)

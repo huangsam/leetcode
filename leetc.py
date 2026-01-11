@@ -21,9 +21,9 @@ def cli():
 @cli.command()
 @click.argument("url_fragment")
 def detail(url_fragment: str):
-    """Get details for a specific LeetCode problem by URL fragment (titleSlug)."""
+    """Get details for a specific LeetCode problem by URL fragment (titleSlug), including the problem content."""
     query = """
-    query questionTitle($titleSlug: String!) {
+    query questionDetail($titleSlug: String!) {
         question(titleSlug: $titleSlug) {
             questionId
             questionFrontendId
@@ -33,6 +33,7 @@ def detail(url_fragment: str):
             difficulty
             likes
             dislikes
+            content
         }
     }
     """

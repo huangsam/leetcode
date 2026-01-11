@@ -9,6 +9,10 @@ class Solution:
         """
         Find the element that appears only once when others appear three times.
 
+        Since all elements except one appear exactly three times, we can use a
+        frequency map to count occurrences of each number. The element with a
+        count of 1 is the one that appears only once.
+
         Complexity:
         - Time: O(n)
         - Space: O(1)

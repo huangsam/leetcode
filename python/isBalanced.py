@@ -10,6 +10,12 @@ class Solution:
         """
         Determine if a binary tree is height-balanced.
 
+        Use a helper to compute height: if node None, 0. Else, get left and right heights.
+
+        If either -1 or abs(left - right) >1, return -1. Else return 1 + max(left, right).
+
+        Tree is balanced if height != -1.
+
         Complexity:
         - Time: O(n)
         - Space: O(h)

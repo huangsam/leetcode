@@ -6,6 +6,10 @@ class Solution:
         """
         Implement pow(x, n) to calculate x raised to the power n.
 
+        We use exponentiation by squaring for efficiency. Handle negative n by
+        taking reciprocal and making n positive. Then, while n > 0, if n is odd,
+        multiply result by x, then square x and halve n.
+
         Complexity:
         - Time: O(log(n))
         - Space: O(1)

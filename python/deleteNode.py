@@ -10,6 +10,14 @@ class Solution:
         """
         Delete a node in a BST.
 
+        Recursively search for the node with the key. If found:
+
+        - If no children, return None.
+
+        - If one child, return the child.
+
+        - If two children, find the inorder successor (min in right subtree), replace value, then delete successor.
+
         Complexity:
         - Time: O(h)
         - Space: O(h)

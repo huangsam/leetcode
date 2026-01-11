@@ -6,6 +6,10 @@ class Solution:
         """
         Determine if a number is a power of four.
 
+        Powers of four are powers of two with even exponents. First, check if num
+        is a power of two by (num & (num-1)) == 0. Then, check if the set bit is
+        at an even position (1, 3, 5, etc.) using a mask for powers of four.
+
         Complexity:
         - Time: O(1)
         - Space: O(1)

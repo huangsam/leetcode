@@ -8,6 +8,11 @@ class Solution:
         """
         Count unique paths in a grid with obstacles from top-left to bottom-right.
 
+        Use DP: memo[r][c] is ways to end from (r,c).
+        If obstacle (1), 0; else, sum from (r+1,c) and (r,c+1).
+
+        Fill from bottom-right: last row and column have 1 if no obstacle and reachable.
+
         Complexity:
         - Time: O(m * n)
         - Space: O(m * n)

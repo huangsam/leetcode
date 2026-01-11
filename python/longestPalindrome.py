@@ -8,6 +8,12 @@ class Solution:
         """
         Find the longest palindromic substring.
 
+        We use the expand around center approach. For each character in the string,
+        we consider it as the center of a potential palindrome and expand outwards
+        to find the longest odd-length palindrome. We also check between characters
+        for even-length palindromes. By comparing the lengths of these palindromes
+        at each center, we track the overall longest one found.
+
         Complexity:
         - Time: O(n^2)
         - Space: O(1)

@@ -8,6 +8,10 @@ class Solution:
         """
         Find the minimum element in a rotated sorted array.
 
+        Use binary search: if nums[mid] > nums[hi], the min is in the right half, so lo = mid + 1.
+
+        Otherwise, the min is in the left half, hi = mid.
+
         Complexity:
         - Time: O(log(n))
         - Space: O(1)

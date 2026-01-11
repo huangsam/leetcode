@@ -8,6 +8,10 @@ class Solution:
         """
         Merge overlapping intervals.
 
+        Sort the intervals by their start times. Then iterate through the sorted list, for
+        each interval, if it overlaps with the last in result (current start <= last end),
+        merge by updating the end. Otherwise, append the interval to result.
+
         Complexity:
         - Time: O(n * log(n))
         - Space: O(n)

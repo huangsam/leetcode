@@ -8,6 +8,12 @@ class Solution:
         """
         Remove all nodes with a specific value from a linked list.
 
+        Use a dummy node to simplify head removal. Iterate with prev and cur pointers.
+
+        If cur.val == val, skip it by setting prev.next = cur.next. Else, move prev to cur.
+
+        Return dummy.next.
+
         Complexity:
         - Time: O(n)
         - Space: O(1)

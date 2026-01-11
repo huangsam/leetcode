@@ -8,6 +8,12 @@ class Solution:
         """
         Implement a basic calculator to evaluate a simple expression string.
 
+        Use a stack to handle operations. Iterate through the string, building numbers.
+
+        When an operator is encountered, apply the previous operator to the current number and push to stack.
+
+        Finally, sum the stack.
+
         Complexity:
         - Time: O(n)
         - Space: O(n)

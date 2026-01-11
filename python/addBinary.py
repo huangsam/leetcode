@@ -9,6 +9,10 @@ class Solution:
         """
         Add two binary strings and return the result as a binary string.
 
+        Convert the binary strings to integers using base 2, sum them, and convert the result back to a binary string.
+
+        This approach is efficient and leverages Python's arbitrary-precision integers to handle large binary numbers.
+
         Complexity:
         - Time: O(n + m)
         - Space: O(1)

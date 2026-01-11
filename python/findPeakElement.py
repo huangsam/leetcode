@@ -8,6 +8,10 @@ class Solution:
         """
         Find a peak element in an array where nums[i] > nums[i+1] and nums[i] > nums[i-1].
 
+        Use binary search: compare nums[mid] and nums[mid+1]. If nums[mid] < nums[mid+1], peak in right half, else in left.
+
+        The peak exists due to the problem constraints.
+
         Complexity:
         - Time: O(log(n))
         - Space: O(1)

@@ -10,6 +10,9 @@ class Solution:
         """
         Remove nodes from linked list that are present in array.
 
+        We convert nums to a set for O(1) lookups. Then traverse the linked list,
+        removing nodes whose values are in the set by adjusting pointers.
+
         Complexity:
         - Time: O(n + m)
         - Space: O(n)

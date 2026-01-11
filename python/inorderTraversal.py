@@ -10,6 +10,8 @@ class Solution:
         """
         Perform inorder traversal of a binary tree.
 
+        Recursively visit left subtree, then append root value, then visit right subtree.
+
         Complexity:
         - Time: O(n)
         - Space: O(h)

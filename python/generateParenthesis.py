@@ -8,6 +8,11 @@ class Solution:
         """
         Generate all combinations of well-formed parentheses.
 
+        We use backtracking to generate all valid combinations. We maintain counts
+        of open and close parentheses used so far. At each step, we can add an open
+        parenthesis if we haven't reached n, and a close parenthesis if it doesn't
+        exceed the number of open ones, ensuring validity.
+
         Complexity:
         - Time: O(4^n / sqrt(n))
         - Space: O(4^n / sqrt(n))

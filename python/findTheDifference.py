@@ -6,6 +6,10 @@ class Solution:
         """
         Find the letter that was added to string t.
 
+        Use an array to count the frequency of each lowercase letter in s and t.
+        Since t has one extra character, increment counts for s and decrement
+        for t, then find the character with count -1.
+
         Complexity:
         - Time: O(n)
         - Space: O(1)

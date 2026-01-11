@@ -6,6 +6,8 @@ class Solution:
         """
         Count how many stones are also jewels.
 
+        Use a set or dict for jewels. Iterate through stones, count how many are in jewels.
+
         Complexity:
         - Time: O(n + m)
         - Space: O(n)

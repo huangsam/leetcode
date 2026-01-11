@@ -6,6 +6,10 @@ class Solution:
         """
         Find minimum bit flips to make a OR b equal to c.
 
+        For each bit position, we check the bits of a, b, and c. If (a | b) != c,
+        we need to flip bits. If c is 1 but both a and b are 0, flip one to 1.
+        If c is 0 but a or b is 1, flip the 1s to 0 (flip both if both are 1, one if one is 1).
+
         Complexity:
         - Time: O(log(max(a, b, c)))
         - Space: O(1)

@@ -11,6 +11,10 @@ class Solution:
         """
         Check if a linked list is a subpath in a binary tree.
 
+        Traverse the binary tree, and for each node that matches the head of the linked list, perform a DFS to check if the list forms a downward path.
+
+        The DFS checks if the current tree node matches the current list node, and recurses on left or right child with next list node.
+
         Complexity:
         - Time: O(n * m)
         - Space: O(h)

@@ -8,6 +8,10 @@ class Solution:
         """
         Calculate the sum of all left leaves in a binary tree.
 
+        A left leaf is a node with no children that is the left child of its parent.
+        We use a recursive approach to traverse the tree, checking each node to see
+        if it is a left leaf and adding its value to the sum if so.
+
         Complexity:
         - Time: O(n)
         - Space: O(h)

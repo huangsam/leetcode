@@ -6,6 +6,12 @@ class Solution:
         """
         Reverse the order of words in a string.
 
+        To reverse the words in a string while keeping the words themselves intact,
+        we first reverse the entire string, which places the words in reverse order
+        but with each word's characters also reversed. Then, we split the string
+        into words, and reverse each word back to its original form. Finally,
+        we join the corrected words with spaces to form the result.
+
         Complexity:
         - Time: O(n)
         - Space: O(n)

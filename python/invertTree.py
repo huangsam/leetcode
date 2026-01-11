@@ -10,6 +10,9 @@ class Solution:
         """
         Invert a binary tree (mirror it).
 
+        Use a recursive approach: if the root is None, return None. Otherwise, swap the left
+        and right children, then recursively invert the left and right subtrees.
+
         Complexity:
         - Time: O(n)
         - Space: O(h)

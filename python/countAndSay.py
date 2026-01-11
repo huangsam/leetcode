@@ -8,6 +8,10 @@ class Solution:
         """
         Generate the nth term of the count-and-say sequence.
 
+        Start with '1'. For each subsequent term, iterate through the current string, counting consecutive identical digits.
+
+        For each group, append the count followed by the digit to build the next term.
+
         Complexity:
         - Time: O(n * m)
         - Space: O(m)

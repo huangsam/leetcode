@@ -6,6 +6,10 @@ class Solution:
         """
         Divide two integers without using multiplication or division operators.
 
+        We use bit manipulation for division. Handle signs separately. For the absolute
+        values, repeatedly find the largest multiple of divisor (by doubling) that fits
+        in remaining dividend, subtract it, and add the corresponding quotient.
+
         Complexity:
         - Time: O(log(n))
         - Space: O(1)

@@ -11,6 +11,12 @@ class Solution:
         """
         Build a binary tree from preorder and inorder traversal arrays.
 
+        In preorder traversal, the root comes first, followed by the left subtree,
+        then the right subtree. In inorder, the left subtree comes before the root,
+        then the right subtree. We use the preorder to identify roots and inorder
+        to determine subtree boundaries. By recursively processing the arrays,
+        we construct the tree.
+
         Complexity:
         - Time: O(n)
         - Space: O(n)

@@ -8,6 +8,8 @@ class Solution:
         """
         Determine if a number is a happy number.
 
+        Use a set to track numbers we've seen to detect cycles. Repeatedly calculate the sum of the squares of the digits of the current number until we reach 1 (happy) or detect a cycle (not happy).
+
         Complexity:
         - Time: O(log(n))
         - Space: O(log(n))

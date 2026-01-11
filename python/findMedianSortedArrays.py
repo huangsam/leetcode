@@ -8,6 +8,11 @@ class Solution:
         """
         Find the median of two sorted arrays.
 
+        Use binary search on the smaller array to partition both arrays such that
+        all elements in the left partitions are less than or equal to all elements
+        in the right partitions. This ensures the median can be found efficiently
+        by checking the boundaries of the partitions.
+
         Complexity:
         - Time: O(log(min(m, n)))
         - Space: O(1)

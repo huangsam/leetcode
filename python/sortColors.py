@@ -8,6 +8,12 @@ class Solution:
         """
         Sort an array with values 0, 1, and 2 in-place.
 
+        Use Dutch flag algorithm with three pointers: lo (next 0 position), mid (current), hi (next 2 position).
+
+        If nums[mid] == 0, swap with lo and increment lo and mid.
+        If 2, swap with hi and decrement hi.
+        If 1, increment mid.
+
         Complexity:
         - Time: O(n)
         - Space: O(1)

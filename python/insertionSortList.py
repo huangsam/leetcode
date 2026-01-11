@@ -8,6 +8,10 @@ class Solution:
         """
         Sort a linked list using insertion sort.
 
+        We maintain a sorted portion of the list starting from a dummy node. For each
+        unsorted node, we find its correct position in the sorted part and insert it
+        there, effectively building the sorted list incrementally.
+
         Complexity:
         - Time: O(n^2)
         - Space: O(1)

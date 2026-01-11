@@ -10,6 +10,10 @@ class Solution:
         """
         Construct a maximum binary tree from an array.
 
+        Recursively build the tree: in the current subarray, find the maximum value and its index.
+
+        Make it the root, then recursively construct left subtree from nums[:index] and right from nums[index+1:].
+
         Complexity:
         - Time: O(n^2)
         - Space: O(n)

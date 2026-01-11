@@ -8,6 +8,10 @@ class Solution:
         """
         Find the diameter (longest path) of a binary tree.
 
+        The diameter is the longest path between any two nodes in the tree. We use
+        a DFS traversal to compute the depth of each subtree. For each node, the
+        path through it is the sum of left and right depths, and we track the maximum.
+
         Complexity:
         - Time: O(n)
         - Space: O(h)
