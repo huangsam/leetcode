@@ -1,6 +1,6 @@
 # LeetCode Problems Summary
 
-## All Solved Problems
+Here are all of the problems that I have solved on the LeetCode platform:
 
 | Problem Name | ID | Difficulty | Topics |
 |--------------|----|------------|--------|
