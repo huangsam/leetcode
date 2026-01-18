@@ -55,7 +55,7 @@ class Solution:
                     neighbor_live_count += 1
 
         if current == 1:
-            # Apply rule 1 or 3
+            # Apply rules 1 or 3
             if neighbor_live_count < 2 or neighbor_live_count > 3:
                 return 0
             else:
