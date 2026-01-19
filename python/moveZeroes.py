@@ -31,6 +31,10 @@ class Solution:
         """
         Move all zeros to the end of an array with a single write.
 
+        Use a two-pointer approach: first, fill in all non-zero elements at the
+        start of the array, then fill in zeros for the remaining positions.
+        This minimizes the number of writes to the array.
+
         Complexity:
         - Time: O(n)
         - Space: O(1)
