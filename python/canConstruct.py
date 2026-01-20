@@ -1,5 +1,7 @@
 # https://leetcode.com/problems/ransom-note/
 
+from collections import Counter
+
 
 class Solution:
     def canConstruct(self, ransomNote: str, magazine: str) -> bool:
@@ -15,17 +17,6 @@ class Solution:
         - Time: O(n + m)
         - Space: O(n)
         """
-        ransom_mapping = {}
-
-        # Collecting the frequency of characters in ransom note
-        for ch in ransomNote:
-            if ch not in ransom_mapping:
-                ransom_mapping[ch] = 0
-            ransom_mapping[ch] += 1
-
-        # Subtracting the frequency of characters in magazine
-        for ch in magazine:
-            if ch in ransom_mapping:
-                ransom_mapping[ch] -= 1
-
-        return all(val <= 0 for val in ransom_mapping.values())
+        ransom_freq = Counter(ransomNote)
+        magazine_freq = Counter(magazine)
+        return all(ransom_freq[ch] <= magazine_freq[ch] for ch in ransom_freq)
