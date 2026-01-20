@@ -1,6 +1,6 @@
 # https://leetcode.com/problems/group-anagrams/
 
-from collections import Counter, defaultdict
+from collections import defaultdict
 from typing import DefaultDict, List
 
 
@@ -11,7 +11,7 @@ class Solution:
 
         Assume that anagram is simply a map of alpha counts.
 
-        Then we can create a hash key from the character frequency count.
+        Then we can create a hash key from the sorted version of each string.
         Each unique hash key will map to a list of strings that are anagrams.
 
         Lastly, we iterate through the values of the dictionary, returning
@@ -21,10 +21,8 @@ class Solution:
         - Time: O(n * k)
         - Space: O(n * k)
         """
-        strings_by_hash: DefaultDict[tuple, list] = defaultdict(list)
+        strings_by_hash: DefaultDict[str, list] = defaultdict(list)
         for content in strs:
-            strings_by_hash[self._getKey(content)].append(content)
+            sorted_hash = "".join(sorted(content))
+            strings_by_hash[sorted_hash].append(content)
         return list(strings_by_hash.values())
-
-    def _getKey(self, content: str) -> tuple:
-        return tuple(sorted(Counter(content).items()))
