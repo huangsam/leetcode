@@ -8,10 +8,8 @@ class Solution:
         """
         Determine if a ransom note can be constructed from magazine letters.
 
-        We are going to collect the mapping of character frequencies
-        for ransom note. Then we subtract the frequencies when iterating
-        through magazine. If ransom mapping has all values <= 0, then we
-        are good to construct the ransom note.
+        Use Counter to count frequencies of characters in both strings and check
+        if ransom note frequencies are covered by magazine frequencies.
 
         Complexity:
         - Time: O(n + m)

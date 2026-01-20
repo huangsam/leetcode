@@ -18,7 +18,7 @@ class Solution:
         it as a list of lists.
 
         Complexity:
-        - Time: O(n * k)
+        - Time: O(n * k log k)
         - Space: O(n * k)
         """
         strings_by_hash: DefaultDict[str, list] = defaultdict(list)
