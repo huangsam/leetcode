@@ -122,33 +122,22 @@ def urls():
 
 @cli.command()
 def sync():
-    """Sync AGENTS.md with the latest solved problems from Python and Java files."""
-    # Read existing AGENTS.md
-    agents_path = Path("AGENTS.md")
-    if not agents_path.exists():
-        click.echo("AGENTS.md not found.", err=True)
-        return
+    """Sync problems.json and AGENTS.md with the latest solved problems from Python and Java files."""
+    problems_json_path = Path("problems.json")
 
-    with open(agents_path, "r", encoding="utf-8") as f:
-        content = f.read()
-    lines = content.split("\n")
-
-    # Get existing slugs and problems
-    existing_slugs = set()
+    # Load existing problems from JSON cache
     existing_problems = {}
-    for line in lines:
-        # Parse the full problem row to extract both metadata and slug from URL
-        match = re.match(r"\| \[(.*?)\]\(https://leetcode\.com/problems/([^/]+)/\) \| (\d+) \| (.*?) \| (.*?) \|", line)
-        if match:
-            title = match.group(1)
-            slug = match.group(2)
-            qid = int(match.group(3))
-            diff = match.group(4)
-            topics = match.group(5)
-            existing_slugs.add(slug)
-            existing_problems[qid] = (qid, title, diff, topics, slug)
+    if problems_json_path.exists():
+        with open(problems_json_path, "r", encoding="utf-8") as f:
+            problems_data = json.load(f)
+            for problem in problems_data:
+                qid = problem["id"]
+                existing_problems[qid] = problem
 
-    # Get all urls
+    existing_slugs = {p["slug"] for p in existing_problems.values()}
+    click.echo(f"Loaded {len(existing_problems)} problems from cache.")
+
+    # Get all problem URLs from source files
     urls = get_urls()
     all_slugs = set()
     for url in urls:
@@ -156,28 +145,38 @@ def sync():
         if match:
             all_slugs.add(match.group(1))
 
-    # New slugs
+    # Find new slugs not in cache
     new_slugs = all_slugs - existing_slugs
-    click.echo(f"Found {len(new_slugs)} new problems.")
+    click.echo(f"Found {len(new_slugs)} new problems to fetch.")
 
-    new_problems = []
+    # Fetch details for new problems
     for slug in new_slugs:
         try:
             question = get_question_details(slug)
             qid = int(question["questionFrontendId"])
-            title = question["title"]
-            difficulty = question["difficulty"]
-            topics = ", ".join([tag["name"] for tag in question["topicTags"]])
-            new_problems.append((qid, title, difficulty, topics, slug))
-            click.echo(f"Added {qid}: {title}")
+            problem = {
+                "id": qid,
+                "title": question["title"],
+                "slug": slug,
+                "difficulty": question["difficulty"],
+                "topics": [tag["name"] for tag in question["topicTags"]],
+            }
+            existing_problems[qid] = problem
+            click.echo(f"Fetched {qid}: {problem['title']}")
         except Exception as e:
             click.echo(f"Error fetching {slug}: {e}", err=True)
 
-    # Combine and sort
-    all_problems = list(existing_problems.values()) + new_problems
-    all_problems.sort(key=lambda x: x[0])
+    # Filter to only problems that exist in source files
+    active_problems = {qid: problem for qid, problem in existing_problems.items() if problem["slug"] in all_slugs}
 
-    # Generate new content
+    # Save updated cache to JSON
+    problems_list = sorted(active_problems.values(), key=lambda x: x["id"])
+    with open(problems_json_path, "w", encoding="utf-8") as f:
+        json.dump(problems_list, f, indent=2)
+
+    click.echo(f"Updated problems.json with {len(problems_list)} problems.")
+
+    # Generate AGENTS.md from the cache
     header = """# LeetCode Problems Summary
 
 Here are all of the problems that I have solved on the LeetCode platform:
@@ -186,14 +185,20 @@ Here are all of the problems that I have solved on the LeetCode platform:
 |--------------|----|------------|--------|
 """
     rows = []
-    for qid, title, diff, topics, slug in all_problems:
+    for problem in problems_list:
+        qid = problem["id"]
+        title = problem["title"]
+        slug = problem["slug"]
+        diff = problem["difficulty"]
+        topics = ", ".join(problem["topics"])
         url = f"https://leetcode.com/problems/{slug}/"
         row = f"| [{title}]({url}) | {qid} | {diff} | {topics} |"
         rows.append(row)
 
     new_content = header + "\n".join(rows) + "\n"
 
-    # Write back
+    # Write AGENTS.md
+    agents_path = Path("AGENTS.md")
     with open(agents_path, "w", encoding="utf-8") as f:
         f.write(new_content)
 

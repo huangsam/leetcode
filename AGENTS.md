@@ -74,7 +74,7 @@ Here are all of the problems that I have solved on the LeetCode platform:
 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | 121 | Easy | Array, Dynamic Programming |
 | [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) | 122 | Medium | Array, Dynamic Programming, Greedy |
 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | 125 | Easy | Two Pointers, String |
-| [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | 128 | Medium | Array, Hash Table, Union Find |
+| [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | 128 | Medium | Array, Hash Table, Union-Find |
 | [Gas Station](https://leetcode.com/problems/gas-station/) | 134 | Medium | Array, Greedy |
 | [Single Number](https://leetcode.com/problems/single-number/) | 136 | Easy | Array, Bit Manipulation |
 | [Single Number II](https://leetcode.com/problems/single-number-ii/) | 137 | Medium | Array, Bit Manipulation |
@@ -91,7 +91,7 @@ Here are all of the problems that I have solved on the LeetCode platform:
 | [Majority Element](https://leetcode.com/problems/majority-element/) | 169 | Easy | Array, Hash Table, Divide and Conquer, Sorting, Counting |
 | [Rotate Array](https://leetcode.com/problems/rotate-array/) | 189 | Medium | Array, Math, Two Pointers |
 | [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) | 199 | Medium | Tree, Depth-First Search, Breadth-First Search, Binary Tree |
-| [Number of Islands](https://leetcode.com/problems/number-of-islands/) | 200 | Medium | Array, Depth-First Search, Breadth-First Search, Union Find, Matrix |
+| [Number of Islands](https://leetcode.com/problems/number-of-islands/) | 200 | Medium | Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix |
 | [Happy Number](https://leetcode.com/problems/happy-number/) | 202 | Easy | Hash Table, Math, Two Pointers |
 | [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/) | 203 | Easy | Linked List, Recursion |
 | [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/) | 205 | Easy | Hash Table, String |
