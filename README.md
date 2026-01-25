@@ -38,6 +38,9 @@ uv run leetc.py detail $URL_FRAGMENT
 
 # Get your overall progress summary
 uv run leetc.py progress $USERNAME
+
+# Sync problems.json and AGENTS.md with website
+uv run leetc.py sync
 ```
 
 ## Additional resources
