@@ -10,16 +10,18 @@ Sharpen your coding skills with these solutions—feel free to explore, learn, a
 
 The URL of each solution is embedded at the top of the file.
 
+See [AGENTS.md](AGENTS.md) for the complete list of problems solved.
+
 ## Getting started
 
-To validate Python solutions:
+To validate Python solutions in the `python/` directory:
 
 ```shell
 uv run ruff check python
 uv run mypy python
 ```
 
-To validate Java solutions:
+To validate Java solutions in the `java/` directory:
 
 ```shell
 gradle build
