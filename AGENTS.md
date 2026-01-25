@@ -110,7 +110,9 @@ Here are all of the problems that I have solved on the LeetCode platform:
 | [H-Index](https://leetcode.com/problems/h-index/) | 274 | Medium | Array, Sorting, Counting Sort |
 | [First Bad Version](https://leetcode.com/problems/first-bad-version/) | 278 | Easy | Binary Search, Interactive |
 | [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | 283 | Easy | Array, Two Pointers |
+| [Game of Life](https://leetcode.com/problems/game-of-life/) | 289 | Medium | Array, Matrix, Simulation |
 | [Word Pattern](https://leetcode.com/problems/word-pattern/) | 290 | Easy | Hash Table, String |
+| [Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence/) | 334 | Medium | Array, Greedy |
 | [Counting Bits](https://leetcode.com/problems/counting-bits/) | 338 | Easy | Dynamic Programming, Bit Manipulation |
 | [Power of Four](https://leetcode.com/problems/power-of-four/) | 342 | Easy | Math, Bit Manipulation, Recursion |
 | [Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/) | 345 | Easy | Two Pointers, String |
@@ -121,6 +123,7 @@ Here are all of the problems that I have solved on the LeetCode platform:
 | [Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/) | 404 | Easy | Tree, Depth-First Search, Breadth-First Search, Binary Tree |
 | [Fizz Buzz](https://leetcode.com/problems/fizz-buzz/) | 412 | Easy | Math, String, Simulation |
 | [Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/) | 442 | Medium | Array, Hash Table, Sorting |
+| [String Compression](https://leetcode.com/problems/string-compression/) | 443 | Medium | Two Pointers, String |
 | [Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/) | 448 | Easy | Array, Hash Table |
 | [Delete Node in a BST](https://leetcode.com/problems/delete-node-in-a-bst/) | 450 | Medium | Tree, Binary Search Tree, Binary Tree |
 | [Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) | 452 | Medium | Array, Greedy, Sorting |
@@ -133,12 +136,15 @@ Here are all of the problems that I have solved on the LeetCode platform:
 | [Can Place Flowers](https://leetcode.com/problems/can-place-flowers/) | 605 | Easy | Array, Greedy |
 | [Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/) | 617 | Easy | Tree, Depth-First Search, Breadth-First Search, Binary Tree |
 | [Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree/) | 637 | Easy | Tree, Depth-First Search, Breadth-First Search, Binary Tree |
+| [Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/) | 643 | Easy | Array, Sliding Window |
 | [Two Sum IV - Input is a BST](https://leetcode.com/problems/two-sum-iv-input-is-a-bst/) | 653 | Easy | Hash Table, Two Pointers, Tree, Depth-First Search, Breadth-First Search, Binary Search Tree, Binary Tree |
 | [Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/) | 654 | Medium | Array, Divide and Conquer, Stack, Tree, Monotonic Stack, Binary Tree |
 | [Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/) | 771 | Easy | Hash Table, String |
 | [Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/) | 1071 | Easy | Math, String |
 | [Minimum Flips to Make a OR b Equal to c](https://leetcode.com/problems/minimum-flips-to-make-a-or-b-equal-to-c/) | 1318 | Medium | Bit Manipulation |
 | [Linked List in Binary Tree](https://leetcode.com/problems/linked-list-in-binary-tree/) | 1367 | Medium | Linked List, Tree, Depth-First Search, Binary Tree |
+| [Maximum Number of Vowels in a Substring of Given Length](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/) | 1456 | Medium | String, Sliding Window |
+| [Max Number of K-Sum Pairs](https://leetcode.com/problems/max-number-of-k-sum-pairs/) | 1679 | Medium | Array, Hash Table, Two Pointers, Sorting |
 | [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/) | 1768 | Easy | Two Pointers, String |
 | [Minimum Additions to Make Valid String](https://leetcode.com/problems/minimum-additions-to-make-valid-string/) | 2645 | Medium | String, Dynamic Programming, Stack, Greedy |
 | [Delete Nodes From Linked List Present in Array](https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/) | 3217 | Medium | Array, Hash Table, Linked List |
