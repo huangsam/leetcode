@@ -1471,6 +1471,18 @@
     ]
   },
   {
+    "id": 1004,
+    "title": "Max Consecutive Ones III",
+    "slug": "max-consecutive-ones-iii",
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Binary Search",
+      "Sliding Window",
+      "Prefix Sum"
+    ]
+  },
+  {
     "id": 1071,
     "title": "Greatest Common Divisor of Strings",
     "slug": "greatest-common-divisor-of-strings",
@@ -1512,6 +1524,17 @@
     ]
   },
   {
+    "id": 1493,
+    "title": "Longest Subarray of 1's After Deleting One Element",
+    "slug": "longest-subarray-of-1s-after-deleting-one-element",
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Dynamic Programming",
+      "Sliding Window"
+    ]
+  },
+  {
     "id": 1679,
     "title": "Max Number of K-Sum Pairs",
     "slug": "max-number-of-k-sum-pairs",
@@ -1521,6 +1544,16 @@
       "Hash Table",
       "Two Pointers",
       "Sorting"
+    ]
+  },
+  {
+    "id": 1732,
+    "title": "Find the Highest Altitude",
+    "slug": "find-the-highest-altitude",
+    "difficulty": "Easy",
+    "topics": [
+      "Array",
+      "Prefix Sum"
     ]
   },
   {
