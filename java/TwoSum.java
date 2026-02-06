@@ -4,7 +4,9 @@ import java.util.HashMap;
 
 public class TwoSum {
     /**
-     * We create a mapping of the numbers we have seen so far. While
+     * Return the indices of the two numbers that add up to a specific target.
+     *
+     * <p>We create a mapping of the numbers we have seen so far. While
      * we do this, we also check if the complement of the current
      * number (i.e., target - nums[i]) exists in the map. If it
      * does, we return the indices of the two numbers that add up to

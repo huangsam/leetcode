@@ -7,17 +7,6 @@ public class PalindromeLinkedList {
      * Checks if a singly linked list is a palindrome by creating a reversed copy
      * of the original list and then comparing the two lists node by node.
      *
-     * <p>Test cases to evaluate:
-     *
-     * <pre>
-     * [0] -> true
-     * [0, 0] -> true
-     * [1, 2, 3, 2, 1] -> true
-     * [3, 1, 3] -> true
-     * [2, 5, 4, 2] -> false
-     * [1, 2, 3] -> false
-     * </pre>
-     *
      * <p>Complexity:
      *
      * <ul>

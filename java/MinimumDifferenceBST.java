@@ -4,7 +4,9 @@ import container.TreeNode;
 
 public class MinimumDifferenceBST {
     /**
-     * We assume that the input is a binary search tree with at least two
+     * Get the minimum difference between values of any two nodes in a binary search tree.
+     *
+     * <p> We assume that the input is a binary search tree with at least two
      * nodes. Based on this, we can always assume there is a previous node
      * and a current node. As we perform inorder traversal, we can check
      * for the node that's being visited and see if there was a previously

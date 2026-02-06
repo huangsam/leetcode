@@ -2,6 +2,8 @@
 
 public class MergeSortedArray {
     /**
+     * Merge two sorted arrays into one sorted array in-place.
+     *
      * Assume that {@code nums1} has m items and is m + n long. Assume that
      * {@code nums2} has n items and is n long. We know that m + n is >= 1
      * but either m or n can have 0 items in the list. Given that {@code nums1}

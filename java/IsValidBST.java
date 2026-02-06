@@ -4,7 +4,9 @@ import container.TreeNode;
 
 public class IsValidBST {
     /**
-     * We process the answer recursively with in-order traversal. The idea is to
+     * Check if a binary tree is a valid binary search tree (BST).
+     *
+     * <p>We process the answer recursively with in-order traversal. The idea is to
      * look for a previous entry if it exists and see if that entry is less than,
      * or equal to, the current entry.
      *

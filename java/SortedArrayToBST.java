@@ -5,7 +5,8 @@ import container.TreeNode;
 public class SortedArrayToBST {
     /**
      * Converts a sorted array into a height-balanced binary search tree (BST).
-     * It recursively selects the middle element of the current subarray as the root,
+     *
+     * <p>It recursively selects the middle element of the current subarray as the root,
      * ensuring that the tree remains balanced.
      *
      * <p>Complexity:

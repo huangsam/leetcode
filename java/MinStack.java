@@ -21,6 +21,10 @@ public class MinStack {
     }
 
     /**
+     * Pushes the given value onto the stack. If the value is less
+     * than or equal to the current minimum, it is also pushed onto
+     * the minimum stack.
+     *
      * <p>Complexity:
      *
      * <ul>

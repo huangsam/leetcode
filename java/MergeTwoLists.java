@@ -4,7 +4,9 @@ import container.ListNode;
 
 public class MergeTwoLists {
     /**
-     * Let us proceed by creating a dummy node to minimize null checks.
+     * Merge two sorted linked lists and return it as a new sorted list.
+     *
+     * <p>Let us proceed by creating a dummy node to minimize null checks.
      * Since {@code list1} and {@code list2} are sorted in increasing
      * order, we can traverse from start to end and link them to next
      * pointer from the dummy onwards. Once the looping is done, whichever

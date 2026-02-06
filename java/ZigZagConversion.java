@@ -2,7 +2,10 @@
 
 public class ZigZagConversion {
     /**
-     * Here are the steps to convert the string:
+     * Convert a string to zigzag pattern on a given number of rows and then read
+     * line by line.
+     *
+     * <p>Here are the steps to convert the string:
      *
      * <ul>
      *     <li>Set up an array of StringBuilder with numRows elements</li>

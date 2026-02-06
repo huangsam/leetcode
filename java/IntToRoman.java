@@ -2,11 +2,11 @@
 
 public class IntToRoman {
     /**
-     * Convert integer to Roman numeral. We start by holding
-     * all the Roman mappings in an array, along with edge cases
-     * like 900, 400, 90, 40, 9, 4. We then iterate through the
-     * array and keep subtracting the value from the number until
-     * we reach 0.
+     * Convert integer to Roman numeral.
+     *
+     * <p>We start by holding all the Roman mappings in an array along with
+     * edge cases like 900, 400, etc. We then iterate through the array and
+     * keep subtracting until we reach 0.
      *
      * <p>Complexity:
      *

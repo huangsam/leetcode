@@ -6,6 +6,8 @@ import java.util.Set;
 
 public class LongestConsecutive {
     /**
+     * Return the length of the longest consecutive elements sequence in an unsorted array.
+     *
      * By using a set, we're able to tell if adjacent neighbors to a current
      * value exist in the dataset, just by doing {@code val-1} or {@code val+1}.
      * In those cases, we simply go up and down as much as possible until we

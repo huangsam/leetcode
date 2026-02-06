@@ -10,9 +10,6 @@ public class AddTwoNumbers {
      * Each node in the input linked lists contains a single digit, and the digits are stored
      * in reverse order, meaning the 1's digit is at the head of the list.
      *
-     * <p> The method handles cases where the input lists have different lengths and also accounts
-     * for any carry that may result from the addition.
-     *
      * <p>Complexity:
      *
      * <ul>

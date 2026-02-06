@@ -4,7 +4,9 @@ import java.util.Arrays;
 
 public class JumpGameTwo {
     /**
-     * Approach with near-far intuition
+     * Return the minimum number of jumps to reach index n - 1.
+     *
+     * <p>Approach the problem with near-far intuition.
      *
      * <p>Complexity:
      *

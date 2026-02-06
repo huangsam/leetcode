@@ -5,7 +5,9 @@ import java.util.List;
 
 public class SummaryRanges {
     /**
-     * Here are the steps to build the range:
+     * Return the summary of continuous ranges in a sorted unique integer array.
+     *
+     * <p>Here are the steps to build the range:
      *
      * <ul>
      *     <li>Iterate through {@code nums} one by one</li>
