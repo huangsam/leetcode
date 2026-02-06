@@ -19,7 +19,7 @@ public class BinaryTreeRightSide {
      *
      * <ul>
      *     <li>Time: O(n)</li>
-     *     <li>Space: O(h)</li>
+     *     <li>Space: O(n)</li>
      * </ul>
      */
     public List<Integer> rightSideView(TreeNode root) {

@@ -15,7 +15,7 @@ public class LevelAverage {
      *
      * <ul>
      *     <li>Time: O(n)</li>
-     *     <li>Space: O(w)</li>
+     *     <li>Space: O(h)</li>
      * </ul>
      */
     public List<Double> averageOfLevels(TreeNode root) {
