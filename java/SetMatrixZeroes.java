@@ -9,7 +9,7 @@ public class SetMatrixZeroes {
      * Once we have the set of all rows and columns that need to be
      * zeroed out, then we actually do the operations.
      *
-     * <p> The primary way to resort to O(1) memory usage is by
+     * <p>The primary way to resort to O(1) memory usage is by
      * using the top row and left column to collect all columns
      * and rows where a zero was encountered. That way, we do not
      * need to have two {@link java.util.HashSet} instances for tracking

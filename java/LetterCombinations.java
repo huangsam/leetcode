@@ -9,7 +9,7 @@ public class LetterCombinations {
     /**
      * Return all possible letter combinations that the number could represent.
      *
-     * <p> We go through each digit in the input string and find the corresponding
+     * <p>We go through each digit in the input string and find the corresponding
      * letters. We use a recursive helper function to build combinations of
      * letters. If the input string is empty, we return an empty list.
      *
