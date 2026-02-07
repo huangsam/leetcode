@@ -15,13 +15,9 @@ class Solution:
         left_sum = 0
 
         for i, j in enumerate(nums):
-            # Exclude current element and left_sum
-            right_sum = total_sum - j - left_sum
-
-            # Check for an exact match on left and right
-            if left_sum == right_sum:
+            # The right sum excludes the current element and left sum
+            if left_sum == total_sum - j - left_sum:
                 return i
-
             left_sum += j
 
         # Default answer if we cannot find anything
