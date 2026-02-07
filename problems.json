@@ -1609,6 +1609,18 @@
     ]
   },
   {
+    "id": 2352,
+    "title": "Equal Row and Column Pairs",
+    "slug": "equal-row-and-column-pairs",
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Hash Table",
+      "Matrix",
+      "Simulation"
+    ]
+  },
+  {
     "id": 2645,
     "title": "Minimum Additions to Make Valid String",
     "slug": "minimum-additions-to-make-valid-string",

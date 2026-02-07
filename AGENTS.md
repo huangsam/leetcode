@@ -153,5 +153,6 @@ Here are all of the problems that I have solved on the LeetCode platform:
 | [Find the Highest Altitude](https://leetcode.com/problems/find-the-highest-altitude/) | 1732 | Easy | Array, Prefix Sum |
 | [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/) | 1768 | Easy | Two Pointers, String |
 | [Find the Difference of Two Arrays](https://leetcode.com/problems/find-the-difference-of-two-arrays/) | 2215 | Easy | Array, Hash Table |
+| [Equal Row and Column Pairs](https://leetcode.com/problems/equal-row-and-column-pairs/) | 2352 | Medium | Array, Hash Table, Matrix, Simulation |
 | [Minimum Additions to Make Valid String](https://leetcode.com/problems/minimum-additions-to-make-valid-string/) | 2645 | Medium | String, Dynamic Programming, Stack, Greedy |
 | [Delete Nodes From Linked List Present in Array](https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/) | 3217 | Medium | Array, Hash Table, Linked List |
