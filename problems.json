@@ -1630,6 +1630,17 @@
     ]
   },
   {
+    "id": 2390,
+    "title": "Removing Stars From a String",
+    "slug": "removing-stars-from-a-string",
+    "difficulty": "Medium",
+    "topics": [
+      "String",
+      "Stack",
+      "Simulation"
+    ]
+  },
+  {
     "id": 2645,
     "title": "Minimum Additions to Make Valid String",
     "slug": "minimum-additions-to-make-valid-string",
