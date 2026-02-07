@@ -139,6 +139,7 @@ Here are all of the problems that I have solved on the LeetCode platform:
 | [Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/) | 643 | Easy | Array, Sliding Window |
 | [Two Sum IV - Input is a BST](https://leetcode.com/problems/two-sum-iv-input-is-a-bst/) | 653 | Easy | Hash Table, Two Pointers, Tree, Depth-First Search, Breadth-First Search, Binary Search Tree, Binary Tree |
 | [Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/) | 654 | Medium | Array, Divide and Conquer, Stack, Tree, Monotonic Stack, Binary Tree |
+| [Find Pivot Index](https://leetcode.com/problems/find-pivot-index/) | 724 | Easy | Array, Prefix Sum |
 | [Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/) | 771 | Easy | Hash Table, String |
 | [Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/) | 1004 | Medium | Array, Binary Search, Sliding Window, Prefix Sum |
 | [Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/) | 1071 | Easy | Math, String |
