@@ -16,7 +16,7 @@ class Solution:
 
         Complexity:
         - Time: O(n^2) to hash all rows and columns
-        - Space: O(k) where k is the number of unique row/column hashes
+        - Space: O(n^2)
         """
         pair_count = 0
 
