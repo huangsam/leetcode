@@ -143,6 +143,7 @@ Here are all of the problems that I have solved on the LeetCode platform:
 | [Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/) | 771 | Easy | Hash Table, String |
 | [Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/) | 1004 | Medium | Array, Binary Search, Sliding Window, Prefix Sum |
 | [Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/) | 1071 | Easy | Math, String |
+| [Unique Number of Occurrences](https://leetcode.com/problems/unique-number-of-occurrences/) | 1207 | Easy | Array, Hash Table |
 | [Minimum Flips to Make a OR b Equal to c](https://leetcode.com/problems/minimum-flips-to-make-a-or-b-equal-to-c/) | 1318 | Medium | Bit Manipulation |
 | [Linked List in Binary Tree](https://leetcode.com/problems/linked-list-in-binary-tree/) | 1367 | Medium | Linked List, Tree, Depth-First Search, Binary Tree |
 | [Maximum Number of Vowels in a Substring of Given Length](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/) | 1456 | Medium | String, Sliding Window |
@@ -150,5 +151,6 @@ Here are all of the problems that I have solved on the LeetCode platform:
 | [Max Number of K-Sum Pairs](https://leetcode.com/problems/max-number-of-k-sum-pairs/) | 1679 | Medium | Array, Hash Table, Two Pointers, Sorting |
 | [Find the Highest Altitude](https://leetcode.com/problems/find-the-highest-altitude/) | 1732 | Easy | Array, Prefix Sum |
 | [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/) | 1768 | Easy | Two Pointers, String |
+| [Find the Difference of Two Arrays](https://leetcode.com/problems/find-the-difference-of-two-arrays/) | 2215 | Easy | Array, Hash Table |
 | [Minimum Additions to Make Valid String](https://leetcode.com/problems/minimum-additions-to-make-valid-string/) | 2645 | Medium | String, Dynamic Programming, Stack, Greedy |
 | [Delete Nodes From Linked List Present in Array](https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/) | 3217 | Medium | Array, Hash Table, Linked List |

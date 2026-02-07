@@ -1503,6 +1503,16 @@
     ]
   },
   {
+    "id": 1207,
+    "title": "Unique Number of Occurrences",
+    "slug": "unique-number-of-occurrences",
+    "difficulty": "Easy",
+    "topics": [
+      "Array",
+      "Hash Table"
+    ]
+  },
+  {
     "id": 1318,
     "title": "Minimum Flips to Make a OR b Equal to c",
     "slug": "minimum-flips-to-make-a-or-b-equal-to-c",
@@ -1574,6 +1584,16 @@
     "topics": [
       "Two Pointers",
       "String"
+    ]
+  },
+  {
+    "id": 2215,
+    "title": "Find the Difference of Two Arrays",
+    "slug": "find-the-difference-of-two-arrays",
+    "difficulty": "Easy",
+    "topics": [
+      "Array",
+      "Hash Table"
     ]
   },
   {
