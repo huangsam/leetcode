@@ -1555,6 +1555,18 @@
     ]
   },
   {
+    "id": 1657,
+    "title": "Determine if Two Strings Are Close",
+    "slug": "determine-if-two-strings-are-close",
+    "difficulty": "Medium",
+    "topics": [
+      "Hash Table",
+      "String",
+      "Sorting",
+      "Counting"
+    ]
+  },
+  {
     "id": 1679,
     "title": "Max Number of K-Sum Pairs",
     "slug": "max-number-of-k-sum-pairs",

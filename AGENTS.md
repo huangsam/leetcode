@@ -148,6 +148,7 @@ Here are all of the problems that I have solved on the LeetCode platform:
 | [Linked List in Binary Tree](https://leetcode.com/problems/linked-list-in-binary-tree/) | 1367 | Medium | Linked List, Tree, Depth-First Search, Binary Tree |
 | [Maximum Number of Vowels in a Substring of Given Length](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/) | 1456 | Medium | String, Sliding Window |
 | [Longest Subarray of 1's After Deleting One Element](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/) | 1493 | Medium | Array, Dynamic Programming, Sliding Window |
+| [Determine if Two Strings Are Close](https://leetcode.com/problems/determine-if-two-strings-are-close/) | 1657 | Medium | Hash Table, String, Sorting, Counting |
 | [Max Number of K-Sum Pairs](https://leetcode.com/problems/max-number-of-k-sum-pairs/) | 1679 | Medium | Array, Hash Table, Two Pointers, Sorting |
 | [Find the Highest Altitude](https://leetcode.com/problems/find-the-highest-altitude/) | 1732 | Easy | Array, Prefix Sum |
 | [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/) | 1768 | Easy | Two Pointers, String |
