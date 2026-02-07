@@ -146,6 +146,7 @@ Here are all of the problems that I have solved on the LeetCode platform:
 | [Unique Number of Occurrences](https://leetcode.com/problems/unique-number-of-occurrences/) | 1207 | Easy | Array, Hash Table |
 | [Minimum Flips to Make a OR b Equal to c](https://leetcode.com/problems/minimum-flips-to-make-a-or-b-equal-to-c/) | 1318 | Medium | Bit Manipulation |
 | [Linked List in Binary Tree](https://leetcode.com/problems/linked-list-in-binary-tree/) | 1367 | Medium | Linked List, Tree, Depth-First Search, Binary Tree |
+| [Kids With the Greatest Number of Candies](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/) | 1431 | Easy | Array |
 | [Maximum Number of Vowels in a Substring of Given Length](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/) | 1456 | Medium | String, Sliding Window |
 | [Longest Subarray of 1's After Deleting One Element](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/) | 1493 | Medium | Array, Dynamic Programming, Sliding Window |
 | [Determine if Two Strings Are Close](https://leetcode.com/problems/determine-if-two-strings-are-close/) | 1657 | Medium | Hash Table, String, Sorting, Counting |

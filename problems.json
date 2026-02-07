@@ -1534,6 +1534,15 @@
     ]
   },
   {
+    "id": 1431,
+    "title": "Kids With the Greatest Number of Candies",
+    "slug": "kids-with-the-greatest-number-of-candies",
+    "difficulty": "Easy",
+    "topics": [
+      "Array"
+    ]
+  },
+  {
     "id": 1456,
     "title": "Maximum Number of Vowels in a Substring of Given Length",
     "slug": "maximum-number-of-vowels-in-a-substring-of-given-length",
