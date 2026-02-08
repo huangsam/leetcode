@@ -301,6 +301,16 @@
     ]
   },
   {
+    "id": 41,
+    "title": "First Missing Positive",
+    "slug": "first-missing-positive",
+    "difficulty": "Hard",
+    "topics": [
+      "Array",
+      "Hash Table"
+    ]
+  },
+  {
     "id": 45,
     "title": "Jump Game II",
     "slug": "jump-game-ii",

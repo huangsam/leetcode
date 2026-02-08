@@ -33,6 +33,7 @@ Here are all of the problems that I have solved on the LeetCode platform:
 | [Search Insert Position](https://leetcode.com/problems/search-insert-position/) | 35 | Easy | Array, Binary Search |
 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | 36 | Medium | Array, Hash Table, Matrix |
 | [Count and Say](https://leetcode.com/problems/count-and-say/) | 38 | Medium | String |
+| [First Missing Positive](https://leetcode.com/problems/first-missing-positive/) | 41 | Hard | Array, Hash Table |
 | [Jump Game II](https://leetcode.com/problems/jump-game-ii/) | 45 | Medium | Array, Dynamic Programming, Greedy |
 | [Permutations](https://leetcode.com/problems/permutations/) | 46 | Medium | Array, Backtracking |
 | [Rotate Image](https://leetcode.com/problems/rotate-image/) | 48 | Medium | Array, Math, Matrix |
