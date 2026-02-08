@@ -117,6 +117,7 @@ Here are all of the problems that I have solved on the LeetCode platform:
 | [Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence/) | 334 | Medium | Array, Greedy |
 | [Counting Bits](https://leetcode.com/problems/counting-bits/) | 338 | Easy | Dynamic Programming, Bit Manipulation |
 | [Power of Four](https://leetcode.com/problems/power-of-four/) | 342 | Easy | Math, Bit Manipulation, Recursion |
+| [Reverse String](https://leetcode.com/problems/reverse-string/) | 344 | Easy | Two Pointers, String |
 | [Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/) | 345 | Easy | Two Pointers, String |
 | [Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/) | 380 | Medium | Array, Hash Table, Math, Design, Randomized |
 | [Ransom Note](https://leetcode.com/problems/ransom-note/) | 383 | Easy | Hash Table, String, Counting |
