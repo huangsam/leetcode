@@ -1017,6 +1017,17 @@
     ]
   },
   {
+    "id": 217,
+    "title": "Contains Duplicate",
+    "slug": "contains-duplicate",
+    "difficulty": "Easy",
+    "topics": [
+      "Array",
+      "Hash Table",
+      "Sorting"
+    ]
+  },
+  {
     "id": 219,
     "title": "Contains Duplicate II",
     "slug": "contains-duplicate-ii",

@@ -99,6 +99,7 @@ Here are all of the problems that I have solved on the LeetCode platform:
 | [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/) | 205 | Easy | Hash Table, String |
 | [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) | 209 | Medium | Array, Binary Search, Sliding Window, Prefix Sum |
 | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) | 215 | Medium | Array, Divide and Conquer, Sorting, Heap (Priority Queue), Quickselect |
+| [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | 217 | Easy | Array, Hash Table, Sorting |
 | [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/) | 219 | Easy | Array, Hash Table, Sliding Window |
 | [Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/) | 222 | Easy | Binary Search, Bit Manipulation, Tree, Binary Tree |
 | [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/) | 226 | Easy | Tree, Depth-First Search, Breadth-First Search, Binary Tree |
