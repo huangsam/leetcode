@@ -147,6 +147,7 @@ Here are all of the problems that I have solved on the LeetCode platform:
 | [Find Pivot Index](https://leetcode.com/problems/find-pivot-index/) | 724 | Easy | Array, Prefix Sum |
 | [Asteroid Collision](https://leetcode.com/problems/asteroid-collision/) | 735 | Medium | Array, Stack, Simulation |
 | [Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/) | 771 | Easy | Hash Table, String |
+| [Number of Recent Calls](https://leetcode.com/problems/number-of-recent-calls/) | 933 | Easy | Design, Queue, Data Stream |
 | [Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/) | 1004 | Medium | Array, Binary Search, Sliding Window, Prefix Sum |
 | [Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/) | 1071 | Easy | Math, String |
 | [Unique Number of Occurrences](https://leetcode.com/problems/unique-number-of-occurrences/) | 1207 | Easy | Array, Hash Table |

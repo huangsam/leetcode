@@ -1545,6 +1545,17 @@
     ]
   },
   {
+    "id": 933,
+    "title": "Number of Recent Calls",
+    "slug": "number-of-recent-calls",
+    "difficulty": "Easy",
+    "topics": [
+      "Design",
+      "Queue",
+      "Data Stream"
+    ]
+  },
+  {
     "id": 1004,
     "title": "Max Consecutive Ones III",
     "slug": "max-consecutive-ones-iii",
