@@ -124,6 +124,7 @@ Here are all of the problems that I have solved on the LeetCode platform:
 | [Ransom Note](https://leetcode.com/problems/ransom-note/) | 383 | Easy | Hash Table, String, Counting |
 | [Find the Difference](https://leetcode.com/problems/find-the-difference/) | 389 | Easy | Hash Table, String, Bit Manipulation, Sorting |
 | [Is Subsequence](https://leetcode.com/problems/is-subsequence/) | 392 | Easy | Two Pointers, String, Dynamic Programming |
+| [Decode String](https://leetcode.com/problems/decode-string/) | 394 | Medium | String, Stack, Recursion |
 | [Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/) | 404 | Easy | Tree, Depth-First Search, Breadth-First Search, Binary Tree |
 | [Fizz Buzz](https://leetcode.com/problems/fizz-buzz/) | 412 | Easy | Math, String, Simulation |
 | [Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/) | 442 | Medium | Array, Hash Table, Sorting |
