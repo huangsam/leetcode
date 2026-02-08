@@ -21,7 +21,7 @@ class Solution:
                 # Building the multiplier (handles multi-digits like '100')
                 current_num = current_num * 10 + int(char)
 
-            elif char == '[':
+            elif char == "[":
                 # We hit a bracket: Save the context
                 # Push the current string and the multiplier onto the stack
                 stack.append((current_str, current_num))
@@ -29,7 +29,7 @@ class Solution:
                 current_str = ""
                 current_num = 0
 
-            elif char == ']':
+            elif char == "]":
                 # End of a block: Pop the last saved context
                 last_str, num = stack.pop()
                 # The new current_str is:
