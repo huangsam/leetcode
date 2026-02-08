@@ -19,7 +19,7 @@ class Solution:
         """
         # Initialize memo array
         rows, cols = len(obstacleGrid), len(obstacleGrid[0])
-        memo = [[0] * cols for _ in range(rows)]
+        dp = [[0] * cols for _ in range(rows)]
 
         # Go through each row, m-1 --> 0
         for r in range(rows - 1, -1, -1):
@@ -29,13 +29,13 @@ class Solution:
                 if obstacleGrid[r][c] == 0:
                     # Base case -> at the end
                     if r == rows - 1 and c == cols - 1:
-                        memo[r][c] = 1
+                        dp[r][c] = 1
                     # Can go down
                     if r + 1 < rows:
-                        memo[r][c] += memo[r + 1][c]
+                        dp[r][c] += dp[r + 1][c]
                     # Can go right
                     if c + 1 < cols:
-                        memo[r][c] += memo[r][c + 1]
+                        dp[r][c] += dp[r][c + 1]
 
         # Solve original problem --> starting point = (0,0)
-        return memo[0][0]
+        return dp[0][0]
