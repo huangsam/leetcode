@@ -1471,6 +1471,17 @@
     ]
   },
   {
+    "id": 735,
+    "title": "Asteroid Collision",
+    "slug": "asteroid-collision",
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Stack",
+      "Simulation"
+    ]
+  },
+  {
     "id": 771,
     "title": "Jewels and Stones",
     "slug": "jewels-and-stones",
