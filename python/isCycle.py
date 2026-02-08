@@ -10,11 +10,8 @@ class Solution:
         """
         Determine if a linked list has a cycle.
 
-        To check cycle, we can use O(n) memory to store all seen nodes and report
-        when the next one matches any of the seen ones. To do this with O(1) memory,
-        we need to have a slow pointer and a fast pointer to loop around. If the fast
-        pointer breaks, then the fast pointer can never catch up to the slow pointer.
-        But if the fast pointer matches, then we know for sure that there is a cycle.
+        To solve this with O(1) memory, we use a slow pointer and a fast pointer.
+        The slow pointer moves one step while the fast pointer moves two steps.
 
         Complexity:
         - Time: O(n)
