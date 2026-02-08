@@ -16,11 +16,11 @@ class Solution:
         - Space: O(1)
         """
         b_count = 0  # Count of 'b' characters seen so far
-        a_count = s.count('a')  # Total count of 'a' characters in the string
+        a_count = s.count("a")  # Total count of 'a' characters in the string
         min_deletions = a_count  # Start with the case where we delete all 'a's
 
         for char in s:
-            if char == 'b':
+            if char == "b":
                 b_count += 1
             else:  # char == 'a'
                 a_count -= 1
