@@ -34,18 +34,21 @@ def get_question_details(title_slug: str) -> dict:
     return data["data"]["question"]
 
 
-def get_urls() -> dict[str, set[str]]:
-    """Get all LeetCode problem URLs from Python and Java files."""
+def get_urls() -> tuple[dict[str, set[str]], set[str]]:
+    """Get all LeetCode problem URLs from Python and Java files, and flag files without links."""
     pattern = re.compile(r"^(#|//) (https://leetcode\.com/problems/[^/]+/)")
     urls: dict[str, set[str]] = {}  # url -> set of languages
+    missing_files: set[str] = set()
 
     for dir_name in ["python", "java"]:
         dir_path = Path(dir_name)
         if not dir_path.exists():
             continue
         lang = dir_name.capitalize()  # 'Python' or 'Java'
-        for ext in ["*.py", "*.java"]:
-            for file_path in dir_path.glob(ext):
+        # Only scan files directly in the directory (first layer)
+        for file_path in dir_path.iterdir():
+            if file_path.is_file() and file_path.suffix in [".py", ".java"]:
+                has_url = False
                 try:
                     with open(file_path, "r", encoding="utf-8") as f:
                         for line in f:
@@ -55,10 +58,14 @@ def get_urls() -> dict[str, set[str]]:
                                 if url not in urls:
                                     urls[url] = set()
                                 urls[url].add(lang)
+                                has_url = True
+                                break  # No need to check further lines
                 except Exception as e:
                     click.echo(f"Error reading {file_path}: {e}", err=True)
+                if not has_url:
+                    missing_files.add(str(file_path))
 
-    return urls
+    return urls, missing_files
 
 
 @click.group()
@@ -113,11 +120,20 @@ def progress(username: str):
 @cli.command()
 def urls():
     """List all LeetCode problem URLs from Python and Java files in the workspace, with language indicators."""
-    urls = get_urls()
+    urls, missing_files = get_urls()
+
+    click.echo("== LeetCode URLs ==")
     for url in sorted(urls):
         langs = sorted(urls[url])
         lang_str = ", ".join(langs)
         click.echo(f"{url} ({lang_str})")
+
+    if missing_files:
+        click.echo("\n== Files without LeetCode URLs ==")
+        for file in sorted(missing_files):
+            click.echo(file)
+    else:
+        click.echo("\n== All files contain LeetCode URLs ==")
 
 
 @cli.command()
@@ -138,7 +154,7 @@ def sync():
     click.echo(f"Loaded {len(existing_problems)} problems from cache.")
 
     # Get all problem URLs from source files
-    urls = get_urls()
+    urls, _ = get_urls()
     all_slugs = set()
     for url in urls:
         match = re.search(r"https://leetcode.com/problems/([^/]+)/", url)
