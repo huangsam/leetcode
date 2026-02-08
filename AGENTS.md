@@ -39,6 +39,7 @@ Here are all of the problems that I have solved on the LeetCode platform:
 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | 49 | Medium | Array, Hash Table, String, Sorting |
 | [Pow(x, n)](https://leetcode.com/problems/powx-n/) | 50 | Medium | Math, Recursion |
 | [N-Queens II](https://leetcode.com/problems/n-queens-ii/) | 52 | Hard | Backtracking |
+| [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | 53 | Medium | Array, Divide and Conquer, Dynamic Programming |
 | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) | 54 | Medium | Array, Matrix, Simulation |
 | [Jump Game](https://leetcode.com/problems/jump-game/) | 55 | Medium | Array, Dynamic Programming, Greedy |
 | [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | 56 | Medium | Array, Sorting |

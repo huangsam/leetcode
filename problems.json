@@ -364,6 +364,17 @@
     ]
   },
   {
+    "id": 53,
+    "title": "Maximum Subarray",
+    "slug": "maximum-subarray",
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Divide and Conquer",
+      "Dynamic Programming"
+    ]
+  },
+  {
     "id": 54,
     "title": "Spiral Matrix",
     "slug": "spiral-matrix",
