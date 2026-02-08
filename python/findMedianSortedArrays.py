@@ -6,53 +6,46 @@ from typing import List
 class Solution:
     def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
         """
-        Find the median of two sorted arrays.
+        Find the median of two sorted arrays in logarithmic time.
 
-        Use binary search on the smaller array to partition both arrays such that
-        all elements in the left partitions are less than or equal to all elements
-        in the right partitions. This ensures the median can be found efficiently
-        by checking the boundaries of the partitions.
+        The idea is to use a helper function `get_kth` that finds the k-th smallest
+        element in the combined sorted array formed by nums1 and nums2. We can use
+        this function to find the median directly.
 
         Complexity:
-        - Time: O(log(min(m, n)))
-        - Space: O(1)
+        - Time: O(log(m + n))
+        - Space: O(log(m + n))
         """
-        # Ensure nums1 is the shorter array for efficient binary search
-        if len(nums1) > len(nums2):
-            nums1, nums2 = nums2, nums1
+        n1, n2 = len(nums1), len(nums2)
+        total = n1 + n2
 
-        m, n = len(nums1), len(nums2)
-        low, high = 0, m  # Binary search on nums1's partition
+        # Helper to find the k-th smallest element (1-indexed)
+        def get_kth(k, start1, start2):
+            # Base Cases
+            if start1 >= n1:
+                return nums2[start2 + k - 1]
+            if start2 >= n2:
+                return nums1[start1 + k - 1]
+            if k == 1:
+                return min(nums1[start1], nums2[start2])
 
-        while low <= high:
-            partitionX = (low + high) // 2
-            partitionY = (m + n + 1) // 2 - partitionX
+            # Look at the middle of the 'k' we are searching for
+            mid = k // 2
+            # Use float('inf') if we run out of elements in one array
+            val1 = nums1[start1 + mid - 1] if start1 + mid <= n1 else float("inf")
+            val2 = nums2[start2 + mid - 1] if start2 + mid <= n2 else float("inf")
 
-            # Determine elements around partitionX
-            # If partitionX is 0, nothing on left, so maxLeftX is -infinity
-            # If partitionX is m, nothing on right, so minRightX is +infinity
-            maxLeftX = float("-inf") if partitionX == 0 else nums1[partitionX - 1]
-            minRightX = float("inf") if partitionX == m else nums1[partitionX]
+            if val1 < val2:
+                # nums1's first 'mid' elements cannot be the k-th smallest
+                return get_kth(k - mid, start1 + mid, start2)
+            else:
+                # nums2's first 'mid' elements cannot be the k-th smallest
+                return get_kth(k - mid, start1, start2 + mid)
 
-            # Determine elements around partitionY
-            maxLeftY = float("-inf") if partitionY == 0 else nums2[partitionY - 1]
-            minRightY = float("inf") if partitionY == n else nums2[partitionY]
-
-            # Check if partitions are correct
-            if maxLeftX <= minRightY and maxLeftY <= minRightX:
-                # Found the correct partition
-                if (m + n) % 2 == 0:
-                    # Even number of elements
-                    return (max(maxLeftX, maxLeftY) + min(minRightX, minRightY)) / 2.0
-                else:
-                    # Odd number of elements
-                    return float(max(maxLeftX, maxLeftY))
-            elif maxLeftX > minRightY:
-                # partitionX is too far right, need to move left
-                high = partitionX - 1
-            else:  # maxLeftY > minRightX
-                # partitionX is too far left, need to move right
-                low = partitionX + 1
-
-        # This part should ideally not be reached if inputs are valid
-        return 0.0  # Or raise an error
+        # For even totals, median is average of two middle elements
+        if total % 2 == 1:
+            return float(get_kth(total // 2 + 1, 0, 0))
+        else:
+            left = get_kth(total // 2, 0, 0)
+            right = get_kth(total // 2 + 1, 0, 0)
+            return (left + right) / 2.0
