@@ -152,6 +152,7 @@ Here are all of the problems that I have solved on the LeetCode platform:
 | [Kids With the Greatest Number of Candies](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/) | 1431 | Easy | Array |
 | [Maximum Number of Vowels in a Substring of Given Length](https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/) | 1456 | Medium | String, Sliding Window |
 | [Longest Subarray of 1's After Deleting One Element](https://leetcode.com/problems/longest-subarray-of-1s-after-deleting-one-element/) | 1493 | Medium | Array, Dynamic Programming, Sliding Window |
+| [Minimum Deletions to Make String Balanced](https://leetcode.com/problems/minimum-deletions-to-make-string-balanced/) | 1653 | Medium | String, Dynamic Programming, Stack |
 | [Determine if Two Strings Are Close](https://leetcode.com/problems/determine-if-two-strings-are-close/) | 1657 | Medium | Hash Table, String, Sorting, Counting |
 | [Max Number of K-Sum Pairs](https://leetcode.com/problems/max-number-of-k-sum-pairs/) | 1679 | Medium | Array, Hash Table, Two Pointers, Sorting |
 | [Find the Highest Altitude](https://leetcode.com/problems/find-the-highest-altitude/) | 1732 | Easy | Array, Prefix Sum |

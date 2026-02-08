@@ -1596,6 +1596,17 @@
     ]
   },
   {
+    "id": 1653,
+    "title": "Minimum Deletions to Make String Balanced",
+    "slug": "minimum-deletions-to-make-string-balanced",
+    "difficulty": "Medium",
+    "topics": [
+      "String",
+      "Dynamic Programming",
+      "Stack"
+    ]
+  },
+  {
     "id": 1657,
     "title": "Determine if Two Strings Are Close",
     "slug": "determine-if-two-strings-are-close",
