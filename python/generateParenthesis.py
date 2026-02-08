@@ -14,8 +14,8 @@ class Solution:
         exceed the number of open ones, ensuring validity.
 
         Complexity:
-        - Time: O(4^n / sqrt(n))
-        - Space: O(4^n / sqrt(n))
+        - Time: O(4^n)
+        - Space: O(4^n)
         """
         result: List[str] = []
         self._backtrack("", 0, 0, n, result)
