@@ -1,12 +1,11 @@
 # https://leetcode.com/problems/number-of-recent-calls/
 
 from collections import deque
-from typing import Deque
 
 
 class RecentCounter:
     def __init__(self):
-        self.q: Deque[int] = deque()
+        self.q = deque()
 
     def ping(self, t: int) -> int:
         """
