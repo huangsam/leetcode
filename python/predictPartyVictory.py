@@ -8,9 +8,11 @@ class Solution:
     def predictPartyVictory(self, senate: str) -> str:
         """
         Predict the winner of the Dota2 Senate game given the initial arrangement
-        of senators. The game proceeds in rounds where each senator can ban one
-        opposing senator for all future rounds. The process continues until a
-        senator sees that the other party has no more senators left.
+        of senators.
+
+        The game proceeds in rounds where each senator can ban one opposing senator
+        for all future rounds. The process continues until a senator sees that the
+        other party has no more senators left.
 
         Complexity:
         - Time: O(n) since a senator can only be banned once and processed twice
