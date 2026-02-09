@@ -1485,6 +1485,17 @@
     ]
   },
   {
+    "id": 649,
+    "title": "Dota2 Senate",
+    "slug": "dota2-senate",
+    "difficulty": "Medium",
+    "topics": [
+      "String",
+      "Greedy",
+      "Queue"
+    ]
+  },
+  {
     "id": 653,
     "title": "Two Sum IV - Input is a BST",
     "slug": "two-sum-iv-input-is-a-bst",

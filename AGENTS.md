@@ -142,6 +142,7 @@ Here are all of the problems that I have solved on the LeetCode platform:
 | [Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/) | 617 | Easy | Tree, Depth-First Search, Breadth-First Search, Binary Tree |
 | [Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree/) | 637 | Easy | Tree, Depth-First Search, Breadth-First Search, Binary Tree |
 | [Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/) | 643 | Easy | Array, Sliding Window |
+| [Dota2 Senate](https://leetcode.com/problems/dota2-senate/) | 649 | Medium | String, Greedy, Queue |
 | [Two Sum IV - Input is a BST](https://leetcode.com/problems/two-sum-iv-input-is-a-bst/) | 653 | Easy | Hash Table, Two Pointers, Tree, Depth-First Search, Breadth-First Search, Binary Search Tree, Binary Tree |
 | [Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/) | 654 | Medium | Array, Divide and Conquer, Stack, Tree, Monotonic Stack, Binary Tree |
 | [Find Pivot Index](https://leetcode.com/problems/find-pivot-index/) | 724 | Easy | Array, Prefix Sum |
