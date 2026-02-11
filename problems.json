@@ -1759,5 +1759,18 @@
       "Hash Table",
       "Linked List"
     ]
+  },
+  {
+    "id": 3721,
+    "title": "Longest Balanced Subarray II",
+    "slug": "longest-balanced-subarray-ii",
+    "difficulty": "Hard",
+    "topics": [
+      "Array",
+      "Hash Table",
+      "Divide and Conquer",
+      "Segment Tree",
+      "Prefix Sum"
+    ]
   }
 ]

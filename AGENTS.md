@@ -167,3 +167,4 @@ Here are all of the problems that I have solved on the LeetCode platform:
 | [Removing Stars From a String](https://leetcode.com/problems/removing-stars-from-a-string/) | 2390 | Medium | String, Stack, Simulation |
 | [Minimum Additions to Make Valid String](https://leetcode.com/problems/minimum-additions-to-make-valid-string/) | 2645 | Medium | String, Dynamic Programming, Stack, Greedy |
 | [Delete Nodes From Linked List Present in Array](https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/) | 3217 | Medium | Array, Hash Table, Linked List |
+| [Longest Balanced Subarray II](https://leetcode.com/problems/longest-balanced-subarray-ii/) | 3721 | Hard | Array, Hash Table, Divide and Conquer, Segment Tree, Prefix Sum |
