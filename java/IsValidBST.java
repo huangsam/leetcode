@@ -38,7 +38,7 @@ public class IsValidBST {
         }
 
         // Recursively validate left and right subtrees with updated bounds
-        return isValidBST(node.left, min, node.val) &&
-               isValidBST(node.right, node.val, max);
+        return isValidBST(node.left, min, node.val)
+            && isValidBST(node.right, node.val, max);
     }
 }
