@@ -162,6 +162,7 @@ Here are all of the problems that I have solved on the LeetCode platform:
 | [Max Number of K-Sum Pairs](https://leetcode.com/problems/max-number-of-k-sum-pairs/) | 1679 | Medium | Array, Hash Table, Two Pointers, Sorting |
 | [Find the Highest Altitude](https://leetcode.com/problems/find-the-highest-altitude/) | 1732 | Easy | Array, Prefix Sum |
 | [Merge Strings Alternately](https://leetcode.com/problems/merge-strings-alternately/) | 1768 | Easy | Two Pointers, String |
+| [Delete the Middle Node of a Linked List](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/) | 2095 | Medium | Linked List, Two Pointers |
 | [Find the Difference of Two Arrays](https://leetcode.com/problems/find-the-difference-of-two-arrays/) | 2215 | Easy | Array, Hash Table |
 | [Equal Row and Column Pairs](https://leetcode.com/problems/equal-row-and-column-pairs/) | 2352 | Medium | Array, Hash Table, Matrix, Simulation |
 | [Removing Stars From a String](https://leetcode.com/problems/removing-stars-from-a-string/) | 2390 | Medium | String, Stack, Simulation |

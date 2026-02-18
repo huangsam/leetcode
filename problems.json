@@ -1705,6 +1705,16 @@
     ]
   },
   {
+    "id": 2095,
+    "title": "Delete the Middle Node of a Linked List",
+    "slug": "delete-the-middle-node-of-a-linked-list",
+    "difficulty": "Medium",
+    "topics": [
+      "Linked List",
+      "Two Pointers"
+    ]
+  },
+  {
     "id": 2215,
     "title": "Find the Difference of Two Arrays",
     "slug": "find-the-difference-of-two-arrays",
