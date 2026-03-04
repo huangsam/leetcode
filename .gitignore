@@ -13,7 +13,9 @@ __pycache__/
 
 # Java
 .gradle/
+bin/
 build/
+*.class
 
 # Study plan
 study/
