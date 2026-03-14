@@ -10,7 +10,7 @@ Sharpen your coding skills with these solutions—feel free to explore, learn, a
 
 The URL of each solution is embedded at the top of the file.
 
-See [AGENTS.md](AGENTS.md) for the complete list of problems solved.
+See [SOLUTIONS.md](SOLUTIONS.md) for the complete list of problems solved.
 
 ## Getting started
 
@@ -41,7 +41,7 @@ uv run leetc.py detail $URL_FRAGMENT
 # Get your overall progress summary
 uv run leetc.py progress $USERNAME
 
-# Sync problems.json and AGENTS.md with website
+# Sync problems.json and SOLUTIONS.md
 uv run leetc.py sync
 ```
 

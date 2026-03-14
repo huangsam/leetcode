@@ -138,7 +138,7 @@ def urls():
 
 @cli.command()
 def sync():
-    """Sync problems.json and AGENTS.md with the latest solved problems from Python and Java files."""
+    """Sync problems.json and SOLUTIONS.md with the latest solved problems from Python and Java files."""
     problems_json_path = Path("problems.json")
 
     # Load existing problems from JSON cache
@@ -192,7 +192,7 @@ def sync():
 
     click.echo(f"Updated problems.json with {len(problems_list)} problems.")
 
-    # Generate AGENTS.md from the cache
+    # Generate SOLUTIONS.md from the cache
     header = """# LeetCode Problems Summary
 
 Here are all of the problems that I have solved on the LeetCode platform:
@@ -213,12 +213,12 @@ Here are all of the problems that I have solved on the LeetCode platform:
 
     new_content = header + "\n".join(rows) + "\n"
 
-    # Write AGENTS.md
-    agents_path = Path("AGENTS.md")
-    with open(agents_path, "w", encoding="utf-8") as f:
+    # Write SOLUTIONS.md
+    solutions_path = Path("SOLUTIONS.md")
+    with open(solutions_path, "w", encoding="utf-8") as f:
         f.write(new_content)
 
-    click.echo("AGENTS.md updated successfully.")
+    click.echo("SOLUTIONS.md updated successfully.")
 
 
 if __name__ == "__main__":
