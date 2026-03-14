@@ -6,7 +6,7 @@ public class TotalNQueens {
     /**
      * Return the total number of distinct solutions to the n-queens puzzle.
      *
-     * We know that 1 <= n <= 9, so time complexity isn't going to be
+     * <p>We know that 1 <= n <= 9, so time complexity isn't going to be
      * as big of a problem in this case. We just need to make sure
      * that we get the correct answer by backtracking solution. So
      * instead of saying that we got the right answer, we're saying

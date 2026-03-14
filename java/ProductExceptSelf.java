@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class ProductExceptSelf {
     /**
-     * <p>Return the product of all the elements of {@code nums} except
+     * Return the product of all the elements of {@code nums} except
      * {@code nums[i]}. What we need to do is:
      *
      * <ul>

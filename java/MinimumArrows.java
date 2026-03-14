@@ -7,7 +7,7 @@ public class MinimumArrows {
     /**
      * Return the minimum number of arrows that must be shot to burst all balloons.
      *
-     * Usually for interval problems, we sort by start time to merge
+     * <p>Usually for interval problems, we sort by start time to merge
      * intervals in an orderly fashion. However, for this problem we
      * are sorting by end time, because we are counting the number
      * of non-overlapping intervals based on {@code previous.end}
