@@ -13,3 +13,8 @@ When working on `java/` files:
 
 When adding new solutions:
 - Run `python leetc.py sync` to update `problems.json` and `SOLUTIONS.md`
+
+When suggesting new problems to solve:
+- Look at what has been solved in `problems.json`
+- Check for popular problems that are not yet solved
+- Consider problems that cover areas that have less coverage
