@@ -2,7 +2,7 @@
 
 package solution;
 
-import helper.VersionControl;
+import util.VersionControl;
 
 public class FirstBadVersion extends VersionControl {
     /**
