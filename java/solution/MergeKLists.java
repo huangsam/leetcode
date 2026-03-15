@@ -5,7 +5,7 @@ package solution;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
-import container.ListNode;
+import model.ListNode;
 
 public class MergeKLists {
     /**

@@ -2,7 +2,7 @@
 
 from typing import Optional
 
-from container.random_linked_list import Node
+from model.random_linked_list import Node
 
 
 class Solution:

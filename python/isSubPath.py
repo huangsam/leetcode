@@ -2,8 +2,8 @@
 
 from typing import Optional
 
-from container.binary_tree import TreeNode
-from container.linked_list import ListNode
+from model.binary_tree import TreeNode
+from model.linked_list import ListNode
 
 
 class Solution:

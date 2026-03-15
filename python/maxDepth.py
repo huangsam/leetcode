@@ -1,6 +1,6 @@
 # https://leetcode.com/problems/maximum-depth-of-binary-tree/
 
-from container.binary_tree import TreeNode
+from model.binary_tree import TreeNode
 
 
 class Solution:

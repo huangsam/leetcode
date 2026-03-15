@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Deque;
 import java.util.List;
 
-import container.TreeNode;
+import model.TreeNode;
 
 public class BinaryTreeRightSide {
     /**

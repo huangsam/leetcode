@@ -2,7 +2,7 @@
 
 package solution;
 
-import container.ListNode;
+import model.ListNode;
 
 public class AddTwoNumbers {
     private static final int TEN = 10;

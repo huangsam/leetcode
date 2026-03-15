@@ -1,4 +1,4 @@
-package container;
+package model;
 
 /**
  * Definition for a binary tree node.

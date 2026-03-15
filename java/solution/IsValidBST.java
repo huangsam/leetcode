@@ -2,7 +2,7 @@
 
 package solution;
 
-import container.TreeNode;
+import model.TreeNode;
 
 public class IsValidBST {
     /**

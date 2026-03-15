@@ -2,7 +2,7 @@
 
 package solution;
 
-import container.ListNode;
+import model.ListNode;
 
 class SwapPairs {
     /**

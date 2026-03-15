@@ -1,6 +1,6 @@
 # https://leetcode.com/problems/remove-linked-list-elements/
 
-from container.linked_list import ListNode
+from model.linked_list import ListNode
 
 
 class Solution:

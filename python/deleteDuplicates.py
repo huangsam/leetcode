@@ -3,7 +3,7 @@
 from collections import defaultdict
 from typing import DefaultDict, Optional
 
-from container.linked_list import ListNode
+from model.linked_list import ListNode
 
 
 class Solution:

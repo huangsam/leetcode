@@ -3,7 +3,7 @@
 from collections import deque
 from typing import Deque, List, Optional
 
-from container.binary_tree import TreeNode
+from model.binary_tree import TreeNode
 
 
 class Solution:
