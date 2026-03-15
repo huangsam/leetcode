@@ -1,0 +1,61 @@
+// https://leetcode.com/problems/min-stack/
+
+package solution;
+
+import java.util.Deque;
+import java.util.LinkedList;
+
+/**
+ * Your MinStack object will be instantiated and called as such:
+ * MinStack obj = new MinStack();
+ * obj.push(val);
+ * obj.pop();
+ * int param_3 = obj.top();
+ * int param_4 = obj.getMin();
+ */
+public class MinStack {
+    private final Deque<Integer> standard;
+    private final Deque<Integer> minimum;
+
+    public MinStack() {
+        standard = new LinkedList<>();
+        minimum = new LinkedList<>();
+    }
+
+    /**
+     * Pushes the given value onto the stack. If the value is less
+     * than or equal to the current minimum, it is also pushed onto
+     * the minimum stack.
+     *
+     * <p>Complexity:
+     *
+     * <ul>
+     *     <li>Time: O(1)</li>
+     *     <li>Space: O(n)</li>
+     * </ul>
+     */
+    public void push(int val) {
+        standard.addFirst(val);
+        if (minimum.isEmpty() || minimum.getFirst() >= val) {
+            minimum.addFirst(val);
+        }
+    }
+
+    public void pop() {
+        if (standard.isEmpty()) {
+            return;
+        }
+        Integer removed = standard.removeFirst();
+        if (!minimum.isEmpty() && removed.equals(minimum.getFirst())) {
+            minimum.removeFirst();
+        }
+    }
+
+    public int top() {
+        return standard.getFirst();
+    }
+
+    public int getMin() {
+        return minimum.getFirst();
+    }
+}

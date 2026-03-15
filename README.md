@@ -21,7 +21,7 @@ uv run ruff check python
 uv run mypy python
 ```
 
-To validate Java solutions in the `java/` directory:
+To validate Java solutions in the `java/solution/` directory:
 
 ```shell
 gradle build

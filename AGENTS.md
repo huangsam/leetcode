@@ -6,7 +6,7 @@ When working on `python/` files:
 - Add docstring explaining the approach
 - Add time/space complexity comments
 
-When working on `java/` files:
+When working on `java/solution/` files:
 - Add problem URL to the first line: `// https://leetcode.com/problems/...`
 - Add JavaDoc for public methods explaining the approach
 - Add time/space complexity comments

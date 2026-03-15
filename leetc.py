@@ -40,14 +40,19 @@ def get_urls() -> tuple[dict[str, set[str]], set[str]]:
     urls: dict[str, set[str]] = {}  # url -> set of languages
     missing_files: set[str] = set()
 
-    for dir_name in ["python", "java"]:
+    # Map directories to their language and file patterns
+    dir_configs = {
+        "python": ("Python", ".py"),
+        "java/solution": ("Java", ".java"),
+    }
+
+    for dir_name, (lang, suffix) in dir_configs.items():
         dir_path = Path(dir_name)
         if not dir_path.exists():
             continue
-        lang = dir_name.capitalize()  # 'Python' or 'Java'
-        # Only scan files directly in the directory (first layer)
-        for file_path in dir_path.iterdir():
-            if file_path.is_file() and file_path.suffix in [".py", ".java"]:
+        # Recursively scan all files in the directory
+        for file_path in dir_path.rglob(f"*{suffix}"):
+            if file_path.is_file():
                 has_url = False
                 try:
                     with open(file_path, "r", encoding="utf-8") as f:

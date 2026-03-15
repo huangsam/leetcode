@@ -1,0 +1,37 @@
+// https://leetcode.com/problems/palindrome-linked-list/
+
+package solution;
+
+import container.ListNode;
+
+public class PalindromeLinkedList {
+    /**
+     * Checks if a singly linked list is a palindrome by creating a reversed copy
+     * of the original list and then comparing the two lists node by node.
+     *
+     * <p>Complexity:
+     *
+     * <ul>
+     *     <li>Time: O(n)</li>
+     *     <li>Space: O(1)</li>
+     * </ul>
+     */
+    public boolean isPalindrome(ListNode head) {
+        ListNode prev = null;
+        ListNode current = head;
+        while (current != null) {
+            ListNode tmp = new ListNode(current.val);
+            current = current.next;
+            tmp.next = prev;
+            prev = tmp;
+        }
+        while (head != null && prev != null) {
+            if (head.val != prev.val) {
+                return false;
+            }
+            head = head.next;
+            prev = prev.next;
+        }
+        return true;
+    }
+}
