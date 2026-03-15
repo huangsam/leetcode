@@ -5,11 +5,13 @@ When working on `python/` files:
 - Use type hints for function parameters and return types
 - Add docstring explaining the approach
 - Add time/space complexity comments
+- Test solution with python interpreter before committing
 
 When working on `java/solution/` files:
 - Add problem URL to the first line: `// https://leetcode.com/problems/...`
 - Add JavaDoc for public methods explaining the approach
 - Add time/space complexity comments
+- Test solution with jshell interpreter before committing
 
 When adding new solutions:
 - Run `python leetc.py sync` to update `problems.json` and `SOLUTIONS.md`
