@@ -5,19 +5,18 @@ package solution;
 public class FindHIndex {
     /**
      * Computes the h-index of a researcher given an array of their paper citations.
-     * The h-index is the maximum value h such that the researcher has at least h papers
-     * cited at least h times.
+     * The h-index is the maximum value {@code h} such that the researcher has at least {@code h} papers
+     * cited at least {@code h} times.
      *
      * <p>The algorithm uses a frequency array to count papers with specific citation counts.
-     * The array size is `citations.length + 1` to group citations exceeding the total
+     * The array size is {@code citations.length + 1} to group citations exceeding the total
      * number of papers into the last bin.
      *
      * <p>After building the frequency array, the algorithm iterates from the highest
-     * possible h-index down to 1. It keeps a running `sum` of papers with at least
-     * the current index `i` citations. If `i` is less than or equal to `sum`, the
-     * h-index is `i`. The first such `i` encountered is the maximum h-index.
-     *
-     * <p>If no valid `i` is found (e.g., no paper has at least 1 citation), the h-index is 0.
+     * possible h-index down to 1. It keeps a running sum of papers with at least
+     * the current index {@code i} citations. If {@code i <= sum}, the h-index is
+     * {@code i}. The first such {@code i} encountered is the maximum h-index.
+     * If no valid {@code i} is found, the h-index is 0.
      *
      * <p>Complexity:
      *
