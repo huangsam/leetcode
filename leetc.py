@@ -50,8 +50,8 @@ def get_urls() -> tuple[dict[str, set[str]], set[str]]:
         dir_path = Path(dir_name)
         if not dir_path.exists():
             continue
-        # Recursively scan all files in the directory
-        for file_path in dir_path.rglob(f"*{suffix}"):
+        # Scan only top-level files in the directory
+        for file_path in dir_path.glob(f"*{suffix}"):
             if file_path.is_file():
                 has_url = False
                 try:
