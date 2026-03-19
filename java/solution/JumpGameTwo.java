@@ -41,7 +41,13 @@ public class JumpGameTwo {
         return jumps;
     }
 
-    /** Approach with dynamic programming */
+    /**
+     * Return the minimum number of jumps to reach index n - 1.
+     *
+     * <p>Approach with dynamic programming. This is a bottom-up approach that builds up
+     * the solution by calculating the minimum jumps required to reach the end from each index,
+     * starting from the end of the array and moving backwards to the beginning.
+     */
     public int jumpDynamic(int[] nums) {
         int[] minJumps = new int[nums.length];
         Arrays.fill(minJumps, Integer.MAX_VALUE - 1);
