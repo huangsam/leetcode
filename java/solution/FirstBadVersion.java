@@ -21,10 +21,10 @@ public class FirstBadVersion extends VersionControl {
 
         while (lo <= hi) {
             int mid = lo + (hi - lo) / 2;
-            if (isBadVersion(mid)) { // look down for earlier versions
+            if (isBadVersion(mid)) { // Look down for earlier versions
                 first = mid;
                 hi = mid - 1;
-            } else { // look up for newer versions
+            } else { // Look up for newer versions
                 lo = mid + 1;
             }
         }
