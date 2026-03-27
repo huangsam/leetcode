@@ -1,7 +1,6 @@
 # https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/
 
-from collections import defaultdict
-from typing import DefaultDict, Optional
+from typing import Optional
 
 from model.linked_list import ListNode
 
@@ -11,32 +10,30 @@ class Solution:
         """
         Remove duplicates from a sorted linked list, keeping only unique elements.
 
-        First, count frequencies of each value. Then, iterate through nodes, linking
-        only those with frequency 1.
+        Use two pointers: prev tracks the last node to keep, curr traverses
+        the list. Since the list is sorted, duplicates are consecutive. Skip
+        entire groups of duplicates.
 
         Complexity:
         - Time: O(n)
-        - Space: O(n)
+        - Space: O(1)
         """
-        val_freq: DefaultDict[int, int] = defaultdict(int)
-        all_nodes = []
-
+        dummy = ListNode(next=head)
+        prev = dummy
         curr = head
-        while curr:
-            val_freq[curr.val] += 1
-            all_nodes.append(curr)
-            curr = curr.next
 
-        # Add dummy to handle 1 node and 2..n node cases
-        dummy = prev = ListNode(next=None)
-
-        curr = head
         while curr:
-            temp = curr.next
-            if val_freq.get(curr.val) == 1:
+            # Check if current value appears multiple times
+            if curr.next and curr.val == curr.next.val:
+                # Skip all nodes with the same value
+                val = curr.val
+                while curr and curr.val == val:
+                    curr = curr.next
+            else:
+                # Single occurrence, keep this node
                 prev.next = curr
                 prev = curr
-                curr.next = None
-            curr = temp
+                curr = curr.next
 
+        prev.next = None  # Prevent cycles
         return dummy.next
