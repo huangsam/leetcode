@@ -1,6 +1,6 @@
 # https://leetcode.com/problems/diameter-of-binary-tree/
 
-from model.binary_tree import TreeNode
+from python.model.binary_tree import TreeNode
 
 
 class Solution:

@@ -5,7 +5,7 @@ from collections import deque
 
 class RecentCounter:
     def __init__(self):
-        self.q = deque()
+        self.q: deque[int] = deque()
 
     def ping(self, t: int) -> int:
         """

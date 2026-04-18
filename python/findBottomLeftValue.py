@@ -1,6 +1,6 @@
 # https://leetcode.com/problems/find-bottom-left-tree-value/
 
-from model.binary_tree import TreeNode
+from python.model.binary_tree import TreeNode
 
 
 class Solution:

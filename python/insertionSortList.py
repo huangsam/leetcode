@@ -1,6 +1,6 @@
 # https://leetcode.com/problems/insertion-sort-list/
 
-from model.linked_list import ListNode
+from python.model.linked_list import ListNode
 
 
 class Solution:

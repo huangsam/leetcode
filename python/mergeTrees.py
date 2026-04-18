@@ -1,6 +1,6 @@
 # https://leetcode.com/problems/merge-two-binary-trees/
 
-from model.binary_tree import TreeNode
+from python.model.binary_tree import TreeNode
 
 
 class Solution:

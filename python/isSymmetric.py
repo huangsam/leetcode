@@ -2,7 +2,7 @@
 
 from typing import Optional
 
-from model.binary_tree import TreeNode
+from python.model.binary_tree import TreeNode
 
 
 class Solution:

@@ -2,7 +2,7 @@
 
 from typing import List, Optional
 
-from model.linked_list import ListNode
+from python.model.linked_list import ListNode
 
 
 class Solution:
