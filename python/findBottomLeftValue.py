@@ -1,5 +1,7 @@
 # https://leetcode.com/problems/find-bottom-left-tree-value/
 
+from collections import deque
+
 from python.model.binary_tree import TreeNode
 
 
@@ -19,11 +21,11 @@ class Solution:
         - Space: O(w)
         """
         leftmost_value = root.val
-        to_visit = [root]
+        to_visit = deque([root])
 
         # We will use a queue to perform a level order traversal
-        while len(to_visit) > 0:
-            node = to_visit.pop(0)
+        while to_visit:
+            node = to_visit.popleft()
             if node.right:
                 to_visit.append(node.right)
             if node.left:
