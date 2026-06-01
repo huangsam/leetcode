@@ -26,6 +26,5 @@ class Solution:
                 heapq.heappush(min_heap, num)
             else:
                 if min_heap[0] < num:
-                    heapq.heappop(min_heap)
-                    heapq.heappush(min_heap, num)
+                    heapq.heapreplace(min_heap, num)
         return min_heap[0]
