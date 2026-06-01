@@ -53,7 +53,7 @@ public class SearchRotatedArray {
 
     private int binarySearch(int[] nums, int target, int lo, int hi) {
         while (lo <= hi) {
-            int mid = (lo + hi) / 2;
+            int mid = lo + (hi - lo) / 2;
             if (nums[mid] == target) {
                 return mid;
             } else if (nums[mid] > target) {
