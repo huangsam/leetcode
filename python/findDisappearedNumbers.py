@@ -16,7 +16,6 @@ class Solution:
         - Time: O(n)
         - Space: O(1)
         """
-        result = []
         n_len = len(nums)
 
         # Use the index of the array to mark the presence of numbers
@@ -26,8 +25,4 @@ class Solution:
                 nums[num - 1] *= -1
 
         # Collect the indices of the numbers that were not marked
-        for i in range(n_len):
-            if nums[i] > 0:
-                result.append(i + 1)
-
-        return result
+        return [i + 1 for i in range(n_len) if nums[i] > 0]
