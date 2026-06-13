@@ -20,7 +20,7 @@ class Solution:
         total = n1 + n2
 
         # Helper to find the k-th smallest element (1-indexed)
-        def get_kth(k, start1, start2):
+        def get_kth(k: int, start1: int, start2: int) -> int:
             # Base Cases
             if start1 >= n1:
                 return nums2[start2 + k - 1]

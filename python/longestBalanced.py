@@ -30,7 +30,7 @@ class Solution:
         tree_max = [0] * (4 * n)
         tree_lazy = [0] * (4 * n)
 
-        def push(node, s, e):
+        def push(node: int, s: int, e: int) -> None:
             """Pushes the lazy updates down to the children of the current node."""
             # If it's a leaf node or there's nothing to push, exit
             if tree_lazy[node] == 0 or s == e:
@@ -50,7 +50,7 @@ class Solution:
 
             tree_lazy[node] = 0
 
-        def update(node, s, e, l, r, val):
+        def update(node: int, s: int, e: int, l: int, r: int, val: int) -> None:
             """Updates the segment tree in the range [l, r] by adding val."""
             if l <= s and e <= r:
                 tree_min[node] += val
@@ -68,7 +68,7 @@ class Solution:
             tree_min[node] = min(tree_min[2 * node + 1], tree_min[2 * node + 2])
             tree_max[node] = max(tree_max[2 * node + 1], tree_max[2 * node + 2])
 
-        def find_leftmost_zero(node, s, e, l, r):
+        def find_leftmost_zero(node: int, s: int, e: int, l: int, r: int) -> int:
             """Finds the leftmost index in the range [l, r] where the value is zero."""
             # If 0 isn't within [min, max], or we are out of range, prune the search
             if tree_min[node] > 0 or tree_max[node] < 0 or s > r or e < l:
