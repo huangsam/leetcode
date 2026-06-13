@@ -18,8 +18,8 @@ class Solution:
         if n <= 1:
             return 1
 
-        # The solution is very similar to the bottoms-up DP approach
-        # for fibonacci. To save on space, we use two variables
+        # The solution is very similar to the bottom-up DP approach
+        # for Fibonacci. To save on space, we use two variables
         # instead of a Python list
         f1, f2 = 1, 1
         for _ in range(2, n + 1):
