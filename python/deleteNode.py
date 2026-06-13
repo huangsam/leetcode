@@ -14,7 +14,7 @@ class Solution:
 
         - If no children, return None.
         - If one child, return the child.
-        - If two children, find min in right subtree, replace value, then delete successor.
+        - If two children, replace value with in-order successor and remove it in one pass.
 
         Complexity:
         - Time: O(h)
@@ -34,17 +34,16 @@ class Solution:
             elif root.right is None:
                 return root.left
 
-            # Node with two children: find the in-order successor (smallest in the right subtree)
-            min_node = self._findMin(root.right)
-
-            # Replace current node's value with in-order successor's value
-            root.val = min_node.val
-
-            # Delete the in-order successor from the right subtree
-            root.right = self.deleteNode(root.right, root.val)
+            # Two children: find successor value and remove it in a single pass
+            root.right, root.val = self._deleteMin(root.right)
         return root
 
-    def _findMin(self, node):
-        while node.left:
-            node = node.left
-        return node
+    def _deleteMin(self, node: TreeNode) -> tuple[Optional[TreeNode], int]:
+        """Remove the minimum node from subtree in one pass.
+
+        Returns (modified subtree root, min value).
+        """
+        if node.left is None:
+            return node.right, node.val
+        node.left, min_val = self._deleteMin(node.left)
+        return node, min_val
