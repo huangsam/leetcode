@@ -18,8 +18,8 @@ managed = true
 line-length = 160
 
 [tool.ruff.lint]
-extend-select = ["I"]
-extend-ignore = ["E741"]
+select = ["E", "F", "I"]
+ignore = ["E741"]
 
 [tool.mypy]
 check_untyped_defs = true
