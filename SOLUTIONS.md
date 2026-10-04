@@ -17,6 +17,7 @@ Here are all of the problems that I have solved on the LeetCode platform:
 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | 13 | Easy | Hash Table, Math, String |
 | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | 14 | Easy | Array, String, Trie |
 | [3Sum](https://leetcode.com/problems/3sum/) | 15 | Medium | Array, Two Pointers, Sorting |
+| [3Sum Closest](https://leetcode.com/problems/3sum-closest/) | 16 | Medium | Array, Two Pointers, Sorting |
 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | 17 | Medium | Hash Table, String, Backtracking |
 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | 19 | Medium | Linked List, Two Pointers |
 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | 20 | Easy | String, Stack |

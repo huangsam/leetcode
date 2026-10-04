@@ -136,6 +136,17 @@
     ]
   },
   {
+    "id": 16,
+    "title": "3Sum Closest",
+    "slug": "3sum-closest",
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Two Pointers",
+      "Sorting"
+    ]
+  },
+  {
     "id": 17,
     "title": "Letter Combinations of a Phone Number",
     "slug": "letter-combinations-of-a-phone-number",
