@@ -18,12 +18,12 @@ class Solution:
         path: list[int] = []
 
         def backtrack(start: int) -> None:
-            # Add generated item once we have k items
+            # Base case: we have collected k numbers
             if len(path) == k:
                 res.append(path.copy())
                 return
 
-            # Until base case, keep generating items
+            # Recursive case: pick the next number and continue
             needed = k - len(path)
             for i in range(start, n - needed + 2):
                 path.append(i)
