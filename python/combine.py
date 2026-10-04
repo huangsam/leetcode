@@ -24,7 +24,8 @@ class Solution:
                 return
 
             # Until base case, keep generating items
-            for i in range(start, n + 1):
+            needed = k - len(path)
+            for i in range(start, n - needed + 2):
                 path.append(i)
                 backtrack(i + 1)
                 path.pop()
