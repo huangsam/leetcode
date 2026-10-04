@@ -4,11 +4,11 @@
 class Solution:
     def combinationSum(self, candidates: list[int], target: int) -> list[list[int]]:
         """
-        Find all unique combinations in candidates where the candidate numbers sum to target.
-        Any number in the combination may be used multiple times.
+        Find all unique combinations in candidates where the candidate numbers
+        sum to target. Any number in the combination may be used multiple times.
 
-        Sorting the candidates allows for early termination. Note that in this case,
-        number reuse implies that backtracking continues from the current index rather
+        Sorting the candidates allows for early termination. Note that number
+        reuse implies that backtracking continues from the current index rather
         than moving to the next one.
 
         Complexity:
