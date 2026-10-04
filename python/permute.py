@@ -12,27 +12,24 @@ class Solution:
 
         Complexity:
         - Time: O(n! * n)
-        - Space: O(n)
+        - Space: O(1)
         """
         res: list[list[int]] = []
         path: list[int] = []
-        used = [False] * len(nums)
+        n = len(nums)
 
-        def backtrack() -> None:
-            # Base case: no available numbers left
-            if all(used):
+        def backtrack(mask: int) -> None:
+            # Base case: we have collected all numbers in the path
+            if len(path) == n:
                 res.append(path.copy())
                 return
 
             # Recursive case: pick an available number and continue
             for i, num in enumerate(nums):
-                if used[i]:
-                    continue
-                used[i] = True
-                path.append(num)
-                backtrack()
-                path.pop()
-                used[i] = False
+                if not mask & (1 << i):
+                    path.append(num)
+                    backtrack(mask | (1 << i))
+                    path.pop()
 
-        backtrack()
+        backtrack(0)
         return res
