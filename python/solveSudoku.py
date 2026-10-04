@@ -16,6 +16,10 @@ class Solution:
         then replace the "." with a 1-9 and modify the associated binary int
         for row, col, grid. Then undo the num placement and move to the next
         item. If a solution is found, then terminate.
+
+        Complexity:
+        - Time: O(9^(9*9)) but typically much faster
+        - Space: O(1)
         """
         rows = [0] * 9
         cols = [0] * 9
