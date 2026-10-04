@@ -32,6 +32,7 @@ Here are all of the problems that I have solved on the LeetCode platform:
 | [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | 34 | Medium | Array, Binary Search |
 | [Search Insert Position](https://leetcode.com/problems/search-insert-position/) | 35 | Easy | Array, Binary Search |
 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | 36 | Medium | Array, Hash Table, Matrix |
+| [Sudoku Solver](https://leetcode.com/problems/sudoku-solver/) | 37 | Hard | Array, Hash Table, Backtracking, Matrix, Algorithm X, Dancing Links |
 | [Count and Say](https://leetcode.com/problems/count-and-say/) | 38 | Medium | String |
 | [First Missing Positive](https://leetcode.com/problems/first-missing-positive/) | 41 | Hard | Array, Hash Table |
 | [Jump Game II](https://leetcode.com/problems/jump-game-ii/) | 45 | Medium | Array, Dynamic Programming, Greedy |
@@ -63,6 +64,7 @@ Here are all of the problems that I have solved on the LeetCode platform:
 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | 88 | Easy | Array, Two Pointers, Sorting |
 | [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) | 92 | Medium | Linked List |
 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | 94 | Easy | Stack, Tree, Depth-First Search, Binary Tree |
+| [Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees/) | 96 | Medium | Math, Dynamic Programming, Tree, Binary Search Tree, Binary Tree |
 | [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/) | 98 | Medium | Tree, Depth-First Search, Binary Search Tree, Binary Tree |
 | [Same Tree](https://leetcode.com/problems/same-tree/) | 100 | Easy | Tree, Depth-First Search, Breadth-First Search, Binary Tree |
 | [Symmetric Tree](https://leetcode.com/problems/symmetric-tree/) | 101 | Easy | Tree, Depth-First Search, Breadth-First Search, Binary Tree |

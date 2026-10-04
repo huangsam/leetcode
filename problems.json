@@ -292,6 +292,20 @@
     ]
   },
   {
+    "id": 37,
+    "title": "Sudoku Solver",
+    "slug": "sudoku-solver",
+    "difficulty": "Hard",
+    "topics": [
+      "Array",
+      "Hash Table",
+      "Backtracking",
+      "Matrix",
+      "Algorithm X",
+      "Dancing Links"
+    ]
+  },
+  {
     "id": 38,
     "title": "Count and Say",
     "slug": "count-and-say",
@@ -609,6 +623,19 @@
       "Stack",
       "Tree",
       "Depth-First Search",
+      "Binary Tree"
+    ]
+  },
+  {
+    "id": 96,
+    "title": "Unique Binary Search Trees",
+    "slug": "unique-binary-search-trees",
+    "difficulty": "Medium",
+    "topics": [
+      "Math",
+      "Dynamic Programming",
+      "Tree",
+      "Binary Search Tree",
       "Binary Tree"
     ]
   },
