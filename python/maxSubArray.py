@@ -1,10 +1,10 @@
 # https://leetcode.com/problems/maximum-subarray/
 
-from typing import Any, List
+from typing import Any
 
 
 class Solution:
-    def maxSubArray(self, nums: List[int]) -> int:
+    def maxSubArray(self, nums: list[int]) -> int:
         """
         Find the contiguous subarray with the largest sum.
 

@@ -1,7 +1,5 @@
 # https://leetcode.com/problems/removing-stars-from-a-string/
 
-from typing import List
-
 
 class Solution:
     def removeStars(self, s: str) -> str:
@@ -13,7 +11,7 @@ class Solution:
         - Time: O(n)
         - Space: O(n)
         """
-        builder: List[str] = []
+        builder: list[str] = []
         for ch in s:
             if ch == "*":
                 # Remove the closest non-star character to the left

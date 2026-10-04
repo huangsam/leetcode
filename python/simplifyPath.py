@@ -1,7 +1,5 @@
 # https://leetcode.com/problems/simplify-path/
 
-from typing import List
-
 
 class Solution:
     def simplifyPath(self, path: str) -> str:
@@ -19,7 +17,7 @@ class Solution:
         - Time: O(n)
         - Space: O(n)
         """
-        path_stack: List[str] = []
+        path_stack: list[str] = []
 
         for token in path.split("/"):
             if token in {"", "."}:

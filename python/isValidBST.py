@@ -1,12 +1,11 @@
 # https://leetcode.com/problems/validate-binary-search-tree/
 
-from typing import Optional
 
 from python.model.binary_tree import TreeNode
 
 
 class Solution:
-    def isValidBST(self, root: Optional[TreeNode]) -> bool:
+    def isValidBST(self, root: TreeNode | None) -> bool:
         """
         Check if the binary tree is a valid BST.
 

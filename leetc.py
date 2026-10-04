@@ -55,7 +55,7 @@ def get_urls() -> tuple[dict[str, set[str]], set[str]]:
             if file_path.is_file():
                 has_url = False
                 try:
-                    with open(file_path, "r", encoding="utf-8") as f:
+                    with open(file_path, encoding="utf-8") as f:
                         for line in f:
                             match = pattern.match(line.strip())
                             if match:
@@ -149,7 +149,7 @@ def sync():
     # Load existing problems from JSON cache
     existing_problems = {}
     if problems_json_path.exists():
-        with open(problems_json_path, "r", encoding="utf-8") as f:
+        with open(problems_json_path, encoding="utf-8") as f:
             problems_data = json.load(f)
             for problem in problems_data:
                 qid = problem["id"]

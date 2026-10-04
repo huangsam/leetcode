@@ -1,10 +1,8 @@
 # https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/
 
-from typing import List
-
 
 class Solution:
-    def findDisappearedNumbers(self, nums: List[int]) -> List[int]:
+    def findDisappearedNumbers(self, nums: list[int]) -> list[int]:
         """
         Find all numbers that disappeared from an array of size n.
 

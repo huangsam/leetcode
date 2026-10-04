@@ -1,10 +1,8 @@
 # https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/
 
-from typing import List
-
 
 class Solution:
-    def removeDuplicates(self, nums: List[int]) -> int:
+    def removeDuplicates(self, nums: list[int]) -> int:
         """
         Remove duplicates from sorted array allowing at most 2 duplicates.
 

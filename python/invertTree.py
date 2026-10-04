@@ -1,12 +1,11 @@
 # https://leetcode.com/problems/invert-binary-tree/
 
-from typing import Optional
 
 from python.model.binary_tree import TreeNode
 
 
 class Solution:
-    def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
+    def invertTree(self, root: TreeNode | None) -> TreeNode | None:
         """
         Invert a binary tree (mirror it).
 

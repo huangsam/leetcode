@@ -1,10 +1,8 @@
 # https://leetcode.com/problems/find-the-highest-altitude/
 
-from typing import List
-
 
 class Solution:
-    def largestAltitude(self, gain: List[int]) -> int:
+    def largestAltitude(self, gain: list[int]) -> int:
         """
         Find the highest altitude of a point.
 

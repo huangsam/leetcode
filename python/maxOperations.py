@@ -1,11 +1,10 @@
 # https://leetcode.com/problems/max-number-of-k-sum-pairs/
 
 from collections import Counter
-from typing import List
 
 
 class Solution:
-    def maxOperations(self, nums: List[int], k: int) -> int:
+    def maxOperations(self, nums: list[int], k: int) -> int:
         """
         Find the maximum number of k-sum pairs in the list.
 

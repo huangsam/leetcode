@@ -1,10 +1,8 @@
 # https://leetcode.com/problems/contains-duplicate-ii/
 
-from typing import Dict, List
-
 
 class Solution:
-    def containsNearbyDuplicate(self, nums: List[int], k: int) -> bool:
+    def containsNearbyDuplicate(self, nums: list[int], k: int) -> bool:
         """
         Determine if there are two distinct indices i and j in the array such that
         nums[i] == nums[j] and abs(i - j) <= k.
@@ -27,7 +25,7 @@ class Solution:
         - Time: O(n) - single pass through the array
         - Space: O(min(n, unique_elements)) - worst case O(n) if all elements are unique
         """
-        val_latest_index: Dict[int, int] = {}
+        val_latest_index: dict[int, int] = {}
 
         for idx, num in enumerate(nums):
             if num not in val_latest_index:

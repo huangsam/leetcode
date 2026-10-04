@@ -1,10 +1,8 @@
 # https://leetcode.com/problems/longest-balanced-subarray-ii/
 
-from typing import Dict, List
-
 
 class Solution:
-    def longestBalanced(self, nums: List[int]) -> int:
+    def longestBalanced(self, nums: list[int]) -> int:
         """
         Finds the length of the longest balanced subarray in the given
         list of integers. A balanced subarray is defined as a subarray
@@ -86,7 +84,7 @@ class Solution:
             return res
 
         ans = 0
-        last_seen: Dict[int, int] = {}
+        last_seen: dict[int, int] = {}
 
         for i, val in enumerate(nums):
             prev_idx = last_seen.get(val, -1)

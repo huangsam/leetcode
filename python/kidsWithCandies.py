@@ -1,10 +1,8 @@
 # https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/
 
-from typing import List
-
 
 class Solution:
-    def kidsWithCandies(self, candies: List[int], extraCandies: int) -> List[bool]:
+    def kidsWithCandies(self, candies: list[int], extraCandies: int) -> list[bool]:
         """
         Determine which kids will have the greatest number of candies.
 

@@ -1,10 +1,8 @@
 # https://leetcode.com/problems/jump-game/
 
-from typing import List
-
 
 class Solution:
-    def canJump(self, nums: List[int]) -> bool:
+    def canJump(self, nums: list[int]) -> bool:
         """
         Determine if you can reach the last index of an array.
 
@@ -33,7 +31,7 @@ class Solution:
                 jump_power -= 1
         return True
 
-    def canJumpDynamic(self, nums: List[int]) -> bool:
+    def canJumpDynamic(self, nums: list[int]) -> bool:
         """
         - Time: O(n^2)
         - Space: O(n)

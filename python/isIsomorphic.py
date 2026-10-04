@@ -1,7 +1,5 @@
 # https://leetcode.com/problems/isomorphic-strings/
 
-from typing import Dict
-
 
 class Solution:
     def isIsomorphic(self, s: str, t: str) -> bool:
@@ -20,8 +18,8 @@ class Solution:
         - Space: O(n)
         """
         # To check for discrepancies in mapping
-        s_to_t: Dict[str, str] = {}
-        t_to_s: Dict[str, str] = {}
+        s_to_t: dict[str, str] = {}
+        t_to_s: dict[str, str] = {}
 
         for ch_s, ch_t in zip(s, t):
             # Check if s->t mapping exists and matches

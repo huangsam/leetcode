@@ -1,7 +1,5 @@
 # https://leetcode.com/problems/count-and-say/
 
-from typing import List
-
 
 class Solution:
     def countAndSay(self, n: int) -> str:
@@ -25,7 +23,7 @@ class Solution:
 
         # Iterate from the 2nd sequence up to the nth sequence
         for _ in range(2, n + 1):
-            next_seq_list: List[str] = []
+            next_seq_list: list[str] = []
 
             count = 1
             # Iterate through the characters of the current sequence string

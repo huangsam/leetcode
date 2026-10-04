@@ -1,12 +1,11 @@
 # https://leetcode.com/problems/flatten-binary-tree-to-linked-list/
 
-from typing import Optional
 
 from python.model.binary_tree import TreeNode
 
 
 class Solution:
-    def flatten(self, root: Optional[TreeNode]) -> None:
+    def flatten(self, root: TreeNode | None) -> None:
         """
         Flatten a binary tree to a linked list in-place.
 

@@ -1,7 +1,6 @@
 # https://leetcode.com/problems/dota2-senate/
 
 from collections import deque
-from typing import Deque
 
 
 class Solution:
@@ -18,8 +17,8 @@ class Solution:
         - Time: O(n) since a senator can only be banned once and processed twice
         - Space: O(n)
         """
-        radq: Deque[int] = deque()
-        dirq: Deque[int] = deque()
+        radq: deque[int] = deque()
+        dirq: deque[int] = deque()
         n = len(senate)
 
         # Populate the queues

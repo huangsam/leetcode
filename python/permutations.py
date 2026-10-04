@@ -1,13 +1,11 @@
 # https://leetcode.com/problems/permutations/
 
-from typing import List, Set
-
 
 class Solution:
     def __init__(self) -> None:
-        self.result: List[List[int]] = []
+        self.result: list[list[int]] = []
 
-    def permute(self, nums: List[int]) -> List[List[int]]:
+    def permute(self, nums: list[int]) -> list[list[int]]:
         """
         Return all possible permutations of an array of distinct integers.
 
@@ -25,7 +23,7 @@ class Solution:
         self._helper(set(nums), [])
         return self.result
 
-    def _helper(self, available: Set[int], arr: List[int]) -> None:
+    def _helper(self, available: set[int], arr: list[int]) -> None:
         if len(available) == 0:
             self.result.append(arr)
             return

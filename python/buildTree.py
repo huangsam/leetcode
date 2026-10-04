@@ -1,13 +1,12 @@
 # https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
 
 from collections import deque
-from typing import Deque, List, Optional
 
 from python.model.binary_tree import TreeNode
 
 
 class Solution:
-    def buildTree(self, preorder: List[int], inorder: List[int]) -> Optional[TreeNode]:
+    def buildTree(self, preorder: list[int], inorder: list[int]) -> TreeNode | None:
         """
         Build a binary tree from preorder and inorder traversal arrays.
 
@@ -25,7 +24,7 @@ class Solution:
         inorder_map = {val: idx for idx, val in enumerate(inorder)}
         return self._build(deque(preorder), inorder, 0, len(inorder) - 1, inorder_map)
 
-    def _build(self, prequeue: Deque[int], inorder: List[int], start: int, end: int, inorder_map: dict) -> Optional[TreeNode]:
+    def _build(self, prequeue: deque[int], inorder: list[int], start: int, end: int, inorder_map: dict) -> TreeNode | None:
         if start > end:
             return None
 

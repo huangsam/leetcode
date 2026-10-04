@@ -1,10 +1,8 @@
 # https://leetcode.com/problems/find-pivot-index/
 
-from typing import List
-
 
 class Solution:
-    def pivotIndex(self, nums: List[int]) -> int:
+    def pivotIndex(self, nums: list[int]) -> int:
         """
         Find the pivot index of an array, where sum to the left of the index
         is equal to sum to the right of the index. Return -1 otherwise.

@@ -1,10 +1,8 @@
 # https://leetcode.com/problems/valid-sudoku/
 
-from typing import List
-
 
 class Solution:
-    def isValidSudoku(self, board: List[List[str]]) -> bool:
+    def isValidSudoku(self, board: list[list[str]]) -> bool:
         """
         Determine if a 9x9 Sudoku board is valid.
 

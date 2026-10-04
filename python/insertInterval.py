@@ -1,10 +1,8 @@
 # https://leetcode.com/problems/insert-interval/
 
-from typing import List
-
 
 class Solution:
-    def insert(self, intervals: List[List[int]], newInterval: List[int]) -> List[List[int]]:
+    def insert(self, intervals: list[list[int]], newInterval: list[int]) -> list[list[int]]:
         """
         Insert a new interval into a sorted list of non-overlapping intervals.
 
@@ -17,7 +15,7 @@ class Solution:
         - Time: O(n)
         - Space: O(n)
         """
-        result: List[List[int]] = []
+        result: list[list[int]] = []
         i = 0
 
         # Intervals that are strictly lesser than newInterval

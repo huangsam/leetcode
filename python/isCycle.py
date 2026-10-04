@@ -1,12 +1,11 @@
 # https://leetcode.com/problems/linked-list-cycle/
 
-from typing import Optional
 
 from python.model.linked_list import ListNode
 
 
 class Solution:
-    def hasCycle(self, head: Optional[ListNode]) -> bool:
+    def hasCycle(self, head: ListNode | None) -> bool:
         """
         Determine if a linked list has a cycle.
 

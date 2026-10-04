@@ -1,13 +1,11 @@
 # https://leetcode.com/problems/combinations/
 
-from typing import List
-
 
 class Solution:
     def __init__(self) -> None:
-        self.result: List[List[int]] = []
+        self.result: list[list[int]] = []
 
-    def combine(self, n: int, k: int) -> List[List[int]]:
+    def combine(self, n: int, k: int) -> list[list[int]]:
         """
         Return all possible combinations of k numbers chosen from the range [1, n].
 
@@ -23,7 +21,7 @@ class Solution:
         self._helper(n, k, [])
         return self.result
 
-    def _helper(self, n: int, k: int, nums: List[int]) -> None:
+    def _helper(self, n: int, k: int, nums: list[int]) -> None:
         if k == 0:
             self.result.append(nums)
             return

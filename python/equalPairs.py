@@ -1,11 +1,10 @@
 # https://leetcode.com/problems/equal-row-and-column-pairs/
 
 from collections import defaultdict
-from typing import DefaultDict, List, Tuple
 
 
 class Solution:
-    def equalPairs(self, grid: List[List[int]]) -> int:
+    def equalPairs(self, grid: list[list[int]]) -> int:
         """
         Count the number of pairs of rows and columns that are equal.
 
@@ -20,8 +19,8 @@ class Solution:
         """
         pair_count = 0
 
-        row_map: DefaultDict[Tuple[int, ...], int] = defaultdict(int)
-        col_map: DefaultDict[Tuple[int, ...], int] = defaultdict(int)
+        row_map: defaultdict[tuple[int, ...], int] = defaultdict(int)
+        col_map: defaultdict[tuple[int, ...], int] = defaultdict(int)
 
         # Get the number of row tuple occurences
         for row in grid:

@@ -1,7 +1,6 @@
 # https://leetcode.com/problems/add-binary/
 
 from collections import deque
-from typing import Deque
 
 
 class Solution:
@@ -32,7 +31,7 @@ class Solution:
         """
         a_idx, b_idx = len(a) - 1, len(b) - 1
         carry = 0
-        buffer: Deque[str] = deque()
+        buffer: deque[str] = deque()
         while a_idx >= 0 or b_idx >= 0 or carry:
             a_val = int(a[a_idx]) if a_idx >= 0 else 0
             b_val = int(b[b_idx]) if b_idx >= 0 else 0

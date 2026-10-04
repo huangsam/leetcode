@@ -1,10 +1,8 @@
 # https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
 
-from typing import List
-
 
 class Solution:
-    def searchRange(self, nums: List[int], target: int) -> List[int]:
+    def searchRange(self, nums: list[int], target: int) -> list[int]:
         """
         Find the starting and ending position of a target value.
 
@@ -27,7 +25,7 @@ class Solution:
         right = self._findBoundary(nums, target, False)
         return [left, right]
 
-    def _findBoundary(self, nums: List[int], target: int, find_left: bool) -> int:
+    def _findBoundary(self, nums: list[int], target: int, find_left: bool) -> int:
         """Binary search to find leftmost or rightmost occurrence."""
         lo, hi = 0, len(nums) - 1
         result = -1

@@ -1,10 +1,8 @@
 # https://leetcode.com/problems/3sum/
 
-from typing import List
-
 
 class Solution:
-    def threeSum(self, nums: List[int]) -> List[List[int]]:
+    def threeSum(self, nums: list[int]) -> list[list[int]]:
         """
         Find all unique triplets in an array that sum to zero.
 

@@ -1,12 +1,11 @@
 # https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/
 
-from typing import Optional
 
 from python.model.linked_list import ListNode
 
 
 class Solution:
-    def deleteDuplicates(self, head: Optional[ListNode]) -> Optional[ListNode]:
+    def deleteDuplicates(self, head: ListNode | None) -> ListNode | None:
         """
         Remove duplicates from a sorted linked list, keeping only unique elements.
 

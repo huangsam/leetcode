@@ -1,15 +1,14 @@
 # https://leetcode.com/problems/two-sum-iv-input-is-a-bst/
 
-from typing import Optional, Set
 
 from python.model.binary_tree import TreeNode
 
 
 class Solution:
     def __init__(self) -> None:
-        self.complement_set: Set[int] = set()
+        self.complement_set: set[int] = set()
 
-    def findTarget(self, root: Optional[TreeNode], k: int) -> bool:
+    def findTarget(self, root: TreeNode | None, k: int) -> bool:
         """
         Find two numbers in a BST that add up to a target value.
 

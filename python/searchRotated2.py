@@ -1,10 +1,8 @@
 # https://leetcode.com/problems/search-in-rotated-sorted-array-ii/
 
-from typing import List
-
 
 class Solution:
-    def search(self, nums: List[int], target: int) -> bool:
+    def search(self, nums: list[int], target: int) -> bool:
         """
         Search for a target in a rotated sorted array with duplicates.
 

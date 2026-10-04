@@ -1,10 +1,8 @@
 # https://leetcode.com/problems/spiral-matrix/
 
-from typing import List
-
 
 class Solution:
-    def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
+    def spiralOrder(self, matrix: list[list[int]]) -> list[int]:
         """
         Return all elements of a matrix in spiral order.
 

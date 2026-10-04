@@ -1,10 +1,8 @@
 # https://leetcode.com/problems/max-consecutive-ones-iii/
 
-from typing import List
-
 
 class Solution:
-    def longestOnes(self, nums: List[int], k: int) -> int:
+    def longestOnes(self, nums: list[int], k: int) -> int:
         """
         Find the longest subarray by filling at most k zeros with ones.
 

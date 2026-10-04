@@ -1,12 +1,11 @@
 # https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/
 
-from typing import Optional
 
 from python.model.linked_list import ListNode
 
 
 class Solution:
-    def deleteMiddle(self, head: Optional[ListNode]) -> Optional[ListNode]:
+    def deleteMiddle(self, head: ListNode | None) -> ListNode | None:
         """
         Deletes the middle node of a singly linked list.
         If the list has an even number of nodes, the second middle node is deleted.

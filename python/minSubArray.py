@@ -1,12 +1,10 @@
 # https://leetcode.com/problems/minimum-size-subarray-sum/
 
-from typing import List
-
 
 class Solution:
     MAX_VALUE = 2**32
 
-    def minSubArrayLen(self, target: int, nums: List[int]) -> int:
+    def minSubArrayLen(self, target: int, nums: list[int]) -> int:
         """
         Find the minimum length of a contiguous subarray with sum >= target.
 

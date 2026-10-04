@@ -1,11 +1,10 @@
 # https://leetcode.com/problems/majority-element/
 
 from collections import defaultdict
-from typing import DefaultDict, List
 
 
 class Solution:
-    def majorityElement(self, nums: List[int]) -> int:
+    def majorityElement(self, nums: list[int]) -> int:
         """
         Find the majority element that appears more than n/2 times.
 
@@ -23,7 +22,7 @@ class Solution:
         - Time: O(n)
         - Space: O(n)
         """
-        counts_by_num: DefaultDict[int, int] = defaultdict(int)
+        counts_by_num: defaultdict[int, int] = defaultdict(int)
         for num in nums:
             counts_by_num[num] += 1
             if counts_by_num[num] > len(nums) / 2:

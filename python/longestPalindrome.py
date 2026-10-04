@@ -1,7 +1,5 @@
 # https://leetcode.com/problems/longest-palindromic-substring/
 
-from typing import Tuple
-
 
 class Solution:
     def longestPalindrome(self, s: str) -> str:
@@ -49,7 +47,7 @@ class Solution:
 
         return s[longest_start : longest_start + longest_length]
 
-    def _expandAroundCenter(self, s: str, left: int, right: int) -> Tuple[int, int]:
+    def _expandAroundCenter(self, s: str, left: int, right: int) -> tuple[int, int]:
         # Expand outwards from the center(s)
         while left >= 0 and right < len(s) and s[left] == s[right]:
             left -= 1

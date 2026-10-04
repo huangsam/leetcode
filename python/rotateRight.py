@@ -1,12 +1,11 @@
 # https://leetcode.com/problems/rotate-list/
 
-from typing import Optional
 
 from python.model.linked_list import ListNode
 
 
 class Solution:
-    def rotateRight(self, head: Optional[ListNode], k: int) -> Optional[ListNode]:
+    def rotateRight(self, head: ListNode | None, k: int) -> ListNode | None:
         """
         Rotate a linked list to the right by k places.
 

@@ -1,12 +1,11 @@
 # https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/
 
-from typing import List, Optional
 
 from python.model.linked_list import ListNode
 
 
 class Solution:
-    def modifiedList(self, nums: List[int], head: Optional[ListNode]) -> Optional[ListNode]:
+    def modifiedList(self, nums: list[int], head: ListNode | None) -> ListNode | None:
         """
         Remove nodes from linked list that are present in array.
 

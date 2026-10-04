@@ -1,10 +1,8 @@
 # https://leetcode.com/problems/two-sum/
 
-from typing import Dict, List
-
 
 class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
+    def twoSum(self, nums: list[int], target: int) -> list[int]:
         """
         Find two numbers that add up to a target value.
 
@@ -20,7 +18,7 @@ class Solution:
         - Space: O(n)
         """
         # Keep track of the numbers we have seen so far and their indices
-        seen_numbers: Dict[int, int] = {}
+        seen_numbers: dict[int, int] = {}
 
         # Return the index pairing that is expected for this function
         for idx, num in enumerate(nums):

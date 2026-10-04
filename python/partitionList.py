@@ -1,12 +1,11 @@
 # https://leetcode.com/problems/partition-list/
 
-from typing import Optional
 
 from python.model.linked_list import ListNode
 
 
 class Solution:
-    def partition(self, head: Optional[ListNode], x: int) -> Optional[ListNode]:
+    def partition(self, head: ListNode | None, x: int) -> ListNode | None:
         """
         Partition a linked list around a value x.
 

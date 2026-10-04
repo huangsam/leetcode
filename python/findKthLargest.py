@@ -1,11 +1,10 @@
 # https://leetcode.com/problems/kth-largest-element-in-an-array/
 
 import heapq
-from typing import List
 
 
 class Solution:
-    def findKthLargest(self, nums: List[int], k: int) -> int:
+    def findKthLargest(self, nums: list[int], k: int) -> int:
         """
         Find the kth largest element in an unsorted array.
 
@@ -20,7 +19,7 @@ class Solution:
         - Time: O(n * log(k))
         - Space: O(k)
         """
-        min_heap: List[int] = []
+        min_heap: list[int] = []
         for num in nums:
             if len(min_heap) < k:
                 heapq.heappush(min_heap, num)

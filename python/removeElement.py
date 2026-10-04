@@ -1,10 +1,8 @@
 # https://leetcode.com/problems/remove-element/
 
-from typing import List
-
 
 class Solution:
-    def removeElement(self, nums: List[int], val: int) -> int:
+    def removeElement(self, nums: list[int], val: int) -> int:
         """
         Remove all occurrences of a value from an array in-place.
 

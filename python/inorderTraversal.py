@@ -1,12 +1,11 @@
 # https://leetcode.com/problems/binary-tree-inorder-traversal/
 
-from typing import List
 
 from python.model.binary_tree import TreeNode
 
 
 class Solution:
-    def inorderTraversal(self, root: TreeNode) -> List[int]:
+    def inorderTraversal(self, root: TreeNode) -> list[int]:
         """
         Perform inorder traversal of a binary tree.
 
@@ -26,7 +25,7 @@ class Solution:
 
         return result
 
-    def inorderTraversalIterative(self, root: TreeNode) -> List[int]:
+    def inorderTraversalIterative(self, root: TreeNode) -> list[int]:
         """
         Perform inorder traversal of a binary tree using an iterative approach.
 
@@ -34,7 +33,7 @@ class Solution:
         - Time: O(n)
         - Space: O(h)
         """
-        visited: List[int] = []
+        visited: list[int] = []
         c = root
         s = []
 

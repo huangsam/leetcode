@@ -1,10 +1,8 @@
 # https://leetcode.com/problems/game-of-life/
 
-from typing import List
-
 
 class Solution:
-    def gameOfLife(self, board: List[List[int]]) -> None:
+    def gameOfLife(self, board: list[list[int]]) -> None:
         """
         Given the current board state of the game, update it to the next state.
 
@@ -35,7 +33,7 @@ class Solution:
             for j in range(len(row)):
                 board[i][j] >>= 1
 
-    def _getNextState(self, board: List[List[int]], row: int, col: int) -> int:
+    def _getNextState(self, board: list[list[int]], row: int, col: int) -> int:
         # Get current state using LSB
         current = board[row][col] & 1
 

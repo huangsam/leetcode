@@ -1,10 +1,8 @@
 # https://leetcode.com/problems/sort-colors/
 
-from typing import List
-
 
 class Solution:
-    def sortColors(self, nums: List[int]) -> None:
+    def sortColors(self, nums: list[int]) -> None:
         """
         Sort an array with values 0, 1, and 2 in-place.
 

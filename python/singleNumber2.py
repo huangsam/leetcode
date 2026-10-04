@@ -1,11 +1,10 @@
 # https://leetcode.com/problems/single-number-ii/
 
 from collections import defaultdict
-from typing import DefaultDict, List
 
 
 class Solution:
-    def singleNumber(self, nums: List[int]) -> int:
+    def singleNumber(self, nums: list[int]) -> int:
         """
         Find the element that appears only once when others appear three times.
 
@@ -17,7 +16,7 @@ class Solution:
         - Time: O(n)
         - Space: O(1)
         """
-        num_to_freq: DefaultDict[int, int] = defaultdict(int)
+        num_to_freq: defaultdict[int, int] = defaultdict(int)
         for num in nums:
             num_to_freq[num] += 1
         for num, freq in num_to_freq.items():

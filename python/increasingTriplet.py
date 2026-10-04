@@ -1,10 +1,8 @@
 # https://leetcode.com/problems/increasing-triplet-subsequence/
 
-from typing import List
-
 
 class Solution:
-    def increasingTriplet(self, nums: List[int]) -> bool:
+    def increasingTriplet(self, nums: list[int]) -> bool:
         """
         Check if there exists a triplet (i, j, k) such that
         nums[i] < nums[j] < nums[k] with i < j < k.

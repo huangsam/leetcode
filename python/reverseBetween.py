@@ -1,12 +1,11 @@
 # https://leetcode.com/problems/reverse-linked-list-ii/
 
-from typing import Optional
 
 from python.model.linked_list import ListNode
 
 
 class Solution:
-    def reverseBetween(self, head: Optional[ListNode], left: int, right: int) -> Optional[ListNode]:
+    def reverseBetween(self, head: ListNode | None, left: int, right: int) -> ListNode | None:
         """
         Reverse a portion of a linked list from position left to right.
 

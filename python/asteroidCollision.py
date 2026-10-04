@@ -1,10 +1,8 @@
 # https://leetcode.com/problems/asteroid-collision/
 
-from typing import List
-
 
 class Solution:
-    def asteroidCollision(self, asteroids: List[int]) -> List[int]:
+    def asteroidCollision(self, asteroids: list[int]) -> list[int]:
         """
         Find out the state of the asteroids after all collisions.
 
@@ -17,7 +15,7 @@ class Solution:
         - Time: O(n)
         - Space: O(n)
         """
-        st: List[int] = []
+        st: list[int] = []
         for num in asteroids:
             # Right-moving asteroids never cause a collision
             if num > 0:

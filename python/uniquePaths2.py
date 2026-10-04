@@ -1,10 +1,8 @@
 # https://leetcode.com/problems/unique-paths-ii/
 
-from typing import List
-
 
 class Solution:
-    def uniquePathsWithObstacles(self, obstacleGrid: List[List[int]]) -> int:
+    def uniquePathsWithObstacles(self, obstacleGrid: list[list[int]]) -> int:
         """
         Count unique paths in a grid with obstacles from top-left to bottom-right.
 

@@ -1,10 +1,8 @@
 # https://leetcode.com/problems/find-peak-element/
 
-from typing import List
-
 
 class Solution:
-    def findPeakElement(self, nums: List[int]) -> int:
+    def findPeakElement(self, nums: list[int]) -> int:
         """
         Find a peak element in an array where nums[i] > nums[i+1] and nums[i] > nums[i-1].
 

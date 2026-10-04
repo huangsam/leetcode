@@ -1,12 +1,11 @@
 # https://leetcode.com/problems/delete-node-in-a-bst/
 
-from typing import Optional
 
 from python.model.binary_tree import TreeNode
 
 
 class Solution:
-    def deleteNode(self, root: Optional[TreeNode], key: int) -> Optional[TreeNode]:
+    def deleteNode(self, root: TreeNode | None, key: int) -> TreeNode | None:
         """
         Delete a node in a BST.
 
@@ -38,7 +37,7 @@ class Solution:
             root.right, root.val = self._deleteMin(root.right)
         return root
 
-    def _deleteMin(self, node: TreeNode) -> tuple[Optional[TreeNode], int]:
+    def _deleteMin(self, node: TreeNode) -> tuple[TreeNode | None, int]:
         """Remove the minimum node from subtree in one pass.
 
         Returns (modified subtree root, min value).

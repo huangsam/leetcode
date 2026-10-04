@@ -1,10 +1,8 @@
 # https://leetcode.com/problems/fizz-buzz/
 
-from typing import List
-
 
 class Solution:
-    def fizzBuzz(self, n: int) -> List[str]:
+    def fizzBuzz(self, n: int) -> list[str]:
         """
         Return a string array where multiples of 3 are "Fizz", 5 are "Buzz", and
         both are "FizzBuzz".

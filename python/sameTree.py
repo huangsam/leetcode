@@ -1,12 +1,11 @@
 # https://leetcode.com/problems/same-tree/
 
-from typing import Optional
 
 from python.model.binary_tree import TreeNode
 
 
 class Solution:
-    def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
+    def isSameTree(self, p: TreeNode | None, q: TreeNode | None) -> bool:
         """
         Determine if two binary trees are identical.
 

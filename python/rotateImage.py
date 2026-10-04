@@ -1,10 +1,8 @@
 # https://leetcode.com/problems/rotate-image/
 
-from typing import List
-
 
 class Solution:
-    def rotate(self, matrix: List[List[int]]) -> None:
+    def rotate(self, matrix: list[list[int]]) -> None:
         """
         Rotate a 2D matrix 90 degrees clockwise.
 

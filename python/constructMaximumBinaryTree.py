@@ -1,12 +1,11 @@
 # https://leetcode.com/problems/maximum-binary-tree/
 
-from typing import List, Optional
 
 from python.model.binary_tree import TreeNode
 
 
 class Solution:
-    def constructMaximumBinaryTree(self, nums: List[int]) -> Optional[TreeNode]:
+    def constructMaximumBinaryTree(self, nums: list[int]) -> TreeNode | None:
         """
         Construct a maximum binary tree from an array.
 

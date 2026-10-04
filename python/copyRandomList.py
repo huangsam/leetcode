@@ -1,12 +1,11 @@
 # https://leetcode.com/problems/copy-list-with-random-pointer/
 
-from typing import Optional
 
 from python.model.random_linked_list import Node
 
 
 class Solution:
-    def copyRandomList(self, head: Optional[Node]) -> Optional[Node]:
+    def copyRandomList(self, head: Node | None) -> Node | None:
         """
         Create a deep copy of a linked list with random pointers.
 

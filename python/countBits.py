@@ -1,10 +1,8 @@
 # https://leetcode.com/problems/counting-bits/
 
-from typing import List
-
 
 class Solution:
-    def countBits(self, n: int) -> List[int]:
+    def countBits(self, n: int) -> list[int]:
         """
         Count the number of 1 bits for every number from 0 to n.
 

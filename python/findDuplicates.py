@@ -1,10 +1,8 @@
 # https://leetcode.com/problems/find-all-duplicates-in-an-array/
 
-from typing import List, Set
-
 
 class Solution:
-    def findDuplicates(self, nums: List[int]) -> List[int]:
+    def findDuplicates(self, nums: list[int]) -> list[int]:
         """
         Find all elements that appear twice in an array.
 
@@ -17,7 +15,7 @@ class Solution:
         - Time: O(n)
         - Space: O(n)
         """
-        seen: Set[int] = set()
+        seen: set[int] = set()
         result = []
         for num in nums:
             # An integer appears twice

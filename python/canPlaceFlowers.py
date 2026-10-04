@@ -1,10 +1,8 @@
 # https://leetcode.com/problems/can-place-flowers/
 
-from typing import List
-
 
 class Solution:
-    def canPlaceFlowers(self, flowerbed: List[int], n: int) -> bool:
+    def canPlaceFlowers(self, flowerbed: list[int], n: int) -> bool:
         """
         Determine if n flowers can be planted without violating the no-adjacent rule.
 

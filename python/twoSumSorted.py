@@ -1,10 +1,8 @@
 # https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
 
-from typing import List
-
 
 class Solution:
-    def twoSum(self, numbers: List[int], target: int) -> List[int]:
+    def twoSum(self, numbers: list[int], target: int) -> list[int]:
         """
         Find two numbers in a sorted array that add up to a target value.
 

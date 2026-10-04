@@ -1,7 +1,5 @@
 # https://leetcode.com/problems/basic-calculator-ii/
 
-from typing import List
-
 
 class Solution:
     def calculate(self, s: str) -> int:
@@ -22,7 +20,7 @@ class Solution:
         if not s:
             return 0
 
-        stack: List[int] = []
+        stack: list[int] = []
         num = 0
         op = "+"
 

@@ -1,12 +1,11 @@
 # https://leetcode.com/problems/path-sum/
 
-from typing import Optional
 
 from python.model.binary_tree import TreeNode
 
 
 class Solution:
-    def hasPathSum(self, root: Optional[TreeNode], targetSum: int) -> bool:
+    def hasPathSum(self, root: TreeNode | None, targetSum: int) -> bool:
         """
         Determine if the tree has a root-to-leaf path with a given sum.
 

@@ -1,13 +1,12 @@
 # https://leetcode.com/problems/linked-list-in-binary-tree/
 
-from typing import Optional
 
 from python.model.binary_tree import TreeNode
 from python.model.linked_list import ListNode
 
 
 class Solution:
-    def isSubPath(self, head: Optional[ListNode], root: Optional[TreeNode]) -> bool:
+    def isSubPath(self, head: ListNode | None, root: TreeNode | None) -> bool:
         """
         Check if a linked list is a subpath in a binary tree.
 
@@ -29,7 +28,7 @@ class Solution:
         # Try matching from current node, or search in left/right subtrees
         return self._matches(head, root) or self.isSubPath(head, root.left) or self.isSubPath(head, root.right)
 
-    def _matches(self, list_node: Optional[ListNode], tree_node: Optional[TreeNode]) -> bool:
+    def _matches(self, list_node: ListNode | None, tree_node: TreeNode | None) -> bool:
         """
         Check if linked list matches path starting from current tree node.
         """

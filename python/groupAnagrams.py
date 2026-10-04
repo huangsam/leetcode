@@ -1,11 +1,10 @@
 # https://leetcode.com/problems/group-anagrams/
 
 from collections import defaultdict
-from typing import DefaultDict, List
 
 
 class Solution:
-    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+    def groupAnagrams(self, strs: list[str]) -> list[list[str]]:
         """
         Group anagrams together from a list of strings.
 
@@ -21,7 +20,7 @@ class Solution:
         - Time: O(n * k log k)
         - Space: O(n * k)
         """
-        strings_by_hash: DefaultDict[str, list] = defaultdict(list)
+        strings_by_hash: defaultdict[str, list] = defaultdict(list)
         for content in strs:
             sorted_hash = "".join(sorted(content))
             strings_by_hash[sorted_hash].append(content)

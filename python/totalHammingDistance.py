@@ -1,10 +1,8 @@
 # https://leetcode.com/problems/total-hamming-distance/
 
-from typing import List
-
 
 class Solution:
-    def totalHammingDistance(self, nums: List[int]) -> int:
+    def totalHammingDistance(self, nums: list[int]) -> int:
         """
         Calculate the total Hamming distance between all pairs of integers.
 

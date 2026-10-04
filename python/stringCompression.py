@@ -1,10 +1,8 @@
 # https://leetcode.com/problems/string-compression/
 
-from typing import List
-
 
 class Solution:
-    def compress(self, chars: List[str]) -> int:
+    def compress(self, chars: list[str]) -> int:
         """
         Compress a list of characters in-place using run-length encoding.
 

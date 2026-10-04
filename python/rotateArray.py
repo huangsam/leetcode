@@ -1,10 +1,8 @@
 # https://leetcode.com/problems/rotate-array/
 
-from typing import List
-
 
 class Solution:
-    def rotate(self, nums: List[int], k: int) -> None:
+    def rotate(self, nums: list[int], k: int) -> None:
         """
         Rotate an array to the right by k steps.
 
@@ -31,7 +29,7 @@ class Solution:
         self._reverse(nums, 0, op_count - 1)
         self._reverse(nums, op_count, n)
 
-    def _reverse(self, nums: List[int], a: int, b: int) -> None:
+    def _reverse(self, nums: list[int], a: int, b: int) -> None:
         while a < b:
             nums[a], nums[b] = nums[b], nums[a]
             a, b = a + 1, b - 1

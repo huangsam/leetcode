@@ -1,10 +1,8 @@
 # https://leetcode.com/problems/move-zeroes/
 
-from typing import List
-
 
 class Solution:
-    def moveZeroes(self, nums: List[int]) -> None:
+    def moveZeroes(self, nums: list[int]) -> None:
         """
         Move all zeros to the end of an array with the typical swap approach.
 
@@ -27,7 +25,7 @@ class Solution:
                 # Increment for the next non-zero element
                 non_zero_found += 1
 
-    def moveZeroesSingleWrite(self, nums: List[int]) -> None:
+    def moveZeroesSingleWrite(self, nums: list[int]) -> None:
         """
         Move all zeros to the end of an array with a single write.
 

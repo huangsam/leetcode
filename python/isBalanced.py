@@ -1,12 +1,11 @@
 # https://leetcode.com/problems/balanced-binary-tree/
 
-from typing import Optional
 
 from python.model.binary_tree import TreeNode
 
 
 class Solution:
-    def isBalanced(self, root: Optional[TreeNode]) -> bool:
+    def isBalanced(self, root: TreeNode | None) -> bool:
         """
         Determine if a binary tree is height-balanced.
 
@@ -19,7 +18,7 @@ class Solution:
         """
         return self._nodeHeight(root) != -1
 
-    def _nodeHeight(self, root: Optional[TreeNode]) -> int:
+    def _nodeHeight(self, root: TreeNode | None) -> int:
         if root is None:
             return 0
 

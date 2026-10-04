@@ -1,11 +1,10 @@
 # https://leetcode.com/problems/single-number-iii/
 
 from collections import defaultdict
-from typing import DefaultDict, List
 
 
 class Solution:
-    def singleNumber(self, nums: List[int]) -> List[int]:
+    def singleNumber(self, nums: list[int]) -> list[int]:
         """
         Find two elements that appear only once when others appear twice.
 
@@ -19,7 +18,7 @@ class Solution:
         - Time: O(n)
         - Space: O(1)
         """
-        mapping: DefaultDict[int, int] = defaultdict(int)
+        mapping: defaultdict[int, int] = defaultdict(int)
         for num in nums:
             mapping[num] += 1
         result = []
@@ -28,7 +27,7 @@ class Solution:
                 result.append(k)
         return result
 
-    def singleNumberBits(self, nums: List[int]) -> List[int]:
+    def singleNumberBits(self, nums: list[int]) -> list[int]:
         left = 0
         right = 0
         xor = 0

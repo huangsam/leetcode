@@ -1,11 +1,10 @@
 # https://leetcode.com/problems/contains-duplicate/
 
 from collections import Counter
-from typing import List
 
 
 class Solution:
-    def containsDuplicate(self, nums: List[int]) -> bool:
+    def containsDuplicate(self, nums: list[int]) -> bool:
         """
         Check if the input list contains any duplicates.
 

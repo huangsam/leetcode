@@ -1,10 +1,8 @@
 # https://leetcode.com/problems/product-of-array-except-self/
 
-from typing import List
-
 
 class Solution:
-    def productExceptSelf(self, nums: List[int]) -> List[int]:
+    def productExceptSelf(self, nums: list[int]) -> list[int]:
         """
         Return an array where each element is the product of all others.
 

@@ -1,7 +1,5 @@
 # https://leetcode.com/problems/happy-number/
 
-from typing import Set
-
 
 class Solution:
     def isHappy(self, n: int) -> bool:
@@ -16,7 +14,7 @@ class Solution:
         - Time: O(log(n))
         - Space: O(log(n))
         """
-        seen_nums: Set[int] = set()
+        seen_nums: set[int] = set()
         current = n
 
         while current != 1:

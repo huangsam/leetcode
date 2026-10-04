@@ -1,10 +1,8 @@
 # https://leetcode.com/problems/merge-intervals/
 
-from typing import List, Optional
-
 
 class Solution:
-    def merge(self, intervals: List[List[int]]) -> List[List[int]]:
+    def merge(self, intervals: list[list[int]]) -> list[list[int]]:
         """
         Merge overlapping intervals.
 
@@ -36,7 +34,7 @@ class Solution:
 
         return result
 
-    def _newInterval(self, first, second) -> Optional[List[int]]:
+    def _newInterval(self, first, second) -> list[int] | None:
         start_1, end_1 = first
         start_2, end_2 = second
 

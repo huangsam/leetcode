@@ -1,10 +1,8 @@
 # https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
 
-from typing import List
-
 
 class Solution:
-    def maxProfit(self, prices: List[int]) -> int:
+    def maxProfit(self, prices: list[int]) -> int:
         """
         Find the maximum profit from buying and selling stock multiple times.
 

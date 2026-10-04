@@ -1,12 +1,11 @@
 # https://leetcode.com/problems/count-complete-tree-nodes/
 
-from typing import Optional
 
 from python.model.binary_tree import TreeNode
 
 
 class Solution:
-    def countNodes(self, root: Optional[TreeNode]) -> int:
+    def countNodes(self, root: TreeNode | None) -> int:
         """
         Count the number of nodes in a complete binary tree.
 

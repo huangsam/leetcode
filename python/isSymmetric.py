@@ -1,12 +1,11 @@
 # https://leetcode.com/problems/symmetric-tree/
 
-from typing import Optional
 
 from python.model.binary_tree import TreeNode
 
 
 class Solution:
-    def isSymmetric(self, root: Optional[TreeNode]) -> bool:
+    def isSymmetric(self, root: TreeNode | None) -> bool:
         """
         Determine if a binary tree is symmetric around its center.
 
@@ -22,7 +21,7 @@ class Solution:
             raise ValueError("The input tree must have at least one node")
         return self._mirrorWorker(root.left, root.right)  # Check if left and right subtrees are mirrors
 
-    def _mirrorWorker(self, left: Optional[TreeNode], right: Optional[TreeNode]) -> bool:
+    def _mirrorWorker(self, left: TreeNode | None, right: TreeNode | None) -> bool:
         if left is None and right is None:
             return True  # Both null, symmetric
         elif not (left is not None and right is not None):

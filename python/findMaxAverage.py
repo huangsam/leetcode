@@ -1,10 +1,8 @@
 # https://leetcode.com/problems/maximum-average-subarray-i/
 
-from typing import List
-
 
 class Solution:
-    def findMaxAverage(self, nums: List[int], k: int) -> float:
+    def findMaxAverage(self, nums: list[int], k: int) -> float:
         """
         Given an array consisting of n integers, find the contiguous subarray of
         length k that has the maximum average value and return this value.

@@ -1,12 +1,11 @@
 # https://leetcode.com/problems/sort-list/
 
-from typing import Optional
 
 from python.model.linked_list import ListNode
 
 
 class Solution:
-    def sortList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+    def sortList(self, head: ListNode | None) -> ListNode | None:
         """
         Sort a linked list in ascending order.
 
@@ -35,7 +34,7 @@ class Solution:
             slow = slow.next
         return slow
 
-    def _mergeSortedLists(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
+    def _mergeSortedLists(self, l1: ListNode | None, l2: ListNode | None) -> ListNode | None:
         """Merge two sorted linked lists."""
         dummy = ListNode()
         node = dummy

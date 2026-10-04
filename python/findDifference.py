@@ -1,10 +1,8 @@
 # https://leetcode.com/problems/find-the-difference-of-two-arrays/
 
-from typing import List
-
 
 class Solution:
-    def findDifference(self, nums1: List[int], nums2: List[int]) -> List[List[int]]:
+    def findDifference(self, nums1: list[int], nums2: list[int]) -> list[list[int]]:
         """
         Given two 0-indexed integer arrays nums1 and nums2, return a list
         answer of size 2 where [0] has distinct integers in nums1 which

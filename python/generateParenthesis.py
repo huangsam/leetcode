@@ -1,10 +1,8 @@
 # https://leetcode.com/problems/generate-parentheses/
 
-from typing import List
-
 
 class Solution:
-    def generateParenthesis(self, n: int) -> List[str]:
+    def generateParenthesis(self, n: int) -> list[str]:
         """
         Generate all combinations of well-formed parentheses.
 
@@ -17,11 +15,11 @@ class Solution:
         - Time: O(4^n)
         - Space: O(4^n)
         """
-        result: List[str] = []
+        result: list[str] = []
         self._backtrack("", 0, 0, n, result)
         return result
 
-    def _backtrack(self, current_string: str, open_count: int, close_count: int, n: int, result_list: List[str]):
+    def _backtrack(self, current_string: str, open_count: int, close_count: int, n: int, result_list: list[str]):
         # Base Case: We've formed a complete, valid parenthesis string
         if open_count == close_count == n:
             result_list.append(current_string)

@@ -1,7 +1,5 @@
 # https://leetcode.com/problems/minimum-additions-to-make-valid-string/
 
-from typing import List
-
 
 class Solution:
     def addMinimum(self, word: str) -> int:
@@ -20,7 +18,7 @@ class Solution:
         - Time: O(n)
         - Space: O(n)
         """
-        curr_seq: List[str] = []
+        curr_seq: list[str] = []
         num_letters = 0
 
         for ch in word:
