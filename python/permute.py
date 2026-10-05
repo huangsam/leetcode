@@ -12,7 +12,7 @@ class Solution:
 
         Complexity:
         - Time: O(n! * n)
-        - Space: O(1)
+        - Space: O(n)
         """
         res: list[list[int]] = []
         path: list[int] = []
