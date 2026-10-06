@@ -14,15 +14,12 @@ class LRUCache:
     Least Recently Used (LRU) cache supporting get and put in O(1) time.
 
     Approach:
-    - Combine a hash map (dict) for O(1) key lookups with a doubly-linked list
-      to maintain usage order in O(1) time.
-    - Use dummy head and tail sentinel nodes to simplify boundary conditions.
-    - Head sentinel is adjacent to the least recently used (LRU) node.
-    - Tail sentinel is adjacent to the most recently used (MRU) node.
-    - On get(key): If present, remove node from current position, insert at tail (MRU),
-      and return its value. Otherwise, return -1.
-    - On put(key, value): If key exists, update value and move to tail. If new,
-      insert at tail. If over capacity, remove node directly after dummy head (LRU).
+    - Combine a hash map for O(1) lookups with a doubly-linked list for O(1) reordering
+    - Use dummy head and tail sentinels to eliminate boundary null checks
+    - Maintain least recently used node at head and most recently used node at tail
+    - On get: detach existing node, re-insert at tail, and return value (or -1 if missing)
+    - On put: update and move existing node to tail, or insert new node at tail
+    - Evict node after dummy head and remove from map when capacity is exceeded
 
     Complexity:
     - Time: O(1) for both get and put

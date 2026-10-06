@@ -9,25 +9,15 @@ class MedianFinder:
     the median in real-time.
 
     Approach:
-    - Use two heaps to divide the numbers into two equal (or almost equal) halves:
-      1. small: A max-heap storing the smaller half of numbers (inverted values using heapq).
-      2. large: A min-heap storing the larger half of numbers.
-    - Invariants:
-      1. Every value in small <= every value in large.
-      2. len(small) == len(large) or len(small) == len(large) + 1.
-    - On addNum(num):
-      - Push num into small (as -num).
-      - Pop largest from small and push into large (preserves ordering invariant).
-      - If large has more elements than small, pop smallest from large and push back into small.
-    - On findMedian():
-      - If small has more elements, median is the top of small (-small[0]).
-      - If heaps are balanced in size, median is the average of tops of small and large.
+    - Divide incoming numbers between a max-heap (small half) and a min-heap (large half)
+    - Invariant 1: every value in small <= every value in large
+    - Invariant 2: small heap size is equal to or exactly one greater than large heap size
+    - On addNum: push to small heap, move largest to large heap, then balance sizes
+    - On findMedian: return top of small heap if odd, or average of tops if even
 
     Complexity:
-    - Time:
-        - addNum: O(log n) to insert and rebalance heaps
-        - findMedian: O(1) to inspect heap roots
-    - Space: O(n) where n is the number of elements added
+    - Time: O(log n) for addNum, O(1) for findMedian
+    - Space: O(n) where n is total numbers added
     """
 
     def __init__(self):

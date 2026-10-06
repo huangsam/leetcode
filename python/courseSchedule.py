@@ -9,14 +9,12 @@ class Solution:
         Determine if it is possible to finish all courses given the prerequisite pairs.
 
         Approach:
-        - Treat courses as nodes and prerequisites as directed edges: [a, b] means b -> a.
-        - Use Kahn's algorithm (BFS topological sort) with in-degrees.
-        - Initialize an adjacency list and compute in-degrees for all nodes.
-        - Push all courses with in-degree 0 (no prerequisites) onto a queue.
-        - Pop courses one-by-one, incrementing a count of completed courses and
-          decrementing the in-degrees of dependent courses.
-        - If a dependent course's in-degree drops to 0, add it to the queue.
-        - If total completed courses equals numCourses, no cycles exist; return True.
+        - Treat courses as nodes and prerequisites as directed edges: [a, b] means b -> a
+        - Build an adjacency list and compute in-degrees for all courses
+        - Push courses with in-degree 0 onto a BFS queue
+        - Pop courses one by one and decrement neighbor in-degrees
+        - Add neighbors to queue once their in-degree reaches 0
+        - Return True if completed course count equals numCourses, else False
 
         Complexity:
         - Time: O(V + E) where V = numCourses and E = len(prerequisites)

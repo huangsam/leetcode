@@ -10,17 +10,11 @@ class Solution:
         can get after performing at most k character replacements.
 
         Approach:
-        - Use a sliding window with two pointers (left, right) and a character
-          frequency map.
-        - Maintain `max_freq`, which tracks the count of the most frequent character
-          within the current window.
-        - A window is valid if: (window_length - max_freq) <= k, meaning the non-dominant
-          characters can all be replaced with at most k operations.
-        - If (right - left + 1) - max_freq > k, the window is invalid; shrink it from
-          the left by decrementing the count of s[left] and advancing left.
-          (Note: max_freq does not need to be decremented when shrinking because a
-          smaller max_freq would only produce a shorter window, which cannot beat our best).
-        - Track the maximum valid window size across the traversal.
+        - Maintain a sliding window [left, right] and a character frequency map
+        - Track max_freq as the highest count of any character seen in the window
+        - Window is valid when (window_length - max_freq) <= k
+        - When invalid, shrink from left and decrement count of s[left]
+        - Track and return the maximum valid window length observed
 
         Complexity:
         - Time: O(n) where n is the length of string s

@@ -12,22 +12,14 @@ class Trie:
     Prefix tree (Trie) supporting word insertion, exact search, and prefix search.
 
     Approach:
-    - Each TrieNode stores a mapping of characters to child TrieNodes and a boolean
-      flag indicating whether a valid word terminates at this node.
-    - insert(word): Traverse the tree down each character of the word, creating
-      new nodes whenever a character branch is missing. Mark the final node as end of word.
-    - search(word): Traverse down each character. If any character branch is missing,
-      return False. If all match, return whether the last node is marked as end of word.
-    - startsWith(prefix): Similar to search, but only checks that the path exists
-      (regardless of whether a complete word ends there).
+    - Store child character nodes in a dict and track end of word with a boolean flag
+    - On insert: traverse characters, create missing nodes, and mark last node as word end
+    - On search: traverse characters and verify final node is marked as end of word
+    - On startsWith: traverse characters and verify prefix path exists in the tree
 
     Complexity:
-    - Time:
-        - insert: O(L) where L is the length of the word
-        - search: O(L) where L is the length of the word
-        - startsWith: O(P) where P is the length of the prefix
-    - Space: O(N * L) total memory in worst case, where N is the number of keys
-      and L is the average length
+    - Time: O(L) for insert/search and O(P) for startsWith, where L/P are string lengths
+    - Space: O(N * L) total memory, where N is key count and L is average key length
     """
 
     def __init__(self):
