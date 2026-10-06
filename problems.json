@@ -400,6 +400,17 @@
     ]
   },
   {
+    "id": 51,
+    "title": "N-Queens",
+    "slug": "n-queens",
+    "difficulty": "Hard",
+    "topics": [
+      "Array",
+      "Backtracking",
+      "Algorithm X"
+    ]
+  },
+  {
     "id": 52,
     "title": "N-Queens II",
     "slug": "n-queens-ii",

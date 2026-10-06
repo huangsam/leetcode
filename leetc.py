@@ -1,12 +1,42 @@
 import json
 import re
+import time
 from pathlib import Path
 
 import click
 import httpx
 
+GRAPHQL_URL = "https://leetcode.com/graphql"
+TIMEOUT = httpx.Timeout(20.0, connect=10.0)
 
-def get_question_details(title_slug: str) -> dict:
+
+def make_graphql_request(
+    query: str,
+    variables: dict,
+    client: httpx.Client | None = None,
+    max_retries: int = 3,
+) -> dict:
+    """Send a GraphQL request to LeetCode with retries and custom timeout."""
+    last_err: Exception | None = None
+    for attempt in range(max_retries):
+        try:
+            if client is not None:
+                response = client.post(GRAPHQL_URL, json={"query": query, "variables": variables})
+            else:
+                with httpx.Client(timeout=TIMEOUT) as default_client:
+                    response = default_client.post(GRAPHQL_URL, json={"query": query, "variables": variables})
+            response.raise_for_status()
+            return response.json()
+        except (httpx.TimeoutException, httpx.TransportError, httpx.HTTPStatusError) as e:
+            last_err = e
+            if attempt < max_retries - 1:
+                time.sleep(1.0 * (attempt + 1))
+    if last_err:
+        raise last_err
+    raise RuntimeError("Failed to execute GraphQL request")
+
+
+def get_question_details(title_slug: str, client: httpx.Client | None = None) -> dict:
     """Get question details from LeetCode GraphQL API."""
     query = """
     query questionDetail($titleSlug: String!) {
@@ -17,20 +47,15 @@ def get_question_details(title_slug: str) -> dict:
             titleSlug
             isPaidOnly
             difficulty
-            likes
-            dislikes
             topicTags {
                 name
                 slug
             }
-            content
         }
     }
     """
     variables = {"titleSlug": title_slug}
-    response = httpx.post("https://leetcode.com/graphql", json={"query": query, "variables": variables})
-    response.raise_for_status()
-    data = response.json()
+    data = make_graphql_request(query, variables, client=client)
     return data["data"]["question"]
 
 
@@ -86,7 +111,7 @@ def cli():
 @cli.command()
 @click.argument("url_fragment")
 def detail(url_fragment: str):
-    """Get details for a specific LeetCode problem by URL fragment (titleSlug), including the problem content."""
+    """Get details for a specific LeetCode problem by URL fragment (titleSlug)."""
     question = get_question_details(url_fragment)
     click.echo(json.dumps({"data": {"question": question}}, indent=2))
 
@@ -116,9 +141,7 @@ def progress(username: str):
     }
     """
     variables = {"username": username}
-    response = httpx.post("https://leetcode.com/graphql", json={"query": query, "variables": variables})
-    response.raise_for_status()
-    data = response.json()
+    data = make_graphql_request(query, variables)
     click.echo(json.dumps(data, indent=2))
 
 
@@ -171,21 +194,26 @@ def sync():
     click.echo(f"Found {len(new_slugs)} new problems to fetch.")
 
     # Fetch details for new problems
-    for slug in new_slugs:
-        try:
-            question = get_question_details(slug)
-            qid = int(question["questionFrontendId"])
-            problem = {
-                "id": qid,
-                "title": question["title"],
-                "slug": slug,
-                "difficulty": question["difficulty"],
-                "topics": [tag["name"] for tag in question["topicTags"]],
-            }
-            existing_problems[qid] = problem
-            click.echo(f"Fetched {qid}: {problem['title']}")
-        except Exception as e:
-            click.echo(f"Error fetching {slug}: {e}", err=True)
+    with httpx.Client(timeout=TIMEOUT) as client:
+        for slug in sorted(new_slugs):
+            click.echo(f"Fetching details for '{slug}'...")
+            try:
+                question = get_question_details(slug, client=client)
+                if not question:
+                    click.echo(f"Warning: Problem '{slug}' not found on LeetCode.", err=True)
+                    continue
+                qid = int(question["questionFrontendId"])
+                problem = {
+                    "id": qid,
+                    "title": question["title"],
+                    "slug": slug,
+                    "difficulty": question["difficulty"],
+                    "topics": [tag["name"] for tag in question["topicTags"]],
+                }
+                existing_problems[qid] = problem
+                click.echo(f"Fetched {qid}: {problem['title']}")
+            except Exception as e:
+                click.echo(f"Error fetching {slug}: {e}", err=True)
 
     # Filter to only problems that exist in source files
     active_problems = {qid: problem for qid, problem in existing_problems.items() if problem["slug"] in all_slugs}
