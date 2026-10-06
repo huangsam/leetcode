@@ -887,6 +887,18 @@
     ]
   },
   {
+    "id": 146,
+    "title": "LRU Cache",
+    "slug": "lru-cache",
+    "difficulty": "Medium",
+    "topics": [
+      "Hash Table",
+      "Linked List",
+      "Design",
+      "Doubly-Linked List"
+    ]
+  },
+  {
     "id": 147,
     "title": "Insertion Sort List",
     "slug": "insertion-sort-list",
@@ -1048,6 +1060,31 @@
     "topics": [
       "Hash Table",
       "String"
+    ]
+  },
+  {
+    "id": 207,
+    "title": "Course Schedule",
+    "slug": "course-schedule",
+    "difficulty": "Medium",
+    "topics": [
+      "Depth-First Search",
+      "Breadth-First Search",
+      "Graph Theory",
+      "Topological Sort",
+      "Directed Acyclic Graph"
+    ]
+  },
+  {
+    "id": 208,
+    "title": "Implement Trie (Prefix Tree)",
+    "slug": "implement-trie-prefix-tree",
+    "difficulty": "Medium",
+    "topics": [
+      "Hash Table",
+      "String",
+      "Design",
+      "Trie"
     ]
   },
   {
@@ -1249,6 +1286,19 @@
     ]
   },
   {
+    "id": 295,
+    "title": "Find Median from Data Stream",
+    "slug": "find-median-from-data-stream",
+    "difficulty": "Hard",
+    "topics": [
+      "Two Pointers",
+      "Design",
+      "Sorting",
+      "Heap (Priority Queue)",
+      "Data Stream"
+    ]
+  },
+  {
     "id": 334,
     "title": "Increasing Triplet Subsequence",
     "slug": "increasing-triplet-subsequence",
@@ -1378,6 +1428,17 @@
       "Math",
       "String",
       "Simulation"
+    ]
+  },
+  {
+    "id": 424,
+    "title": "Longest Repeating Character Replacement",
+    "slug": "longest-repeating-character-replacement",
+    "difficulty": "Medium",
+    "topics": [
+      "Hash Table",
+      "String",
+      "Sliding Window"
     ]
   },
   {

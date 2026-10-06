@@ -87,6 +87,7 @@ Here are all of the problems that I have solved on the LeetCode platform:
 | [Single Number II](https://leetcode.com/problems/single-number-ii/) | 137 | Medium | Array, Bit Manipulation |
 | [Copy List with Random Pointer](https://leetcode.com/problems/copy-list-with-random-pointer/) | 138 | Medium | Hash Table, Linked List |
 | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) | 141 | Easy | Hash Table, Linked List, Two Pointers |
+| [LRU Cache](https://leetcode.com/problems/lru-cache/) | 146 | Medium | Hash Table, Linked List, Design, Doubly-Linked List |
 | [Insertion Sort List](https://leetcode.com/problems/insertion-sort-list/) | 147 | Medium | Linked List, Sorting |
 | [Sort List](https://leetcode.com/problems/sort-list/) | 148 | Medium | Linked List, Two Pointers, Divide and Conquer, Sorting, Merge Sort |
 | [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string/) | 151 | Medium | Two Pointers, String |
@@ -102,6 +103,8 @@ Here are all of the problems that I have solved on the LeetCode platform:
 | [Happy Number](https://leetcode.com/problems/happy-number/) | 202 | Easy | Hash Table, Math, Two Pointers |
 | [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/) | 203 | Easy | Linked List, Recursion |
 | [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/) | 205 | Easy | Hash Table, String |
+| [Course Schedule](https://leetcode.com/problems/course-schedule/) | 207 | Medium | Depth-First Search, Breadth-First Search, Graph Theory, Topological Sort, Directed Acyclic Graph |
+| [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/) | 208 | Medium | Hash Table, String, Design, Trie |
 | [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) | 209 | Medium | Array, Binary Search, Sliding Window, Prefix Sum |
 | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) | 215 | Medium | Array, Divide and Conquer, Sorting, Heap (Priority Queue), Quickselect |
 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | 217 | Easy | Array, Hash Table, Sorting |
@@ -120,6 +123,7 @@ Here are all of the problems that I have solved on the LeetCode platform:
 | [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | 283 | Easy | Array, Two Pointers |
 | [Game of Life](https://leetcode.com/problems/game-of-life/) | 289 | Medium | Array, Matrix, Simulation |
 | [Word Pattern](https://leetcode.com/problems/word-pattern/) | 290 | Easy | Hash Table, String |
+| [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/) | 295 | Hard | Two Pointers, Design, Sorting, Heap (Priority Queue), Data Stream |
 | [Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence/) | 334 | Medium | Array, Greedy |
 | [Counting Bits](https://leetcode.com/problems/counting-bits/) | 338 | Easy | Dynamic Programming, Bit Manipulation |
 | [Power of Four](https://leetcode.com/problems/power-of-four/) | 342 | Easy | Math, Bit Manipulation, Recursion |
@@ -132,6 +136,7 @@ Here are all of the problems that I have solved on the LeetCode platform:
 | [Decode String](https://leetcode.com/problems/decode-string/) | 394 | Medium | String, Stack, Recursion |
 | [Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/) | 404 | Easy | Tree, Depth-First Search, Breadth-First Search, Binary Tree |
 | [Fizz Buzz](https://leetcode.com/problems/fizz-buzz/) | 412 | Easy | Math, String, Simulation |
+| [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) | 424 | Medium | Hash Table, String, Sliding Window |
 | [Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/) | 442 | Medium | Array, Hash Table, Sorting |
 | [String Compression](https://leetcode.com/problems/string-compression/) | 443 | Medium | Two Pointers, String |
 | [Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/) | 448 | Easy | Array, Hash Table |
