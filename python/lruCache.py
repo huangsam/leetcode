@@ -64,6 +64,7 @@ class LRUCache:
         return node.val
 
     def put(self, key: int, value: int) -> None:
+        # Key already exists, update value and move to tail
         if key in self.cache:
             node = self.cache[key]
             node.val = value
@@ -71,8 +72,8 @@ class LRUCache:
             self._insert_at_tail(node)
             return
 
+        # Key is missing and evict node when capacity is exceeded
         if len(self.cache) >= self.capacity:
-            # Evict LRU node (immediately after head sentinel)
             lru_node = self.head.next
             if lru_node is not None and lru_node != self.tail:
                 self._remove(lru_node)
