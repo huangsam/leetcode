@@ -6,8 +6,16 @@ import model.ListNode;
 
 public class PalindromeLinkedList {
     /**
-     * Checks if a singly linked list is a palindrome by creating a reversed copy
-     * of the original list and then comparing the two lists node by node.
+     * Checks if a singly linked list is a palindrome.
+     *
+     * This is achieved by following multiple steps:
+     *
+     * <ol>
+     *     <li>Find the middle node of the list.</li>
+     *     <li>Reverse the second half of the list.</li>
+     *     <li>Compare the first half and the reversed second half.</li>
+     *     <li>Restore the second half to its original order.</li>
+     * </ol>
      *
      * <p>Complexity:
      *
@@ -17,21 +25,49 @@ public class PalindromeLinkedList {
      * </ul>
      */
     public boolean isPalindrome(ListNode head) {
+        // Handle edge cases with 0 or 1 node
+        if (head == null || head.next == null) {
+            return true;
+        }
+
+        // Find the middle node
+        ListNode slow = head, fast = head;
+        while (fast.next != null && fast.next.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+
+        // Reverse the list starting from the node after the middle node
+        ListNode second = reverseList(slow.next);
+
+        // Compare the first half and the reversed second half
+        boolean isPalin = true;
+        ListNode p1 = head, p2 = second;
+        while (p2 != null) {
+            if (p1.val != p2.val) {
+                // Found a mismatch, but restore the list before returning
+                isPalin = false;
+                break;
+            }
+            p1 = p1.next;
+            p2 = p2.next;
+        }
+
+        // Restore the second half of the list to its original order
+        slow.next = reverseList(second);
+
+        return isPalin;
+    }
+
+    private ListNode reverseList(ListNode head) {
         ListNode prev = null;
         ListNode current = head;
         while (current != null) {
-            ListNode tmp = new ListNode(current.val);
-            current = current.next;
-            tmp.next = prev;
-            prev = tmp;
+            ListNode next = current.next;
+            current.next = prev;
+            prev = current;
+            current = next;
         }
-        while (head != null && prev != null) {
-            if (head.val != prev.val) {
-                return false;
-            }
-            head = head.next;
-            prev = prev.next;
-        }
-        return true;
+        return prev;
     }
 }
