@@ -6,11 +6,11 @@ class Solution:
         """
         Return all elements of a matrix in spiral order.
 
-        Start at (0,0), go right until you hit the end.
-        then you go down until you hit the end. Then you
-        go left until you hit the end. Then you go up until
-        you hit previously marked items. Then you hit the
-        right hand side.
+        - Start at (0,0), go right until you hit the end.
+        - Then you go down until you hit the end.
+        - Then you go left until you hit the end.
+        - Then you go up until you hit previously marked items.
+        - Then you hit the right hand side.
 
         Keep repeating this process until all items in the matrix
         are visited. That means the current direction is exhausted
