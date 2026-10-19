@@ -6,85 +6,41 @@ class Solution:
         """
         Return all elements of a matrix in spiral order.
 
-        - Start at (0,0), go right until you hit the end.
-        - Then you go down until you hit the end.
-        - Then you go left until you hit the end.
-        - Then you go up until you hit previously marked items.
-        - Then you hit the right hand side.
+        For an M x N matrix, where M is the row count and N is the column count,
+        we would want to do the following:
 
-        Keep repeating this process until all items in the matrix
-        are visited. That means the current direction is exhausted
-        and the next direction cannot be traversed.
-
-        Note that r=right, d=down, l=left, u=up.
+        - Start at (0, 0) and go to the (0, N-1), then the top shrinks by 1
+        - Go down to the bottom (M-1, N-1), the the right shrinks by 1
+        - Go to the left (M-1, 0), then the bottom shrinks by 1
+        - Once we go up to (1, 0), we enter a subproblem and shrink left by 1
+        - Keep repeating these steps until the top/bottom or left/right overlap
 
         Complexity:
         - Time: O(m * n)
-        - Space: O(1)
+        - Space: O(1) extra, excluding the output list
         """
-        # Boolean flags to keep us sane
-        visited = [[False] * self._width(matrix) for _ in range(self._height(matrix))]
+        result: list[int] = []
+        top, bottom = 0, len(matrix) - 1
+        left, right = 0, len(matrix[0]) - 1
 
-        # The final result
-        result = []
+        while top <= bottom and left <= right:
+            for y in range(left, right + 1):
+                result.append(matrix[top][y])
+            top += 1
 
-        # The current direction that we are taking
-        direction = "r"
+            for x in range(top, bottom + 1):
+                result.append(matrix[x][right])
+            right -= 1
 
-        # The current cell that we are on
-        x, y = 0, 0
+            # Guard against re-walking a row/column when one is left
+            if top <= bottom:
+                for y in range(right, left - 1, -1):
+                    result.append(matrix[bottom][y])
+                bottom -= 1
 
-        while True:
-            # Add current cell value to result (do-while)
-            result.append(matrix[x][y])
-
-            # Mark node as visited (do-while)
-            visited[x][y] = True
-
-            # Change direction as needed
-            direction = self._nextDirection(matrix, visited, direction, x, y)
-
-            # If direction changed but still cannot proceed, then
-            # it's time to circuit break
-            if not self._canMove(matrix, visited, direction, x, y):
-                break
-
-            # Continue to traverse based on current direction
-            if direction == "r":
-                y += 1
-            elif direction == "d":
-                x += 1
-            elif direction == "l":
-                y -= 1
-            elif direction == "u":
-                x -= 1
+            if left <= right:
+                for x in range(bottom, top - 1, -1):
+                    result.append(matrix[x][left])
+                left += 1
 
         return result
-
-    def _nextDirection(self, matrix, visited, direction, x, y) -> str:
-        next_direction = {"r": "d", "d": "l", "l": "u", "u": "r"}
-        if self._canMove(matrix, visited, direction, x, y):
-            return direction
-        else:
-            return next_direction[direction]
-
-    def _canMove(self, matrix, visited, direction, x, y) -> bool:
-        if direction == "r":
-            if y == self._width(matrix) - 1 or visited[x][y + 1]:
-                return False
-        elif direction == "d":
-            if x == self._height(matrix) - 1 or visited[x + 1][y]:
-                return False
-        elif direction == "l":
-            if y == 0 or visited[x][y - 1]:
-                return False
-        elif direction == "u":
-            if x == 0 or visited[x - 1][y]:
-                return False
-        return True
-
-    def _width(self, matrix) -> int:
-        return len(matrix[0])
-
-    def _height(self, matrix) -> int:
-        return len(matrix)
