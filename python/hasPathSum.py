@@ -1,6 +1,5 @@
 # https://leetcode.com/problems/path-sum/
 
-
 from python.model.binary_tree import TreeNode
 
 

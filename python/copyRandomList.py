@@ -1,6 +1,5 @@
 # https://leetcode.com/problems/copy-list-with-random-pointer/
 
-
 from python.model.random_linked_list import Node
 
 

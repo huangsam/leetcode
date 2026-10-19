@@ -1,6 +1,5 @@
 # https://leetcode.com/problems/sort-list/
 
-
 from python.model.linked_list import ListNode
 
 

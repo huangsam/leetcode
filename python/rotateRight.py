@@ -1,6 +1,5 @@
 # https://leetcode.com/problems/rotate-list/
 
-
 from python.model.linked_list import ListNode
 
 

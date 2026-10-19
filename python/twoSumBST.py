@@ -1,6 +1,5 @@
 # https://leetcode.com/problems/two-sum-iv-input-is-a-bst/
 
-
 from python.model.binary_tree import TreeNode
 
 

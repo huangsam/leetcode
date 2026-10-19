@@ -1,6 +1,5 @@
 # https://leetcode.com/problems/linked-list-in-binary-tree/
 
-
 from python.model.binary_tree import TreeNode
 from python.model.linked_list import ListNode
 

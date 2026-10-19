@@ -1,6 +1,5 @@
 # https://leetcode.com/problems/binary-tree-inorder-traversal/
 
-
 from python.model.binary_tree import TreeNode
 
 

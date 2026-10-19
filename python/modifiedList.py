@@ -1,6 +1,5 @@
 # https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/
 
-
 from python.model.linked_list import ListNode
 
 

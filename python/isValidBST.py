@@ -1,6 +1,5 @@
 # https://leetcode.com/problems/validate-binary-search-tree/
 
-
 from python.model.binary_tree import TreeNode
 
 

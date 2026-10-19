@@ -1,6 +1,5 @@
 # https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/
 
-
 from python.model.linked_list import ListNode
 
 

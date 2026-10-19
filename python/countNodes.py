@@ -1,6 +1,5 @@
 # https://leetcode.com/problems/count-complete-tree-nodes/
 
-
 from python.model.binary_tree import TreeNode
 
 

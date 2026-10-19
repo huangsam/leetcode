@@ -1,6 +1,5 @@
 # https://leetcode.com/problems/delete-node-in-a-bst/
 
-
 from python.model.binary_tree import TreeNode
 
 

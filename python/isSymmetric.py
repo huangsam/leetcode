@@ -1,6 +1,5 @@
 # https://leetcode.com/problems/symmetric-tree/
 
-
 from python.model.binary_tree import TreeNode
 
 

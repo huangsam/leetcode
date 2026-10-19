@@ -1,6 +1,5 @@
 # https://leetcode.com/problems/same-tree/
 
-
 from python.model.binary_tree import TreeNode
 
 
