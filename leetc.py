@@ -2,6 +2,7 @@ import json
 import re
 import time
 from pathlib import Path
+from typing import Any
 
 import click
 import httpx
@@ -162,6 +163,40 @@ def urls():
             click.echo(file)
     else:
         click.echo("\n== All files contain LeetCode URLs ==")
+
+
+@cli.command("list")
+@click.option("--topic", help="Filter by an exact topic name (case-insensitive).")
+@click.option(
+    "--difficulty",
+    type=click.Choice(["Easy", "Medium", "Hard"], case_sensitive=False),
+    help="Filter by difficulty.",
+)
+def list_solutions(topic: str | None, difficulty: str | None) -> None:
+    """List solved problems, optionally filtered by topic and difficulty."""
+    problems_json_path = Path("problems.json")
+    try:
+        with open(problems_json_path, encoding="utf-8") as f:
+            problems: list[dict[str, Any]] = json.load(f)
+    except FileNotFoundError as e:
+        raise click.ClickException("problems.json not found. Run `uv run leetc.py sync` first.") from e
+    except (OSError, json.JSONDecodeError) as e:
+        raise click.ClickException(f"Could not read {problems_json_path}: {e}") from e
+
+    filtered_problems = [
+        problem
+        for problem in problems
+        if (topic is None or any(topic.casefold() == name.casefold() for name in problem["topics"]))
+        and (difficulty is None or problem["difficulty"].casefold() == difficulty.casefold())
+    ]
+    if not filtered_problems:
+        click.echo("No solutions found matching the supplied filters.")
+        return
+
+    click.echo(f"Found {len(filtered_problems)} solution(s):")
+    for problem in filtered_problems:
+        url = f"https://leetcode.com/problems/{problem['slug']}/"
+        click.echo(f"{problem['id']}. {problem['title']} | {url}")
 
 
 @cli.command()

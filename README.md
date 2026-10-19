@@ -41,6 +41,9 @@ uv run leetc.py detail $URL_FRAGMENT
 # Get your overall progress summary
 uv run leetc.py progress $USERNAME
 
+# List all solved problems, filtered by topic and/or difficulty
+uv run leetc.py list --topic "Dynamic Programming" --difficulty Medium
+
 # Sync problems.json and SOLUTIONS.md
 uv run leetc.py sync
 ```
