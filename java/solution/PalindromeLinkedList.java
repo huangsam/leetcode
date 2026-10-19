@@ -40,23 +40,21 @@ public class PalindromeLinkedList {
         // Reverse the list starting from the node after the middle node
         ListNode second = reverseList(slow.next);
 
-        // Compare the first half and the reversed second half
-        boolean isPalin = true;
-        ListNode p1 = head, p2 = second;
-        while (p2 != null) {
-            if (p1.val != p2.val) {
-                // Found a mismatch, but restore the list before returning
-                isPalin = false;
-                break;
+        try {
+            // Compare the first half and the reversed second half
+            ListNode p1 = head, p2 = second;
+            while (p2 != null) {
+                if (p1.val != p2.val) {
+                    return false;
+                }
+                p1 = p1.next;
+                p2 = p2.next;
             }
-            p1 = p1.next;
-            p2 = p2.next;
+            return true;
+        } finally {
+            // Restore the second half of the list to its original order
+            slow.next = reverseList(second);
         }
-
-        // Restore the second half of the list to its original order
-        slow.next = reverseList(second);
-
-        return isPalin;
     }
 
     private ListNode reverseList(ListNode head) {
