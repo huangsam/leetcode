@@ -15,7 +15,7 @@ class Solution:
         - Time: O(n + m)
         - Space: O(n)
         """
-        # Create hash set to avoid an expensive O(N) lookup on nums
+        # Create hash set to avoid an expensive O(n) lookup on nums
         num_set = set(nums)
 
         # Initially, first and current should be the same thing

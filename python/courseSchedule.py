@@ -17,8 +17,8 @@ class Solution:
         - Return True if completed course count equals numCourses, else False
 
         Complexity:
-        - Time: O(V + E) where V = numCourses and E = len(prerequisites)
-        - Space: O(V + E) for adjacency list, in-degree tracker, and queue
+        - Time: O(v + e) where v = numCourses and e = len(prerequisites)
+        - Space: O(v + e) for adjacency list, in-degree tracker, and queue
         """
         adj: list[list[int]] = [[] for _ in range(numCourses)]
         in_degrees: list[int] = [0] * numCourses

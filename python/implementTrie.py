@@ -18,8 +18,8 @@ class Trie:
     - On startsWith: traverse characters and verify prefix path exists in the tree
 
     Complexity:
-    - Time: O(L) for insert/search and O(P) for startsWith, where L/P are string lengths
-    - Space: O(N * L) total memory, where N is key count and L is average key length
+    - Time: O(word_length) for insert/search and O(prefix_length) for startsWith
+    - Space: O(key_count * average_word_length) total memory
     """
 
     def __init__(self):

@@ -10,7 +10,7 @@ class Solution:
         of len(candies) where you literally go through a second pass. Can I be
         more efficient simply by relying the i and i-1? No I don't think so
         because that would only give you the local maxima, not the absolute
-        maxima. You can only find the absolute maxima in O(N).
+        maxima. You can only find the absolute maxima in O(n).
 
         Complexity:
         - Time: O(n)

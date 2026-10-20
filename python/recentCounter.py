@@ -15,7 +15,7 @@ class RecentCounter:
 
         Complexity:
         - Time: O(1) amortized. Each ping is added and removed once
-        - Space: O(W), where W is the size of the window
+        - Space: O(w), where w is the size of the window
         """
         self.q.append(t)
         while self.q[0] < t - 3000:

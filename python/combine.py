@@ -11,7 +11,7 @@ class Solution:
         generate the rest of the combination.
 
         Complexity:
-        - Time: O(C(n, k) * k) where C(n, k) is the binomial coefficient
+        - Time: O(binomial(n, k) * k), where binomial(n, k) is the number of combinations
         - Space: O(k) for the recursion stack and path list
         """
         res: list[list[int]] = []
