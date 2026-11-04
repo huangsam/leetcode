@@ -3,7 +3,15 @@
 
 class Solution:
     def myAtoi(self, s: str) -> int:
-        """Convert a string to a 32-bit signed integer."""
+        """Convert a string to a 32-bit signed integer.
+
+        By using a single pass through the string, we can extract the sign cleanly
+        and accumulate the digits without storing them in a separate list.
+
+        Complexity:
+        - Time: O(n)
+        - Space: O(1)
+        """
         n = len(s)
         i = 0
 
