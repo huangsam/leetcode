@@ -13,6 +13,7 @@ Here are all of the problems that I have solved on the LeetCode platform:
 | [Reverse Integer](https://leetcode.com/problems/reverse-integer/) | 7 | Medium | Math |
 | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/) | 8 | Medium | String |
 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | 9 | Easy | Math |
+| [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/) | 10 | Hard | String, Dynamic Programming, Recursion |
 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | 11 | Medium | Array, Two Pointers, Greedy |
 | [Integer to Roman](https://leetcode.com/problems/integer-to-roman/) | 12 | Medium | Hash Table, Math, String |
 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | 13 | Easy | Hash Table, Math, String |

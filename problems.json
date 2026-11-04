@@ -90,6 +90,17 @@
     ]
   },
   {
+    "id": 10,
+    "title": "Regular Expression Matching",
+    "slug": "regular-expression-matching",
+    "difficulty": "Hard",
+    "topics": [
+      "String",
+      "Dynamic Programming",
+      "Recursion"
+    ]
+  },
+  {
     "id": 11,
     "title": "Container With Most Water",
     "slug": "container-with-most-water",
