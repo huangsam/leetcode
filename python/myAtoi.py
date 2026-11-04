@@ -34,7 +34,7 @@ class Solution:
         num *= sign
 
         # Clamping
-        min_val, max_val = -2**31, 2**31 - 1
+        min_val, max_val = -(2**31), 2**31 - 1
         if num < min_val:
             return min_val
         if num > max_val:
