@@ -11,6 +11,7 @@ Here are all of the problems that I have solved on the LeetCode platform:
 | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | 5 | Medium | Two Pointers, String, Dynamic Programming |
 | [Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion/) | 6 | Medium | String |
 | [Reverse Integer](https://leetcode.com/problems/reverse-integer/) | 7 | Medium | Math |
+| [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/) | 8 | Medium | String |
 | [Palindrome Number](https://leetcode.com/problems/palindrome-number/) | 9 | Easy | Math |
 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | 11 | Medium | Array, Two Pointers, Greedy |
 | [Integer to Roman](https://leetcode.com/problems/integer-to-roman/) | 12 | Medium | Hash Table, Math, String |

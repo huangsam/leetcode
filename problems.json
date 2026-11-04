@@ -72,6 +72,15 @@
     ]
   },
   {
+    "id": 8,
+    "title": "String to Integer (atoi)",
+    "slug": "string-to-integer-atoi",
+    "difficulty": "Medium",
+    "topics": [
+      "String"
+    ]
+  },
+  {
     "id": 9,
     "title": "Palindrome Number",
     "slug": "palindrome-number",
