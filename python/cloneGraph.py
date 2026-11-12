@@ -1,7 +1,6 @@
 # https://leetcode.com/problems/clone-graph/
 
 
-
 class Node:
     def __init__(self, val: int = 0, neighbors: list["Node"] | None = None):
         self.val = val
