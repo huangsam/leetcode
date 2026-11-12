@@ -178,6 +178,17 @@
     ]
   },
   {
+    "id": 18,
+    "title": "4Sum",
+    "slug": "4sum",
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Two Pointers",
+      "Sorting"
+    ]
+  },
+  {
     "id": 19,
     "title": "Remove Nth Node From End of List",
     "slug": "remove-nth-node-from-end-of-list",

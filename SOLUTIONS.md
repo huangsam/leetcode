@@ -21,6 +21,7 @@ Here are all of the problems that I have solved on the LeetCode platform:
 | [3Sum](https://leetcode.com/problems/3sum/) | 15 | Medium | Array, Two Pointers, Sorting |
 | [3Sum Closest](https://leetcode.com/problems/3sum-closest/) | 16 | Medium | Array, Two Pointers, Sorting |
 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | 17 | Medium | Hash Table, String, Backtracking |
+| [4Sum](https://leetcode.com/problems/4sum/) | 18 | Medium | Array, Two Pointers, Sorting |
 | [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | 19 | Medium | Linked List, Two Pointers |
 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | 20 | Easy | String, Stack |
 | [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | 21 | Easy | Linked List, Recursion |
