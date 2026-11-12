@@ -9,6 +9,18 @@ class Node:
 
 class Solution:
     def cloneGraph(self, node: Node | None) -> Node | None:
+        """
+        Return a deep copy (clone) of the graph.
+
+        We use a hash map instead of a hash set to store the mapping
+        from original nodes to their clones. This allows us to easily
+        retrieve the clone of a node when we encounter it again during
+        the DFS traversal.
+
+        Complexity:
+        - Time: O(n + m), where n is node count and m is edge count
+        - Space: O(n), for the visited dictionary and recursion stack
+        """
         if not node:
             return None
 
