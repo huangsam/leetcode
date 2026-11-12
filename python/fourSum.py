@@ -3,6 +3,17 @@
 
 class Solution:
     def fourSum(self, nums: list[int], target: int) -> list[list[int]]:
+        """
+        Identify all unique quadruplets in the array that sum up to the target.
+
+        Lock in the first two elements and then use two pointers to find the
+        remaining two elements that sum up to the target. To speed up the
+        process, we skip duplicate elements to avoid redundant checks.
+
+        Complexity:
+        - Time: O(n^3)
+        - Space: O(n) due to Tim Sort
+        """
         nums.sort()
         n = len(nums)
         result = []
