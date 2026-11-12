@@ -84,6 +84,7 @@ Here are all of the problems that I have solved on the LeetCode platform:
 | [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) | 122 | Medium | Array, Dynamic Programming, Greedy |
 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | 125 | Easy | Two Pointers, String |
 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | 128 | Medium | Array, Hash Table, Union-Find |
+| [Clone Graph](https://leetcode.com/problems/clone-graph/) | 133 | Medium | Hash Table, Depth-First Search, Breadth-First Search, Graph Theory |
 | [Gas Station](https://leetcode.com/problems/gas-station/) | 134 | Medium | Array, Greedy |
 | [Single Number](https://leetcode.com/problems/single-number/) | 136 | Easy | Array, Bit Manipulation |
 | [Single Number II](https://leetcode.com/problems/single-number-ii/) | 137 | Medium | Array, Bit Manipulation |
