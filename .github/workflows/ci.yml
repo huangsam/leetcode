@@ -41,4 +41,4 @@ jobs:
           cache: 'gradle'
       - name: Build source with Gradle
         run: |
-          gradle build
+          ./gradlew build
