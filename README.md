@@ -8,8 +8,6 @@ Sharpen your coding skills with these solutions—feel free to explore, learn, a
 
 🐍 🐍 🐍 - 🏃‍♂️ 🏃‍♂️ 🏃‍♂️ - ☕ ☕ ☕
 
-The URL of each solution is embedded at the top of the file.
-
 See [SOLUTIONS.md](SOLUTIONS.md) for the complete list of problems solved.
 
 ## Getting started
