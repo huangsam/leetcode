@@ -32,6 +32,7 @@ Here are all of the problems that I have solved on the LeetCode platform:
 | [Remove Element](https://leetcode.com/problems/remove-element/) | 27 | Easy | Array, Two Pointers |
 | [Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/) | 28 | Easy | Two Pointers, String, String Matching |
 | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers/) | 29 | Medium | Math, Bit Manipulation |
+| [Next Permutation](https://leetcode.com/problems/next-permutation/) | 31 | Medium | Array, Two Pointers |
 | [Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) | 33 | Medium | Array, Binary Search |
 | [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | 34 | Medium | Array, Binary Search |
 | [Search Insert Position](https://leetcode.com/problems/search-insert-position/) | 35 | Easy | Array, Binary Search |

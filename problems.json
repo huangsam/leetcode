@@ -293,6 +293,16 @@
     ]
   },
   {
+    "id": 31,
+    "title": "Next Permutation",
+    "slug": "next-permutation",
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Two Pointers"
+    ]
+  },
+  {
     "id": 33,
     "title": "Search in Rotated Sorted Array",
     "slug": "search-in-rotated-sorted-array",
