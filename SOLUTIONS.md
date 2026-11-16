@@ -103,6 +103,7 @@ Here are all of the problems that I have solved on the LeetCode platform:
 | [Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | 167 | Medium | Array, Two Pointers, Binary Search |
 | [Majority Element](https://leetcode.com/problems/majority-element/) | 169 | Easy | Array, Hash Table, Divide and Conquer, Sorting, Counting |
 | [Rotate Array](https://leetcode.com/problems/rotate-array/) | 189 | Medium | Array, Math, Two Pointers |
+| [House Robber](https://leetcode.com/problems/house-robber/) | 198 | Medium | Array, Dynamic Programming |
 | [Binary Tree Right Side View](https://leetcode.com/problems/binary-tree-right-side-view/) | 199 | Medium | Tree, Depth-First Search, Breadth-First Search, Binary Tree |
 | [Number of Islands](https://leetcode.com/problems/number-of-islands/) | 200 | Medium | Array, Depth-First Search, Breadth-First Search, Union-Find, Matrix |
 | [Happy Number](https://leetcode.com/problems/happy-number/) | 202 | Easy | Hash Table, Math, Two Pointers |
