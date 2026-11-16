@@ -1719,6 +1719,17 @@
     ]
   },
   {
+    "id": 739,
+    "title": "Daily Temperatures",
+    "slug": "daily-temperatures",
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Stack",
+      "Monotonic Stack"
+    ]
+  },
+  {
     "id": 771,
     "title": "Jewels and Stones",
     "slug": "jewels-and-stones",

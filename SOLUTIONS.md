@@ -162,6 +162,7 @@ Here are all of the problems that I have solved on the LeetCode platform:
 | [Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/) | 654 | Medium | Array, Divide and Conquer, Stack, Tree, Monotonic Stack, Binary Tree |
 | [Find Pivot Index](https://leetcode.com/problems/find-pivot-index/) | 724 | Easy | Array, Prefix Sum |
 | [Asteroid Collision](https://leetcode.com/problems/asteroid-collision/) | 735 | Medium | Array, Stack, Simulation |
+| [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/) | 739 | Medium | Array, Stack, Monotonic Stack |
 | [Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/) | 771 | Easy | Hash Table, String |
 | [Number of Recent Calls](https://leetcode.com/problems/number-of-recent-calls/) | 933 | Easy | Design, Queue, Data Stream |
 | [Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/) | 1004 | Medium | Array, Binary Search, Sliding Window, Prefix Sum |
