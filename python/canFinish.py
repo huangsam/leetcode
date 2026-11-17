@@ -28,6 +28,7 @@ class Solution:
             adj[prereq].append(course)
             in_degrees[course] += 1
 
+        # Start with courses that have no prerequisites
         queue: deque[int] = deque(course for course in range(numCourses) if in_degrees[course] == 0)
         completed = 0
 
@@ -35,6 +36,8 @@ class Solution:
             cur = queue.popleft()
             completed += 1
 
+            # Decrease in-degree for all neighbors and add to queue if
+            # they have no remaining prerequisites
             for neighbor in adj[cur]:
                 in_degrees[neighbor] -= 1
                 if in_degrees[neighbor] == 0:
