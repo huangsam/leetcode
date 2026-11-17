@@ -150,6 +150,7 @@ Here are all of the problems that I have solved on the LeetCode platform:
 | [Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) | 452 | Medium | Array, Greedy, Sorting |
 | [Hamming Distance](https://leetcode.com/problems/hamming-distance/) | 461 | Easy | Bit Manipulation |
 | [Total Hamming Distance](https://leetcode.com/problems/total-hamming-distance/) | 477 | Medium | Array, Math, Bit Manipulation |
+| [Next Greater Element I](https://leetcode.com/problems/next-greater-element-i/) | 496 | Easy | Array, Hash Table, Stack, Monotonic Stack |
 | [Find Bottom Left Tree Value](https://leetcode.com/problems/find-bottom-left-tree-value/) | 513 | Medium | Tree, Depth-First Search, Breadth-First Search, Binary Tree |
 | [Minimum Absolute Difference in BST](https://leetcode.com/problems/minimum-absolute-difference-in-bst/) | 530 | Easy | Tree, Depth-First Search, Breadth-First Search, Binary Search Tree, Binary Tree |
 | [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/) | 543 | Easy | Tree, Depth-First Search, Binary Tree |

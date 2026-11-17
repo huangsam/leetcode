@@ -1578,6 +1578,18 @@
     ]
   },
   {
+    "id": 496,
+    "title": "Next Greater Element I",
+    "slug": "next-greater-element-i",
+    "difficulty": "Easy",
+    "topics": [
+      "Array",
+      "Hash Table",
+      "Stack",
+      "Monotonic Stack"
+    ]
+  },
+  {
     "id": 513,
     "title": "Find Bottom Left Tree Value",
     "slug": "find-bottom-left-tree-value",
