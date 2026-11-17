@@ -21,14 +21,15 @@ class Solution:
         - Time: O(v + e) where v = numCourses and e = len(prerequisites)
         - Space: O(v + e) for adjacency list, in-degree tracker, and queue
         """
+        # Tracks index as course and value as the courses that depend on it
         adj: list[list[int]] = [[] for _ in range(numCourses)]
+        # Tracks index as course and value as the number of prerequisites
         in_degrees: list[int] = [0] * numCourses
 
         for course, prereq in prerequisites:
             adj[prereq].append(course)
             in_degrees[course] += 1
 
-        # Start with courses that have no prerequisites
         queue: deque[int] = deque(course for course in range(numCourses) if in_degrees[course] == 0)
         completed = 0
 
