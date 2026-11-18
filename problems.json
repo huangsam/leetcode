@@ -387,6 +387,19 @@
     ]
   },
   {
+    "id": 42,
+    "title": "Trapping Rain Water",
+    "slug": "trapping-rain-water",
+    "difficulty": "Hard",
+    "topics": [
+      "Array",
+      "Two Pointers",
+      "Dynamic Programming",
+      "Stack",
+      "Monotonic Stack"
+    ]
+  },
+  {
     "id": 45,
     "title": "Jump Game II",
     "slug": "jump-game-ii",

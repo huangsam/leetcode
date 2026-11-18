@@ -41,6 +41,7 @@ Here are all of the problems that I have solved on the LeetCode platform:
 | [Count and Say](https://leetcode.com/problems/count-and-say/) | 38 | Medium | String |
 | [Combination Sum](https://leetcode.com/problems/combination-sum/) | 39 | Medium | Array, Backtracking |
 | [First Missing Positive](https://leetcode.com/problems/first-missing-positive/) | 41 | Hard | Array, Hash Table |
+| [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) | 42 | Hard | Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack |
 | [Jump Game II](https://leetcode.com/problems/jump-game-ii/) | 45 | Medium | Array, Dynamic Programming, Greedy |
 | [Permutations](https://leetcode.com/problems/permutations/) | 46 | Medium | Array, Backtracking |
 | [Rotate Image](https://leetcode.com/problems/rotate-image/) | 48 | Medium | Array, Math, Matrix |
