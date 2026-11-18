@@ -658,6 +658,18 @@
     ]
   },
   {
+    "id": 84,
+    "title": "Largest Rectangle in Histogram",
+    "slug": "largest-rectangle-in-histogram",
+    "difficulty": "Hard",
+    "topics": [
+      "Array",
+      "Stack",
+      "Monotonic Stack",
+      "Range Minimum/Maximum Query"
+    ]
+  },
+  {
     "id": 86,
     "title": "Partition List",
     "slug": "partition-list",

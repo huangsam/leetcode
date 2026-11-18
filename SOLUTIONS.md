@@ -67,6 +67,7 @@ Here are all of the problems that I have solved on the LeetCode platform:
 | [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) | 80 | Medium | Array, Two Pointers |
 | [Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/) | 81 | Medium | Array, Binary Search |
 | [Remove Duplicates from Sorted List II](https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/) | 82 | Medium | Linked List, Two Pointers |
+| [Largest Rectangle in Histogram](https://leetcode.com/problems/largest-rectangle-in-histogram/) | 84 | Hard | Array, Stack, Monotonic Stack, Range Minimum/Maximum Query |
 | [Partition List](https://leetcode.com/problems/partition-list/) | 86 | Medium | Linked List, Two Pointers |
 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | 88 | Easy | Array, Two Pointers, Sorting |
 | [Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/) | 92 | Medium | Linked List |
