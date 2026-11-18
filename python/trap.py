@@ -60,7 +60,7 @@ class Solution:
                 width = i - st[-1] - 1
 
                 # Height of water is determined by the shorter wall
-                height_diff = min(height[i], height[st[-1]]) - height[j]
+                height_diff = min(h, height[st[-1]]) - height[j]
 
                 area = height_diff * width
 
