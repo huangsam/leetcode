@@ -19,6 +19,7 @@ class Solution:
         result = 0
 
         while left < right:
+            # The water trapped is limited by the shorter wall
             if height[left] < height[right]:
                 if height[left] >= left_max:
                     left_max = height[left]
