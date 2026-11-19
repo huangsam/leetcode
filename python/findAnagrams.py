@@ -19,33 +19,27 @@ class Solution:
 
         result: list[int] = []
 
-        def indexAt(ch: str) -> int:
+        def index(ch: str) -> int:
             return ord(ch) - ord("a")
 
         # Tracks the counts as we go through sliding window
         ledger = [0] * 26
         for ch in p:
-            ledger[indexAt(ch)] += 1
+            ledger[index(ch)] += 1
 
         # Relying on a fixed length sliding window
         k = len(p)
 
         # Setup ledger properly prior to going further
         for i in range(k):
-            ledger[indexAt(s[i])] -= 1
+            ledger[index(s[i])] -= 1
 
         for right in range(k, len(s)):
             left = right - k
-
-            # All-zero ledger implies an anagram exists so record
-            # this index to the result
             if all(i == 0 for i in ledger):
                 result.append(left)
-
-            # Exiting returns one char
-            ledger[indexAt(s[left])] += 1
-            # Entering consumes one char
-            ledger[indexAt(s[right])] -= 1
+            ledger[index(s[left])] += 1
+            ledger[index(s[right])] -= 1
 
         # Addresses the last iteration
         if all(i == 0 for i in ledger):
