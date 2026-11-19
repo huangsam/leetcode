@@ -158,6 +158,7 @@ Here are all of the problems that I have solved on the LeetCode platform:
 | [Minimum Absolute Difference in BST](https://leetcode.com/problems/minimum-absolute-difference-in-bst/) | 530 | Easy | Tree, Depth-First Search, Breadth-First Search, Binary Search Tree, Binary Tree |
 | [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/) | 543 | Easy | Tree, Depth-First Search, Binary Tree |
 | [Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii/) | 557 | Easy | Two Pointers, String |
+| [Permutation in String](https://leetcode.com/problems/permutation-in-string/) | 567 | Medium | Hash Table, Two Pointers, String, Sliding Window |
 | [Can Place Flowers](https://leetcode.com/problems/can-place-flowers/) | 605 | Easy | Array, Greedy |
 | [Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/) | 617 | Easy | Tree, Depth-First Search, Breadth-First Search, Binary Tree |
 | [Average of Levels in Binary Tree](https://leetcode.com/problems/average-of-levels-in-binary-tree/) | 637 | Easy | Tree, Depth-First Search, Breadth-First Search, Binary Tree |

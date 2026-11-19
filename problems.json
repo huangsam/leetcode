@@ -1672,6 +1672,18 @@
     ]
   },
   {
+    "id": 567,
+    "title": "Permutation in String",
+    "slug": "permutation-in-string",
+    "difficulty": "Medium",
+    "topics": [
+      "Hash Table",
+      "Two Pointers",
+      "String",
+      "Sliding Window"
+    ]
+  },
+  {
     "id": 605,
     "title": "Can Place Flowers",
     "slug": "can-place-flowers",
