@@ -62,6 +62,7 @@ Here are all of the problems that I have solved on the LeetCode platform:
 | [Sqrt(x)](https://leetcode.com/problems/sqrtx/) | 69 | Easy | Math, Binary Search |
 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | 70 | Easy | Math, Dynamic Programming, Memoization |
 | [Simplify Path](https://leetcode.com/problems/simplify-path/) | 71 | Medium | String, Stack |
+| [Edit Distance](https://leetcode.com/problems/edit-distance/) | 72 | Medium | String, Dynamic Programming |
 | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) | 73 | Medium | Array, Hash Table, Matrix |
 | [Sort Colors](https://leetcode.com/problems/sort-colors/) | 75 | Medium | Array, Two Pointers, Sorting |
 | [Combinations](https://leetcode.com/problems/combinations/) | 77 | Medium | Backtracking |

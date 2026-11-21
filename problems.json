@@ -610,6 +610,16 @@
     ]
   },
   {
+    "id": 72,
+    "title": "Edit Distance",
+    "slug": "edit-distance",
+    "difficulty": "Medium",
+    "topics": [
+      "String",
+      "Dynamic Programming"
+    ]
+  },
+  {
     "id": 73,
     "title": "Set Matrix Zeroes",
     "slug": "set-matrix-zeroes",
