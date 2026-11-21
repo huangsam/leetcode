@@ -4,15 +4,13 @@
 class Solution:
     def addMinimum(self, word: str) -> int:
         """
-        Find minimum additions to make a valid string.
+        Find minimum additions to make a valid string. A string is valid
+        if it can be formed by concatenating the string "abc" >= 1 times.
 
-        Here are some examples of how the scoring works:
-        - a -> 2
-        - b -> 2
-        - c -> 2
-        - ab -> 1
-        - bc -> 1
-        - abc -> 0
+        The idea is to look at each subsequence of characters in the string
+        for matching characters. If we find a character that is less than
+        or equal to the last character in the current sequence, then we
+        tally our score and reset the sequence.
 
         Complexity:
         - Time: O(n)
