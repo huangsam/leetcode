@@ -1397,6 +1397,18 @@
     ]
   },
   {
+    "id": 300,
+    "title": "Longest Increasing Subsequence",
+    "slug": "longest-increasing-subsequence",
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Binary Search",
+      "Dynamic Programming",
+      "Longest Increasing Subsequence"
+    ]
+  },
+  {
     "id": 322,
     "title": "Coin Change",
     "slug": "coin-change",
