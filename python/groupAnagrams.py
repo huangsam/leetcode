@@ -8,13 +8,9 @@ class Solution:
         """
         Group anagrams together from a list of strings.
 
-        Assume that anagram is simply a map of alpha counts.
-
-        Then we can create a hash key from the sorted version of each string.
-        Each unique hash key will map to a list of strings that are anagrams.
-
-        Lastly, we iterate through the values of the dictionary, returning
-        it as a list of lists.
+        If we treat an anagram as simply a map of alpha counts, then we can
+        use a hash table to group them together. Lastly, we can return the
+        values of the hash table as a list of lists.
 
         Complexity:
         - Time: O(n * k log k)
