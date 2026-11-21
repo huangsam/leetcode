@@ -22,9 +22,9 @@ jobs:
       - name: Setup latest version of uv
         uses: astral-sh/setup-uv@v7
       - name: Run lint
-        run: uv run ruff check python
+        run: uv run --locked ruff check python
       - name: Run type hints
-        run: uv run mypy python
+        run: uv run --locked mypy python
 
   java-build:
     name: Java
