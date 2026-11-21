@@ -174,6 +174,7 @@ Here are all of the problems that I have solved on the LeetCode platform:
 | [Number of Recent Calls](https://leetcode.com/problems/number-of-recent-calls/) | 933 | Easy | Design, Queue, Data Stream |
 | [Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/) | 1004 | Medium | Array, Binary Search, Sliding Window, Prefix Sum |
 | [Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/) | 1071 | Easy | Math, String |
+| [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/) | 1143 | Medium | String, Dynamic Programming, Longest Common Subsequence |
 | [Unique Number of Occurrences](https://leetcode.com/problems/unique-number-of-occurrences/) | 1207 | Easy | Array, Hash Table |
 | [Minimum Flips to Make a OR b Equal to c](https://leetcode.com/problems/minimum-flips-to-make-a-or-b-equal-to-c/) | 1318 | Medium | Bit Manipulation |
 | [Linked List in Binary Tree](https://leetcode.com/problems/linked-list-in-binary-tree/) | 1367 | Medium | Linked List, Tree, Depth-First Search, Binary Tree |

@@ -1853,6 +1853,17 @@
     ]
   },
   {
+    "id": 1143,
+    "title": "Longest Common Subsequence",
+    "slug": "longest-common-subsequence",
+    "difficulty": "Medium",
+    "topics": [
+      "String",
+      "Dynamic Programming",
+      "Longest Common Subsequence"
+    ]
+  },
+  {
     "id": 1207,
     "title": "Unique Number of Occurrences",
     "slug": "unique-number-of-occurrences",
