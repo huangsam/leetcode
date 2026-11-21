@@ -7,14 +7,14 @@ class Solution:
         Find minimum additions to make a valid string. A string is valid
         if it can be formed by concatenating the string "abc" >= 1 times.
 
-        The idea is to look at each subsequence of characters in the string
-        for matching characters. If we find a character that is less than
-        or equal to the last character in the current sequence, then we
-        tally our score and reset the sequence.
+        Track the characters in the current "abc" sequence. If the next
+        character is not greater than the last character, the current
+        sequence cannot continue, so add the missing letters and reset
+        the sequence. Finish by accounting for any final sequence.
 
         Complexity:
         - Time: O(n)
-        - Space: O(n)
+        - Space: O(1)
         """
         curr_seq: list[str] = []
         num_letters = 0
