@@ -1397,6 +1397,19 @@
     ]
   },
   {
+    "id": 322,
+    "title": "Coin Change",
+    "slug": "coin-change",
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Dynamic Programming",
+      "Breadth-First Search",
+      "Knapsack Problem",
+      "Complete Knapsack"
+    ]
+  },
+  {
     "id": 334,
     "title": "Increasing Triplet Subsequence",
     "slug": "increasing-triplet-subsequence",

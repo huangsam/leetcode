@@ -133,6 +133,7 @@ Here are all of the problems that I have solved on the LeetCode platform:
 | [Game of Life](https://leetcode.com/problems/game-of-life/) | 289 | Medium | Array, Matrix, Simulation |
 | [Word Pattern](https://leetcode.com/problems/word-pattern/) | 290 | Easy | Hash Table, String |
 | [Find Median from Data Stream](https://leetcode.com/problems/find-median-from-data-stream/) | 295 | Hard | Two Pointers, Design, Sorting, Heap (Priority Queue), Data Stream |
+| [Coin Change](https://leetcode.com/problems/coin-change/) | 322 | Medium | Array, Dynamic Programming, Breadth-First Search, Knapsack Problem, Complete Knapsack |
 | [Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence/) | 334 | Medium | Array, Greedy |
 | [Counting Bits](https://leetcode.com/problems/counting-bits/) | 338 | Easy | Dynamic Programming, Bit Manipulation |
 | [Power of Four](https://leetcode.com/problems/power-of-four/) | 342 | Easy | Math, Bit Manipulation, Recursion |
