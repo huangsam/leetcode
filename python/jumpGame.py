@@ -31,8 +31,8 @@ class Solution:
 
     def canJumpDynamic(self, nums: list[int]) -> bool:
         """
-        Uses dynamic programming instead of a greedy approach. This results
-        in a TLE for large inputs, but is a valid solution.
+        Uses dynamic programming instead of a greedy approach. This causes
+        TLE for large inputs, but works for small inputs.
 
         The dp approach is as follows:
         - Initialize reachable array
