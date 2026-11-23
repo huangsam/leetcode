@@ -4,14 +4,12 @@
 class Solution:
     def canJump(self, nums: list[int]) -> bool:
         """
-        Determine if you can reach the last index of an array.
+        Determine if you can reach the last index of an array. You
+        are given an integer array nums. You are initially positioned
+        at the array's first index, and each element in the array
+        represents your maximum jump length at that position.
 
-        You are given an integer array nums. You are initially
-        positioned at the array's first index, and each element
-        in the array represents your maximum jump length at
-        that position.
-
-        Approach (efficient):
+        The greedy approach is as follows:
         - Assess jump power at every iteration
         - If we have negative jump power, then we cannot proceed
         - If a higher jump power exists, replace the previous one
@@ -33,14 +31,18 @@ class Solution:
 
     def canJumpDynamic(self, nums: list[int]) -> bool:
         """
-        - Time: O(n^2)
-        - Space: O(n)
+        Uses dynamic programming instead of a greedy approach. This results
+        in a TLE for large inputs, but is a valid solution.
 
-        Approach (sub-efficient):
+        The dp approach is as follows:
         - Initialize reachable array
         - Base case is reachable[0] = True
-        - For each position i, mark i...i+n_val as reachable
+        - For each position i, mark i..i+n_val as reachable
         - Check if n_len-1 is reachable
+
+        Complexity:
+        - Time: O(n^2)
+        - Space: O(n)
         """
         if len(nums) <= 1:
             return True
