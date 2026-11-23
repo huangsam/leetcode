@@ -1554,6 +1554,18 @@
     ]
   },
   {
+    "id": 416,
+    "title": "Partition Equal Subset Sum",
+    "slug": "partition-equal-subset-sum",
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Dynamic Programming",
+      "Knapsack Problem",
+      "0-1 Knapsack"
+    ]
+  },
+  {
     "id": 424,
     "title": "Longest Repeating Character Replacement",
     "slug": "longest-repeating-character-replacement",

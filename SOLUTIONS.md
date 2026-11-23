@@ -147,6 +147,7 @@ Here are all of the problems that I have solved on the LeetCode platform:
 | [Decode String](https://leetcode.com/problems/decode-string/) | 394 | Medium | String, Stack, Recursion |
 | [Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/) | 404 | Easy | Tree, Depth-First Search, Breadth-First Search, Binary Tree |
 | [Fizz Buzz](https://leetcode.com/problems/fizz-buzz/) | 412 | Easy | Math, String, Simulation |
+| [Partition Equal Subset Sum](https://leetcode.com/problems/partition-equal-subset-sum/) | 416 | Medium | Array, Dynamic Programming, Knapsack Problem, 0-1 Knapsack |
 | [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) | 424 | Medium | Hash Table, String, Sliding Window |
 | [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | 438 | Medium | Hash Table, String, Sliding Window |
 | [Find All Duplicates in an Array](https://leetcode.com/problems/find-all-duplicates-in-an-array/) | 442 | Medium | Array, Hash Table, Sorting |
