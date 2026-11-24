@@ -87,6 +87,7 @@ Here are all of the problems that I have solved on the LeetCode platform:
 | [Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/) | 114 | Medium | Linked List, Stack, Tree, Depth-First Search, Binary Tree |
 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | 121 | Easy | Array, Dynamic Programming |
 | [Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) | 122 | Medium | Array, Dynamic Programming, Greedy |
+| [Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/) | 123 | Hard | Array, Dynamic Programming |
 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | 125 | Easy | Two Pointers, String |
 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | 128 | Medium | Array, Hash Table, Union-Find |
 | [Clone Graph](https://leetcode.com/problems/clone-graph/) | 133 | Medium | Hash Table, Depth-First Search, Breadth-First Search, Graph Theory |
