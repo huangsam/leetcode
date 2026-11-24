@@ -28,10 +28,11 @@ class Solution:
         max_profit_seen = 0
         for i in range(n):
             min_price = min(prices[i], min_price)
+            if i > 0:
+                left[i] = max(prices[i] - min_price, left[i - 1])
             max_price = max(prices[n - i - 1], max_price)
             if i > 0:
-                left[i] = max(left[i - 1], prices[i] - min_price)
-                right[n - 1 - i] = max(right[n - i], max_price - prices[n - 1 - i])
+                right[n - 1 - i] = max(max_price - prices[n - 1 - i], right[n - i])
 
         for i in range(len(left)):
             max_profit_seen = max(left[i] + right[i], max_profit_seen)
