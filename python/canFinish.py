@@ -6,8 +6,8 @@ from collections import deque
 class Solution:
     def canFinish(self, numCourses: int, prerequisites: list[list[int]]) -> bool:
         """
-        Determine if it is possible to finish all courses given the prerequisite pairs.
-        Prerequisites are represented as a list of pairs [a, b] where b is a prerequisite for a.
+        Determine if it is possible to finish all courses given the prerequisites.
+        They are represented as a list of pairs [a, b] where b is needed for a.
 
         Approach:
         - Treat courses as nodes and prerequisites as directed edges: [a, b] means b -> a
