@@ -162,6 +162,7 @@ Here are all of the problems that I have solved on the LeetCode platform:
 | [Find Bottom Left Tree Value](https://leetcode.com/problems/find-bottom-left-tree-value/) | 513 | Medium | Tree, Depth-First Search, Breadth-First Search, Binary Tree |
 | [Minimum Absolute Difference in BST](https://leetcode.com/problems/minimum-absolute-difference-in-bst/) | 530 | Easy | Tree, Depth-First Search, Breadth-First Search, Binary Search Tree, Binary Tree |
 | [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/) | 543 | Easy | Tree, Depth-First Search, Binary Tree |
+| [Number of Provinces](https://leetcode.com/problems/number-of-provinces/) | 547 | Medium | Depth-First Search, Breadth-First Search, Union-Find, Graph Theory |
 | [Reverse Words in a String III](https://leetcode.com/problems/reverse-words-in-a-string-iii/) | 557 | Easy | Two Pointers, String |
 | [Permutation in String](https://leetcode.com/problems/permutation-in-string/) | 567 | Medium | Hash Table, Two Pointers, String, Sliding Window |
 | [Can Place Flowers](https://leetcode.com/problems/can-place-flowers/) | 605 | Easy | Array, Greedy |

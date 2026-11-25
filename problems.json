@@ -1719,6 +1719,18 @@
     ]
   },
   {
+    "id": 547,
+    "title": "Number of Provinces",
+    "slug": "number-of-provinces",
+    "difficulty": "Medium",
+    "topics": [
+      "Depth-First Search",
+      "Breadth-First Search",
+      "Union-Find",
+      "Graph Theory"
+    ]
+  },
+  {
     "id": 557,
     "title": "Reverse Words in a String III",
     "slug": "reverse-words-in-a-string-iii",
