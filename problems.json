@@ -1208,6 +1208,18 @@
     ]
   },
   {
+    "id": 210,
+    "title": "Course Schedule II",
+    "slug": "course-schedule-ii",
+    "difficulty": "Medium",
+    "topics": [
+      "Depth-First Search",
+      "Breadth-First Search",
+      "Graph Theory",
+      "Topological Sort"
+    ]
+  },
+  {
     "id": 215,
     "title": "Kth Largest Element in an Array",
     "slug": "kth-largest-element-in-an-array",

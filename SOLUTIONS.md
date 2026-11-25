@@ -116,6 +116,7 @@ Here are all of the problems that I have solved on the LeetCode platform:
 | [Course Schedule](https://leetcode.com/problems/course-schedule/) | 207 | Medium | Depth-First Search, Breadth-First Search, Graph Theory, Topological Sort, Directed Acyclic Graph |
 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/) | 208 | Medium | Hash Table, String, Design, Trie |
 | [Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) | 209 | Medium | Array, Binary Search, Sliding Window, Prefix Sum |
+| [Course Schedule II](https://leetcode.com/problems/course-schedule-ii/) | 210 | Medium | Depth-First Search, Breadth-First Search, Graph Theory, Topological Sort |
 | [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/) | 215 | Medium | Array, Divide and Conquer, Sorting, Heap (Priority Queue), Quickselect |
 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | 217 | Easy | Array, Hash Table, Sorting |
 | [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/) | 219 | Easy | Array, Hash Table, Sliding Window |
