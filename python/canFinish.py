@@ -26,9 +26,9 @@ class Solution:
         # Tracks index as course and value as the number of prerequisites
         in_degrees: list[int] = [0] * numCourses
 
-        for course, prereq in prerequisites:
-            adj[prereq].append(course)
-            in_degrees[course] += 1
+        for target, depend in prerequisites:
+            adj[depend].append(target)
+            in_degrees[target] += 1
 
         queue: deque[int] = deque(course for course in range(numCourses) if in_degrees[course] == 0)
         completed = 0
@@ -62,7 +62,7 @@ class Solution:
         adj: list[list[int]] = [[] for _ in range(numCourses)]
 
         for target, depend in prerequisites:
-            adj[target].append(depend)
+            adj[depend].append(target)
 
         def dfs(course: int) -> bool:
             """Check whether a cycle exists or not."""
@@ -71,8 +71,8 @@ class Solution:
             if course in visiting:
                 return True
             visiting.add(course)
-            for depend in adj[course]:
-                if dfs(depend):
+            for neighbor in adj[course]:
+                if dfs(neighbor):
                     return True
             visiting.remove(course)
             visited.add(course)
