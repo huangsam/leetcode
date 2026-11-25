@@ -38,3 +38,31 @@ class Solution:
             max_profit_seen = max(left[i] + right[i], max_profit_seen)
 
         return max_profit_seen
+
+    def maxProfitState(self, prices: list[int]) -> int:
+        """
+        We use a state machine approach where we track the best profit
+        for each of the 5 states (0, 1, 2, 3, 4) where:
+        - 0: no transactions yet
+        - 1: first buy
+        - 2: first sell
+        - 3: second buy
+        - 4: second sell
+
+        Complexity:
+        - Time: O(n)
+        - Space: O(1)
+        """
+        s0 = 0
+        s1 = -prices[0]
+        s2 = float("-inf")
+        s3 = float("-inf")
+        s4 = float("-inf")
+
+        for price in prices[1:]:
+            s1 = max(s1, s0 - price)
+            s2 = max(s2, s1 + price)
+            s3 = max(s3, s2 - price)
+            s4 = max(s4, s3 + price)
+
+        return int(max(s0, s2, s4))
