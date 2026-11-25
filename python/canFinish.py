@@ -45,3 +45,42 @@ class Solution:
                     queue.append(neighbor)
 
         return completed == numCourses
+
+    def canFinishDepth(self, numCourses: int, prerequisites: list[list[int]]) -> bool:
+        """
+        With this variation, we want to check whether a cycle exists or not.
+        If no cycle exists, then all tasks can be completed.
+
+        Complexity:
+        - Time: O(v + e)
+        - Memory: O(v)
+        """
+        visiting: set[int] = set()
+        visited: set[int] = set()
+
+        # Adjacency list for exactly n courses
+        adj: list[list[int]] = [[] for _ in range(numCourses)]
+
+        for target, depend in prerequisites:
+            adj[target].append(depend)
+
+        def dfs(course: int) -> bool:
+            """Check whether a cycle exists or not."""
+            if course in visited:
+                return False
+            if course in visiting:
+                return True
+            visiting.add(course)
+            for depend in adj[course]:
+                if dfs(depend):
+                    return True
+            visiting.remove(course)
+            visited.add(course)
+            return False
+
+        for i in range(numCourses):
+            if i not in visited:
+                if dfs(i):
+                    return False
+
+        return True
