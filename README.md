@@ -4,8 +4,6 @@
 
 Python / Java solutions for [LeetCode problems](https://leetcode.com/). 🚀
 
-Sharpen your coding skills with these solutions—feel free to explore, learn, and contribute!
-
 🐍 🐍 🐍 - 🏃‍♂️ 🏃‍♂️ 🏃‍♂️ - ☕ ☕ ☕
 
 See [SOLUTIONS.md](SOLUTIONS.md) for the complete list of problems solved.
