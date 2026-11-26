@@ -173,6 +173,7 @@ Here are all of the problems that I have solved on the LeetCode platform:
 | [Dota2 Senate](https://leetcode.com/problems/dota2-senate/) | 649 | Medium | String, Greedy, Queue |
 | [Two Sum IV - Input is a BST](https://leetcode.com/problems/two-sum-iv-input-is-a-bst/) | 653 | Easy | Hash Table, Two Pointers, Tree, Depth-First Search, Breadth-First Search, Binary Search Tree, Binary Tree |
 | [Maximum Binary Tree](https://leetcode.com/problems/maximum-binary-tree/) | 654 | Medium | Array, Divide and Conquer, Stack, Tree, Monotonic Stack, Binary Tree |
+| [Redundant Connection](https://leetcode.com/problems/redundant-connection/) | 684 | Medium | Depth-First Search, Breadth-First Search, Union-Find, Graph Theory |
 | [Find Pivot Index](https://leetcode.com/problems/find-pivot-index/) | 724 | Easy | Array, Prefix Sum |
 | [Asteroid Collision](https://leetcode.com/problems/asteroid-collision/) | 735 | Medium | Array, Stack, Simulation |
 | [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/) | 739 | Medium | Array, Stack, Monotonic Stack |

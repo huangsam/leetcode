@@ -1849,6 +1849,18 @@
     ]
   },
   {
+    "id": 684,
+    "title": "Redundant Connection",
+    "slug": "redundant-connection",
+    "difficulty": "Medium",
+    "topics": [
+      "Depth-First Search",
+      "Breadth-First Search",
+      "Union-Find",
+      "Graph Theory"
+    ]
+  },
+  {
     "id": 724,
     "title": "Find Pivot Index",
     "slug": "find-pivot-index",
