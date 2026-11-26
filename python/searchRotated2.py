@@ -6,9 +6,8 @@ class Solution:
         """
         Search for a target in a rotated sorted array with duplicates.
 
-        Use modified binary search: skip duplicates at lo and hi to handle worst case.
-
-        Then check which half is sorted, and decide to search left or right based on target.
+        Use the modified binary search from searchRotated but also check
+        for the case where [lo] == [mid] == [hi] to handle ambiguity.
 
         Complexity:
         - Time: O(n)
@@ -16,31 +15,29 @@ class Solution:
         """
         lo, hi = 0, len(nums) - 1
         while lo <= hi:
-            # Handle duplicate elements at the boundaries
-            while lo < hi and nums[lo] == nums[lo + 1]:
-                lo += 1
-            while hi > lo and nums[hi] == nums[hi - 1]:
-                hi -= 1
-
-            mid = lo + (hi - lo) // 2
-            if target == nums[mid]:
+            mid = (lo + hi) // 2
+            if nums[mid] == target:
                 return True
 
+            # Ambiguous case: both ends match mid
+            if nums[lo] == nums[mid] == nums[hi]:
+                lo += 1
+                hi -= 1
+
             # Case 1: The left half is sorted
-            if nums[lo] <= nums[mid]:
+            elif nums[lo] <= nums[mid]:
                 # Target is inside this sorted left half
-                if nums[lo] <= target <= nums[mid]:
+                if nums[lo] <= target < nums[mid]:
                     hi = mid - 1
-                # Target is outside this sorted left half
                 else:
                     lo = mid + 1
 
             # Case 2: The right half is sorted
             else:
                 # Target is inside this sorted right half
-                if nums[mid] <= target <= nums[hi]:
+                if nums[mid] < target <= nums[hi]:
                     lo = mid + 1
-                # Target is outside this sorted right half
                 else:
                     hi = mid - 1
+
         return False

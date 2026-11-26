@@ -6,11 +6,8 @@ class Solution:
         """
         Search for a target in a rotated sorted array.
 
-        Use modified binary search: find the mid, if target == nums[mid], return.
-        Else, determine which half is sorted.
-
-        If left half is sorted, check if target is in left range, else search right.
-        If right half is sorted, check accordingly.
+        If left half is sorted, check if target is in left range.
+        If right half is sorted, use a similar approach.
 
         Complexity:
         - Time: O(log(n))
@@ -25,7 +22,7 @@ class Solution:
             # Case 1: The left half is sorted
             if nums[lo] <= nums[mid]:
                 # Target is inside this sorted left half
-                if nums[lo] <= target <= nums[mid]:
+                if nums[lo] <= target < nums[mid]:
                     hi = mid - 1
                 # Target is outside this sorted left half
                 else:
@@ -34,7 +31,7 @@ class Solution:
             # Case 2: The right half is sorted
             else:
                 # Target is inside this sorted right half
-                if nums[mid] <= target <= nums[hi]:
+                if nums[mid] < target <= nums[hi]:
                     lo = mid + 1
                 # Target is outside this sorted right half
                 else:
