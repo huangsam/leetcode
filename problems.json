@@ -1902,6 +1902,17 @@
     ]
   },
   {
+    "id": 994,
+    "title": "Rotting Oranges",
+    "slug": "rotting-oranges",
+    "difficulty": "Medium",
+    "topics": [
+      "Array",
+      "Breadth-First Search",
+      "Matrix"
+    ]
+  },
+  {
     "id": 1004,
     "title": "Max Consecutive Ones III",
     "slug": "max-consecutive-ones-iii",

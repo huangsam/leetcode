@@ -178,6 +178,7 @@ Here are all of the problems that I have solved on the LeetCode platform:
 | [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/) | 739 | Medium | Array, Stack, Monotonic Stack |
 | [Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/) | 771 | Easy | Hash Table, String |
 | [Number of Recent Calls](https://leetcode.com/problems/number-of-recent-calls/) | 933 | Easy | Design, Queue, Data Stream |
+| [Rotting Oranges](https://leetcode.com/problems/rotting-oranges/) | 994 | Medium | Array, Breadth-First Search, Matrix |
 | [Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/) | 1004 | Medium | Array, Binary Search, Sliding Window, Prefix Sum |
 | [Greatest Common Divisor of Strings](https://leetcode.com/problems/greatest-common-divisor-of-strings/) | 1071 | Easy | Math, String |
 | [Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/) | 1143 | Medium | String, Dynamic Programming, Longest Common Subsequence |
